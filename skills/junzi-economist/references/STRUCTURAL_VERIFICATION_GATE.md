@@ -16,6 +16,16 @@ Every estimator start receives a row-level acceptance decision from the declared
 
 Instantiate `assets/templates/STRUCTURAL_RELEASE_MATRIX.yaml` before running production. Give every required claim or artifact family a stable `check_id`, its composite row key, every field that must be recomputed or reconciled, its verification mode, tolerance, and permitted scope language. A prose checklist does not substitute for this matrix.
 
+Keep the release lifecycle explicit and acyclic:
+
+1. freeze the contract, with requirements but no runtime pass or closure values;
+2. freeze a manifest of production inputs that already exist;
+3. run the verifier and write its emitted checks and closure result;
+4. generate the report from that result;
+5. write a final handoff receipt that reopens and hashes the contract, input manifest, verification result, and report.
+
+The handoff receipt is last and is not self-verifying. Do not put future files in an earlier manifest, and do not let the frozen contract double as the later pass certificate.
+
 ## 2. Freeze a complete production record
 
 Retain enough precision to recompute after serialization:
@@ -68,6 +78,8 @@ The verifier's coverage map names one predicate per claim and records pass, fail
 
 Leave unexecuted predicates explicitly unverified. A verifier failure writes its record and exits nonzero.
 
+Exercise the failure path before release. Save the exact command or injected failing condition, numeric process exit code, and resulting failure record. A nonempty status string is not evidence of nonzero exit behavior.
+
 Close the release matrix mechanically:
 
 - the set of required `check_id` values in the frozen contract must equal the set emitted by the verifier;
@@ -75,6 +87,8 @@ Close the release matrix mechanically:
 - row-family checks bind every declared composite key to every required saved field, not merely to the row count or objective;
 - interface checks cover every estimator or solver family for which the public interface claim is made and compare the exact returned schema;
 - headline and hash checks are ordinary required matrix rows, not informal post-processing.
+
+An input-hash predicate covers only files frozen before verification. Claims that the final verification result and report were reopened belong to the later handoff receipt; they cannot be marked passed in the verifier before those files exist in final form.
 
 The report may say “all,” “complete,” “every,” “full output,” or “independently verified” only at the scope for which matrix closure passes. Otherwise name the narrower executed scope. A truthful predicate is still insufficient when its label implies fields that its code did not check.
 

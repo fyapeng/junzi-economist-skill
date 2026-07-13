@@ -1,7 +1,15 @@
 schema_version: 1
+document_role: frozen_pre_execution_contract
 scope_statement: ""
 claim_language_if_closed: ""
 claim_language_if_not_closed: "Verified only for the explicitly passed checks and fields below."
+lifecycle:
+  contract: freeze_before_production_or_release_verification
+  production_input_manifest: freeze_existing_inputs_before_verification
+  verification_result: write_emitted_checks_and_closure_after_execution
+  report: generate_from_verification_result
+  handoff_receipt: write_last_after_reopening_contract_manifest_result_and_report
+  handoff_receipt_is_self_verifying: false
 checks:
   - check_id: population_cells
     required: true
@@ -90,8 +98,19 @@ checks:
     verification_mode: reopen_and_hash_every_listed_file
     tolerance: exact
     evidence: ""
-closure:
-  required_check_ids_equal_emitted_check_ids: false
-  contract_fields_equal_emitted_fields: false
-  every_required_check_passes: false
-  report_scope_matches_closed_scope: false
+closure_requirements:
+  - required_check_ids_equal_emitted_check_ids
+  - contract_fields_equal_emitted_fields
+  - every_required_check_passes
+  - report_scope_matches_closed_scope
+failure_path_evidence:
+  exact_command_or_injected_condition: ""
+  numeric_exit_code_required: true
+  failure_record_required: true
+handoff_receipt_requirements:
+  reopen_and_hash:
+    - frozen_contract
+    - production_input_manifest
+    - verification_result
+    - final_report
+  state_that_receipt_is_not_self_verified: true
