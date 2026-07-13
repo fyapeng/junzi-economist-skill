@@ -1,0 +1,53 @@
+schema_version: 1
+execution_id: JE-X027
+case_id: JE-R34
+timestamp_utc: "2026-07-13T06:15:00Z"
+skill_commit: "2e2c603"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_endpoint
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "Assess whether a dominant delivery platform's faster deliveries, lower prices, higher hourly rider earnings, and higher profit justify mandatory monitoring despite more crashes, penalized refusal, opaque deactivation, income dependence, and absent worker voice. Reconstruct agency, power, welfare criteria, safeguards, design, value conflict, branch decision, and claim statuses."
+expected:
+  - make constrained agency and asymmetric power alter the economic object
+  - distinguish evidence from unresolved normative criteria
+  - account for safety due process collective voice and distribution
+  - backtrack from mandate and preserve explicit claim status
+forbidden:
+  - infer consent or welfare from participation or average earnings
+  - call profit a transfer or ignore shifted costs
+  - randomize away basic protections
+  - label a policy recommendation as empirically supported
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/BRANCH_AND_DECISION_PROTOCOL.md
+response_file: response.md
+response_sha256: "ef4d873abcabf0265167b57bc1d02c3ec5f8a8fef6b5798fcc91e030c0cec9aa"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "405766d7ea7c2843c5be9eb2ae965a080cf5b2d9dc593a163a91ce0e81c37079"
+rubric:
+  - criterion: constrained agency power and information
+    score: 2
+    max_score: 2
+  - criterion: positive mechanisms incidence and social accounting
+    score: 2
+    max_score: 2
+  - criterion: explicit welfare criteria and irreducible value conflict
+    score: 2
+    max_score: 2
+  - criterion: safeguards research design branch and claim status
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the blind first response required audit-driven corrections; both initial mixed findings and passing retests remain in the two audit files
+  - exact client and model versions unavailable

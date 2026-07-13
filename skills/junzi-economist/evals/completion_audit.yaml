@@ -3,9 +3,9 @@ audit_date: "2026-07-13"
 status_scale: [proved, partial, missing, contradicted]
 requirements:
   junzi_root:
-    status: partial
-    evidence: [SKILL.md, evals/runs/2026-07-13-round-04.md]
-    gap: "Dedicated behavior tests for human agency, power asymmetry, and a genuine Dao-level conflict."
+    status: proved
+    evidence: [SKILL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, evals/executions/JE-X027, evals/executions/JE-X028, evals/executions/JE-X029, evals/executions/JE-X030, evals/executions/JE-X031, evals/executions/JE-X032, evals/executions/JE-X033]
+    gap: "Seven adversarial executions now make agency, power, safety, due process, voice, rights constraints, and unresolved value conflict change feasible sets, welfare criteria, research design, and branch decisions across labor, education, housing, health, courts, scholarships, and childcare; JE-X033 is a clean dual-audited pass on exact commit b8f4611. Future breadth can test environmental and intergenerational conflicts."
   microeconomic_law:
     status: partial
     evidence: [references/MICROECONOMIC_LAW.md, evals/runs/2026-07-13-round-02.md]
@@ -25,7 +25,7 @@ requirements:
   causal_identification:
     status: proved
     evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/runs/2026-07-13-round-04.md]
-    gap: "Broaden design coverage beyond DID and common counterfactual failures."
+    gap: "Coverage now includes DID, common counterfactual failures, protected-choice ITTs, two-stage saturation designs, partial interference, displacement, total-policy effects, and finite-population support; broaden to networks, measurement error, and mediation."
   structural_estimation:
     status: partial
     evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/executions/JE-X011, evals/executions/JE-X012]
@@ -49,7 +49,7 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Twenty-five strict raw executions now include automatic routing, real PDF, long manuscript, legacy-only baselines, integrated comparisons, and clean theory/frontier endpoints; exact client/model provenance and platform-level telemetry remain unavailable."
+    gap: "Thirty-two strict executions now include automatic routing, real PDF, long manuscript, legacy comparisons, clean theory/frontier endpoints, six preserved Dao correction histories, and a clean dual-audited Dao transfer on exact commit b8f4611; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]

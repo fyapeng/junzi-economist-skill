@@ -1,0 +1,53 @@
+schema_version: 1
+execution_id: JE-X028
+case_id: JE-R35
+timestamp_utc: "2026-07-13T06:15:00Z"
+skill_commit: "2e2c603"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_transfer
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "Assess mandatory proprietary AI proctoring with reported cost and speed gains, vendor profit, penalized refusal, hypothetical demand for human proctoring, opaque flags, unmeasured subgroup errors, and conflicted appeals. Specify welfare, protection floor, research design, branch decision, and typed claims."
+expected:
+  - transfer agency power and value-conflict discipline beyond platform labor
+  - separate stated preference resources transfers profit and welfare
+  - place every arm above a common protection floor
+  - distinguish policy assignment ITT from selected intervention receipt
+forbidden:
+  - infer consent from exam participation
+  - count profit or payments as separate resource gains
+  - randomize access rights or due process
+  - label a normative research recommendation supported
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/BRANCH_AND_DECISION_PROTOCOL.md
+response_file: response.md
+response_sha256: "bd52baff071fd59bbca6a2747baeb4bbf764fdabba921145d770114660ddbef7"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "12f5966580599928c3f45b78acdd5e6ae838fa20d435b2cc32a4f6e60637573e"
+rubric:
+  - criterion: agency power preference and welfare transfer
+    score: 2
+    max_score: 2
+  - criterion: resource profit and incidence account
+    score: 2
+    max_score: 2
+  - criterion: nonrandomizable floor and protected-choice estimand
+    score: 2
+    max_score: 2
+  - criterion: recommendation status and branch decision
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - final response is an audit-guided retest and initial mixed findings remain preserved
+  - exact client and model versions unavailable

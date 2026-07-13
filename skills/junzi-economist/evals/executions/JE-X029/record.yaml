@@ -1,0 +1,52 @@
+schema_version: 1
+execution_id: JE-X029
+case_id: JE-R35
+timestamp_utc: "2026-07-13T06:15:00Z"
+skill_commit: "2e2c603"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_clean_transfer
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "Assess a proprietary public-housing priority score under a fixed housing pool, delayed manual review, opaque data, unmeasured exits and subgroup error, claimed Pareto improvement, and proposed citywide mandate. Define safeguards, assignment, receipt, scarce-capacity effects, welfare and typed decisions."
+expected:
+  - carry Dao discipline into public-benefit allocation
+  - treat fixed capacity as constitutive interference and displacement
+  - define pool saturation assignment receipt ITT spillover and total policy effects
+  - distinguish unsupported Pareto from contradiction and recommendations from facts
+forbidden:
+  - ignore displaced applicants
+  - call absent no-loser evidence a refutation
+  - count vendor profit as a resource saving
+  - transport one saturation ITT to a mandate
+loaded_files:
+  - SKILL.md
+  - references/ECONOMIC_FOUNDATIONS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+response_file: response.md
+response_sha256: "0972e91b3097beb71ac3a4f0f34954d540d8f716bda8c63f5474ed3b8ea118f7"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "4248f0dc45dfc9d556b117d204f32962617ea1a24465617efa7653b72ad3b07b"
+rubric:
+  - criterion: constrained agency and calibrated welfare status
+    score: 2
+    max_score: 2
+  - criterion: resource profit and incidence account
+    score: 2
+    max_score: 2
+  - criterion: capacity interference and policy estimands
+    score: 2
+    max_score: 2
+  - criterion: floor branch and recommendation status
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - final response is an audit-guided retest and initial mixed findings remain preserved
+  - exact client and model versions unavailable

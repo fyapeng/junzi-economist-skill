@@ -1,0 +1,53 @@
+schema_version: 1
+execution_id: JE-X030
+case_id: JE-R35
+timestamp_utc: "2026-07-13T06:15:00Z"
+skill_commit: "2e2c603"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_final_transfer
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "Assess a proprietary specialist-appointment ranking algorithm under fixed weekly capacity, delayed clinician review, opaque reasons, unmeasured health and subgroup outcomes, and a Pareto/universal-adoption claim. Define a rights floor and saturation design with interference and transport limits."
+expected:
+  - transfer power agency welfare and protection discipline to health allocation
+  - decompose payment producer surplus rent resources and incidence
+  - separate saturation own assignment peer exposure and endogenous receipt
+  - keep exclusion threats consistent with the common floor
+forbidden:
+  - call profit itself transfer or rent
+  - conflate assignment and receipt in a direct effect
+  - exploit a protection-floor breach as identifying variation
+  - infer universal adoption from one pilot saturation
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/SOURCE_PROTOCOL.md
+response_file: response.md
+response_sha256: "f51a6b80975662492ac5c909e4270314f2009bb2b21723cc4a09fac0deb22702"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "69c32b4d84f16955566b4968e2add73a2d8ab97f0c3f63791182932bcb5f0598"
+rubric:
+  - criterion: agency power welfare and protection floor
+    score: 2
+    max_score: 2
+  - criterion: exact social accounting
+    score: 2
+    max_score: 2
+  - criterion: two-stage interference and receipt estimands
+    score: 2
+    max_score: 2
+  - criterion: floor-consistent identification and transport
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - final response is an audit-guided retest and initial mixed findings remain preserved
+  - exact client and model versions unavailable

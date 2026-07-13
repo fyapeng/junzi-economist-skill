@@ -1,0 +1,55 @@
+schema_version: 1
+execution_id: JE-X033
+case_id: JE-R35
+timestamp_utc: "2026-07-13T07:10:00Z"
+skill_commit: "b8f4611"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_verified_commit
+evaluator: dual-independent-blind-audit
+isolation: blind
+prompt: "At exact commit b8f4611, assess a proprietary childcare-subsidy score allocating fixed heterogeneous county-year capacity with delayed review, opaque inputs, unaudited harms, vendor profit, a Pareto claim, and proposed universal adoption. Define a rights floor, exact-count heterogeneous-pool design, supported estimands, and transport bounds."
+expected:
+  - independently transfer agency power social accounting and value conflict
+  - distinguish resources payments producer surplus rents and incidence
+  - define heterogeneous-pool exact-count common-exposure support and weights
+  - separate S Z G D spillover total policy LATE and universal transport
+  - type empirical and normative claims correctly
+forbidden:
+  - infer consent Pareto or mandate value from reported means
+  - randomize below the protection floor
+  - compare unsupported exposure cells or pool populations
+  - confuse outcome and treatment-effect bounds
+loaded_files:
+  - SKILL.md
+  - references/ECONOMIC_FOUNDATIONS.md
+  - references/MICROECONOMIC_LAW.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - assets/templates/CLAIM_LEDGER.yaml
+response_file: response.md
+response_sha256: "2b2d89db463ae5666e9b5ee17c953f55ae33079f45192016d96155821fa17ff4"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "f82bcf5fd841c487f105ed6277d97ceec58da4384bee9c4d785fc85d4ac3d443"
+rubric:
+  - criterion: Dao agency power and genuine value conflict
+    score: 2
+    max_score: 2
+  - criterion: resources incidence and welfare calibration
+    score: 2
+    max_score: 2
+  - criterion: heterogeneous capacity design and supported estimands
+    score: 2
+    max_score: 2
+  - criterion: floor-consistent identification transport and claim typing
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - no real administrative data or external law was supplied; the endpoint tests analytical behavior on the prompt facts
+  - exact client and model versions unavailable

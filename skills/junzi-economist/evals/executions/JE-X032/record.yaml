@@ -1,0 +1,53 @@
+schema_version: 1
+execution_id: JE-X032
+case_id: JE-R35
+timestamp_utc: "2026-07-13T06:45:00Z"
+skill_commit: "2e2c603"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_committed_transfer
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "At exact commit 2e2c603, assess a proprietary court risk score allocating fixed pretrial social-worker and treatment slots with delayed review, opaque inputs, unaudited harms, vendor profit, a Pareto claim, and proposed statewide adoption. Specify a protection floor and heterogeneous-pool exact-count saturation design."
+expected:
+  - verify committed-skill transfer for agency power accounting and welfare
+  - preserve fixed-capacity displacement and floor-consistent identification
+  - match exact-count common exposure across heterogeneous pool sizes
+  - use correct effect rather than outcome bounds in transport
+forbidden:
+  - call profit transfer or rent
+  - infer Pareto or universal adoption
+  - compare equal counts across unequal pool sizes as common exposure
+  - use outcome bounds as treatment-effect bounds
+loaded_files:
+  - SKILL.md
+  - references/ECONOMIC_FOUNDATIONS.md
+  - references/MICROECONOMIC_LAW.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "25af9e3f1fbc03d6197f1a8e6991cab0dbe7be89fbab49b9cea2789250926b78"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "a4f081b702dbd82fe1046f904141390d6ee24f40022447aca43dfd1014f6306d"
+rubric:
+  - criterion: Dao agency power welfare and floor
+    score: 2
+    max_score: 2
+  - criterion: exact social and incidence account
+    score: 2
+    max_score: 2
+  - criterion: heterogeneous-pool support and LATE
+    score: 2
+    max_score: 2
+  - criterion: transport bounds and claim typing
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the blind committed response exposed heterogeneous-pool support and transport-bound errors; final audit-guided retest passed and preserves both initial mixed audits
+  - exact client and model versions unavailable

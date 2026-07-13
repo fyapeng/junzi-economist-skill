@@ -200,3 +200,15 @@ cases:
     prompt: "核验当前医院转诊、容量提示与资源配给的一手来源，严格区分日期和版本，并判断公开证据是否已经提供可操作的外生推广或阈值。"
     expected: [verify mutable artifacts preserve version conflicts separate policy existence from assignment observe recommendation patient choice capacity acceptance and outcomes and pause with explicit reopening conditions when identification is not operational]
     failure: [infer missing dates call a policy or early adopter a quasi-experiment omit patient choice or continue searching after the decisive assignment evidence is absent]
+  - id: JE-R34
+    layer: dao
+    title: agency-power-and-genuine-value-conflict
+    prompt: "效率、价格和平均收入改善，但监控、事故、申诉、退出和集体发声受到不平等权力约束时，是否足以证明福利提高并推广制度？"
+    expected: [reconstruct the constrained choice set distinguish dependence from imposed penalties make agency power safety due process and voice change mechanisms outcomes safeguards welfare criteria and branch choice and preserve value conflict evidence cannot settle]
+    failure: [infer consent from participation equate measured surplus with welfare append moral language without changing the economic object or hide a normative recommendation behind empirical status]
+  - id: JE-R35
+    layer: dao
+    title: rights-floor-and-scarce-capacity-transfer
+    prompt: "在固定稀缺名额与算法排序下，建立共同保护底线，并评估分配、接受、同伴暴露、位移、溢出和全面推广。"
+    expected: [separate resources payments profit rents and incidence preserve a nonrandomizable floor distinguish assignment peer exposure and receipt define design-supported ITT spillover displacement and total-policy effects and bound LATE and universal transport]
+    failure: [call profit a transfer call missing no-loser evidence a refutation randomize away basic protections ignore constitutive interference conflate assignment with receipt or claim an unsupported common-exposure contrast]

@@ -1,0 +1,53 @@
+schema_version: 1
+execution_id: JE-X031
+case_id: JE-R35
+timestamp_utc: "2026-07-13T06:15:00Z"
+skill_commit: "2e2c603"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: dao_release_transfer
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "Assess a proprietary need-based scholarship ranking score under a fixed 10,000-award pool, delayed review, opaque inputs, unaudited outcomes, higher vendor profit, and a Pareto/universal-adoption claim. Specify a common floor and finite-population two-stage saturation design."
+expected:
+  - independently transfer the accumulated Dao and welfare rules
+  - preserve fixed-capacity displacement and typed recommendations
+  - distinguish randomized saturation assignment peer exposure and endogenous receipt
+  - match finite-population estimands to exact fixed-count support
+forbidden:
+  - call profit transfer or rent
+  - contradict Pareto from missing evidence
+  - identify a same-peer-exposure direct effect without support
+  - exploit a floor breach or transport an unsupported ITT
+loaded_files:
+  - SKILL.md
+  - references/ECONOMIC_FOUNDATIONS.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/SOURCE_PROTOCOL.md
+response_file: response.md
+response_sha256: "272719ba55d89427c5bf241ccd647716d4b610972017c8eb0fa37bd13ba3c05c"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "15ea70334f77ad7e6623b3d4244ff7471fb36b3935a46262cf0d038072497ff4"
+rubric:
+  - criterion: Dao agency power and value conflict transfer
+    score: 2
+    max_score: 2
+  - criterion: resources incidence and welfare status
+    score: 2
+    max_score: 2
+  - criterion: finite-capacity two-stage design and estimands
+    score: 2
+    max_score: 2
+  - criterion: identification floor transport and claim typing
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the blind response passed one audit but the red team found a fixed-count support error; the corrected retest passed both and the full history remains preserved
+  - exact client and model versions unavailable
