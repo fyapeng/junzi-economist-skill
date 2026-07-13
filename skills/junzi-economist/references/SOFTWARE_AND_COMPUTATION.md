@@ -37,6 +37,8 @@ For constrained estimators, record active bounds and projected or KKT residuals 
 
 Scale equilibrium residuals by an economically meaningful quantity and reject degenerate states in which raw residuals vanish only because shares, quantities, or probabilities approach zero. Save the complete executable branch or patch that produced an important failure, not only its output. Describe a verifier that imports production solvers or reads saved summaries as a regression check; reserve “independent verification” for a separate implementation or recomputation from primitives that can detect a shared coding error.
 
+Keep artifact-level and process-level failure signaling consistent. Write the diagnostic record before termination, then return a nonzero process status whenever a required replication, equilibrium, estimation, or verification unit fails. A successful exit must not silently mean only that the failure report was written.
+
 ## Toolchain exit
 
 Do not continue using a tool because code already exists. When a package, language, data format, or pipeline blocks the real question, preserve portable inputs, specifications, tests, and learned results; then replace or retire the instrument. Never change the research target merely to fit the available tool.

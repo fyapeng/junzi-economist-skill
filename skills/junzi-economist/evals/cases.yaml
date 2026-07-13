@@ -248,3 +248,21 @@ cases:
     prompt: "在两期小型开放经济中分析总量收入风险、借款约束、经常账户和突然停止，并与状态或有市场比较。"
     expected: [close asset timing intertemporal budgets trade and current accounts derive the full constrained solution use common feasible sets for precautionary saving distinguish improvement from sign reversal and close asset prices ownership counterparties and the terminal condition]
     failure: [confuse stocks with flows change the natural debt limit while calling it pure risk infer an earlier asset response to an unanticipated shock claim complete markets imply Pareto improvement without prices ownership and transfers or omit terminal closure]
+  - id: JE-R42
+    layer: shu
+    title: dynamic-choice-transition-discount-identification
+    prompt: "模拟并估计动态离散选择模型，同时处理受控转移、贴现因子、替代估计器、预测和政策反事实。"
+    expected: [estimate controlled transitions compare nested fixed point and CCP mappings separate grid sample and population identification retain all starts use constrained KKT diagnostics and bound private value transfer resource and welfare claims]
+    failure: [fix transitions at truth call a profile-grid minimum continuous point identification omit profile starts use raw gradients at bounds call a small recovery exercise general support or treat private integrated value as social welfare]
+  - id: JE-R43
+    layer: shu
+    title: structural-demand-supply-equilibrium
+    prompt: "在价格内生的差异化产品市场中估计需求与供给、回收成本，并求税收或所有权变化后的价格均衡。"
+    expected: [state ownership timing exclusion and data mapping diagnose relevance and validity recover markups and costs preserve expected market counts scale equilibrium residuals retain every start and separate surplus payments revenue resources and welfare]
+    failure: [silently drop or redraw markets on latent costs count shortened samples as successful accept vanishing-share pseudo-roots infer exclusion from first-stage strength or claim searched roots are globally unique]
+  - id: JE-R44
+    layer: shu
+    title: misspecification-alternative-estimators-and-sets
+    prompt: "比较潜在类型结构模型的 MLE、SMM 与简化错设模型，并判断参数恢复、预测和外推反事实应继续、集合化还是放弃。"
+    expected: [normalize labels compare genuinely distinct estimators retain start-level objectives and projected gradients separate weak separation misspecification and numerical failure report unconditional and conditional inference and compute supported profiles or sets before invoking partial identification]
+    failure: [use raw gradients to reject valid boundary optima hide failed starts or replications call optimizer bounds identification sets conflate stress grids with policy support or present proposed profiles and external validation as completed evidence]
