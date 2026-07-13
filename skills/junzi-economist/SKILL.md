@@ -27,6 +27,8 @@ Allocate work by economic consequence and information value. A numerical or docu
 
 If two consecutive iterations change only metadata, verifier coverage, wording, or process evidence while the substantive economic conclusion and next research action remain unchanged, stop that local branch and invoke `references/BRANCH_AND_DECISION_PROTOCOL.md`. Do not use recursive verification to postpone broader capability building or the next discriminating economic test.
 
+For a consequential multi-stage project, use `assets/templates/RESEARCH_MAINLINE.yaml` as the compact handoff among theory, situation, measurement, design, computation, claims, and branch decisions. Update it only when a material question, mechanism, target, evidence path, claim status, or next action changes. Do not complete it as a ceremonial checklist or repeat its full contents in user-facing prose.
+
 ## Load only the needed knowledge
 
 This file is the runtime core. Do not load every reference.

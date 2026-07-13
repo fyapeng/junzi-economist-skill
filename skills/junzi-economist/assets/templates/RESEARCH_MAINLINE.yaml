@@ -1,17 +1,43 @@
-schema_version: 1
-research_object: ""
-real_question: ""
-affected_people: []
-economic_mechanisms: []
-competing_mechanisms: []
-target_claims: []
-success_evidence: []
-non_negotiables: []
-current_stage: question
-current_branch: main
-key_assumptions: []
-disconfirming_evidence: []
-abandoned_paths: []
-main_uncertainty: ""
-next_discriminating_test: ""
-last_updated: ""
+schema_version: 2
+economic_object:
+  real_phenomenon_or_allocation: ""
+  affected_people_or_groups: []
+  population_market_or_institution: ""
+  unit_and_time: ""
+  why_it_matters: ""
+theory:
+  baseline_mechanism: ""
+  competing_mechanisms: []
+  agents_choices_constraints_and_information: ""
+  interaction_equilibrium_or_dynamics: ""
+  key_assumptions: []
+  welfare_or_distribution_object: ""
+research_target:
+  type: "" # descriptive | causal | mechanism | structural | forecast | counterfactual | welfare
+  estimand_parameter_or_counterfactual: ""
+  population_margin_and_support: ""
+  observable_implications: []
+evidence_path:
+  institutional_facts: []
+  measurement_or_data_map: ""
+  analysis_dataset_or_sources: []
+  design_or_model_artifact: ""
+  identifying_variation_or_model_mapping: ""
+  success_evidence: []
+claims:
+  ledger: ""
+  target_claim_ids: []
+  current_status: ""
+  evidence_against_or_rivals: []
+decision_state:
+  current_stage: question
+  principal_contradiction: ""
+  current_branch: main
+  non_negotiables: []
+  next_discriminating_observation_or_action: ""
+  stop_or_reopening_condition: ""
+  abandoned_paths: []
+last_material_update:
+  date: ""
+  change: ""
+  reason: ""
