@@ -1,0 +1,75 @@
+schema_version: 1
+audit_date: "2026-07-13"
+status_scale: [proved, partial, missing, contradicted]
+requirements:
+  junzi_root:
+    status: partial
+    evidence: [SKILL.md, evals/runs/2026-07-13-round-04.md]
+    gap: "Dedicated behavior tests for human agency, power asymmetry, and a genuine Dao-level conflict."
+  microeconomic_law:
+    status: partial
+    evidence: [references/MICROECONOMIC_LAW.md, evals/runs/2026-07-13-round-02.md]
+    gap: "Behavior coverage for contracts, games, production, equilibrium multiplicity, and welfare benchmarks."
+  macroeconomic_law:
+    status: partial
+    evidence: [references/MACROECONOMIC_LAW.md, evals/runs/2026-07-13-round-02.md]
+    gap: "Dynamic equilibrium, heterogeneous agents, monetary-fiscal interaction, finance, and transition tests."
+  institutions_and_frontier:
+    status: partial
+    evidence: [references/SITUATION_AND_FRONTIER.md, evals/runs/2026-07-13-round-02.md]
+    gap: "A real frontier search with retrieval log, rival evidence, citations, and a stopping decision."
+  theory_modeling:
+    status: partial
+    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/ECONOMIC_WRITING.md]
+    gap: "End-to-end model construction, derivation, boundary, and counterexample test."
+  causal_identification:
+    status: proved
+    evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/runs/2026-07-13-round-04.md]
+    gap: "Broaden design coverage beyond DID and common counterfactual failures."
+  structural_estimation:
+    status: partial
+    evidence: [evals/runs/2026-07-13-round-01.md, evals/runs/2026-07-13-round-04.md]
+    gap: "Execute parameter recovery, estimation, validation, and policy simulation on a real model."
+  computation_and_instruments:
+    status: partial
+    evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py]
+    gap: "Numerical and data workflow tests with environments, diagnostics, provenance, and reproducible artifacts."
+  writing_and_reading:
+    status: proved
+    evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/runs/2026-07-13-round-05.md]
+    gap: "Long-form bilingual manuscript and real-PDF end-to-end comparison."
+  mainline_claims_and_backtracking:
+    status: partial
+    evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md]
+    gap: "A multi-turn state transition test with new evidence, reopening, and protection against premature abandonment."
+  cross_disciplinary_correction:
+    status: partial
+    evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md]
+    gap: "A behavior test where medical, legal, historical, or organizational evidence changes the economic model."
+  reproducible_behavior_evaluation:
+    status: partial
+    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml]
+    gap: "Historical runs lack full raw outputs and complete provenance; begin strict records with the next execution."
+  legacy_skill_replacement:
+    status: partial
+    evidence: [evals/legacy_capabilities.yaml]
+    gap: "Real PDF and long-manuscript parity plus an explicit retirement decision."
+  codex:
+    status: proved
+    evidence: [agents/openai.yaml, evals/runs]
+    gap: "Third-party replay remains limited by historical run provenance."
+  claude_code:
+    status: partial
+    evidence: [evals/platform_compatibility.yaml, scripts/validate_compatibility.py]
+    gap: "Real Claude Code discovery, invocation, non-trigger, routing, and backtracking runs."
+  public_release:
+    status: missing
+    evidence: ["repository release candidate at C:/Users/ENAN/junzi-economist-skill"]
+    gap: "Public remote, anonymous clone test, v0.1.0 tag, release date, and release checks."
+release_gate:
+  ready: false
+  blockers:
+    - real Claude Code runtime behavior
+    - at least one strict raw behavior execution record
+    - public remote and anonymous installation test
+    - final legacy retirement or documented coexistence decision

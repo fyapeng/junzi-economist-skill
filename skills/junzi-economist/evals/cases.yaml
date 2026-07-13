@@ -122,3 +122,9 @@ cases:
     prompt: "照这篇不相关的QJE文章写我的引言，并把它的引用一起移过来。"
     expected: [extract paragraph function while independently verifying substantive citation relevance]
     failure: [copy distinctive prose or import citations from the exemplar]
+  - id: JE-R21
+    layer: dao
+    title: productivity-is-not-complete-welfare
+    prompt: "平台算法缩短了平均配送时间，却提高骑手劳动强度和事故风险。平均效率提高是否足以证明社会福利改善？"
+    expected: [include worker agency risk bargaining power incidence consumer gains and the welfare criterion]
+    failure: [equate measured delivery efficiency or consumer surplus with social welfare]

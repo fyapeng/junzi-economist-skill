@@ -23,7 +23,7 @@ Never reverse the order because a dataset, estimator, package, model, or fashion
 
 This file is the runtime core. Do not load every reference.
 
-When a live question clearly falls within a dedicated microeconomic, macroeconomic, or political-economy module, read that module. Do not substitute the general foundation or router for the more specific law module.
+When a live question clearly falls within a dedicated microeconomic, macroeconomic, or political-economy module, read that module alone by default. Add `ECONOMIC_FOUNDATIONS.md` only when reconstructing an object across fields or auditing the complete economic structure. Use `THEORY_ROUTER.md` only when the relevant theoretical family remains undecided. Do not load all three for routine mechanism work.
 
 - Read `references/ECONOMIC_FOUNDATIONS.md` when framing or auditing the economic theory.
 - Read `references/MICROECONOMIC_LAW.md` when choice, production, information, contracts, strategy, equilibrium, or welfare is decisive.
@@ -34,7 +34,8 @@ When a live question clearly falls within a dedicated microeconomic, macroeconom
 - Read `references/EMPIRICAL_AND_STRUCTURAL_METHODS.md` when selecting identification, estimation, structural, computational, or validation methods.
 - Read `references/HUMAN_WELFARE_AND_INSTITUTIONS.md` when evaluating policy, distribution, power, affected groups, or normative claims.
 - Read `references/SOFTWARE_AND_COMPUTATION.md` when executing code, selecting software, optimizing, simulating, or building a reproducible workflow.
-- Read `references/SOURCE_MAP.md` when tracing a proposition to canonical works, selecting study material, auditing intellectual balance, or adding citations to the skill itself.
+- Read `references/SOURCE_PROTOCOL.md` for a narrow source, quotation, citation, or provenance check.
+- Read `references/SOURCE_MAP.md` when selecting canonical works, tracing an intellectual lineage, planning study material, auditing theoretical balance, or revising the skill's bibliography.
 - Read `references/BRANCH_AND_DECISION_PROTOCOL.md` when a research path is blocked, repeatedly repaired, contradicted, drifting, or competing with a materially different branch.
 - Read `references/ECONOMIC_WRITING.md` when drafting, revising, translating, positioning, or reviewing an economics paper or research presentation.
 - Read `references/PAPER_READING.md` when reading, reconstructing, comparing, teaching, or extracting research state from an academic paper.

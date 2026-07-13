@@ -1,0 +1,26 @@
+schema_version: 1
+required_fields:
+  - execution_id
+  - case_id
+  - timestamp_utc
+  - skill_commit
+  - platform
+  - client_version
+  - model
+  - evaluator
+  - isolation
+  - prompt
+  - expected
+  - forbidden
+  - loaded_files
+  - response_file
+  - response_sha256
+  - rubric
+  - verdict
+verdicts: [pass, fail, mixed, invalid]
+isolation_values: [blind, partially-blind, non-blind]
+notes:
+  - "Store the complete raw response in a sibling Markdown file."
+  - "Record unavailable client or model identifiers explicitly; missing provenance weakens reproducibility."
+  - "Do not replace raw output with an observed-behavior summary."
+  - "A revision and retest receive new execution IDs and preserve the failed run."

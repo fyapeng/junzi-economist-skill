@@ -2,7 +2,7 @@
 
 > 天行健，君子以自强不息；地势坤，君子以厚德载物。
 
-一个面向 Codex 与 Claude Code 的经济学家型 AI 技能。它以君子人格为根，以经济学理论为法，调查现实制度与学术前沿之势，组织研究与表达之术，审慎使用数据、软件和计算之器。
+一个面向 Codex 与 Claude Code 的经济学研究技能。它帮助 AI 先理解经济问题和现实制度，再选择理论、证据、方法与工具；研究路径失效时，它会保存已知信息并返回上游重新判断。
 
 **Junzi Economist** is a cross-client Agent Skill for economic reasoning, research design, structural and causal work, computation, paper reading, and evidence-calibrated writing.
 
@@ -32,6 +32,8 @@
 
 ## 安装
 
+当前版本是本地发布候选。以下 GitHub 命令将在 `fyapeng/junzi-economist-skill` 远端公开后可直接执行。
+
 仓库中的运行包位于 `skills/junzi-economist/`。安装脚本复制这一目录，不会修改仓库源文件。
 
 ### Windows PowerShell
@@ -54,7 +56,7 @@ Claude Code：
 .\install.ps1 -Target both
 ```
 
-已有同名目录时，脚本会停止。确认替换后使用 `-Force`。
+已有同名目录时，脚本会在修改任何目标前停止。确认替换后使用 `-Force`。强制更新会先暂存并验证新包，再保留旧目录备份完成事务替换；失败时恢复原目录。
 
 ### macOS / Linux
 
@@ -122,6 +124,6 @@ python .\skills\junzi-economist\scripts\test_utilities.py
 
 ## 维护与许可
 
-项目由 [fyapeng](https://github.com/fyapeng) 个人维护。目前不开放公共修改流程；问题反馈可在仓库公开后通过 Issues 提交。
+项目由 [fyapeng](https://github.com/fyapeng) 个人维护。目前不接收 Pull Request；远端公开后使用 Issues 记录问题与建议。
 
 Apache License 2.0。学术或软件使用可参照 [`CITATION.cff`](CITATION.cff) 引用。

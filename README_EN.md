@@ -10,6 +10,8 @@ The skill supports microeconomics, macroeconomics, political economy, causal inf
 
 ## Install
 
+This is currently a local release candidate. The GitHub commands below become directly usable after the `fyapeng/junzi-economist-skill` remote is published.
+
 Windows PowerShell:
 
 ```powershell
@@ -30,6 +32,24 @@ cd junzi-economist-skill
 
 The runtime package is stored at `skills/junzi-economist/`. Manual installation copies this directory to `~/.codex/skills/` or `~/.claude/skills/`.
 
+The installers preflight every selected destination before making changes. Existing installations are preserved unless `-Force` on PowerShell or `--force` on the shell installer is supplied. Forced updates stage and verify the new package, retain a temporary backup, and restore the previous installation if the transaction fails.
+
+## Use
+
+Codex:
+
+```text
+$junzi-economist Review the economic object, identification, and policy counterfactual in this model.
+```
+
+Claude Code:
+
+```text
+/junzi-economist Assess whether this institutional change supports a credible economic study.
+```
+
+Relevant research requests may also trigger the skill automatically. Routine formatting, citation-style conversion, and literal translation remain lightweight.
+
 ## Validate
 
 ```text
@@ -38,6 +58,6 @@ python skills/junzi-economist/scripts/validate_compatibility.py
 python skills/junzi-economist/scripts/test_utilities.py
 ```
 
-Codex structure and behavioral tests currently pass. Claude Code static compatibility follows the official skill layout; an independent Claude runtime test remains pending.
+Codex structure and behavioral tests currently pass. Claude Code static compatibility follows the official skill layout; an independent Claude runtime test remains pending. The installed runtime directory includes its Apache-2.0 license.
 
 Maintained by [fyapeng](https://github.com/fyapeng). Licensed under Apache-2.0.

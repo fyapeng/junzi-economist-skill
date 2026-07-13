@@ -41,6 +41,7 @@ REQUIRED = [
     "references/HUMAN_WELFARE_AND_INSTITUTIONS.md",
     "references/SOFTWARE_AND_COMPUTATION.md",
     "references/SOURCE_MAP.md",
+    "references/SOURCE_PROTOCOL.md",
     "references/BRANCH_AND_DECISION_PROTOCOL.md",
     "references/ECONOMIC_WRITING.md",
     "references/PAPER_READING.md",
@@ -54,10 +55,13 @@ REQUIRED = [
     "evals/cases.yaml",
     "evals/legacy_capabilities.yaml",
     "evals/platform_compatibility.yaml",
+    "evals/run_schema.yaml",
+    "evals/completion_audit.yaml",
     "scripts/check_citekeys.py",
     "scripts/prose_lint.py",
     "scripts/test_utilities.py",
     "scripts/validate_compatibility.py",
+    "LICENSE.txt",
 ]
 
 for relative in REQUIRED:
@@ -81,7 +85,7 @@ else:
 if len(skill.splitlines()) >= 300:
     fail("SKILL.md should stay below 300 lines")
 
-for relative in REQUIRED[2:15]:
+for relative in REQUIRED[2:16]:
     if f"`{relative}`" not in skill:
         fail(f"SKILL.md does not route to {relative}")
 
@@ -113,10 +117,14 @@ for phrase in [
     "Jean Tirole",
     "Amartya Sen",
     "Kenneth L. Judd",
-    "Source-use protocol",
 ]:
     if phrase not in source_map:
         fail(f"source map missing lineage or protocol: {phrase}")
+
+source_protocol = read("references/SOURCE_PROTOCOL.md")
+for phrase in ["Identify the source job", "Verify before using", "Place sources by layer", "Cross-disciplinary correction"]:
+    if phrase not in source_protocol:
+        fail(f"source protocol missing: {phrase}")
 
 branch_protocol = read("references/BRANCH_AND_DECISION_PROTOCOL.md")
 for phrase in ["Detect branch capture", "Name the failed premise", "Diagnose the deepest affected layer", "Preserve branch memory", "forbidden repetition"]:
@@ -141,8 +149,8 @@ for phrase in ["Causal identification", "Structural modeling and estimation", "N
 
 cases = read("evals/cases.yaml")
 case_count = len(re.findall(r"(?m)^  - id: JE-R\d{2}$", cases))
-if case_count < 20:
-    fail(f"need at least twenty core eval cases; found {case_count}")
+if case_count < 21:
+    fail(f"need at least twenty-one core eval cases; found {case_count}")
 
 triggers = read("evals/triggers.yaml")
 trigger_count = len(re.findall(r"(?m)^  - id: JE-T\d{2}$", triggers))

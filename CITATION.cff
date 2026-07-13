@@ -4,10 +4,8 @@ title: "Junzi Economist: A Dao–Fa–Shi–Shu–Qi Agent Skill for Economic Re
 type: software
 authors:
   - name: "fyapeng"
-version: 0.1.0
-date-released: 2026-07-13
+version: 0.1.0-rc.1
 license: Apache-2.0
-repository-code: "https://github.com/fyapeng/junzi-economist-skill"
 abstract: "A cross-client Agent Skill that guides economic reasoning, institutional investigation, causal and structural research, computation, paper reading, writing, and branch backtracking through a hierarchical Junzi framework."
 keywords:
   - economics

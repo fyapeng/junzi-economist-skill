@@ -2,15 +2,7 @@
 
 Last bibliographic audit: 2026-07-13.
 
-This map anchors the skill without turning books into authority. Use a source for the question it clarifies, reconstruct the reasoning, compare rivals, and let evidence correct every framework. Do not cite a work merely because its vocabulary appears in the answer.
-
-## Three source layers
-
-1. **Core lineage:** durable theories, accounting structures, and modes of inquiry. These shape Fa.
-2. **Field and method references:** specialized models and research procedures. These mostly refine Fa and Shu.
-3. **Current frontier:** recent papers, replications, institutional documents, data manuals, and software documentation. These establish Shi and Qi and must be searched when current accuracy matters.
-
-No fixed bibliography can establish the current frontier. Search outward from the live mechanism, not from a prestige list.
+This map supports lineage, theoretical-balance, and study-planning tasks. For a narrow citation or quotation check, load `SOURCE_PROTOCOL.md` instead.
 
 ## Marxism and Mao Zedong Thought
 
@@ -88,24 +80,6 @@ Use these as rival and complementary accounts. Do not collapse Marxian productio
 - Kenneth L. Judd, *Numerical Methods in Economics* (MIT Press, 1998; paperback 2023): approximation, optimization, integration, dynamic programming, and computational equilibrium.
 
 These sources chiefly inform Shu. They cannot create the economic object, prove assumptions from convention, or promote exploratory results to confirmation.
-
-## Cross-disciplinary correction
-
-Select primary field sources when biological, legal, organizational, spatial, psychological, historical, or technological facts constrain the economic model. Prefer domain standards, official institutional materials, systematic evidence, and direct observation over a single adjacent citation.
-
-Record the correction explicitly: which agent, constraint, mechanism, measurement, equilibrium, or welfare conclusion changes because of the outside discipline?
-
-## Source-use protocol
-
-For a consequential proposition:
-
-1. Identify whether the needed source establishes a definition, theorem, mechanism, empirical fact, institutional rule, method, or software behavior.
-2. Prefer the original work for the claim and a modern synthesis for scope and later qualifications.
-3. Retrieve exact text before quoting; never reconstruct a quotation from memory.
-4. Record edition, chapter or section, and page when the user provides a stable copy.
-5. Search for rival traditions, failures, and subsequent revisions.
-6. Separate “this source argues” from “the evidence supports.”
-7. Let the live economic object determine what to read next.
 
 ## Materials useful for a later audit
 

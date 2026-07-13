@@ -9,25 +9,64 @@ permissions:
   contents: read
 
 jobs:
-  validate:
+  package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Validate structure and compatibility
+      - name: Validate package
         working-directory: skills/junzi-economist
         run: |
           python scripts/validate.py
           python scripts/validate_compatibility.py
           python scripts/test_utilities.py
           python -m compileall -q scripts
-      - name: Test portable installer
+
+  install:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Test shell installer
+        if: runner.os != 'Windows'
+        shell: bash
         env:
           HOME: ${{ runner.temp }}/junzi-home
         run: |
           chmod +x install.sh
           ./install.sh both
-          test -f "$HOME/.codex/skills/junzi-economist/SKILL.md"
-          test -f "$HOME/.claude/skills/junzi-economist/SKILL.md"
+          python "$HOME/.codex/skills/junzi-economist/scripts/validate.py"
+          python "$HOME/.claude/skills/junzi-economist/scripts/validate_compatibility.py"
+          python scripts/verify_install.py --source skills/junzi-economist --installed "$HOME/.codex/skills/junzi-economist"
+          python scripts/verify_install.py --source skills/junzi-economist --installed "$HOME/.claude/skills/junzi-economist"
+          touch "$HOME/.codex/skills/junzi-economist/keep-marker"
+          if ./install.sh both 2>/dev/null; then exit 1; fi
+          test -f "$HOME/.codex/skills/junzi-economist/keep-marker"
+          ./install.sh both --force
+          test ! -f "$HOME/.codex/skills/junzi-economist/keep-marker"
+      - name: Test PowerShell installer
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $Root = Join-Path $env:RUNNER_TEMP 'junzi-home'
+          .\install.ps1 -Target both -DestinationRoot $Root
+          $Codex = Join-Path $Root '.codex\skills\junzi-economist'
+          $Claude = Join-Path $Root '.claude\skills\junzi-economist'
+          python "$Codex\scripts\validate.py"
+          python "$Claude\scripts\validate_compatibility.py"
+          python .\scripts\verify_install.py --source .\skills\junzi-economist --installed $Codex
+          python .\scripts\verify_install.py --source .\skills\junzi-economist --installed $Claude
+          Set-Content -LiteralPath "$Codex\keep-marker" -Value 'preserve'
+          $Blocked = $false
+          try { .\install.ps1 -Target both -DestinationRoot $Root } catch { $Blocked = $true }
+          if (-not $Blocked -or -not (Test-Path -LiteralPath "$Codex\keep-marker")) { throw 'Overwrite protection failed' }
+          .\install.ps1 -Target both -DestinationRoot $Root -Force
+          if (Test-Path -LiteralPath "$Codex\keep-marker") { throw 'Force replacement failed' }
