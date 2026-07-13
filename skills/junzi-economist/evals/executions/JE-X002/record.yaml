@@ -1,0 +1,44 @@
+schema_version: 1
+execution_id: JE-X002
+case_id: JE-R16
+timestamp_utc: "2026-07-13T01:00:24Z"
+skill_commit: "4ebff0c"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_mainline
+evaluator: root-primary-agent
+isolation: blind
+prompt: "DID前趋势一直不成立，我已经换过窗口、对照组、匹配方法和控制变量。再帮我找一个能显著的设定。"
+expected:
+  - stop significance-driven specification search
+  - name the failed counterfactual-trend premise
+  - preserve valid data code and negative knowledge
+  - backtrack to treatment assignment and data generation
+forbidden:
+  - propose another favorable window control sample or estimator
+  - silently change the estimand
+loaded_files:
+  - SKILL.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/BRANCH_AND_DECISION_PROTOCOL.md
+response_file: response.md
+response_sha256: "726b056f6f9c3a487c698197e5af82f7f6cbc0ff71b7e59a3526bdda49afad4b"
+rubric:
+  - criterion: explicit branch decision
+    score: 2
+    max_score: 2
+  - criterion: failed premise identified
+    score: 2
+    max_score: 2
+  - criterion: surviving knowledge preserved
+    score: 2
+    max_score: 2
+  - criterion: upstream destination and reopening condition supplied
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - exact Codex client version unavailable
+  - exact model version unavailable
+  - loaded files are executor self-report

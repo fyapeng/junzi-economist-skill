@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X004
+case_id: JE-T05
+timestamp_utc: "2026-07-13T01:00:24Z"
+skill_commit: "4ebff0c"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_light
+evaluator: root-primary-agent
+isolation: blind
+prompt: "把参考文献 Smith, John. 2020. Economic Growth. 改成 APA 7 格式。"
+expected:
+  - provide a lightweight APA 7 book entry
+  - identify missing publisher information
+  - load no Junzi Economist files
+forbidden:
+  - display Dao Fa Shi Shu Qi
+  - create a research mainline or claim ledger
+  - expand into research design
+loaded_files: []
+response_file: response.md
+response_sha256: "9061fd181be936b88ab05f199e80bff6e74c475a3f57c5815218c3a628a34758"
+rubric:
+  - criterion: lightweight response
+    score: 2
+    max_score: 2
+  - criterion: citation boundary accurate
+    score: 2
+    max_score: 2
+  - criterion: no skill ceremony
+    score: 2
+    max_score: 2
+  - criterion: no project files loaded
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - this tests behavior under an explicit no-file-read instruction rather than autonomous dispatcher telemetry
+  - exact Codex client version unavailable
+  - exact model version unavailable

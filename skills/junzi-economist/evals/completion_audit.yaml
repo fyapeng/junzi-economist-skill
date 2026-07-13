@@ -48,8 +48,8 @@ requirements:
     gap: "A behavior test where medical, legal, historical, or organizational evidence changes the economic model."
   reproducible_behavior_evaluation:
     status: partial
-    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions/JE-X001]
-    gap: "JE-X001 begins strict raw recording; historical runs lack full raw outputs and exact client/model provenance, and critical-case coverage remains narrow."
+    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions/JE-X001, evals/executions/JE-X002, evals/executions/JE-X003, evals/executions/JE-X004]
+    gap: "Strict raw coverage now includes welfare, backtracking, writing, and a non-trigger; historical runs lack full raw outputs and exact client/model provenance, while theory and trigger-dispatch coverage remain incomplete."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml]
@@ -70,6 +70,6 @@ release_gate:
   ready: false
   blockers:
     - real Claude Code runtime behavior
-    - strict raw execution coverage for critical trigger, theory, backtracking, writing, and non-trigger cases
+    - strict raw execution coverage for theory and automatic-trigger cases
     - public remote and anonymous installation test
     - final legacy retirement or documented coexistence decision
