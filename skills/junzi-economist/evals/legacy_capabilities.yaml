@@ -18,6 +18,8 @@ legacy_skills:
         destination: [references/SITUATION_AND_FRONTIER.md, references/ECONOMIC_WRITING.md]
       - capability: revision stop gate
         destination: [references/ECONOMIC_WRITING.md, references/BRANCH_AND_DECISION_PROTOCOL.md]
+      - capability: bilingual economic argument reconstruction and parallel-output reconciliation
+        destination: [references/BILINGUAL_ECONOMIC_WRITING.md, assets/templates/BILINGUAL_CLAIM_MAP.yaml]
     integrated_tools:
       - capability: Pandoc citekey to BibTeX consistency check
         destination: scripts/check_citekeys.py
@@ -51,6 +53,8 @@ legacy_skills:
         destination: references/PAPER_READING.md
       - capability: technical and public explanations
         destination: references/PAPER_READING.md
+      - capability: bilingual abstract and note translation with author-reader voice separation
+        destination: references/BILINGUAL_ECONOMIC_WRITING.md
     deferred_tools: []
     rejected_or_localized:
       - rule: always create a dated Markdown file
@@ -66,9 +70,9 @@ readiness:
     - JE-X022: "integrated deep read added material economic judgment but was mixed because it mislabeled a two-way interaction"
     - JE-X023: "econ-paper alone passed the long-manuscript evidence-packet audit"
     - JE-X024: "integrated long writing passed and added inspectable claim governance, with only marginal manuscript improvement"
-  tooling_parity: "real PDF and long-manuscript outputs tested; legacy-specific convenience and formatting surfaces remain available downstream"
+  tooling_parity: "real PDF and long-manuscript outputs tested; bilingual claim mapping is now integrated, while legacy-specific convenience and formatting surfaces remain available downstream"
   deletion_authorized: false
   current_decision: "coexist: Junzi Economist governs live economic claims upstream; paper-deep-read and econ-paper remain optional downstream execution skills"
   reason: "Both legacy baselines passed. Integrated outputs were not uniformly more accurate, and the writing gain was mainly auditable governance rather than a large prose-quality improvement."
-  reopening_condition_for_retirement: "Retest multiple theory, structural, empirical, bilingual, and public-explanation papers with no loss of method accuracy, then inventory any legacy scripts or format surfaces still used."
+  reopening_condition_for_retirement: "Use future substantive theory, structural, empirical, bilingual, and public-explanation tasks to test for method loss, then inventory any legacy scripts or format surfaces still used. Do not launch a separate retirement-only test campaign."
   next_gate: "retain routing tests and remove a legacy skill only after its remaining unique capabilities are absent or reproduced"

@@ -56,8 +56,8 @@ requirements:
     gap: "Sixty strict executions now include automatic routing, real PDF, long manuscript, legacy comparisons, theory/frontier and Dao endpoints, micro and macro law families, structural demand-supply, dynamic choice, misspecification, profile sets, preserved failures, and clean exact-commit transfers through f120979; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
-    evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
-    gap: "A documented coexistence decision replaces premature deletion: legacy baselines passed, integrated reading was not uniformly more accurate, and integrated writing added governance with marginal prose gain. Broader paper types and remaining legacy tools must pass before retirement."
+    evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, references/BILINGUAL_ECONOMIC_WRITING.md, assets/templates/BILINGUAL_CLAIM_MAP.yaml, evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
+    gap: "Conceptual reading, writing, claim governance, literature/style separation, citekey checking, prose review, and bilingual claim reconciliation are integrated. Coexistence remains appropriate because legacy baselines passed, integrated reading was not uniformly more accurate, writing gains were mainly governance, and convenience/formatting surfaces remain. Let future substantive paper work reveal remaining gaps instead of running a retirement-only test campaign."
   codex:
     status: proved
     evidence: [agents/openai.yaml, evals/executions/JE-X016, evals/executions/JE-X017, evals/executions/JE-X020]

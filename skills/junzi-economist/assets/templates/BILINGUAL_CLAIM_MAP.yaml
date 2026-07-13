@@ -1,0 +1,28 @@
+schema_version: 1
+authoritative_sources:
+  claim_ledger: ""
+  result_version: ""
+  tables_figures_equations: []
+outputs:
+  - language: zh
+    artifact_type: manuscript_section
+    audience: ""
+  - language: en
+    artifact_type: manuscript_section
+    audience: ""
+terms:
+  - concept: ""
+    zh: ""
+    en: ""
+    context_or_boundary: ""
+claims:
+  - claim_id: C1
+    object: ""
+    status: idea
+    evidence_anchor: ""
+    zh_statement: ""
+    en_statement: ""
+    magnitudes_units: []
+    qualifiers: []
+    reconciled: false
+    unresolved_difference: ""

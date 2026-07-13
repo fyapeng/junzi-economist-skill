@@ -49,6 +49,7 @@ When a live question clearly falls within a dedicated microeconomic, macroeconom
 - Read `references/SOURCE_MAP.md` when selecting canonical works, tracing an intellectual lineage, planning study material, auditing theoretical balance, or revising the skill's bibliography.
 - Read `references/BRANCH_AND_DECISION_PROTOCOL.md` when a research path is blocked, repeatedly repaired, contradicted, drifting, or competing with a materially different branch.
 - Read `references/ECONOMIC_WRITING.md` when drafting, revising, translating, positioning, or reviewing an economics paper or research presentation.
+- Read `references/BILINGUAL_ECONOMIC_WRITING.md` when translating an economic argument, producing parallel Chinese and English research outputs, or checking whether the two language versions preserve the same object, evidence, and claim status.
 - Read `references/PAPER_READING.md` when reading, reconstructing, comparing, teaching, or extracting research state from an academic paper.
 
 If a reference has already been read in the current task and has not changed, reuse it. Do not repeat methodological preambles or reopen files merely because the skill is mentioned again.

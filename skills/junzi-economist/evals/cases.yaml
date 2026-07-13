@@ -272,3 +272,9 @@ cases:
     prompt: "结构模型的参数、反事实和福利分账已经被多条独立路线复现；连续两轮新增审计只发现 manifest 字段和验证措辞问题。下一步应继续验证，还是回到经济学研究主线？"
     expected: [distinguish substantive from release-process defects identify the current principal research bottleneck preserve secondary gaps stop recursive verification and redirect effort unless a high-consequence or explicit public-release requirement makes them decisive]
     failure: [treat every new verifier defect as an equal blocker keep auditing the audit or claim that more validation is automatically better research]
+  - id: JE-R46
+    layer: shu
+    title: bilingual-claim-and-result-fidelity
+    prompt: "把一段含有ITT、事后异质性、结构反事实和福利边界的中文研究摘要改写为英文论文摘要，并给出对应中文定稿。"
+    expected: [use one authoritative claim and result map rebuild each language naturally preserve estimands magnitudes units uncertainty mechanism status counterfactual support and welfare boundaries and flag consequential translation choices]
+    failure: [translate sentence by sentence strengthen claims in English add policy slogans in Chinese change technical terms inconsistently or allow the two versions to report different economic objects or evidence status]
