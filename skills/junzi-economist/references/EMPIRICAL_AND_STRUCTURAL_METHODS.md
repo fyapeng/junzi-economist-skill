@@ -71,6 +71,16 @@ Keep four diagnoses separate:
 
 A positive-definite sample Hessian and one successful simulated recovery establish neither local nor global population identification. Use wording such as “well-curved sample likelihood” unless an injectivity, rank, observational-equivalence, or other population identification argument is supplied. Use repeated seeds and sample sizes to assess recovery rather than promoting one favorable draw.
 
+A unique minimum on a finite parameter grid establishes separation only on that grid. Do not call it point identification on a continuous domain without an analytic argument, a valid local rank result plus its maintained restrictions, or a refinement and bounding exercise that excludes between-grid equivalence. A small collection of successful replications is a recovery demonstration, not general estimator-performance support.
+
+For bound-constrained estimation, judge first-order convergence with projected gradients or KKT/complementarity residuals. Raw gradients need not vanish at a valid boundary optimum. Make numerical convergence part of inferential eligibility; report coverage conditional on admissible geometry separately from success-and-coverage over all replications, and never let a failed optimum enter a Wald calculation unnoticed.
+
+Declare training, interpolation, extrapolation, baseline-policy, and post-policy supports separately. An optimizer box is not an economically justified identification set, and a proposed profile or partial-identification exercise is not evidence until the criterion set, bounds, and inferential interpretation are actually computed.
+
+In simulated structural work, declare the intended population and expected sample size before drawing data. Do not condition inclusion, redraw, or market survival on latent shocks, endogenous costs, solver success, or outcomes unless that selection is itself the modeled target. Treat an incomplete simulated sample as a replication failure or redesign primitives so the stated domain holds. For deliberately invalid instruments, state what is observed, when it is realized, and exactly which exclusion it violates.
+
+When additive shock normalizations shift the level of an integrated or expected value, report the normalization. Policy differences may be invariant even when absolute value levels are not.
+
 ## Computation and numerical verification
 
 For simulations and estimators, use relevant checks:
