@@ -1,0 +1,526 @@
+schema_version: 1
+claims:
+  - claim_id: C1
+    version: 1
+    statement: >-
+      In the supplied aggregate claims summary, outpatient encounter counts in
+      the 30 rural counties were reported to be 20 percent higher in 2024 than in
+      the prior year, while counts in the 30 urban counties were reported to be
+      3 percent higher.
+    type: descriptive
+    object:
+      population: residents represented in the supplied aggregate claims
+      market_or_institution: outpatient care in 30 rural and 30 urban counties
+      time: 2024 relative to the prior year
+      unit: aggregate recorded outpatient encounters by county group
+    evidence_for:
+      - the initial project statement reports the two aggregate growth rates
+    evidence_against: []
+    competing_explanations:
+      - none required for the arithmetic report, but its substantive interpretation depends on coding, coverage, denominators, and composition
+    identifying_or_model_assumptions:
+      - the supplied summary was calculated as described
+      - encounter and county classifications are comparable across the two years
+    failure_conditions:
+      - reproduction from source claims does not yield the reported changes
+      - coding, coverage, or aggregation changes make the two annual counts non-comparable
+    status: provisional
+    source_artifacts:
+      - initial_project_statement
+    last_updated: "2026-07-13"
+
+  - claim_id: C2
+    version: 1
+    statement: >-
+      The supplied aggregate growth rates imply an unadjusted 17 percentage-point
+      rural-minus-urban difference in year-over-year encounter growth.
+    type: descriptive
+    object:
+      population: residents represented in the supplied aggregate claims
+      market_or_institution: outpatient care in the selected rural and urban counties
+      time: 2024 relative to the prior year
+      unit: difference between two aggregate percentage changes
+    evidence_for:
+      - "reported arithmetic: 20 percentage points minus 3 percentage points equals 17 percentage points"
+    evidence_against: []
+    competing_explanations:
+      - different baseline composition, population change, claims coverage, coding, or aggregation weights
+    identifying_or_model_assumptions:
+      - the two reported percentage changes use commensurate definitions and periods
+    failure_conditions:
+      - source-data reproduction changes either component
+      - the component growth rates are not commensurate
+    status: provisional
+    source_artifacts:
+      - initial_project_statement
+    last_updated: "2026-07-13"
+
+  - claim_id: C3
+    version: 1
+    statement: Platform entry caused outpatient encounters to increase in the rural counties.
+    type: causal_effect
+    object:
+      population: residents of the 30 rural entry counties represented or representable in claims
+      market_or_institution: regional telemedicine platform and outpatient care market
+      time: 2024 after entry relative to the no-entry counterfactual
+      unit: county-period or resident-period outpatient encounters
+    evidence_for:
+      - entry and higher reported encounter growth coincide in 2024
+    evidence_against:
+      - no coding crosswalk, comparison-group pretrends, exact timing, exposure, or contemporaneous-shock audit has been inspected
+    competing_explanations:
+      - differential prior trends
+      - coding or claims-coverage change
+      - population or case-mix composition change
+      - another rural policy or shock
+      - spillovers or endogenous platform targeting
+    identifying_or_model_assumptions:
+      - a credible no-entry counterfactual can be constructed
+      - no differential measurement change coincided with entry
+      - timing, anticipation, spillovers, and selection into entry are addressed
+    failure_conditions:
+      - material differential pretrends persist under defensible measurement
+      - coding or coverage changes explain the increase
+      - entry timing or selection provides no credible identifying variation
+    status: underidentified
+    source_artifacts:
+      - initial_project_statement
+    last_updated: "2026-07-13"
+
+  - claim_id: C4
+    version: 1
+    statement: Platform entry improved effective access to appropriate outpatient care for rural residents.
+    type: mechanism
+    object:
+      population: all rural residents in the entry counties, including people without claims or digital access
+      market_or_institution: telemedicine and in-person outpatient care pathways
+      time: post-entry 2024 relative to the no-entry counterfactual
+      unit: resident-level feasible and realized access to appropriate care
+    evidence_for:
+      - encounter growth is consistent with relaxed access constraints
+    evidence_against:
+      - no travel, waiting, prices, patient pathways, unmet need, digital exclusion, quality, or substitution measures have been inspected
+    competing_explanations:
+      - substitution from in-person to remote billing without expanded effective care
+      - induced low-value use or coding intensity
+      - easier initial contact paired with congestion or failed downstream referral
+      - gains for connected residents and losses or no gains for excluded residents
+    identifying_or_model_assumptions:
+      - encounters represent clinically appropriate realized care rather than only billing events
+      - access includes feasibility, time, affordability, quality, and completion of the care pathway
+      - platform exposure reaches the population whose access is being claimed
+    failure_conditions:
+      - encounters mainly substitute across billing modes with no reduction in access costs or unmet need
+      - waiting, completion, quality, or access for vulnerable groups worsens
+      - measurement cannot distinguish new care from substitution or coding
+    status: underidentified
+    source_artifacts:
+      - initial_project_statement
+    last_updated: "2026-07-13"
+
+  - claim_id: C5
+    version: 1
+    statement: Platform entry improved welfare for rural residents.
+    type: welfare_conclusion
+    object:
+      population: rural residents in the entry counties, with distributional attention to vulnerable and digitally excluded groups
+      market_or_institution: outpatient care system, platform, providers, insurers or taxpayers, and households
+      time: post-entry and relevant longer-run adjustment relative to no entry
+      unit: criterion-specific resident and social welfare
+    evidence_for: []
+    evidence_against:
+      - utilization alone has no signed welfare interpretation
+      - patient outcomes, travel and time costs, prices, quality, provider responses, coding, capacity, distribution, and fiscal incidence are unobserved
+    competing_explanations:
+      - valuable unmet need was served
+      - low-value or harmful utilization increased
+      - time savings were offset by poorer quality, fragmented care, congestion, or spending
+      - average benefits conceal distributional losses
+    identifying_or_model_assumptions:
+      - the welfare criterion, affected parties, horizon, and incidence are explicit
+      - relevant health, time, monetary, quality, autonomy, distributional, provider, and fiscal effects are measured or credibly modeled
+      - behavioral and equilibrium responses are incorporated where material
+    failure_conditions:
+      - no credible bridge can be built from care pathways and outcomes to the stated welfare criterion
+      - harms or costs offset benefits under plausible incidence and valuation
+      - conclusions reverse across defensible welfare criteria or excluded groups without resolution
+    status: underidentified
+    source_artifacts:
+      - initial_project_statement
+    last_updated: "2026-07-13"
+
+  - claim_id: C1
+    version: 2
+    statement: >-
+      Under a frozen encounter crosswalk, outpatient encounters grew 8 percent
+      in the 30 rural platform counties and 3 percent in the 30 urban comparison
+      counties in 2024 relative to the prior year; the original rural 20 percent
+      figure mixed encounter growth with newly separate billing of existing contacts.
+    type: descriptive
+    object:
+      population: residents represented in audited raw claims
+      market_or_institution: outpatient care in 30 rural platform and 30 urban comparison counties
+      time: 2024 relative to the prior year
+      unit: aggregate frozen-definition outpatient encounters by county group
+    evidence_for:
+      - raw-claims and billing-manual audit
+      - frozen crosswalk reconstruction yields 8 percent rural and 3 percent urban growth
+      - 12 percentage points of the raw rural increase are contacts that existed previously but became separately billable
+    evidence_against: []
+    competing_explanations:
+      - remaining growth may reflect population, case-mix, contemporaneous shocks, purposive entry, substitution, or genuine additional care
+    identifying_or_model_assumptions:
+      - the frozen crosswalk consistently represents the same encounter object across years and county groups
+      - the reconstruction and denominators are complete and correctly applied
+    failure_conditions:
+      - independent reconstruction does not reproduce the 8 percent and 3 percent figures
+      - the frozen crosswalk still differentially omits, duplicates, or reclassifies contacts
+    status: supported
+    source_artifacts:
+      - initial_project_statement
+      - round_2_raw_claims_and_billing_manual_audit
+      - round_2_frozen_crosswalk_reconstruction
+    last_updated: "2026-07-13"
+
+  - claim_id: C2
+    version: 2
+    statement: >-
+      The frozen-definition aggregates document a 5 percentage-point
+      rural-minus-urban difference in year-over-year outpatient encounter growth.
+    type: descriptive
+    object:
+      population: residents represented in audited raw claims
+      market_or_institution: outpatient care in the selected rural platform and urban comparison counties
+      time: 2024 relative to the prior year
+      unit: difference between frozen-definition aggregate growth rates
+    evidence_for:
+      - "audited arithmetic: 8 percentage points minus 3 percentage points equals 5 percentage points"
+      - frozen-definition trends during 2021-2023 are approximately parallel with no visible differential pretrend
+    evidence_against:
+      - visual absence of a pretrend does not establish a causal counterfactual
+    competing_explanations:
+      - purposive vendor-government selection
+      - contemporaneous rural shocks or provider changes
+      - population or case-mix composition change
+      - spillovers or differences in comparison-group support
+    identifying_or_model_assumptions:
+      - the frozen encounter definition is comparable
+      - the two aggregate growth rates use consistent weighting and denominators
+    failure_conditions:
+      - source-data reconstruction changes either component
+      - remaining measurement or aggregation differences make the components non-comparable
+    status: supported
+    source_artifacts:
+      - round_2_frozen_crosswalk_reconstruction
+      - round_2_2021_2023_pretrend_plot
+    last_updated: "2026-07-13"
+
+  - claim_id: C3
+    version: 2
+    statement: Platform entry caused frozen-definition outpatient encounters to increase in the rural counties.
+    type: causal_effect
+    object:
+      population: residents of the 30 rural platform counties represented or representable in claims
+      market_or_institution: regional telemedicine platform and outpatient care market
+      time: 2024 after entry relative to the no-entry counterfactual
+      unit: county-period or resident-period frozen-definition outpatient encounters
+    evidence_for:
+      - platform counties have 5 percentage points greater frozen-definition encounter growth than urban comparison counties
+      - county-level frozen-definition trends are approximately parallel during 2021-2023 with no visible differential pretrend
+    evidence_against:
+      - vendor and regional government selected entry timing and counties rather than randomizing them
+      - no assignment-process, anticipated-shock, concurrent-policy, support, or spillover audit has yet established the counterfactual
+    competing_explanations:
+      - selection on anticipated demand, supply, capacity, political, or provider changes
+      - a contemporaneous rural policy or shock
+      - population or case-mix composition change
+      - spillovers into controls or differential exposure intensity
+    identifying_or_model_assumptions:
+      - conditional on a defensible design, platform counties would have followed the comparison outcome path absent entry
+      - no unaddressed anticipation, spillovers, or differential contemporaneous shock drives the post-entry gap
+      - frozen measurement remains stable
+    failure_conditions:
+      - selection records reveal targeting on anticipated 2024 outcome shocks without a credible adjustment or alternative variation
+      - balance, support, negative controls, or institutional timing contradict the proposed counterfactual
+      - the effect disappears under the validated frozen definition or defensible comparison population
+    status: underidentified
+    source_artifacts:
+      - round_2_raw_claims_and_billing_manual_audit
+      - round_2_frozen_crosswalk_reconstruction
+      - round_2_2021_2023_pretrend_plot
+      - round_2_entry_selection_fact
+    last_updated: "2026-07-13"
+
+  - claim_id: C4
+    version: 2
+    statement: Platform entry improved effective access to appropriate outpatient care for rural residents.
+    type: mechanism
+    object:
+      population: all rural residents in the entry counties, including people without claims or digital access
+      market_or_institution: telemedicine and in-person outpatient care pathways
+      time: post-entry 2024 relative to the no-entry counterfactual
+      unit: resident-level feasible and realized access to appropriate care
+    evidence_for:
+      - a 5 percentage-point frozen-definition encounter-growth contrast remains after removing the identified billing-code artifact
+    evidence_against:
+      - no outcome, travel, waiting, price, clinic-exit, unmet-need, digital-exclusion, quality, or substitution evidence has been added
+      - the remaining utilization contrast is not yet causally identified
+    competing_explanations:
+      - substitution from in-person to remote care without net expansion of appropriate completed care
+      - induced low-value use, supplier response, or residual composition
+      - easier initial contact paired with downstream congestion or failed referral
+      - heterogeneous gains and digital exclusion
+    identifying_or_model_assumptions:
+      - the utilization effect is causal
+      - new frozen-definition encounters represent appropriate, completed care and reduced access constraints
+      - access costs, quality, pathways, and population reach can be measured
+    failure_conditions:
+      - no causal utilization effect survives selection analysis
+      - additional contacts mainly substitute or fail to complete appropriate pathways
+      - travel, waiting, affordability, quality, or access for vulnerable groups does not improve or worsens
+    status: underidentified
+    source_artifacts:
+      - round_2_frozen_crosswalk_reconstruction
+    last_updated: "2026-07-13"
+
+  - claim_id: C3
+    version: 3
+    statement: Platform entry caused frozen-definition outpatient encounters to increase across the rural platform counties.
+    type: causal_effect
+    object:
+      population: residents of the 30 rural platform counties
+      market_or_institution: county-level platform entry and outpatient care
+      time: 2024 relative to the no-entry counterfactual
+      unit: county-period frozen-definition outpatient encounters
+    evidence_for:
+      - frozen-definition growth is 5 percentage points higher in platform than comparison counties
+      - 2021-2023 frozen-definition trends are approximately parallel
+    evidence_against:
+      - counties were selected partly on forecast 2024 provider exits and unusually high latent demand
+      - four entered counties had outpatient-department closures scheduled for mid-2024
+      - no nonentered counties share joint support on selection score and scheduled closures
+      - no credible threshold, lottery, or other exogenous entry rule exists
+    competing_explanations:
+      - anticipated demand growth
+      - scheduled provider closures and other supply shocks
+      - government-vendor targeting and contemporaneous responses
+    identifying_or_model_assumptions:
+      - a defensible no-entry county counterfactual exists on observed support
+    failure_conditions:
+      - selection on anticipated outcomes and absent overlap cannot be repaired by a credible design
+    status: abandoned
+    source_artifacts:
+      - round_2_frozen_crosswalk_reconstruction
+      - round_2_2021_2023_pretrend_plot
+      - round_3_vendor_selection_files
+      - round_3_support_and_closure_audit
+    last_updated: "2026-07-13"
+
+  - claim_id: C4
+    version: 3
+    statement: Platform entry improved effective access to appropriate outpatient care for rural residents county-wide.
+    type: mechanism
+    object:
+      population: all rural residents in the 30 platform counties, including residents outside preregistration and without digital access
+      market_or_institution: county-wide telemedicine and in-person outpatient pathways
+      time: 2024 relative to no platform entry
+      unit: resident-level feasible and realized access aggregated county-wide
+    evidence_for:
+      - randomized invitations improved two access margins for a narrowly eligible preregistered population during the first three months
+    evidence_against:
+      - the county-level entry effect has no defensible counterfactual
+      - the invitation experiment excludes most county residents and occurred under early appointment scarcity
+      - shared-clinician interference may imply reallocation rather than net access creation
+    competing_explanations:
+      - targeted residents gained while other patients lost scarce clinician capacity
+      - early experimental effects do not generalize across people, time, counties, or equilibrium responses
+      - scheduled provider exits jointly changed access
+    identifying_or_model_assumptions:
+      - the experimental invitation margin transports to nonregistered residents and later platform operation
+      - county-wide provider and patient spillovers do not offset gains
+      - county-level entry effects can be separated from selected demand and provider exits
+    failure_conditions:
+      - lack of county-level counterfactual persists
+      - clinician displacement or excluded-population losses offset experimental gains
+      - effects fail to transport beyond the experimental population and capacity regime
+    status: underidentified
+    source_artifacts:
+      - round_3_randomized_invitation_experiment
+      - round_3_vendor_selection_files
+    last_updated: "2026-07-13"
+
+  - claim_id: C5
+    version: 2
+    statement: Platform entry improved welfare for rural residents.
+    type: welfare_conclusion
+    object:
+      population: all rural residents and other affected parties, with distributional attention to excluded and capacity-competing groups
+      market_or_institution: platform, outpatient system, providers, households, and payers
+      time: early operation and relevant longer-run adjustment relative to no entry
+      unit: criterion-specific resident and social welfare
+    evidence_for:
+      - randomized invitation raised indicated follow-up completion and reduced travel time in a high-barrier preregistered group
+    evidence_against:
+      - no measurable 90-day health or total-spending change was reported
+      - 25 percent of invitees did not complete a platform visit
+      - county-level entry effects are not identified
+      - clinician interference, incidence, prices, longer-run outcomes, and excluded-population effects remain unresolved
+    competing_explanations:
+      - time savings and completed follow-up create benefits without detectable short-run health change
+      - scarce appointments are redistributed, producing losses for controls or other patients
+      - benefits are concentrated among preregistered high-barrier residents and do not generalize
+    identifying_or_model_assumptions:
+      - a welfare criterion values indicated follow-up and time savings and accounts for health, spending, capacity, distribution, and opportunity costs
+      - interference and general-equilibrium effects are measured or bounded
+      - experimental evidence can be appropriately transported only to populations and regimes claimed
+    failure_conditions:
+      - displacement, harms, fiscal costs, or excluded-group losses offset measured benefits
+      - longer-run outcomes fail to support the chosen welfare criterion
+      - no credible aggregation from the experimental margin to the county-wide population is available
+    status: underidentified
+    source_artifacts:
+      - round_3_randomized_invitation_experiment
+    last_updated: "2026-07-13"
+
+  - claim_id: C6
+    version: 1
+    statement: >-
+      Under the realized first-three-month allocation regime, random assignment
+      to a platform invitation increased completed clinician-indicated follow-up
+      within 30 days by 15 percentage points among 2400 preregistered residents
+      without a household car, living over 30 km from specialty care, and having
+      a documented follow-up need.
+    type: causal_effect
+    object:
+      population: 2400 preregistered high-travel-barrier residents with clinician-documented follow-up need
+      market_or_institution: scarce early platform appointments allocated by randomized invitation
+      time: platform's first three months with 30-day follow-up measurement
+      unit: intention-to-treat effect of invitation assignment on completed indicated follow-up
+    evidence_for:
+      - invitations were randomized because appointment capacity was scarce
+      - allocation logs and baseline balance were independently verified
+      - reported intention-to-treat difference is 15 percentage points
+    evidence_against:
+      - interference through shared clinicians remains possible
+      - confidence intervals and the exact randomization-inference procedure have not yet been supplied
+    competing_explanations:
+      - own invitation facilitates follow-up
+      - invitations reallocate clinician slots away from noninvitees or other patients
+    identifying_or_model_assumptions:
+      - assignment was implemented according to the verified randomization
+      - outcome ascertainment is comparable across assignment arms
+      - the estimand is the effect of invitation assignment under the realized saturation; an isolated direct effect additionally requires an interference model
+    failure_conditions:
+      - allocation or outcome audit reveals differential implementation or ascertainment
+      - randomization-consistent uncertainty includes substantively negligible effects
+      - clinician interference changes the estimand or shows offsetting losses that invalidate an access-expansion interpretation
+    status: supported
+    source_artifacts:
+      - round_3_verified_allocation_logs
+      - round_3_baseline_balance_audit
+      - round_3_randomized_invitation_estimates
+    last_updated: "2026-07-13"
+
+  - claim_id: C7
+    version: 1
+    statement: >-
+      Under the realized first-three-month allocation regime, random assignment
+      to invitation reduced round-trip travel time by 90 minutes in the same
+      preregistered experimental population.
+    type: causal_effect
+    object:
+      population: 2400 preregistered high-travel-barrier residents with clinician-documented follow-up need
+      market_or_institution: scarce early platform appointments allocated by randomized invitation
+      time: platform's first three months
+      unit: intention-to-treat effect of invitation assignment on defined round-trip travel time
+    evidence_for:
+      - verified randomized invitation allocation and baseline balance
+      - reported intention-to-treat difference is minus 90 minutes
+    evidence_against:
+      - travel-time construction, missingness, confidence interval, and interference-robust interpretation still require audit
+    competing_explanations:
+      - remote completion replaces travel
+      - outcome coding assigns zero travel to a contact without measuring other travel or time burdens
+      - appointment reallocation changes travel among noninvitees or other patients
+    identifying_or_model_assumptions:
+      - travel time is defined and observed comparably in both arms
+      - assignment affects recorded travel through access to the platform rather than differential missingness
+      - interpretation remains tied to realized invitation saturation if clinicians are shared
+    failure_conditions:
+      - outcome audit reveals differential measurement or missingness
+      - randomization-consistent uncertainty does not support a material reduction
+      - spillover losses reverse the system-level travel implication
+    status: provisional
+    source_artifacts:
+      - round_3_verified_allocation_logs
+      - round_3_randomized_invitation_estimates
+    last_updated: "2026-07-13"
+
+  - claim_id: C8
+    version: 1
+    statement: >-
+      The randomized invitation analysis detected no measurable effect on
+      90-day health, total medical spending, or clinic exit in the experimental
+      population over the reported follow-up window.
+    type: causal_effect
+    object:
+      population: the 2400 preregistered experimental residents and relevant clinics
+      market_or_institution: early platform invitation and outpatient care
+      time: 90 days after invitation, or the reported clinic-exit window
+      unit: intention-to-treat contrasts for health, total spending, and clinic exit
+    evidence_for:
+      - reported randomized contrasts were not measurably different from zero
+    evidence_against:
+      - effect estimates, confidence intervals, minimum detectable effects, outcome definitions, and attrition are not supplied
+    competing_explanations:
+      - true effects are near zero
+      - the experiment is underpowered for these outcomes
+      - 90 days is too short or outcomes too coarse
+      - positive and negative subgroup effects average out
+    identifying_or_model_assumptions:
+      - outcomes and attrition are measured comparably across arms
+      - uncertainty and detectable-effect bounds are reported before interpreting the null
+    failure_conditions:
+      - confidence intervals permit substantively large effects
+      - attrition, interference, or measurement invalidates the contrasts
+      - longer follow-up reveals effects outside the initial window
+    status: provisional
+    source_artifacts:
+      - round_3_randomized_invitation_estimates
+    last_updated: "2026-07-13"
+
+  - claim_id: C9
+    version: 1
+    statement: >-
+      Random invitation improved effective access for the experimental population
+      by increasing completed indicated follow-up and reducing travel burden.
+    type: mechanism
+    object:
+      population: preregistered residents without a household car, over 30 km from specialty care, with documented follow-up need
+      market_or_institution: capacity-constrained platform invitation and shared-clinician care pathway
+      time: first three months of platform operation
+      unit: invitation-assignment effect on realized indicated follow-up and travel burden
+    evidence_for:
+      - 15-percentage-point increase in completed indicated follow-up
+      - 90-minute reduction in round-trip travel time
+      - clinical need was documented before invitation
+    evidence_against:
+      - 25 percent of invitees did not complete a platform visit
+      - clinician interference and displacement have not been assessed
+      - no measurable 90-day health effect was reported
+    competing_explanations:
+      - access is expanded for invitees
+      - scarce access is reallocated from noninvitees or other patients
+      - follow-up completion improves without downstream health benefit in the observed window
+    identifying_or_model_assumptions:
+      - completed indicated follow-up and travel burden are valid components of effective access
+      - observed gains are not fully offset by spillover losses
+      - the claim is confined to the randomized population and early capacity regime
+    failure_conditions:
+      - clinician-level analysis shows offsetting delays or losses among those sharing capacity
+      - travel-time or indicated-follow-up measurement fails audit
+      - effects do not survive design-consistent inference
+    status: provisional
+    source_artifacts:
+      - round_3_randomized_invitation_experiment
+    last_updated: "2026-07-13"

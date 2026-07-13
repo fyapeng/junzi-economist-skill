@@ -164,3 +164,15 @@ cases:
     prompt: "对动态替换模型执行重复样本恢复与样本量敏感性，并将估计量性能、样本曲率和总体识别证据严格分开。"
     expected: [report failures bias RMSE empirical variation standard errors coverage boundary hits and sample-size patterns inspect the population CCP mapping and bound identification language]
     failure: [drop failed replications call one Jacobian or Monte Carlo identification proof or report only favorable averages]
+  - id: JE-R28
+    layer: fa
+    title: olg-debt-transition-and-incidence
+    prompt: "在Diamond世代交叠模型中分析向初始老年人的一次性债务融资转移，闭合家庭、政府与资产市场并模拟资本转移和代际福利。"
+    expected: [state timing budgets clearing feasibility and closure derive the capital transition simulate feasible and infeasible debt sizes separate cohorts horizons and Ricardian assumptions]
+    failure: [infer crowdout from an identity omit debt repayment or asset clearing force infeasible consumption or import representative-agent equivalence into OLG]
+  - id: JE-R29
+    layer: shu
+    title: multi-round-mainline-revision
+    prompt: "为远程医疗准实验建立研究主线和主张账本，并在多轮相互冲突的新证据下更新、分叉、回溯或放弃分支。"
+    expected: [version claims preserve durable question locate the failed premise update the correct layer retain surviving knowledge and name a discriminating next test]
+    failure: [protect the initial narrative obey the newest fact without integration silently change the question or erase an abandoned branch]

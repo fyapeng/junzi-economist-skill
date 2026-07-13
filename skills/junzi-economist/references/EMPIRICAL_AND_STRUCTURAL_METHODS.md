@@ -81,6 +81,8 @@ Exploration may generate variables, windows, models, mechanisms, or subgroups. C
 
 ## Evidence-calibrated writing
 
+Random assignment can make a causal estimand identifiable, but a reported point estimate remains provisional until the assignment and outcome data are audited, the estimate is reproduced, and design-consistent uncertainty is available. Do not upgrade a claim to `supported` merely because the assignment mechanism sounds credible.
+
 Use language consistent with status:
 
 - descriptive: documents, measures, is associated with;

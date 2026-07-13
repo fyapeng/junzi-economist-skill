@@ -12,8 +12,8 @@ requirements:
     gap: "Behavior coverage for contracts, games, production, equilibrium multiplicity, and welfare benchmarks."
   macroeconomic_law:
     status: partial
-    evidence: [references/MACROECONOMIC_LAW.md, evals/runs/2026-07-13-round-02.md]
-    gap: "Dynamic equilibrium, heterogeneous agents, monetary-fiscal interaction, finance, and transition tests."
+    evidence: [references/MACROECONOMIC_LAW.md, evals/executions/JE-X014]
+    gap: "JE-X014 passes fiscal closure, overlapping generations, transition dynamics, feasibility, and cohort incidence; monetary-fiscal interaction, incomplete markets, finance, open economy, and aggregate uncertainty remain."
   institutions_and_frontier:
     status: partial
     evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/executions/JE-X008, evals/executions/JE-X010]
@@ -39,9 +39,9 @@ requirements:
     evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/runs/2026-07-13-round-05.md]
     gap: "Long-form bilingual manuscript and real-PDF end-to-end comparison."
   mainline_claims_and_backtracking:
-    status: partial
-    evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md]
-    gap: "A multi-turn state transition test with new evidence, reopening, and protection against premature abandonment."
+    status: proved
+    evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md, evals/executions/JE-X015]
+    gap: "JE-X015 preserves three-round claim history, backtracks measurement, abandons an unsupported causal branch, and forks a bounded randomized margin; claim-status promotion before uncertainty was tightened after audit."
   cross_disciplinary_correction:
     status: proved
     evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, evals/executions/JE-X013]
@@ -49,7 +49,7 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Twelve strict raw executions now cover welfare, backtracking, writing, a non-trigger, theory, frontier, structural estimation, and cross-disciplinary correction; exact client/model provenance and automatic trigger-dispatch coverage remain incomplete."
+    gap: "Fourteen strict raw executions now cover welfare, backtracking, writing, a non-trigger, theory, frontier, structural estimation, cross-disciplinary correction, macro dynamics, and multi-turn state; exact client/model provenance and automatic trigger-dispatch coverage remain incomplete."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml]

@@ -1,0 +1,97 @@
+schema_version: 1
+research_object: >-
+  Entry of a regional telemedicine platform into 30 rural counties in 2024 and
+  the resulting changes in residents' feasible access to outpatient care,
+  care received, and welfare.
+real_question: >-
+  Did platform entry relax consequential access constraints for rural residents,
+  and did the resulting allocation improve their welfare after accounting for
+  quality, money and time costs, substitution, congestion, provider responses,
+  distribution, and harms?
+affected_people:
+  - rural residents who previously faced geographic, time, information, mobility, or provider-capacity barriers
+  - rural residents with limited digital access or conditions unsuitable for telemedicine
+  - caregivers and household members
+  - rural and urban clinicians and other health workers
+  - in-person providers, platform providers, and taxpayers or insurers
+economic_mechanisms:
+  - lower travel, search, scheduling, and information costs expand the feasible care set
+  - remote capacity and matching may relax local provider constraints
+  - telemedicine may substitute for in-person care or complement it through referrals and follow-up
+  - changes in convenience or reimbursement may induce low-value or supplier-influenced utilization
+  - platform entry may alter quality, continuity, prices, waiting, congestion, provider entry or exit, and fiscal incidence
+competing_mechanisms:
+  - claims coding, coverage, enrollment, population, or reporting changed in 2024
+  - rural counties were already on a different utilization trend than urban counties
+  - contemporaneous rural shocks or policies, rather than platform entry, raised encounters
+  - recorded encounters reflect substitution across billing settings rather than additional effective care
+  - encounters rose while quality-adjusted access remained unchanged or worsened
+  - average gains conceal exclusion or losses among digitally disadvantaged or high-need residents
+target_claims:
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - C7
+  - C8
+  - C9
+success_evidence:
+  - stable and linkable encounter definitions, coding, coverage, and population denominators across counties and years
+  - credible comparison-group behavior before entry and verified county-specific entry timing and exposure
+  - patient-level evidence on new versus substituted care, travel or time costs, waiting, prices, quality, and outcomes
+  - evidence on heterogeneity, digital exclusion, provider capacity, entry and exit, congestion, and spillovers
+  - a stated welfare criterion with incidence and uncertainty, supported by outcomes beyond utilization
+non_negotiables:
+  - do not treat encounter growth as effective access or welfare
+  - do not call the rural-urban growth difference causal before validating coding, timing, comparability, and pretrends
+  - preserve residents with no claim and those excluded from digital care in the population of concern
+  - version any material change in population, estimand, mechanism, comparison group, or welfare criterion
+current_stage: randomized_access_margin_and_interference_audit
+current_branch: randomized_invitation_access_margin
+key_assumptions:
+  - the frozen crosswalk maps pre-2024 contacts and 2024 telemedicine-specific codes to a stable encounter concept
+  - the reconstructed 8 percent and 3 percent changes use consistent county aggregation and population denominators
+  - platform entry occurred in the stated rural counties during 2024
+  - invitation assignment among the 2400 preregistered eligible residents was randomized and implemented as logged
+  - completed indicated follow-up and travel-time outcomes were defined and ascertained comparably by invitation assignment
+  - any interference through shared clinicians is either absent, bounded, or modeled in an estimand tied to the realized allocation regime
+disconfirming_evidence:
+  - new telemedicine-specific billing codes began in platform counties on 2024-01-01 but not in control counties
+  - 12 percentage points of the reported 20 percent rural increase are previously existing contacts that became separately billable
+  - platform timing was selected by the vendor and regional government rather than randomized
+  - officials forecast unusually high latent demand and 2024 provider exits when selecting platform counties
+  - four entered counties had outpatient-department closures already scheduled for mid-2024
+  - no nonentered counties share joint support on the selection score and scheduled closures
+  - no credible threshold or lottery governed county entry
+  - 25 percent of randomized invitees did not complete a platform visit
+  - interference through shared clinicians remains possible
+abandoned_paths:
+  - branch: raw_code_growth_as_utilization_change
+    reason: treatment-specific coding changes violate longitudinal and cross-group measurement comparability
+    surviving_fact: the original 20 percent and 3 percent figures remain a report about recorded billing counts, not comparable encounter growth
+  - branch: frozen_definition_county_causal_effect
+    reason: >-
+      purposive selection on anticipated 2024 demand and provider exits, scheduled
+      closures, absent joint support, and no threshold or lottery leave no
+      defensible county-level no-entry counterfactual
+    surviving_fact: the 5 percentage-point frozen-definition contrast remains a supported descriptive difference
+main_uncertainty: >-
+  Whether the randomized invitation effects represent newly completed indicated
+  care and lower access costs or partly reallocate scarce shared-clinician slots
+  away from noninvitees. External validity is limited to preregistered residents
+  without a household car, more than 30 km from specialty care, with documented
+  follow-up need, during the platform's capacity-constrained first three months.
+  The experiment does not identify county-wide entry effects or welfare.
+next_discriminating_test: >-
+  Link invitation assignments, appointment slots, clinician rosters and workload,
+  and completed indicated follow-up for invitees, noninvitees, and other patients.
+  Re-estimate intention-to-treat effects by the actual randomization scheme with
+  randomization inference; define clinician-level exposure or saturation and test
+  whether invitee gains coincide with losses, delays, or congestion among people
+  sharing clinicians. Audit the travel-time outcome and report confidence intervals.
+  If total indicated follow-up rises without offsetting access losses, preserve an
+  access-expansion interpretation for this experimental population; if gains are
+  displaced from others, backtrack to a rationing/reallocation mechanism.
+last_updated: "2026-07-13"

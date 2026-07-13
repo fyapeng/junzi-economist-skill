@@ -1,0 +1,69 @@
+schema_version: 1
+execution_id: JE-X015
+case_id: JE-R29
+timestamp_utc: "2026-07-13T02:40:37Z"
+skill_commit: "06c74b6"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: mainline_eval
+evaluator: audit_eval-independent-state-audit
+isolation: blind
+prompt: "Across three turns, maintain a research mainline and claim ledger for rural telemedicine: begin from an unadjusted utilization increase; then receive evidence of treatment-specific coding and a frozen-definition residual difference; then receive evidence defeating county-level common support plus a separate randomized invitation among a narrow high-barrier population. Preserve history and choose continue, backtrack, fork, or abandon at the correct layer."
+rounds:
+  - round: 1
+    evidence: "Rural billed encounters rose 20% versus 3% urban; no outcomes, travel, coding, prices, exits, or pretrends inspected."
+  - round: 2
+    evidence: "New rural telemedicine codes explain 12 points; frozen definition gives 8% versus 3%; pretrends appear parallel; entry remains selected."
+  - round: 3
+    evidence: "Selection on forecast demand and provider exits destroys county support; a separate invitation lottery reports follow-up and travel point estimates with nonreceipt and possible clinician interference."
+expected:
+  - preserve every claim version and prior branch decision
+  - backtrack from unstable measurement without abandoning the durable question
+  - abandon the unsupported county causal branch rather than cosmetically repair it
+  - fork and narrowly bound the invitation estimand
+  - distinguish nulls from equivalence and access expansion from rationing
+forbidden:
+  - rewrite prior state as if later evidence was always known
+  - use randomized invitation to rescue county entry claims
+  - mark a reported point estimate supported before design-consistent uncertainty and outcome audit
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/SITUATION_AND_FRONTIER.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/BRANCH_AND_DECISION_PROTOCOL.md
+  - assets/templates/RESEARCH_MAINLINE.yaml
+  - assets/templates/CLAIM_LEDGER.yaml
+  - assets/templates/BRANCH_LOG.yaml
+response_file: response.md
+response_sha256: "9eac289eedde051077cc53faaaa7691da44a2b84e87a31d0127eab0422eae013"
+audit_file: audit.md
+artifacts:
+  - file: artifacts/RESEARCH_MAINLINE.yaml
+    sha256: "41f551dd5beeafda1bc0b89b88265848251ec33edd95a59cd6677a694e1382d4"
+  - file: artifacts/CLAIM_LEDGER.yaml
+    sha256: "ae18d38d4816707da3ae529ad2d8ab3a94e5d61123471280010e7a1ae383b84d"
+  - file: artifacts/BRANCH_LOG.yaml
+    sha256: "f75994500dcd0a8c0a0ab94b5998583b3997cc2ea2490948f99bbb9277ea7ed0"
+  - file: artifacts/DECISION_NOTE.md
+    sha256: "bc37af8d10cb3902164073849c0f99246eef06afb82fa04d21b5bc8959151965"
+rubric:
+  - criterion: versioned state and branch memory
+    score: 2
+    max_score: 2
+  - criterion: measurement backtrack and county branch abandonment
+    score: 2
+    max_score: 2
+  - criterion: bounded fork nulls interference and next test
+    score: 2
+    max_score: 2
+  - criterion: claim-status calibration
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - the reported invitation effect was upgraded before uncertainty and outcome auditing
+  - the three-round transcript is represented by versioned artifacts and the final response rather than three separate raw response files
+  - exact client and model versions unavailable

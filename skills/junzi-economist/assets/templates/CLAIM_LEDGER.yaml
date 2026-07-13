@@ -1,4 +1,12 @@
 schema_version: 1
+status_guide:
+  idea: "A proposed statement without adjudicative evidence."
+  exploratory: "Generated or selected using the same evidence now offered in support."
+  provisional: "A reported or partially checked result whose measurement, design-consistent uncertainty, or replication is incomplete."
+  supported: "The estimate or derivation has been reproduced or verified, material measurement checks passed, and uncertainty is reported using the design that generated the evidence."
+  contradicted: "Evidence defeats a required premise or the stated claim."
+  underidentified: "Available evidence cannot distinguish the claim from serious rivals."
+  abandoned: "The branch no longer warrants continued work absent its stated reopening condition."
 claims:
   - claim_id: C1
     version: 1

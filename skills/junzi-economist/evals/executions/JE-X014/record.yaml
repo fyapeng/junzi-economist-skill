@@ -1,0 +1,57 @@
+schema_version: 1
+execution_id: JE-X014
+case_id: JE-R28
+timestamp_utc: "2026-07-13T02:31:40Z"
+skill_commit: "06c74b6"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: macro_eval
+evaluator: audit_eval-independent-rerun
+isolation: blind
+prompt: "Analyze and numerically verify a one-time debt-financed transfer to the initial old in a closed-economy two-period Diamond OLG model with log utility, Cobb-Douglas production, full depreciation, population growth, one-period government debt, next-period lump-sum repayment tax, and no debt thereafter. Close every budget and market, simulate debt at 2%, 10%, and 30% of initial output, detect infeasibility, trace cohorts and transitions, and compare with Ricardian equivalence."
+expected:
+  - state timing household and government budgets asset clearing and resource feasibility
+  - derive capital transitions steady state and cohort incidence
+  - distinguish impact transition and long run
+  - detect infeasible issue or repayment regions
+  - identify the assumptions behind crowdout and Ricardian equivalence
+forbidden:
+  - infer crowdout from accounting alone
+  - omit population scaling debt return or repayment
+  - force negative consumption or capital through the solver
+  - impose representative-agent equivalence on finite-lived cohorts
+loaded_files:
+  - SKILL.md
+  - references/MACROECONOMIC_LAW.md
+  - references/THEORY_ROUTER.md
+  - references/THEORY_MODELING.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+  - references/BRANCH_AND_DECISION_PROTOCOL.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "d6fa661da09b2e3528257ff9721ec3437983ef58313729649479739f729ee55a"
+audit_file: audit.md
+artifacts:
+  - file: artifacts/analysis.md
+    sha256: "7d4f6f80c5ee7eaf05c5297e72b741b38e0310e36c33138427e0378fefd551a7"
+  - file: artifacts/simulate_olg.py
+    sha256: "a122f26fda40304daafb83ff3b7918afa9c72e4054a6f855281b4a4a0e598ef9"
+rubric:
+  - criterion: macroeconomic closure and timing
+    score: 2
+    max_score: 2
+  - criterion: dynamics feasibility and numerical verification
+    score: 2
+    max_score: 2
+  - criterion: cohort incidence and welfare
+    score: 2
+    max_score: 2
+  - criterion: Ricardian comparison and assumption boundaries
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - full depreciation log utility and lump-sum taxes make the transition unusually transparent
+  - the exercise does not cover monetary interaction uncertainty labor response or open-economy finance
+  - exact client and model versions unavailable

@@ -1,0 +1,175 @@
+schema_version: 1
+branches:
+  - branch_id: raw_code_growth_as_utilization_change
+    parent_branch: mainline_measurement_and_counterfactual_audit
+    claim_versions:
+      - C1-v1
+      - C2-v1
+      - C3-v1
+    research_object: >-
+      Interpret the reported 20 percent rural and 3 percent urban growth in raw
+      recorded claims as comparable changes in outpatient encounters.
+    required_premises:
+      - raw encounter codes represent a stable event definition across years and county groups
+      - no platform-specific billing change creates recorded growth without new contacts
+    evidence_obtained:
+      - platform counties introduced telemedicine-specific billing codes on 2024-01-01 while controls did not
+      - a frozen crosswalk attributes 12 percentage points of the reported 20 percent rural increase to previously existing contacts becoming separately billable
+      - frozen-definition growth is 8 percent rural and 3 percent urban
+    failed_premises:
+      - raw encounter codes are not longitudinally or cross-sectionally comparable because the billing change is treatment-specific
+    attempted_repairs:
+      - reconstruct encounters under a frozen crosswalk
+    surviving_knowledge:
+      - the supplied raw billing aggregates were reported as 20 percent rural and 3 percent urban growth
+      - the coding artifact accounts for 12 percentage points of rural raw-count growth
+      - a 5 percentage-point descriptive frozen-definition contrast remains
+      - frozen-definition trends in 2021-2023 are approximately parallel with no visible differential pretrend
+    reusable_artifacts:
+      - billing-manual audit
+      - frozen encounter crosswalk
+      - county-level 2021-2023 frozen-definition trend reconstruction
+    forbidden_repetition:
+      - do not reuse the raw 20-versus-3 contrast as a utilization, access, causal, or welfare effect
+      - do not fix treatment-specific coding merely by adding controls or alternative standard errors
+    action: backtrack
+    destination_node: frozen_definition_selection_audit
+    reopening_condition: >-
+      Reopen only if new source documentation proves that the platform-specific
+      codes capture genuinely new contacts absent from all prior billing channels;
+      even then, reconstruct rather than assume comparability.
+    decided_at: "2026-07-13-round-2"
+
+  - branch_id: frozen_definition_selection_audit
+    parent_branch: mainline_measurement_and_counterfactual_audit
+    claim_versions:
+      - C1-v2
+      - C2-v2
+      - C3-v2
+      - C4-v2
+      - C5-v1
+    research_object: >-
+      Determine whether the 5 percentage-point frozen-definition utilization
+      contrast is caused by platform entry and what, if anything, it implies for
+      effective access and welfare.
+    required_premises:
+      - frozen encounter measurement is stable
+      - a credible no-entry counterfactual exists despite purposive rollout
+      - access and welfare require evidence beyond utilization
+    evidence_obtained:
+      - frozen-definition rural growth is 8 percent and urban growth is 3 percent
+      - 2021-2023 frozen-definition trends are approximately parallel with no visible differential pretrend
+      - vendor and regional government selected platform timing rather than randomizing it
+    failed_premises: []
+    attempted_repairs: []
+    surviving_knowledge:
+      - measurement repair removes most of the original rural increase but leaves a descriptive contrast
+      - visual pretrend similarity reduces one concern but does not resolve purposive selection
+      - no current evidence signs effective access or welfare
+    reusable_artifacts:
+      - frozen encounter crosswalk
+      - pre-entry county panel
+    forbidden_repetition:
+      - do not equate visual parallel pretrends with identification
+      - do not promote the 5-point contrast to access or welfare without pathway and outcome evidence
+    action: continue
+    destination_node: vendor_government_selection_and_counterfactual_audit
+    reopening_condition: "not applicable while active"
+    decided_at: "2026-07-13-round-2"
+
+  - branch_id: frozen_definition_county_causal_effect
+    parent_branch: frozen_definition_selection_audit
+    claim_versions:
+      - C2-v2
+      - C3-v3
+      - C4-v3
+      - C5-v2
+    research_object: >-
+      Identify the county-wide causal effect of platform entry from the
+      frozen-definition platform-versus-urban comparison.
+    required_premises:
+      - nonentered counties can support a defensible no-entry counterfactual for selected platform counties
+      - selection does not depend on unaddressed anticipated outcomes or supply shocks
+      - overlap exists on decisive assignment variables
+    evidence_obtained:
+      - selection files show targeting on forecast 2024 provider exits and unusually high latent demand
+      - four entered counties had outpatient-department closures scheduled for mid-2024
+      - no nonentered county shares joint support on the selection score and scheduled closures
+      - no credible threshold or lottery governed entry
+      - 2021-2023 trends were approximately parallel, but this does not resolve anticipated 2024 shocks
+    failed_premises:
+      - no supported nonentry counterfactual exists for the selected counties
+      - selection is directly related to anticipated post-entry demand and supply outcomes
+    attempted_repairs:
+      - frozen encounter definition
+      - pretrend inspection
+      - selection-score and scheduled-closure support audit
+      - search for an assignment threshold or lottery
+    surviving_knowledge:
+      - the frozen-definition 5-point contrast is a supported descriptive fact
+      - measurement repair and pretrend reconstruction remain valid
+      - purposive selection and scheduled closures are substantive institutional facts
+      - the lack of county-level identification does not negate a separately randomized individual invitation margin
+    reusable_artifacts:
+      - frozen crosswalk
+      - county pretrend panel
+      - vendor-government selection files
+      - selection-score and closure support audit
+    forbidden_repetition:
+      - do not add controls, matching, weighting, or synthetic combinations outside joint support and call the county effect identified
+      - do not treat parallel pretrends as protection from known anticipated post-period shocks
+      - do not use the randomized invitation experiment to relabel the county-entry effect as identified
+    action: abandon
+    destination_node: randomized_invitation_access_margin
+    reopening_condition: >-
+      Reopen only with genuinely new comparison support or exogenous county-entry
+      variation that is independent of forecast demand and provider exits; a new
+      specification using the same unsupported controls is insufficient.
+    decided_at: "2026-07-13-round-3"
+
+  - branch_id: randomized_invitation_access_margin
+    parent_branch: frozen_definition_selection_audit
+    claim_versions:
+      - C6-v1
+      - C7-v1
+      - C8-v1
+      - C9-v1
+      - C4-v3
+      - C5-v2
+    research_object: >-
+      Identify the effect of randomized invitation to a scarce platform
+      appointment on indicated follow-up completion, travel burden, short-run
+      outcomes, and the access mechanism for a preregistered high-barrier population.
+    required_premises:
+      - invitation assignment and implementation follow the verified randomization
+      - outcomes are comparably measured across arms
+      - interference is absent or explicitly incorporated into the estimand
+      - external conclusions remain within the experimental population and early capacity regime
+    evidence_obtained:
+      - allocation logs and baseline balance were independently verified
+      - invitation increased completed indicated follow-up within 30 days by 15 percentage points
+      - invitation reduced reported round-trip travel time by 90 minutes
+      - no measurable 90-day health, total-spending, or clinic-exit effect was reported
+      - 25 percent of invitees did not complete a platform visit
+      - shared-clinician interference remains possible
+    failed_premises: []
+    attempted_repairs: []
+    surviving_knowledge:
+      - randomization identifies a narrow invitation margin under the realized allocation regime
+      - completed indicated follow-up and travel burden improve on reported measures
+      - treatment receipt is incomplete, so assignment effects are not treatment-on-treated effects
+      - short-run nulls do not establish equivalence or welfare neutrality without precision
+    reusable_artifacts:
+      - verified invitation allocation logs
+      - baseline balance audit
+      - preregistration eligibility records
+      - experimental outcome panel
+    forbidden_repetition:
+      - do not generalize from preregistered high-barrier residents to all county residents
+      - do not convert intention-to-treat estimates into treatment-on-treated effects without valid assumptions
+      - do not call null outcomes zero effects without confidence intervals and power
+      - do not ignore clinician interference when interpreting net access creation
+    action: fork
+    destination_node: clinician_interference_and_capacity_incidence_audit
+    reopening_condition: "not applicable while active"
+    decided_at: "2026-07-13-round-3"
