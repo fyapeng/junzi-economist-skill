@@ -14,7 +14,7 @@ Do not call a stationary budget identity a policy regime. When policy or debt dy
 
 Ask which micro objects aggregate, under what distribution, prices, market completeness, and mobility. Aggregate change may reflect within-unit behavior, composition, entry and exit, reallocation, price indices, or measurement. Representative-agent shortcuts require an aggregation argument and may erase incidence, precaution, or financial amplification.
 
-For heterogeneous-agent equilibrium, close household policy, the invariant distribution, every asset's net supply, factor prices, and the aggregate resource constraint together. Report boundary mass, policy truncation, distribution residuals, optimality or Euler/KKT errors, market residuals, and grid sensitivity. A computed root is one equilibrium found unless the full reliable domain, all sign changes and tangencies, or an analytic uniqueness argument has been checked.
+For heterogeneous-agent equilibrium, close household policy, the invariant distribution, every asset's net supply, factor prices, and the aggregate resource constraint together. Predeclare acceptance thresholds and make every decisive diagnostic—including household optimality, distribution, market, resource, and boundary errors—part of the executed reliability decision. A computed root is one equilibrium found unless the full reliable domain, all sign changes and genuine non-crossing tangencies, or an analytic uniqueness argument has been checked.
 
 ## Intertemporal constraints and dynamics
 
