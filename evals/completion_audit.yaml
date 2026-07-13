@@ -67,10 +67,9 @@ requirements:
     evidence: [agents/openai.yaml, evals/executions/JE-X016, evals/executions/JE-X017, evals/executions/JE-X020]
     gap: "Fresh-context tests prove positive auto-invocation, negative restraint, and upstream-before-writing order; provenance is self-reported because dispatch telemetry is unavailable."
   public_release:
-    status: partial
-    evidence: ["Codex-only release candidate with a separated runtime package", evals/README.md, "bounded credential and personal-data scan on 2026-07-13"]
-    gap: "Publish the authorized public remote, enable Pages, and complete one anonymous installation check. A version tag can follow a later release decision."
+    status: proved
+    evidence: ["https://github.com/fyapeng/junzi-economist-skill", "https://fyapeng.com/junzi-economist-skill/", evals/README.md, "anonymous clone and isolated Codex installation passed on 2026-07-13"]
+    gap: "A stable version tag can follow a later release decision; it is not required for the current public Codex skill."
 release_gate:
-  ready: false
-  blockers:
-    - public remote and anonymous installation test
+  ready: true
+  blockers: []
