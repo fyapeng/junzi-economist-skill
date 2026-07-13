@@ -14,6 +14,8 @@ Before execution, record:
 
 Every estimator start receives a row-level acceptance decision from the declared predicate. Solver status, `ftol`, or a finite objective does not substitute for KKT acceptance. Select only among accepted starts and reconcile the selected row, accepted count, and headline count mechanically.
 
+Instantiate `assets/templates/STRUCTURAL_RELEASE_MATRIX.yaml` before running production. Give every required claim or artifact family a stable `check_id`, its composite row key, every field that must be recomputed or reconciled, its verification mode, tolerance, and permitted scope language. A prose checklist does not substitute for this matrix.
+
 ## 2. Freeze a complete production record
 
 Retain enough precision to recompute after serialization:
@@ -65,6 +67,16 @@ The verifier's coverage map names one predicate per claim and records pass, fail
 - headline reconciliation and artifact hashes.
 
 Leave unexecuted predicates explicitly unverified. A verifier failure writes its record and exits nonzero.
+
+Close the release matrix mechanically:
+
+- the set of required `check_id` values in the frozen contract must equal the set emitted by the verifier;
+- each emitted result records the exact `fields_checked`, and those fields must equal the contract fields for that `check_id`;
+- row-family checks bind every declared composite key to every required saved field, not merely to the row count or objective;
+- interface checks cover every estimator or solver family for which the public interface claim is made and compare the exact returned schema;
+- headline and hash checks are ordinary required matrix rows, not informal post-processing.
+
+The report may say “all,” “complete,” “every,” “full output,” or “independently verified” only at the scope for which matrix closure passes. Otherwise name the narrower executed scope. A truthful predicate is still insufficient when its label implies fields that its code did not check.
 
 ## 6. Bound provenance and the final claim
 

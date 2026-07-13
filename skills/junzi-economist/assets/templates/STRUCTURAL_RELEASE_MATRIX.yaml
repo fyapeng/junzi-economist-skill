@@ -1,0 +1,97 @@
+schema_version: 1
+scope_statement: ""
+claim_language_if_closed: ""
+claim_language_if_not_closed: "Verified only for the explicitly passed checks and fields below."
+checks:
+  - check_id: population_cells
+    required: true
+    artifact: ""
+    row_key: []
+    expected_keys_source: ""
+    fields_checked: []
+    verification_mode: reconstruct_from_primitives
+    tolerance: exact
+    evidence: ""
+  - check_id: estimator_starts
+    required: true
+    artifact: ""
+    row_key: [start_id]
+    expected_keys_source: ""
+    fields_checked:
+      - start_vector
+      - terminal_vector
+      - objective
+      - raw_gradient
+      - projected_gradient
+      - active_bounds
+      - residual
+      - solver_status
+      - accepted
+      - selected
+    verification_mode: recompute_every_row
+    tolerance: ""
+    evidence: ""
+  - check_id: restricted_domain
+    required: false
+    artifact: ""
+    row_key: [row_id]
+    expected_keys_source: ""
+    fields_checked:
+      - coordinates
+      - boundary_flags
+      - feasible
+      - feasibility_slack
+      - objective
+      - selected
+    verification_mode: recompute_every_row
+    tolerance: ""
+    evidence: ""
+  - check_id: saved_policy_accounts
+    required: false
+    artifact: ""
+    row_key: [policy_key, numeric_value, support_label]
+    expected_keys_source: ""
+    fields_checked:
+      - scenario_flags
+      - solution_vectors
+      - residuals
+      - accounting_levels
+      - accounting_changes
+      - distributional_levels
+      - distributional_changes
+      - accounting_identities
+    verification_mode: independent_solve_every_row
+    tolerance: ""
+    evidence: ""
+  - check_id: generated_policy_interface
+    required: false
+    artifact: public_interface
+    row_key: [solver_family, generated_input]
+    expected_keys_source: frozen_generated_test_design
+    fields_checked: []
+    verification_mode: invoke_public_interface_and_independent_solve
+    tolerance: ""
+    evidence: ""
+  - check_id: headlines
+    required: true
+    artifact: ""
+    row_key: []
+    expected_keys_source: report_claim_registry
+    fields_checked: []
+    verification_mode: reconcile_from_row_level_artifacts
+    tolerance: ""
+    evidence: ""
+  - check_id: artifact_hashes
+    required: true
+    artifact: ""
+    row_key: [path]
+    expected_keys_source: manifest
+    fields_checked: [sha256]
+    verification_mode: reopen_and_hash_every_listed_file
+    tolerance: exact
+    evidence: ""
+closure:
+  required_check_ids_equal_emitted_check_ids: false
+  contract_fields_equal_emitted_fields: false
+  every_required_check_passes: false
+  report_scope_matches_closed_scope: false
