@@ -44,6 +44,15 @@ Document:
 
 Do not claim that convergence identifies a parameter or that in-sample fit validates a counterfactual.
 
+Keep four diagnoses separate:
+
+- **computation:** solver convergence, residuals, gradients, starts, and numerical sensitivity;
+- **sample likelihood geometry:** local curvature, profile shape, and finite-sample parameter correlation;
+- **population identification:** whether the distribution of observables uniquely determines the target under stated normalizations, support, exclusions, and equilibrium assumptions;
+- **estimator performance:** bias, variance, recovery, coverage, and failure rates across repeated samples.
+
+A positive-definite sample Hessian and one successful simulated recovery establish neither local nor global population identification. Use wording such as “well-curved sample likelihood” unless an injectivity, rank, observational-equivalence, or other population identification argument is supplied. Use repeated seeds and sample sizes to assess recovery rather than promoting one favorable draw.
+
 ## Computation and numerical verification
 
 For simulations and estimators, use relevant checks:

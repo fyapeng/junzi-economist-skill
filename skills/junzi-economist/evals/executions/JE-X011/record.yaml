@@ -1,0 +1,59 @@
+schema_version: 1
+execution_id: JE-X011
+case_id: JE-R25
+timestamp_utc: "2026-07-13T01:43:31Z"
+skill_commit: "76d2356"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_mainline
+evaluator: eval_light-independent-rerun
+isolation: blind
+prompt: "Build and run an end-to-end simulated NFXP estimation of a five-state dynamic physician equipment-replacement model with true theta=0.7, RC=2.2, beta=0.9, 400 physicians, 30 periods, seed 20260713, known action-specific transitions, four or more starts, recovery, Bellman and optimizer diagnostics, gradient check, tolerance sensitivity, held-out prediction, and a 25% replacement-cost counterfactual. Separate computation, identification, fit, and counterfactual validity."
+expected:
+  - state the economic target observable mapping and identification burden before estimation
+  - execute simulation NFXP estimation and parameter recovery
+  - verify starts residuals gradients tolerances and heldout predictions
+  - bound counterfactual and welfare language
+  - distinguish sample curvature from population identification
+forbidden:
+  - equate convergence or a positive sample Hessian with identification
+  - hide sparse states or failed checks
+  - call integrated provider value social welfare
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/THEORY_MODELING.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "70f09da8ac32eee35c870c669022b21325ee109733ca8a0bed051b0177227f5b"
+audit_file: audit.md
+artifacts:
+  - file: artifacts/analysis.py
+    sha256: "2bab6d0be9d4c75a6cb89869b04606fa08b2d5e26c9da0c48d7cf2e2343e186d"
+  - file: artifacts/design.md
+    sha256: "21745e3b4b0aa6277884cb10ac6834a23a54f150de6c6613a8a826428e51380e"
+  - file: artifacts/diagnostics.json
+    sha256: "7b841a589346ea147779a26f5a51d584783b66f56c1db3723813e9f318320a7c"
+  - file: artifacts/run_summary.txt
+    sha256: "1da2f4d012b583d84c9b8c5755225a16b9f7efc112ab785343d5a19361f02e1d"
+rubric:
+  - criterion: structural implementation and reproducibility
+    score: 2
+    max_score: 2
+  - criterion: numerical and recovery diagnostics
+    score: 2
+    max_score: 2
+  - criterion: heldout fit counterfactual and welfare boundaries
+    score: 2
+    max_score: 2
+  - criterion: identification language
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - one successful simulated sample and sample Hessian do not establish population identification
+  - no Monte Carlo bias variance coverage or failure-rate study was run
+  - exact client and model versions unavailable

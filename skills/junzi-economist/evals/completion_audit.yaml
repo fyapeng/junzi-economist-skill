@@ -16,24 +16,24 @@ requirements:
     gap: "Dynamic equilibrium, heterogeneous agents, monetary-fiscal interaction, finance, and transition tests."
   institutions_and_frontier:
     status: partial
-    evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/executions/JE-X008]
-    gap: "JE-X008 produced a strong mechanism map and caught a mutable-source conflict, but still conflated document/page dates, inferred one revision date, and overstated stop-rule coverage; complete a clean retest with artifact hashes."
+    evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/executions/JE-X008, evals/executions/JE-X010]
+    gap: "JE-X010 cleanly separated dates and hashed mutable artifacts, but its design omitted the patient's observed choice margin and relied on unverified rollout or threshold variation."
   theory_modeling:
     status: partial
-    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/THEORY_MODELING.md, evals/executions/JE-X005, evals/executions/JE-X007]
-    gap: "JE-X007 fixed the earlier constrained-solution errors but misclassified movement from an initially optimal benchmark and omitted an exact welfare-direction condition for payment; retest the new distance protocol."
+    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/THEORY_MODELING.md, evals/executions/JE-X005, evals/executions/JE-X007, evals/executions/JE-X009]
+    gap: "JE-X009 correctly handled constrained finite benchmark distance, but did not explicitly characterize the kink derivatives or execute its proposed domain-restricted grid check."
   causal_identification:
     status: proved
     evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/runs/2026-07-13-round-04.md]
     gap: "Broaden design coverage beyond DID and common counterfactual failures."
   structural_estimation:
     status: partial
-    evidence: [evals/runs/2026-07-13-round-01.md, evals/runs/2026-07-13-round-04.md]
-    gap: "Execute parameter recovery, estimation, validation, and policy simulation on a real model."
+    evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/executions/JE-X011]
+    gap: "JE-X011 executed and reproduced a complete NFXP recovery, validation, and counterfactual, but one-run sample curvature was overstated as local identification; add a population argument or repeated-sample recovery study."
   computation_and_instruments:
     status: partial
-    evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py]
-    gap: "The provider-model fixture checks algebra, numerical derivatives, examples, and a boundary counterexample; structural estimation and data-workflow evidence remain."
+    evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py]
+    gap: "Dynamic programming, NFXP, optimizer, gradient, tolerance, and heldout checks now have a reproducible run; broader data-construction, alternative-algorithm, and failure-region evidence remain."
   writing_and_reading:
     status: proved
     evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/runs/2026-07-13-round-05.md]
@@ -48,8 +48,8 @@ requirements:
     gap: "A behavior test where medical, legal, historical, or organizational evidence changes the economic model."
   reproducible_behavior_evaluation:
     status: partial
-    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions/JE-X001, evals/executions/JE-X002, evals/executions/JE-X003, evals/executions/JE-X004, evals/executions/JE-X005, evals/executions/JE-X007, evals/executions/JE-X008]
-    gap: "Strict raw coverage now includes welfare, backtracking, writing, a non-trigger, repeated theory modeling, and frontier search; exact client/model provenance, clean theory/frontier passes, and automatic trigger-dispatch coverage remain incomplete."
+    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
+    gap: "Ten strict raw executions now cover welfare, backtracking, writing, a non-trigger, theory, frontier, and structural estimation; exact client/model provenance, clean endpoint passes, and automatic trigger-dispatch coverage remain incomplete."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml]

@@ -45,6 +45,16 @@ for record in records:
     verdict_match = re.search(r"(?m)^verdict:\s*(\w+)\s*$", text)
     if not verdict_match or verdict_match.group(1) not in {"pass", "fail", "mixed", "invalid"}:
         errors.append(f"{record}: invalid verdict")
+    for artifact_name, expected_hash in re.findall(
+        r'(?m)^  - file:\s*([^\s]+)\s*\n\s+sha256:\s*"?([0-9a-fA-F]{64})"?\s*$', text
+    ):
+        artifact = record.parent / artifact_name
+        if not artifact.is_file():
+            errors.append(f"{record}: artifact missing: {artifact_name}")
+            continue
+        actual = hashlib.sha256(artifact.read_bytes()).hexdigest()
+        if actual != expected_hash.lower():
+            errors.append(f"{record}: artifact hash mismatch: {artifact_name}")
 
 if errors:
     print("Behavior record validation failed:")

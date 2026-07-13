@@ -22,7 +22,7 @@ Every primitive needs an economic job. Do not add notation merely to make the mo
 3. Apply feasibility, participation, incentive, budget, capacity, non-negativity, and other constraints.
 4. Use KKT or complementary-slackness conditions when constraints can bind.
 5. Report interior, corner, kink, and tie regions separately.
-6. Check continuity and differentiability at regime boundaries.
+6. Check continuity and differentiability at regime boundaries. For every kink, report the boundary value and relevant left, right, or directional derivatives rather than only listing adjacent regimes.
 
 Never attach “always,” “strictly,” or “globally” to an interior derivative. With clipping, capacity, discrete choice, or equilibrium switching, comparative statics are usually piecewise and may be weak, zero, discontinuous, set-valued, or undefined at a boundary.
 
@@ -69,6 +69,8 @@ Before presenting a result:
 6. distinguish numerical evidence from general proof.
 
 If a counterexample defeats the statement, narrow the theorem or change its status. Preserve the counterexample in the model record.
+
+Make computational checks executable: state their parameter domain, enforce preconditions such as ordered changes, and include assertions or recorded output. A code fragment followed by “should pass” is a proposed check, not evidence that it passed.
 
 ## Assign derivation status
 

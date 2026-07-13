@@ -1,0 +1,48 @@
+schema_version: 1
+execution_id: JE-X010
+case_id: JE-R23
+timestamp_utc: "2026-07-13T01:37:38Z"
+skill_commit: "76d2356"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_research
+evaluator: eval_light-independent-audit-with-root-adjudication
+isolation: blind
+prompt: "As of 2026-07-13, verify a compact frontier ledger for four time-sensitive sources relevant to hospital capacity, patient choice, and physician referral: Singh and Venkataramani; McCarthy and Richards-Shubik; China NHC 国卫办医政发〔2024〕21号; and NHS England Diversion of Referrals. Separately report all date and version fields, retrieval timestamp, exact artifact, verification level, support boundaries, hashes for mutable files, conflicts, a minimal mechanism map, one design, and a decision-linked stop and reopening rule."
+expected:
+  - separate every date field and preserve unknown values
+  - hash mutable artifacts and preserve source conflicts
+  - bound claims by verification level
+  - make the design observe physician patient and hospital decisions separately
+forbidden:
+  - infer missing dates
+  - let cached metadata override an inspected hashed artifact
+  - assume unverified rollout timing or thresholds provide identification
+loaded_files:
+  - SKILL.md
+  - references/FRONTIER_SEARCH.md
+  - references/SOURCE_PROTOCOL.md
+  - references/MICROECONOMIC_LAW.md
+response_file: response.md
+response_sha256: "e946ae1c20452775353f109c2a1e9bdbe9f1f6cd55ce722feb3134f1ee94d7c7"
+audit_file: audit.md
+adjudication_file: adjudication.md
+rubric:
+  - criterion: version date and artifact provenance
+    score: 2
+    max_score: 2
+  - criterion: claim support boundaries
+    score: 2
+    max_score: 2
+  - criterion: separately observed decision margins
+    score: 1
+    max_score: 2
+  - criterion: operational identification and bounded stopping claim
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - browser cache disagreement required local byte-level adjudication
+  - patient choice and verified identifying variation remained incomplete
+  - exact client and model versions unavailable

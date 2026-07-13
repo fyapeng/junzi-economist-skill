@@ -1,0 +1,419 @@
+{
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "seed": 20260713,
+  "sample": {
+    "physicians": 400,
+    "periods": 30,
+    "train_physicians": 300,
+    "heldout_physicians": 100
+  },
+  "true_params": {
+    "theta": 0.7,
+    "RC": 2.2
+  },
+  "estimate": {
+    "theta": 0.7022661120897227,
+    "RC": 2.168038208660873
+  },
+  "recovery_error": [
+    0.002266112089722716,
+    -0.03196179133912702
+  ],
+  "standard_errors_hessian": [
+    0.023133314115758724,
+    0.05306220265659094
+  ],
+  "hessian": [
+    [
+      4052.3293591832035,
+      -1296.883473594037
+    ],
+    [
+      -1296.883473594037,
+      770.2113214106893
+    ]
+  ],
+  "hessian_eigenvalues": [
+    319.6247088504386,
+    4502.915971743454
+  ],
+  "hessian_condition_number": 14.088134762605275,
+  "parameter_correlation": [
+    [
+      1.0,
+      0.7340804175826182
+    ],
+    [
+      0.7340804175826183,
+      0.9999999999999999
+    ]
+  ],
+  "start_runs": [
+    {
+      "start": [
+        0.15,
+        0.4
+      ],
+      "x": [
+        0.7022660018298004,
+        2.1680379419455127
+      ],
+      "fun": 4898.21168896686,
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 11,
+      "nfev": 39,
+      "jac": [
+        0.0,
+        0.0001818989414600712
+      ]
+    },
+    {
+      "start": [
+        0.4,
+        5.5
+      ],
+      "x": [
+        0.7022658752969559,
+        2.168037462140257
+      ],
+      "fun": 4898.211688966963,
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 11,
+      "nfev": 42,
+      "jac": [
+        -9.094946972029363e-05,
+        -0.0003637978829201424
+      ]
+    },
+    {
+      "start": [
+        1.2,
+        1.0
+      ],
+      "x": [
+        0.7022665351406375,
+        2.168039270372261
+      ],
+      "fun": 4898.211688967,
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 7,
+      "nfev": 27,
+      "jac": [
+        0.0002728484091608809,
+        0.0001818989414600712
+      ]
+    },
+    {
+      "start": [
+        2.5,
+        6.5
+      ],
+      "x": [
+        0.7022660622346122,
+        2.1680380161468475
+      ],
+      "fun": 4898.211688966848,
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 10,
+      "nfev": 42,
+      "jac": [
+        -0.00018189893944058725,
+        0.0001818989414600712
+      ]
+    },
+    {
+      "start": [
+        4.0,
+        3.0
+      ],
+      "x": [
+        0.7022661120897227,
+        2.168038208660873
+      ],
+      "fun": 4898.211688966836,
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 12,
+      "nfev": 51,
+      "jac": [
+        -9.094946972029363e-05,
+        -9.09494707300356e-05
+      ]
+    }
+  ],
+  "bellman": {
+    "iterations": 235,
+    "last_update": 9.184653038118995e-12,
+    "bellman_residual": 8.266276552149066e-12
+  },
+  "finite_difference_gradient": [
+    -6.070877134334295e-05,
+    -2.1058961897724863e-05
+  ],
+  "finite_difference_gradient_max_abs": 6.070877134334295e-05,
+  "tolerance_sensitivity": [
+    {
+      "bellman_tolerance": 1e-08,
+      "estimate": [
+        0.7022660817327139,
+        2.168038112409001
+      ],
+      "nll": 4898.211688966837,
+      "best_success": true
+    },
+    {
+      "bellman_tolerance": 1e-10,
+      "estimate": [
+        0.7022661657605545,
+        2.1680383182420595
+      ],
+      "nll": 4898.2116889668305,
+      "best_success": true
+    },
+    {
+      "bellman_tolerance": 1e-12,
+      "estimate": [
+        0.7022660741116128,
+        2.168038109387948
+      ],
+      "nll": 4898.211688966841,
+      "best_success": true
+    }
+  ],
+  "train_predictive": {
+    "log_loss": 0.5442457432185351,
+    "brier": 0.18229957401868366,
+    "accuracy": 0.731
+  },
+  "heldout_predictive": {
+    "log_loss": 0.5447921031082409,
+    "brier": 0.18250105207790068,
+    "accuracy": 0.7316666666666667
+  },
+  "train_state_fit": [
+    {
+      "state": 0,
+      "n": 3936,
+      "observed_replace_rate": 0.1410060975609756,
+      "predicted_replace_rate": 0.14088184297732406
+    },
+    {
+      "state": 1,
+      "n": 3326,
+      "observed_replace_rate": 0.3845460012026458,
+      "predicted_replace_rate": 0.3830132464502137
+    },
+    {
+      "state": 2,
+      "n": 1388,
+      "observed_replace_rate": 0.6217579250720461,
+      "predicted_replace_rate": 0.6301824975917855
+    },
+    {
+      "state": 3,
+      "n": 317,
+      "observed_replace_rate": 0.804416403785489,
+      "predicted_replace_rate": 0.7991235808722386
+    },
+    {
+      "state": 4,
+      "n": 33,
+      "observed_replace_rate": 1.0,
+      "predicted_replace_rate": 0.8931310698911925
+    }
+  ],
+  "heldout_state_fit": [
+    {
+      "state": 0,
+      "n": 1293,
+      "observed_replace_rate": 0.13766434648105183,
+      "predicted_replace_rate": 0.14088184297732406
+    },
+    {
+      "state": 1,
+      "n": 1104,
+      "observed_replace_rate": 0.37681159420289856,
+      "predicted_replace_rate": 0.3830132464502137
+    },
+    {
+      "state": 2,
+      "n": 470,
+      "observed_replace_rate": 0.6148936170212767,
+      "predicted_replace_rate": 0.6301824975917855
+    },
+    {
+      "state": 3,
+      "n": 113,
+      "observed_replace_rate": 0.7610619469026548,
+      "predicted_replace_rate": 0.7991235808722386
+    },
+    {
+      "state": 4,
+      "n": 20,
+      "observed_replace_rate": 0.85,
+      "predicted_replace_rate": 0.8931310698911925
+    }
+  ],
+  "baseline_stationary": {
+    "distribution": [
+      0.41639916101315894,
+      0.3756848639865356,
+      0.1632202298518248,
+      0.039381330943982266,
+      0.005314414204497435
+    ],
+    "replacement_rate": 0.34163091136874113,
+    "mean_state": 0.8415269733401218,
+    "ccp_replace": [
+      0.14088184297732406,
+      0.3830132464502137,
+      0.6301824975917855,
+      0.7991235808722386,
+      0.8931310698911925
+    ],
+    "stationary_residual": 1.2212453270876722e-15,
+    "iterations": 32,
+    "value_at_state_0": -3.8823112082684963
+  },
+  "counterfactual_params": {
+    "theta": 0.7022661120897227,
+    "RC": 1.626028656495655
+  },
+  "counterfactual_stationary": {
+    "distribution": [
+      0.45785814378634054,
+      0.375658315581401,
+      0.1367064874381316,
+      0.026896158658780926,
+      0.0028808945353461526
+    ],
+    "replacement_rate": 0.3910932375634034,
+    "mean_state": 0.7412833445753916,
+    "ccp_replace": [
+      0.20835986154657507,
+      0.4678386305549175,
+      0.6935042814303843,
+      0.8367623030509815,
+      0.9143966102959227
+    ],
+    "stationary_residual": 1.4988010832439613e-15,
+    "iterations": 28,
+    "value_at_state_0": -2.03134279380743
+  },
+  "counterfactual_changes": {
+    "replacement_rate": 0.04946232619466229,
+    "mean_state": -0.10024362876473025,
+    "value_at_state_0": 1.8509684144610663
+  },
+  "choice_counts": {
+    "train_replace": 2985,
+    "train_total": 9000,
+    "test_replace": 986,
+    "test_total": 3000
+  },
+  "empirical_transition_counts": [
+    [
+      4496.0,
+      2735.0,
+      706.0,
+      89.0,
+      3.0
+    ],
+    [
+      733.0,
+      1695.0,
+      1152.0,
+      341.0,
+      50.0
+    ]
+  ],
+  "empirical_transition_probabilities": [
+    [
+      [
+        0.4041370106761566,
+        0.5958629893238434,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.40219378427787933,
+        0.5978062157221207,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.41076487252124644,
+        0.5892351274787535,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.42696629213483145,
+        0.5730337078651685
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.7803547066848567,
+        0.21964529331514324,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8017699115044248,
+        0.19823008849557522,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8081597222222222,
+        0.1918402777777778,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8123167155425219,
+        0.187683284457478,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.76,
+        0.24,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  ]
+}

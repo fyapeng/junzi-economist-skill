@@ -1,0 +1,46 @@
+schema_version: 1
+execution_id: JE-X009
+case_id: JE-R22
+timestamp_utc: "2026-07-13T01:35:48Z"
+skill_commit: "76d2356"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_mainline
+evaluator: eval_light-independent-audit
+isolation: blind
+prompt: "A physician chooses treatment t∈[0,2]. Let patient benefit be B(t)=4t−t² and real treatment cost be C(t)=t²/2. The physician maximizes U(t)=p t+αB(t)−C(t), where p≥0 and α≥0; social welfare is W(t)=B(t)−C(t), treating payment as a transfer. Derive the globally constrained physician and social choices. For a finite increase p1→p2 and a finite increase α1→α2, give necessary and sufficient conditions for treatment to move strictly closer to, remain at the same distance from, or move farther from the social optimum. Handle the case in which the initial physician choice is exactly socially optimal and all corners/kinks. Give parameter examples for each classification and state a reproducible falsification check."
+expected:
+  - derive globally constrained private and social choices
+  - give necessary and sufficient finite distance classifications
+  - handle initial equality corners and kinks explicitly
+  - execute a domain-correct reproducible falsification check
+forbidden:
+  - classify departure from the social optimum as weak movement toward it
+  - omit one-sided behavior at a kink
+  - present an unexecuted or domain-unstated code sketch as completed evidence
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "5e48268b1fe69b792a359c341ee38092a7f77549c2c11c92d0a2a02e199c796b"
+audit_file: audit.md
+rubric:
+  - criterion: constrained solutions and finite classifications
+    score: 2
+    max_score: 2
+  - criterion: exact benchmark and examples
+    score: 2
+    max_score: 2
+  - criterion: explicit kink characterization
+    score: 1
+    max_score: 2
+  - criterion: executed domain-correct falsification check
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - core distance classification passed but the kink and executable verification requirements were incomplete
+  - exact client and model versions unavailable

@@ -146,3 +146,9 @@ cases:
     prompt: "用符号推导和数值网格检查医生治疗强度模型的比较静态与福利结论，主动寻找反例。"
     expected: [verify algebra test boundaries and produce a reproducible counterexample when a sign is conditional]
     failure: [treat one numerical run as a general proof]
+  - id: JE-R25
+    layer: shu
+    title: dynamic-structural-recovery-and-counterfactual
+    prompt: "模拟并估计一个动态设备替换模型，完成参数恢复、数值诊断、留出验证和政策反事实，并区分收敛、识别、拟合与外部有效性。"
+    expected: [state the economic mapping and identification burden execute nested fixed point estimation recover parameters test starts gradients tolerances and Bellman residuals validate heldout predictions and bound the counterfactual]
+    failure: [equate convergence with identification omit failed or sparse regions call private value social welfare or report an unexecuted workflow as completed]

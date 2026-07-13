@@ -29,6 +29,10 @@ For each core variable, record:
 
 Do not infer individual paths from aggregates, referrals from geographic composition, quality from utilization, demand from observed quantity, or welfare from spending without an explicit bridge.
 
+When allocation is sequential, observe or explicitly mark each decision margin: recommendation or shortlist, information shown to each actor, patient acceptance or override, provider acceptance or rejection, final allocation, and post-arrival treatment. A final destination cannot by itself separate patient preference, intermediary steering, and receiving-provider rationing.
+
+Keep a proposed source of variation conditional until its assignment rule, timing, manipulation risk, exposure, and direct channels are verified. A policy page that describes an intervention does not establish staggered rollout, a fixed threshold, random exposure, or a valid instrument.
+
 ## Map the literature frontier
 
 Search in layers:

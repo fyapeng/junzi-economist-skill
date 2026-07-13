@@ -1,0 +1,9 @@
+Dynamic replacement NFXP run
+estimate theta=0.702266, RC=2.168038
+true theta=0.700000, RC=2.200000
+Bellman residual=8.266e-12, iterations=235
+FD gradient=[-6.070877134334295e-05, -2.1058961897724863e-05]
+Hessian eigenvalues=[319.6247088504386, 4502.915971743454], condition=14.088
+heldout logloss=0.544792, brier=0.182501
+baseline replacement=0.341631, mean state=0.841527
+policy replacement=0.391093, mean state=0.741283
