@@ -9,7 +9,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXECUTIONS = ROOT / "evals" / "executions"
 CASES = (ROOT / "evals" / "cases.yaml").read_text(encoding="utf-8")
+TRIGGERS = (ROOT / "evals" / "triggers.yaml").read_text(encoding="utf-8")
 VALID_CASES = set(re.findall(r"(?m)^  - id:\s*(JE-R\d+)\s*$", CASES))
+VALID_CASES.update(re.findall(r"(?m)^  - id:\s*(JE-T\d+)\s*$", TRIGGERS))
 REQUIRED = [
     "execution_id", "case_id", "timestamp_utc", "skill_commit", "platform",
     "client_version", "model", "evaluator", "isolation", "prompt", "expected",

@@ -20,6 +20,7 @@ required_fields:
 verdicts: [pass, fail, mixed, invalid]
 isolation_values: [blind, partially-blind, non-blind]
 notes:
+  - "case_id may reference a behavior case (JE-R*) or trigger case (JE-T*)."
   - "Store the complete raw response in a sibling Markdown file."
   - "Record unavailable client or model identifiers explicitly; missing provenance weakens reproducibility."
   - "Do not replace raw output with an observed-behavior summary."
