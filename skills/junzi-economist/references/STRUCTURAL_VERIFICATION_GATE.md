@@ -1,6 +1,8 @@
 # Structural verification gate — 结构估计发布门槛
 
-Use this gate for an executed structural estimate, profile, equilibrium, restricted search, policy counterfactual, or welfare result. Apply it before describing the endpoint as reproducible or independently verified.
+Use this release-grade gate for a designated public replication package, high-consequence executable result, or an explicit full-verification request. Do not apply it by default to exploratory structural work or ordinary research diagnostics. Those stages require proportionate checks and bounded claim language, not a publication lifecycle.
+
+Before loading the rest of this gate, confirm that failure of the release package could change a public claim, consequential decision, safety boundary, or explicit delivery requirement. If not, return to the lighter verification tier in `SKILL.md`. If repeated release work changes only metadata or meta-verification while the economic result and next decision remain stable, preserve the gap and backtrack to the current principal research contradiction.
 
 ## 1. Declare the production contract
 

@@ -29,7 +29,7 @@ requirements:
   structural_estimation:
     status: partial
     evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/SOFTWARE_AND_COMPUTATION.md, evals/executions/JE-X044, evals/executions/JE-X045, evals/executions/JE-X046, evals/executions/JE-X053, evals/executions/JE-X058, evals/executions/JE-X059, evals/executions/JE-X061]
-    gap: "Demand-supply equilibrium and latent-profile endpoints now have clean exact-commit passes with unconditional samples, executable timing, full-precision traces, nonzero failure signaling, unrestricted-reference profiles, and raw-primitives-only verification. Dynamic NFXP/CCP, estimated transitions, local rank, closed domains, arbitrary-policy accounting, and projected gradients reproduce substantively, but the latest packaged verifier still overstates narrow coverage semantics; retain partial until a clean transfer closes that last auditability gap."
+    gap: "Demand-supply equilibrium and latent-profile endpoints have clean exact-commit passes, while dynamic NFXP/CCP, estimated transitions, local rank, closed domains, generated policy interfaces, accounting, and projected gradients reproduce substantively across repeated audits. Round 17 showed that pursuing a formally perfect release package had become a secondary meta-verification branch. Retain partial without further dedicated verifier endpoints; future evidence should come from economically distinct structural applications, not recursive release auditing."
   computation_and_instruments:
     status: partial
     evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py, evals/executions/JE-X039, evals/executions/JE-X042, evals/executions/JE-X043]
@@ -42,6 +42,10 @@ requirements:
     status: proved
     evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md, evals/executions/JE-X015]
     gap: "JE-X015 preserves three-round claim history, backtracks measurement, abandons an unsupported causal branch, and forks a bounded randomized margin; claim-status promotion before uncertainty was tightened after audit."
+  principal_contradiction_and_bounded_verification:
+    status: partial
+    evidence: [SKILL.md, references/BRANCH_AND_DECISION_PROTOCOL.md, evals/runs/2026-07-13-round-17.md, evals/cases.yaml]
+    gap: "A real long-running failure exposed verification-branch capture and produced explicit principal-contradiction, three-tier verification, and two-iteration stopping rules. The observed failure motivates the rule but does not prove corrected behavior; test it once inside a future substantive research task rather than launching a dedicated meta-verification campaign."
   cross_disciplinary_correction:
     status: proved
     evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, evals/executions/JE-X013]

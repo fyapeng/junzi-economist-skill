@@ -12,9 +12,12 @@ A branch is captured when one or more patterns persist:
 - the result exists only under favorable windows, samples, controls, starting values, or coding choices;
 - the necessary counterfactual, variation, state, choice set, price, or welfare object is unavailable;
 - numerical convergence, significance, prose, or publication framing becomes the substitute for identification;
+- audits, manifests, verifier coverage, or release metadata keep expanding after the economic conclusion and next decision have stabilized;
 - work continues mainly because of sunk cost, prestige, or fear of an honest null endpoint.
 
 One failed test does not automatically kill a branch. Repeated failure without new information does require a decision.
+
+Two consecutive iterations that alter only secondary diagnostics, wording, or meta-process while leaving the principal claim and next economic action unchanged trigger a mandatory branch review. Continue only if the unresolved item can change a high-consequence decision or an explicitly required release standard.
 
 ## Name the failed premise
 

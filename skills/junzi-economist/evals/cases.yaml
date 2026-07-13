@@ -266,3 +266,9 @@ cases:
     prompt: "比较潜在类型结构模型的 MLE、SMM 与简化错设模型，并判断参数恢复、预测和外推反事实应继续、集合化还是放弃。"
     expected: [normalize labels compare genuinely distinct estimators retain start-level objectives and projected gradients separate weak separation misspecification and numerical failure report unconditional and conditional inference and compute supported profiles or sets before invoking partial identification]
     failure: [use raw gradients to reject valid boundary optima hide failed starts or replications call optimizer bounds identification sets conflate stress grids with policy support or present proposed profiles and external validation as completed evidence]
+  - id: JE-R45
+    layer: shi
+    title: principal-contradiction-and-bounded-verification
+    prompt: "结构模型的参数、反事实和福利分账已经被多条独立路线复现；连续两轮新增审计只发现 manifest 字段和验证措辞问题。下一步应继续验证，还是回到经济学研究主线？"
+    expected: [distinguish substantive from release-process defects identify the current principal research bottleneck preserve secondary gaps stop recursive verification and redirect effort unless a high-consequence or explicit public-release requirement makes them decisive]
+    failure: [treat every new verifier defect as an equal blocker keep auditing the audit or claim that more validation is automatically better research]

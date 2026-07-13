@@ -19,6 +19,14 @@ Use the layers as a generating order:
 
 Never reverse the order because a dataset, estimator, package, model, or fashionable literature is available. Let practice feed back inward: tool failure can expose a bad implementation; repeated method failure can expose a mistaken situation; contradictory evidence can expose the wrong economic mechanism.
 
+## Identify the current principal contradiction
+
+At the beginning of a substantial stage and after material feedback, name the bottleneck most capable of changing the economic question, mechanism, feasible design, principal claim, welfare judgment, or next research decision. Compare theory, institutional understanding, data generation, identification, computation, and communication; do not let the most measurable technical defect automatically dominate.
+
+Allocate work by economic consequence and information value. A numerical or documentation defect is principal when it can overturn a result, claim status, policy conclusion, safety boundary, or required release. Otherwise record and bound it as secondary, then return effort to the underdeveloped economic object, theory, evidence, or decision. Reclassify the principal contradiction when the stage changes.
+
+If two consecutive iterations change only metadata, verifier coverage, wording, or process evidence while the substantive economic conclusion and next research action remain unchanged, stop that local branch and invoke `references/BRANCH_AND_DECISION_PROTOCOL.md`. Do not use recursive verification to postpone broader capability building or the next discriminating economic test.
+
 ## Load only the needed knowledge
 
 This file is the runtime core. Do not load every reference.
@@ -33,7 +41,7 @@ When a live question clearly falls within a dedicated microeconomic, macroeconom
 - Read `references/SITUATION_AND_FRONTIER.md` when investigating institutions, data generation, empirical facts, or current literature.
 - Read `references/FRONTIER_SEARCH.md` whenever the task asks for current, recent, latest, frontier, novelty, or time-sensitive literature and institutional evidence.
 - Read `references/EMPIRICAL_AND_STRUCTURAL_METHODS.md` when selecting identification, estimation, structural, computational, or validation methods.
-- Read `references/STRUCTURAL_VERIFICATION_GATE.md` whenever a structural estimate, profile, equilibrium, restricted search, policy counterfactual, or welfare result will be executed and reported as reproducible evidence.
+- Read `references/STRUCTURAL_VERIFICATION_GATE.md` only for a designated public replication package, release-grade structural evidence, high-consequence executable result, or an explicit request for full independent verification. Exploratory calculations and ordinary research diagnostics do not load the release gate.
 - Read `references/THEORY_MODELING.md` whenever building, solving, proving, extending, or computationally checking a formal economic model.
 - Read `references/HUMAN_WELFARE_AND_INSTITUTIONS.md` when evaluating policy, distribution, power, affected groups, or normative claims.
 - Read `references/SOFTWARE_AND_COMPUTATION.md` when executing code, selecting software, optimizing, simulating, or building a reproducible workflow.
@@ -124,6 +132,14 @@ Do not equate a hot topic with an important problem, a recent paper with settled
 Let the economic and numerical task choose the tool. Verify package versions and official documentation when current syntax matters. Preserve raw inputs, transformations, environments, random seeds, tolerances, convergence diagnostics, and output provenance in proportion to consequence.
 
 For structural and computational work, require at least the relevant subset of: parameter recovery, simulated-data tests, multiple starts, alternative algorithms, tolerance checks, gradient checks, fit to targeted and untargeted moments, external validation, and sensitivity of counterfactuals.
+
+Scale verification to the claim stage:
+
+- **Exploration:** run decisive smoke, recovery, boundary, and plausibility checks; label the result exploratory and use failures to choose the next model or fact.
+- **Research evidence:** reproduce the estimates and diagnostics that determine claim status, identification, equilibrium, counterfactuals, and welfare; preserve material failures and rivals.
+- **Public or high-consequence release:** use the structural verification gate, independent implementation, field-level release contract, and handoff evidence.
+
+Move upward only when the intended claim or consequence requires it. More validation is not automatically more economics. Stop when additional checks cannot change claim status, branch choice, risk, or the declared delivery standard.
 
 Keep machine-specific paths and installed software profiles in the user's `AGENTS.md` or local configuration, not in this public skill.
 
