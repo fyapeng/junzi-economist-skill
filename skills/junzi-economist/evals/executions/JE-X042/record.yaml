@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X042
+case_id: JE-R40
+timestamp_utc: "2026-07-13T05:54:00Z"
+skill_commit: "d6866bb"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: macro_heterogeneity_transfer
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer revised heterogeneous-equilibrium rules to a new three-state production economy with fresh solving, full reliable scans, tail diagnostics, tangency screening, and grid checks."
+expected:
+  - jointly close household distribution prices assets and resources
+  - make every decisive diagnostic part of reliability
+  - collect all reliable brackets and distinguish tangency from crossing
+  - isolate and report numerical convergence differences
+forbidden:
+  - read stored results as verification
+  - return the first root as uniqueness
+  - accept a root whose optimality is outside the reliability rule
+  - call a joint grid change isolated convergence evidence
+loaded_files: [SKILL.md, references/MACROECONOMIC_LAW.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "93b6cf092a3ea0e5d2ac977f9e3101cc4a06ad4ad4643ac38a5255591f5cc0d6"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/solve_and_verify.py, sha256: "9d43896284eb2159e23ad9d30ca0c31cb46b5b9c5cc8a0d368fad25546f593e7"}
+  - {file: artifacts/results.json, sha256: "b96b77fad9d1d29e6af1442434ed0285cb400f4559113c034b42b054e6cfcee4"}
+  - {file: artifacts/run_output.txt, sha256: "0b1eb7de81eae2ee66d40bf2daa4caf9a15063be32f1b49d96eb1291e9a73b50"}
+  - {file: artifacts/PROVENANCE.md, sha256: "e676b75f455842bdc05153ef14f4975194c609385e42f1b5f73ba8cb44b3570a"}
+rubric:
+  - {criterion: economic and distributional closure, score: 2, max_score: 2}
+  - {criterion: fresh full reliable scan and root trace, score: 2, max_score: 2}
+  - {criterion: optimality acceptance and genuine tangency screen, score: 0, max_score: 2}
+  - {criterion: isolated convergence and bounded welfare claims, score: 1, max_score: 2}
+verdict: mixed
+limitations:
+  - reliability omits an Euler KKT acceptance threshold and the root callback does not reject unreliable intermediate evaluations
+  - the tangency routine redetects the ordinary crossing and the joint grid change confounds convergence attribution

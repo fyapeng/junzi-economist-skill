@@ -1,0 +1,42 @@
+schema_version: 1
+execution_id: JE-X039
+case_id: JE-R40
+timestamp_utc: "2026-07-13T05:33:00Z"
+skill_commit: "31b1ca8"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_game
+evaluator: independent-recompute-audit
+isolation: blind
+prompt: "Solve and validate an Aiyagari production economy with invariant distribution, market and resource closure, optimality diagnostics, sensitivities, and a bounded representative-agent comparison."
+expected:
+  - jointly close household policy distribution prices assets and resources
+  - execute Bellman Euler KKT distribution market and tail diagnostics
+  - recompute verification from primitives and inspect all reliable roots
+  - bound representative-agent and welfare language
+forbidden:
+  - equate convergence with equilibrium
+  - read stored residuals as a fresh solve
+  - return the first bracket as global uniqueness
+  - claim Pareto welfare from aggregate capital
+loaded_files: [SKILL.md, references/MACROECONOMIC_LAW.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "1b77ac34566398fc5cd61e68cfdaaa661893768fe35152b545761559585e7b9b"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/solve.py, sha256: "4a258ddba391b1ad352084b370b353e9e52e8ebf92f0bece7a5c45879b7c1680"}
+  - {file: artifacts/results.json, sha256: "65b5b1551a162559d4964b6f32eb4be1a24fa4b32053e0a887e86877851f0f01"}
+  - {file: artifacts/run_output.txt, sha256: "c4b71bffb757fbef475774c5b30d7328bc0ffd4d4ab4af2837f80d7059b35977"}
+  - {file: artifacts/verify_results.py, sha256: "22bf29236c58f5b24d04e9903c4136365ec860fd2af4d0ba7d9319b63c607512"}
+  - {file: artifacts/verification_output.txt, sha256: "5d44a49d73eceb9662b3120f9338ddcdbc7c5cded796de520d0887cf2447566f"}
+  - {file: artifacts/PROVENANCE.md, sha256: "ca97d1e6cee0ea49ad810fa9ddea38f06832624b37e4b897866c7354b88a20a3"}
+rubric:
+  - {criterion: economic equilibrium and accounting closure, score: 2, max_score: 2}
+  - {criterion: numerical solution and sensitivity diagnostics, score: 2, max_score: 2}
+  - {criterion: fresh verification and complete reliable root scan, score: 0, max_score: 2}
+  - {criterion: distributional and welfare calibration, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - reported equilibrium reproduces but verify_results reads stored summaries instead of resolving
+  - bracket search returns the first sign change and claimed truncation filtering was not executed

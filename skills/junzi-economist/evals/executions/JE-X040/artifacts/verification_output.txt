@@ -1,0 +1,17 @@
+HIGH-PRECISION CHECKS: PASS
+cases checked: 13; decimal precision: 60 digits
+interior: b1=0.461538462, c1=1.538461538, regime=interior
+binding: b1=-0.500000000, c1=1.500000000, regime=binding
+boundary_equality: b1=-0.500000000, c1=3.500000000, regime=binding
+det_mean: b1=-0.051282051, c1=2.051282051, regime=interior
+risky: b1=0.183571910, c1=1.816428090, regime=interior
+narrow_mps: b1=0.012424743, c1=1.987575257, regime=interior
+wide_mps: b1=0.183571910, c1=1.816428090, regime=interior
+future_up: b1=-0.307692308, c1=2.307692308, regime=interior
+higher_mean_risky: b1=0.413277436, c1=1.586722564, regime=interior
+stop_old: b1=-1.394736842, c1=2.894736842, regime=interior
+stop_new: b1=0.000000000, c1=1.500000000, regime=binding
+risk saving, mean-preserving spread, future-income ambiguity: PASS
+sudden-stop CA sign reversal: PASS
+R comparative-static sign reversal: PASS
+budgets, CA/TB identities, KKT, strict concavity, finite global grids: PASS

@@ -1,0 +1,13 @@
+ALL ASSERTIONS PASSED
+root_regime_cases: 128
+lambert_residual_and_counterexample_checks: 502
+stability_sign_checks: 18
+debt_closure_checks: 10
+d=0.000000000 roots=0.000000000
+d=0.500000000 roots=0.055916280, 1.788576032
+d=1.000000000 roots=0.129585551, 1.271320679
+d=1.839397206 roots=0.500000000
+d=2.000000000 roots=
+peak_pi=0.500000000 peak_S=1.839397206
+monetary_dp=0.718730753
+bad_closure_bdot_at_peak=0.060602794

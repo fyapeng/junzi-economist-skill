@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X043
+case_id: JE-R40
+timestamp_utc: "2026-07-13T06:08:00Z"
+skill_commit: "845a0ae"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: hetero_reliability_transfer
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer the executable reliability rules to a new two-state heterogeneous production economy with all diagnostics in the acceptance rule, full traces, genuine non-crossing screening, and one-dimension-at-a-time numerical checks."
+expected:
+  - gate every scan root-path and final evaluation on predeclared economic and numerical diagnostics
+  - collect all reliable brackets and separate non-crossing tangencies from ordinary roots
+  - isolate asset-grid and upper-bound convergence evidence
+  - backtrack a contaminated grid without relaxing thresholds
+forbidden:
+  - accept internally unreliable root evaluations
+  - minimize absolute residual at a crossing and call it tangency evidence
+  - confound joint grid changes with isolated convergence
+  - claim global uniqueness RA aggregation or welfare ranking
+loaded_files: [SKILL.md, references/MACROECONOMIC_LAW.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "7ed5be2ff96e3ab7ac7a89fec2a1fd53fa0a0703279918fd99dbbaeebf7ab6e2"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/solve_and_verify.py, sha256: "afa8aafe494e6355c3191feafe70db686391a78f2ffe34939f74e4f5a68d0958"}
+  - {file: artifacts/results.json, sha256: "1db6c718b09e1f7ac0516660e2a11b8647ce4d69e2b35b95d1663264e6bb1711"}
+  - {file: artifacts/run_output.txt, sha256: "6b1768889673652059328ae1a1cb00eeba8739c37dd5f6307dfbf500e7fd78d9"}
+  - {file: artifacts/PROVENANCE.md, sha256: "01604a3fd388e840a6c16366a5a7be4c4be02ad32936b25893fdd3ce37258010"}
+rubric:
+  - {criterion: household distribution firm and resource closure, score: 2, max_score: 2}
+  - {criterion: executable reliability and complete root traces, score: 2, max_score: 2}
+  - {criterion: genuine tangency screening and bounded equilibrium claim, score: 2, max_score: 2}
+  - {criterion: isolated convergence backtracking and welfare limits, score: 2, max_score: 2}
+verdict: pass
+limitations:
+  - finite reliable-domain scans cannot prove global uniqueness or exclude arbitrarily narrow missed roots
+  - a diagnostic named transition_row_error checks lottery weights rather than the exogenous transition matrix directly

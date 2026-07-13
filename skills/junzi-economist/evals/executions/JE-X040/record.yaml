@@ -1,0 +1,39 @@
+schema_version: 1
+execution_id: JE-X040
+case_id: JE-R41
+timestamp_utc: "2026-07-13T05:38:00Z"
+skill_commit: "31b1ca8"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_production
+evaluator: independent-blind-audit
+isolation: blind
+prompt: "Derive and verify a two-period small open economy with aggregate income risk, borrowing limits, current-account accounting, sudden stops, and complete-market comparison."
+expected:
+  - close asset timing intertemporal budgets trade and current accounts
+  - characterize every KKT regime and common-feasible-set risk comparison
+  - distinguish current-account improvement from sign reversal
+  - bound complete-market and welfare claims by prices ownership and terminal closure
+forbidden:
+  - confuse stocks flows or inherited assets
+  - move the natural debt limit while calling it pure risk
+  - infer an earlier response to an unanticipated tightening
+  - claim Pareto improvement without a closed market system
+loaded_files: [SKILL.md, references/MACROECONOMIC_LAW.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "ca3806cfa2dded8b9daa068fdafb0c3c992d03bb0844cbfdacf9ecbd6a2ba899"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/verify.py, sha256: "29d92afc5628987731f51ed18ec1c15a77f6d2ebcf8c1dd04c5dbbdfbcf9ff7e"}
+  - {file: artifacts/verification_output.txt, sha256: "a0ab4bdc6dc58f2de6ec0c0f8f6e3c6941b0218083ec7014c3ccbb223aec68de"}
+  - {file: artifacts/PROVENANCE.md, sha256: "b19db54ad7e5b75a4129bb06167c50d44fc418d2280bbe677423a27075d6388c"}
+rubric:
+  - {criterion: asset timing and external-account closure, score: 2, max_score: 2}
+  - {criterion: constrained solution and risk comparative statics, score: 2, max_score: 2}
+  - {criterion: sudden stop and terminal closure, score: 2, max_score: 2}
+  - {criterion: market-completeness and welfare calibration, score: 2, max_score: 2}
+verdict: pass
+limitations:
+  - complete-market budget nesting would additionally require the no-arbitrage state-price normalization
+  - finite verifier covers selected cases while the analytic proof carries the global result

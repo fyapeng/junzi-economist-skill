@@ -1,0 +1,4 @@
+ALL RESULT CHECKS PASSED
+market clearing, invariant distribution, resources, Bellman, Euler/KKT: PASS
+fine/wide grid stability and top-grid checks: PASS
+representative-agent and sensitivity comparisons: PASS

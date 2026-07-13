@@ -1,0 +1,10 @@
+RUN baseline n=700 amax=100.0
+  reliable scan 52/59; brackets=[[0.05, 0.051000000000000004]]
+  accepted roots=[0.05083584029740903]
+RUN asset_grid_only n=1400 amax=100.0
+  reliable scan 52/59; brackets=[[0.05, 0.051000000000000004]]
+  accepted roots=[0.05083941832290109]
+RUN asset_bound_only n=700 amax=200.0
+  reliable scan 56/59; brackets=[[0.05, 0.051000000000000004]]
+  accepted roots=[0.050830940377936416]
+WROTE results.json

@@ -230,3 +230,21 @@ cases:
     prompt: "完整分析二元采用的战略互补博弈、混合均衡、风险占优、福利与补贴，并处理多重均衡和财政成本。"
     expected: [derive complete Nash and welfare correspondences including degeneracies distinguish selection criteria from play preserve set-valued policy outcomes and test uniqueness and fiscal-welfare thresholds]
     failure: [select the welfare-dominant equilibrium by assumption omit mixed or equality cases call risk dominance observed behavior or infer that an equilibrium-changing subsidy improves welfare]
+  - id: JE-R39
+    layer: fa
+    title: monetary-fiscal-regime-and-seigniorage
+    prompt: "在非单调铸币税曲线下闭合货币、财政与债务，区分稳态相容、多重通胀分支和可执行动态政策制度。"
+    expected: [derive the complete finite steady-state correspondence separate accounting money demand stationarity and fiscal closure specify off-steady-state instruments branch selection feasibility expectations and debt stability and refuse unsupported welfare ranking]
+    failure: [call a stationary identity a dynamic regime select a branch without a rule use debt issuance as permanent resources use numerical tolerance to change an exact economic region or infer welfare without preferences and real costs]
+  - id: JE-R40
+    layer: fa
+    title: heterogeneous-agent-stationary-equilibrium
+    prompt: "求解异质性主体不完全市场生产经济的平稳递归竞争均衡，并验证分布、资产市场、资源与数值边界。"
+    expected: [close household policy invariant distribution asset supplies factor prices and resources recompute from primitives retain the reliable full equilibrium scan and report optimality distribution market tail and grid diagnostics]
+    failure: [equate solver stopping with equilibrium read stored residuals as a fresh verification return the first root as uniqueness ignore upper-grid contamination or infer Pareto welfare from a representative-agent comparison]
+  - id: JE-R41
+    layer: fa
+    title: open-economy-risk-and-sudden-stop
+    prompt: "在两期小型开放经济中分析总量收入风险、借款约束、经常账户和突然停止，并与状态或有市场比较。"
+    expected: [close asset timing intertemporal budgets trade and current accounts derive the full constrained solution use common feasible sets for precautionary saving distinguish improvement from sign reversal and close asset prices ownership counterparties and the terminal condition]
+    failure: [confuse stocks with flows change the natural debt limit while calling it pure risk infer an earlier asset response to an unanticipated shock claim complete markets imply Pareto improvement without prices ownership and transfers or omit terminal closure]

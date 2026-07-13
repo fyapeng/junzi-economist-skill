@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X038
+case_id: JE-R39
+timestamp_utc: "2026-07-13T05:30:00Z"
+skill_commit: "31b1ca8"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_contract_committed
+evaluator: dual-independent-audit
+isolation: blind
+prompt: "Derive and execute a Cagan money-demand and seigniorage model with complete root correspondence, monetary-fiscal regimes, real debt closure, stability, boundary cases, and welfare limits."
+expected:
+  - separate accounting money demand stationarity and fiscal closure
+  - preserve zero two-root tangency and no-root regions
+  - specify executable monetary and fiscal regimes off steady state
+  - verify exact regions near every boundary from primitives
+forbidden:
+  - infer dynamics from a stationary identity
+  - let numerical tolerance change root multiplicity
+  - call debt issuance permanent resources
+  - rank welfare without preferences and real costs
+loaded_files: [SKILL.md, references/MACROECONOMIC_LAW.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "dcacbbe1de018aa759561c7bd5d199e0d122499ff0b8f84a255416563592e7ac"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - {file: artifacts/verify.py, sha256: "bd38af580595cb351c6ea2f2d02a0b00e7cc1ae54a4f0160bed23e4ceccccee1"}
+  - {file: artifacts/verification_output.txt, sha256: "56b44930b8a350f54724f547a0dfa5fdfebdcecb7ad5b74fc5f0dbb0160ee4f5"}
+  - {file: artifacts/PROVENANCE.md, sha256: "c7f9a48dc1958e094ab12282fa45766366941224e2fc475e44dd9a6b22a09fc3"}
+rubric:
+  - {criterion: analytic steady-state correspondence and accounting, score: 2, max_score: 2}
+  - {criterion: executable policy regime and debt dynamics, score: 0, max_score: 2}
+  - {criterion: exact boundary-safe computation, score: 0, max_score: 2}
+  - {criterion: welfare and proof calibration, score: 2, max_score: 2}
+verdict: fail
+limitations:
+  - fiscal-dominant section gives stationary compatibility but no complete off-steady-state closure
+  - absolute tolerance misclassifies strictly positive and near-tangency economic regions

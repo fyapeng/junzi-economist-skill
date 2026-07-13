@@ -1,0 +1,39 @@
+schema_version: 1
+execution_id: JE-X041
+case_id: JE-R39
+timestamp_utc: "2026-07-13T05:52:00Z"
+skill_commit: "d6866bb"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: macro_policy_transfer
+evaluator: independent-recompute-audit
+isolation: blind
+prompt: "Transfer the revised rules to a rational seigniorage curve and distinguish stationary compatibility from complete monetary- and fiscal-dominant dynamics with exact boundary computation."
+expected:
+  - independently transfer dynamic closure branch feasibility and terminal rules
+  - classify all finite roots including escape to infinity at zero
+  - recompute high-precision near-boundary cases from primitives
+  - preserve missing-preference welfare limits
+forbidden:
+  - infer dynamics from stationary compatibility
+  - let tolerance determine an economic branch
+  - omit tool limits or branch selection
+  - claim finite tests replace proof
+loaded_files: [SKILL.md, references/MACROECONOMIC_LAW.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "190b7186da2c73ff83c864ee977213977a3cb5487c46b9399c46ceef48ffa9ef"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/verify.py, sha256: "b20322e2f584801ffd1a92489ad9ad7a0b25ab26e5c8af8d37eb2cfe4ebcb975"}
+  - {file: artifacts/verification_output.txt, sha256: "6f5787bdddb67f717ec06cacf5dab98db75386830f2123d117c09ebe70af9274"}
+  - {file: artifacts/PROVENANCE.md, sha256: "26725b4620c539cc55a1561e8d1edfb396d219b50e14fae1889e0e8800b73ff7"}
+rubric:
+  - {criterion: full analytic correspondence and boundaries, score: 2, max_score: 2}
+  - {criterion: executable regimes and debt dynamics, score: 2, max_score: 2}
+  - {criterion: boundary-safe fresh computation, score: 2, max_score: 2}
+  - {criterion: feasibility expectations and welfare calibration, score: 2, max_score: 2}
+verdict: pass
+limitations:
+  - direct inflation implementation abstracts from a full private-sector nominal block
+  - finite checks support but do not replace the analytic result
