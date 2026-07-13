@@ -61,6 +61,7 @@ REQUIRED = [
     "scripts/prose_lint.py",
     "scripts/test_utilities.py",
     "scripts/validate_compatibility.py",
+    "scripts/validate_eval_records.py",
     "LICENSE.txt",
 ]
 

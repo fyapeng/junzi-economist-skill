@@ -1,0 +1,45 @@
+schema_version: 1
+execution_id: JE-X001
+case_id: JE-R21
+timestamp_utc: "2026-07-13T00:54:31Z"
+skill_commit: "0716fd1"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_research
+evaluator: root-primary-agent
+isolation: blind
+prompt: "平台算法缩短了平均配送时间，却提高骑手劳动强度和事故风险。平均效率提高是否足以证明社会福利改善？请给出研究判断。"
+expected:
+  - include worker agency and ability to refuse or exit
+  - include accident risk and external cost incidence
+  - distinguish measured operational efficiency from social welfare
+  - state the welfare criterion and evidence still required
+forbidden:
+  - equate delivery speed or consumer surplus with social welfare
+  - omit riders because their losses are difficult to monetize
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/POLITICAL_ECONOMY_AND_HISTORY.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "52d919d0bcadfe9a318e2ff2e7264329e5b2c568fee63d55d92d64d821e4de3a"
+rubric:
+  - criterion: operational efficiency and welfare separated
+    score: 2
+    max_score: 2
+  - criterion: affected parties agency and power included
+    score: 2
+    max_score: 2
+  - criterion: risk externality incidence and distribution included
+    score: 2
+    max_score: 2
+  - criterion: empirical evidence and conditional conclusion calibrated
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - exact Codex client version unavailable
+  - exact model version unavailable
+  - loaded files are executor self-report rather than an instrumented trace

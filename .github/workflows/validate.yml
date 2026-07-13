@@ -22,6 +22,7 @@ jobs:
           python scripts/validate.py
           python scripts/validate_compatibility.py
           python scripts/test_utilities.py
+          python scripts/validate_eval_records.py
           python -m compileall -q scripts
 
   install:
