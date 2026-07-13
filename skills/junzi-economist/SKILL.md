@@ -39,6 +39,7 @@ When a live question clearly falls within a dedicated microeconomic, macroeconom
 - Read `references/POLITICAL_ECONOMY_AND_HISTORY.md` when rules, organizations, power, conflict, implementation, structural change, or historical sequence can alter the mechanism.
 - Read `references/THEORY_ROUTER.md` when choosing among mechanisms or connecting a phenomenon to theory.
 - Read `references/SITUATION_AND_FRONTIER.md` when investigating institutions, data generation, empirical facts, or current literature.
+- Read `references/DATA_AND_MEASUREMENT.md` when defining variables, cleaning or linking sources, constructing panels or events, auditing sample flow, reconciling units, or preparing an analysis dataset.
 - Read `references/FRONTIER_SEARCH.md` whenever the task asks for current, recent, latest, frontier, novelty, or time-sensitive literature and institutional evidence.
 - Read `references/EMPIRICAL_AND_STRUCTURAL_METHODS.md` when selecting identification, estimation, structural, computational, or validation methods.
 - Read `references/STRUCTURAL_VERIFICATION_GATE.md` only for a designated public replication package, release-grade structural evidence, high-consequence executable result, or an explicit request for full independent verification. Exploratory calculations and ordinary research diagnostics do not load the release gate.

@@ -1,0 +1,69 @@
+schema_version: 1
+economic_object:
+  target_population: ""
+  observational_unit: ""
+  event_stock_or_flow: ""
+  time_basis: ""
+  geography_or_market: ""
+  intended_claim_ids: []
+sources:
+  - source_id: S1
+    owner_and_recording_purpose: ""
+    version_or_extraction_date: ""
+    coverage: ""
+    source_unit: ""
+    candidate_keys: []
+    access_or_sensitivity: ""
+    provenance_or_hash: ""
+    known_gaps: []
+variables:
+  - variable: ""
+    economic_concept: ""
+    source_fields: []
+    type_and_unit: ""
+    timing_and_denominator: ""
+    missing_codes: []
+    transformation: ""
+    support_and_limitations: ""
+    claim_jobs: []
+joins:
+  - join_id: J1
+    left_source: ""
+    right_source: ""
+    keys: []
+    expected_cardinality: ""
+    realized_cardinality: ""
+    matched_rows: null
+    left_only_rows: null
+    right_only_rows: null
+    multiplied_rows: null
+    duplicate_explanation: ""
+    crosswalk_version: ""
+    decision_and_claim_impact: ""
+sample_flow:
+  - stage: source
+    inclusion_or_exclusion_rule: ""
+    people_units_or_events: null
+    economic_consequence: ""
+    claim_impact: ""
+transformations:
+  - output: ""
+    inputs: []
+    formula_or_rule: ""
+    script_entrypoint: ""
+    version_or_parameters: ""
+    validation: []
+checks:
+  - check_id: D1
+    object: ""
+    predicate_or_reconciliation: ""
+    expected: ""
+    realized: ""
+    status: unverified
+handoff:
+  analysis_dataset: ""
+  data_dictionary: ""
+  construction_entrypoint: ""
+  environment: ""
+  source_to_analysis_reconciliation: ""
+  material_limitations: []

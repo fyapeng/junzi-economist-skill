@@ -278,3 +278,9 @@ cases:
     prompt: "把一段含有ITT、事后异质性、结构反事实和福利边界的中文研究摘要改写为英文论文摘要，并给出对应中文定稿。"
     expected: [use one authoritative claim and result map rebuild each language naturally preserve estimands magnitudes units uncertainty mechanism status counterfactual support and welfare boundaries and flag consequential translation choices]
     failure: [translate sentence by sentence strengthen claims in English add policy slogans in Chinese change technical terms inconsistently or allow the two versions to report different economic objects or evidence status]
+  - id: JE-R47
+    layer: shu
+    title: multi-source-panel-measurement-and-linkage
+    prompt: "把患者就诊、医院名录、医生执业、县区代码和政策实施表合并成医院—月份与患者就诊面板；来源存在重复ID、行政区划调整、缺失结局和分批上线。请设计可复现的数据构造方案。"
+    expected: [define economic units and recording processes declare join cardinalities audit duplicates unmatched and row multiplication version crosswalks construct exposure and event time distinguish missing zero and inapplicable preserve sample flow and state how measurement limits change the estimand and claims]
+    failure: [merge on convenient names drop unmatched rows silently fill missing outcomes with zero infer patient or referral paths without stable identifiers or treat a clean rectangular panel as proof of valid measurement]

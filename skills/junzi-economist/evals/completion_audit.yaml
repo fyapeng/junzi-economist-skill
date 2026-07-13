@@ -32,12 +32,16 @@ requirements:
     gap: "Demand-supply equilibrium and latent-profile endpoints have clean exact-commit passes, while dynamic NFXP/CCP, estimated transitions, local rank, closed domains, generated policy interfaces, accounting, and projected gradients reproduce substantively across repeated audits. Round 17 showed that pursuing a formally perfect release package had become a secondary meta-verification branch. Retain partial without further dedicated verifier endpoints; future evidence should come from economically distinct structural applications, not recursive release auditing."
   computation_and_instruments:
     status: partial
-    evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py, evals/executions/JE-X039, evals/executions/JE-X042, evals/executions/JE-X043]
-    gap: "Dynamic programming, NFXP, exact-rational tests, high-precision boundary tests, invariant distributions, fresh equilibrium recomputation, rejection of contaminated regions, complete root traces, and isolated grid checks now have reproducible runs; broader data construction, alternative algorithms, parallel or hardware variation, and failure-region evidence remain."
+    evidence: [references/SOFTWARE_AND_COMPUTATION.md, references/DATA_AND_MEASUREMENT.md, assets/templates/DATA_CONSTRUCTION_MAP.yaml, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py, evals/executions/JE-X039, evals/executions/JE-X042, evals/executions/JE-X043]
+    gap: "Dynamic programming, NFXP, exact-rational and boundary tests, invariant distributions, equilibrium recomputation, root traces, and isolated grid checks have reproducible runs. Data and measurement now have an integrated economic-object, linkage, sample-flow, transformation, and handoff protocol, but behavior on a real multi-source research dataset remains unproved. Alternative algorithms, parallel or hardware variation, and broader failure-region evidence also remain."
+  data_and_measurement:
+    status: partial
+    evidence: [references/SITUATION_AND_FRONTIER.md, references/DATA_AND_MEASUREMENT.md, assets/templates/DATA_CONSTRUCTION_MAP.yaml, evals/cases.yaml]
+    gap: "The runtime now routes variable definition, panel construction, joins, crosswalks, missingness, sample flow, and analysis-data handoff through a theory- and institution-aware protocol. Validate it once in a future substantive data project with real source keys and sample reconciliation; do not create a synthetic data-audit campaign solely for status promotion."
   writing_and_reading:
     status: proved
-    evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
-    gap: "Real 69-page PDF and long-manuscript comparisons now pass; bilingual, theory-paper, structural-paper, and public-explanation breadth remains for later expansion."
+    evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, references/BILINGUAL_ECONOMIC_WRITING.md, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
+    gap: "Real 69-page PDF and long-manuscript comparisons pass, and bilingual claim reconciliation is now integrated. Future substantive work should broaden theory-paper, structural-paper, bilingual, and public-explanation behavior without a separate format-only test campaign."
   mainline_claims_and_backtracking:
     status: proved
     evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md, evals/executions/JE-X015]
