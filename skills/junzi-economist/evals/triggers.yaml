@@ -1,0 +1,33 @@
+schema_version: 1
+suite: junzi-economist-triggering
+cases:
+  - id: JE-T01
+    kind: positive
+    prompt: "这个医院选择问题应该如何建立经济学机制并选择简约式或结构式方法？"
+  - id: JE-T02
+    kind: positive
+    prompt: "Use $junzi-economist to assess whether this demand model identifies the policy counterfactual."
+  - id: JE-T03
+    kind: positive
+    prompt: "新政策改变了企业进入和消费者搜索，帮我形成经济学研究设计。"
+  - id: JE-T04
+    kind: negative
+    prompt: "把这段英文翻译成中文，不改变含义。"
+  - id: JE-T05
+    kind: negative
+    prompt: "把参考文献改成 APA 格式。"
+  - id: JE-T06
+    kind: coexistence
+    prompt: "在已确定主张状态后，使用 econ-paper 改写引言。"
+  - id: JE-T07
+    kind: coexistence
+    prompt: "精读这篇论文，并判断它是否改变当前经济机制。"
+  - id: JE-T08
+    kind: continuity
+    prompt: "Junzi Economist 已经生效；现在只修正一个变量标签。"
+  - id: JE-T09
+    kind: positive
+    prompt: "精读这篇经济学论文，重建它的识别逻辑并判断证据是否支持摘要中的机制主张。"
+  - id: JE-T10
+    kind: positive
+    prompt: "根据当前主张账本把研究结果写成一段经济学论文引言，不要提高证据等级。"

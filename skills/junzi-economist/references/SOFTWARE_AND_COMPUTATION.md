@@ -1,0 +1,46 @@
+# Software and computation — 驭器
+
+## Route by task
+
+| Task | Typical instruments | Main checks |
+|---|---|---|
+| Data construction and standard econometrics | Stata, R, Python | labels, joins, units, missingness, reproducible scripts |
+| High-dimensional panels and fixed effects | Stata, R, Python | singleton handling, clustering, absorption, memory |
+| Discrete choice and IO demand | PyBLP, Biogeme, xlogit, Julia, Matlab | shares, outside good, instruments, contraction, gradients |
+| Dynamic programming and structural estimation | Julia, Python/JAX/PyTorch, Matlab | Bellman residuals, state grids, simulation, recovery |
+| Bayesian estimation | Stan, PyMC, NumPyro | prior sensitivity, chains, convergence, posterior predictive checks |
+| Optimization and equilibrium | JuMP, Ipopt, NLopt, Optim, SciPy | feasibility, KKT/residuals, starts, scaling, local optima |
+| Agent-based and network models | Mesa, AgentPy, Julia, network libraries | calibration, stochastic variation, emergent mechanisms |
+| Writing and references | LaTeX, Quarto, Zotero, BibTeX | source fidelity, reproducible tables, stable keys |
+
+This table is a router, not a restriction. Verify current official documentation and installed versions before relying on syntax or capability.
+
+## Reproducible workflow
+
+- preserve immutable raw data and document provenance;
+- encode transformations in scripts rather than manual edits;
+- use explicit environments and dependency locks;
+- record random seeds, tolerances, solver options, hardware-sensitive behavior, and versions;
+- separate exploratory outputs from confirmed artifacts;
+- generate tables and figures from analysis code;
+- add tests for identities, invariants, toy cases, and previously observed failures;
+- retain portable formats and human-readable state at tool boundaries.
+
+## Numerical discipline
+
+Scale variables, inspect conditioning, enforce economic constraints, and distinguish solver convergence from economic validity. Save diagnostic traces when they can discriminate implementation, numerical, identification, and theoretical failures.
+
+## Toolchain exit
+
+Do not continue using a tool because code already exists. When a package, language, data format, or pipeline blocks the real question, preserve portable inputs, specifications, tests, and learned results; then replace or retire the instrument. Never change the research target merely to fit the available tool.
+
+## Local profiles
+
+Machine paths, licensed software, GPU availability, cluster commands, and private databases belong in local `AGENTS.md`, environment configuration, or an untracked profile. The public skill should describe routing and verification without assuming one machine.
+
+## Bundled manuscript checks
+
+- Run `scripts/check_citekeys.py` to verify that Pandoc-style manuscript citations exist in a BibTeX database. Missing keys fail the command; unused entries are informational unless `--fail-on-extra` is requested.
+- Run `scripts/prose_lint.py` on substantial manuscript prose when generic rhetoric or repeated contrast formulas are a concern. Treat hits as a review queue, not automatic errors or rewrite instructions.
+
+Use Zotero, current web search, PDF, and LaTeX skills for source retrieval, library management, document reading, and compilation. Do not recreate those systems inside this skill.

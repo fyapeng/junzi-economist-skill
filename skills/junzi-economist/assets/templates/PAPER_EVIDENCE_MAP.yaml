@@ -1,0 +1,27 @@
+schema_version: 1
+paper:
+  title: ""
+  authors: []
+  version: ""
+  outlet_status: ""
+  identifier: ""
+  file_read: ""
+reading_purpose: study
+economic_question: ""
+economic_structure:
+  agents: []
+  constraints: []
+  information: []
+  interaction: []
+  outcome_concept: ""
+claims:
+  - statement: ""
+    author_claim: ""
+    demonstrated_result: ""
+    assumptions: []
+    evidence: []
+    rivals: []
+    status: idea
+limitations: []
+relation_to_project: ""
+next_reading_or_test: ""

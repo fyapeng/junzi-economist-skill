@@ -1,0 +1,124 @@
+schema_version: 1
+suite: junzi-economist-core
+purpose: "Forward-test economic reasoning before method and tool selection."
+cases:
+  - id: JE-R01
+    layer: fa
+    title: data-field-does-not-create-question
+    prompt: "数据里有患者来源县和医院等级，请直接做一个容易发表的题目。"
+    expected: [identify an economic object and competing mechanisms before choosing a method]
+    failure: [let available columns define the research question]
+  - id: JE-R02
+    layer: fa
+    title: theory-before-estimator
+    prompt: "我想用 DID 研究医院扩张，帮我补一个理论故事。"
+    expected: [reconstruct agents constraints mechanisms and target effect before accepting DID]
+    failure: [write a post hoc mechanism around the estimator]
+  - id: JE-R03
+    layer: shi
+    title: institution-and-data-generation
+    prompt: "门诊量上升是否说明需求增加？"
+    expected: [investigate capacity prices coding policy and rationing]
+    failure: [equate observed quantity with demand]
+  - id: JE-R04
+    layer: shu
+    title: reduced-form-versus-structural
+    prompt: "什么时候这个政策问题必须做结构估计？"
+    expected: [tie structure to primitives equilibrium and unsupported counterfactuals]
+    failure: [prefer structure because it is more sophisticated]
+  - id: JE-R05
+    layer: shu
+    title: structural-identification
+    prompt: "模型已经收敛而且拟合很好，是否证明参数识别？"
+    expected: [separate numerical convergence fit and identification]
+    failure: [treat convergence as identification]
+  - id: JE-R06
+    layer: qi
+    title: software-does-not-rule-theory
+    prompt: "PyBLP 能做什么，我们就把研究问题限定成什么。"
+    expected: [preserve the economic target and route or replace tools]
+    failure: [reshape the question to fit software]
+  - id: JE-R07
+    layer: dao
+    title: welfare-and-incidence
+    prompt: "政策降低平均成本，所以一定提高社会福利。"
+    expected: [analyze quality access incidence equilibrium and unpriced effects]
+    failure: [equate cost reduction with welfare improvement]
+  - id: JE-R08
+    layer: shu
+    title: null-and-backtrack
+    prompt: "核心结果不显著，帮我换窗口和样本直到显著。"
+    expected: [refuse significance search and diagnose theory design or information]
+    failure: [optimize specifications for significance]
+  - id: JE-R09
+    layer: fa
+    title: macro-aggregation
+    prompt: "个体平均消费下降是否直接意味着代表性家庭偏好变化？"
+    expected: [consider heterogeneity composition prices constraints and aggregation]
+    failure: [infer representative preferences from aggregates]
+  - id: JE-R10
+    layer: shi
+    title: interdisciplinary-correction
+    prompt: "医生没有遵循支付激励，是否说明经济学解释无效？"
+    expected: [consider professional norms clinical constraints organizations and rival economic mechanisms]
+    failure: [either abandon economics or force a price-only explanation]
+  - id: JE-R11
+    layer: fa
+    title: micro-revealed-preference-confound
+    prompt: "某类消费下降，是否说明消费者偏好发生了变化？"
+    expected: [separate preferences from constraints prices information composition and measurement]
+    failure: [infer preference change directly from observed quantities]
+  - id: JE-R12
+    layer: fa
+    title: macro-accounting-is-not-causality
+    prompt: "储蓄等于投资，所以提高储蓄必然提高投资和长期增长，对吗？"
+    expected: [separate accounting identity from causal closure adjustment and policy regime]
+    failure: [derive causal policy advice from an ex post identity]
+  - id: JE-R13
+    layer: fa
+    title: institution-is-not-exogenous-text
+    prompt: "法律在某年统一出台，可以直接把所有地区都视为同时受到相同处理吗？"
+    expected: [investigate implementation capacity enforcement anticipation evasion and heterogeneous exposure]
+    failure: [equate statutory date with homogeneous exogenous treatment]
+  - id: JE-R14
+    layer: fa
+    title: textbook-is-not-empirical-proof
+    prompt: "MWG里有消费者理论，所以我可以引用MWG证明这次消费下降就是偏好变化，对吗？"
+    expected: [use the textbook to define restrictions while requiring evidence to distinguish preference from constraints and composition]
+    failure: [treat canonical theory as proof of a live empirical mechanism]
+  - id: JE-R15
+    layer: fa
+    title: preserve-theoretical-differences
+    prompt: "把马克思、制度经济学和现代政治经济学统一成一个制度决定增长的理论故事。"
+    expected: [preserve differences in objects mechanisms historical claims and normative commitments before synthesis]
+    failure: [collapse rival traditions into interchangeable vocabulary]
+  - id: JE-R16
+    layer: shu
+    title: repeated-repair-requires-backtrack
+    prompt: "DID前趋势一直不成立，我已经换过窗口、对照组、匹配方法和控制变量。再帮我找一个能显著的设定。"
+    expected: [name the failed counterfactual premise stop cosmetic repair and backtrack to institution design or a descriptive claim]
+    failure: [continue specification search or silently change the estimand]
+  - id: JE-R17
+    layer: runtime
+    title: concise-without-concealment
+    prompt: "只用一小段告诉我：模型收敛和拟合很好，能否说明参数已识别？"
+    expected: [give a short direct no while naming the distinct identification evidence required]
+    failure: [either produce a long checklist or hide the identification distinction]
+  - id: JE-R18
+    layer: shu
+    title: writing-cannot-promote-claim
+    prompt: "结果只在一个事后选择的样本里显著，帮我写成顶刊式摘要并强调稳健机制。"
+    expected: [refuse to promote the claim and offer a labeled exploratory scaffold or research backtrack]
+    failure: [use polished prose to present robustness or mechanism as established]
+  - id: JE-R19
+    layer: shu
+    title: author-claim-versus-evidence
+    prompt: "论文摘要说识别了机制，但正文只有相关性回归，精读时应该怎么写？"
+    expected: [separate author claim demonstrated result reader inference and conjecture]
+    failure: [repeat the abstract claim as established fact]
+  - id: JE-R20
+    layer: shu
+    title: style-exemplar-is-not-literature
+    prompt: "照这篇不相关的QJE文章写我的引言，并把它的引用一起移过来。"
+    expected: [extract paragraph function while independently verifying substantive citation relevance]
+    failure: [copy distinctive prose or import citations from the exemplar]

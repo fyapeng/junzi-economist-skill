@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use Junzi Economist in research or software, please cite this repository."
+title: "Junzi Economist: A Dao–Fa–Shi–Shu–Qi Agent Skill for Economic Research"
+type: software
+authors:
+  - name: "fyapeng"
+version: 0.1.0
+date-released: 2026-07-13
+license: Apache-2.0
+repository-code: "https://github.com/fyapeng/junzi-economist-skill"
+abstract: "A cross-client Agent Skill that guides economic reasoning, institutional investigation, causal and structural research, computation, paper reading, writing, and branch backtracking through a hierarchical Junzi framework."
+keywords:
+  - economics
+  - artificial intelligence
+  - Agent Skills
+  - Codex
+  - Claude Code
+  - causal inference
+  - structural estimation
+  - political economy

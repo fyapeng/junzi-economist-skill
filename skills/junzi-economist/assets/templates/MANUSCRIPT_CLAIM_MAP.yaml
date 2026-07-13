@@ -1,0 +1,15 @@
+schema_version: 1
+artifact_type: manuscript_section
+audience: ""
+language: ""
+research_state: exploratory
+authoritative_result_version: ""
+sections:
+  - section: ""
+    paragraph_job: ""
+    claim_ids: []
+    evidence_artifacts: []
+    citation_jobs: []
+    prohibited_overreach: []
+output_label: scaffold
+revision_judgment: backtrack_to_research

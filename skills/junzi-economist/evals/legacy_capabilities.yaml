@@ -1,0 +1,67 @@
+schema_version: 1
+audit_date: "2026-07-13"
+purpose: "Track evidence for gradual absorption of econ-paper and paper-deep-read without premature deletion."
+legacy_skills:
+  econ-paper:
+    integrated:
+      - capability: paper architecture and section jobs
+        destination: references/ECONOMIC_WRITING.md
+      - capability: claim-first restrained economics prose
+        destination: references/ECONOMIC_WRITING.md
+      - capability: claim literature and style ledger separation
+        destination: references/ECONOMIC_WRITING.md
+      - capability: model reconstruction and derivation status
+        destination: references/ECONOMIC_WRITING.md
+      - capability: identification language bounded by estimand and assumptions
+        destination: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/ECONOMIC_WRITING.md]
+      - capability: literature organization by intellectual role
+        destination: [references/SITUATION_AND_FRONTIER.md, references/ECONOMIC_WRITING.md]
+      - capability: revision stop gate
+        destination: [references/ECONOMIC_WRITING.md, references/BRANCH_AND_DECISION_PROTOCOL.md]
+    integrated_tools:
+      - capability: Pandoc citekey to BibTeX consistency check
+        destination: scripts/check_citekeys.py
+      - capability: generic and repetitive prose review queue
+        destination: scripts/prose_lint.py
+    deferred_tools:
+      - DOI metadata retrieval delegated to Zotero and current source tools
+      - literature discovery delegated to current web and scholarly search tools
+      - manuscript merge and completion audit scripts
+      - LaTeX table and figure procedures
+    rejected_or_localized:
+      - rule: fixed journal-tier citation permission
+        reason: relevance evidence and citation job outrank outlet labels
+      - rule: universal Chinese-manuscript character threshold
+        reason: outlet-specific and temporally variable
+      - rule: project-specific hospital payment terminology
+        reason: belongs in project-local evidence and terminology files
+      - rule: mandatory matrices for every full introduction
+        reason: artifacts must change a substantive decision
+  paper-deep-read:
+    integrated:
+      - capability: purpose-sensitive reading modes
+        destination: references/PAPER_READING.md
+      - capability: metadata and version verification
+        destination: references/PAPER_READING.md
+      - capability: theory identification result and literature reconstruction
+        destination: references/PAPER_READING.md
+      - capability: equation preservation when it carries a claim
+        destination: references/PAPER_READING.md
+      - capability: author claim versus evidence and reader inference
+        destination: references/PAPER_READING.md
+      - capability: technical and public explanations
+        destination: references/PAPER_READING.md
+    deferred_tools: []
+    rejected_or_localized:
+      - rule: always create a dated Markdown file
+        reason: output form follows the user and task
+      - rule: fixed section template for every paper
+        reason: paper type and reading purpose determine structure
+      - rule: mandatory figure placeholders
+        reason: refer to source figures unless an artifact requires placeholders
+readiness:
+  conceptual_absorption: passed
+  behavior_tests: [JE-F12, JE-F13, JE-F14]
+  tooling_parity: scoped
+  deletion_authorized: false
+  next_gate: validate legacy scripts as optional tools or replace them with smaller tested utilities

@@ -1,0 +1,7 @@
+interface:
+  display_name: "君子经济学家 Junzi Economist"
+  short_description: "以经济学理论为法、以现实问题为本的研究型 AI 经济学家"
+  default_prompt: "Use $junzi-economist to investigate this economic question from theory and institutions through evidence, estimation, computation, and welfare."
+
+policy:
+  allow_implicit_invocation: true

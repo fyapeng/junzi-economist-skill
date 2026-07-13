@@ -1,0 +1,19 @@
+schema_version: 1
+claims:
+  - claim_id: C1
+    version: 1
+    statement: ""
+    type: descriptive
+    object:
+      population: ""
+      market_or_institution: ""
+      time: ""
+      unit: ""
+    evidence_for: []
+    evidence_against: []
+    competing_explanations: []
+    identifying_or_model_assumptions: []
+    failure_conditions: []
+    status: idea
+    source_artifacts: []
+    last_updated: ""

@@ -1,0 +1,17 @@
+schema_version: 1
+branches:
+  - branch_id: main
+    parent_branch: null
+    claim_versions: []
+    research_object: ""
+    required_premises: []
+    evidence_obtained: []
+    failed_premises: []
+    attempted_repairs: []
+    surviving_knowledge: []
+    reusable_artifacts: []
+    forbidden_repetition: []
+    action: continue
+    destination_node: ""
+    reopening_condition: ""
+    decided_at: ""

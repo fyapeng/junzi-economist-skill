@@ -1,0 +1,33 @@
+name: Validate skill
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Validate structure and compatibility
+        working-directory: skills/junzi-economist
+        run: |
+          python scripts/validate.py
+          python scripts/validate_compatibility.py
+          python scripts/test_utilities.py
+          python -m compileall -q scripts
+      - name: Test portable installer
+        env:
+          HOME: ${{ runner.temp }}/junzi-home
+        run: |
+          chmod +x install.sh
+          ./install.sh both
+          test -f "$HOME/.codex/skills/junzi-economist/SKILL.md"
+          test -f "$HOME/.claude/skills/junzi-economist/SKILL.md"
