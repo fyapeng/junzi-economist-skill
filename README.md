@@ -117,7 +117,7 @@ python .\scripts\test_utilities.py
 python .\scripts\validate_eval_records.py
 ```
 
-行为评测位于 `evals/`。测试记录保留失败、修订和复测过程，不只保留通过结果；它们用于项目开发和复核，不进入运行时技能。
+行为评测位于 [`evals/`](evals/README.md)。测试记录保留失败、修订和复测过程，不只保留通过结果；它们用于项目开发和复核，不进入运行时技能。
 
 ## 当前状态
 

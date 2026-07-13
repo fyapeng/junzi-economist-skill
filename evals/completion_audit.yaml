@@ -72,8 +72,8 @@ requirements:
     gap: "The package is installed at the official personal skill path with parity and current documentation confirms the layout; Claude Code itself is not installed or authenticated, so real discovery, invocation, non-trigger, routing, and backtracking runs remain."
   public_release:
     status: missing
-    evidence: ["local repository release candidate with a separated runtime package"]
-    gap: "Public remote, anonymous clone test, v0.1.0 tag, release date, and release checks."
+    evidence: ["local repository release candidate with a separated runtime package", evals/README.md, "bounded credential and personal-data scan on 2026-07-13"]
+    gap: "The authenticated GitHub account is fyapeng and fyapeng/junzi-economist-skill does not yet exist. Public remote creation, anonymous clone test, v0.1.0 tag, release date, and remote checks require an explicit publication decision."
 release_gate:
   ready: false
   blockers:

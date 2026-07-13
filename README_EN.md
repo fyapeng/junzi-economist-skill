@@ -32,7 +32,7 @@ cd junzi-economist-skill
 
 The runtime package is stored at `skills/junzi-economist/`. Manual installation copies this directory to `~/.codex/skills/` or `~/.claude/skills/`.
 
-Evaluation cases, historical executions, and development checks remain in the repository-level `evals/` and `scripts/` directories. They are not copied into a user's skill directory.
+Evaluation cases, historical executions, and development checks remain in the repository-level [`evals/`](evals/README.md) and `scripts/` directories. They are not copied into a user's skill directory.
 
 The installers preflight every selected destination before making changes. Existing installations are preserved unless `-Force` on PowerShell or `--force` on the shell installer is supplied. Forced updates stage and verify the new package, retain a temporary backup, and restore the previous installation if the transaction fails.
 
