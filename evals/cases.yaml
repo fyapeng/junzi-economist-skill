@@ -2,6 +2,13 @@ schema_version: 1
 suite: junzi-economist-core
 purpose: "Forward-test economic reasoning before method and tool selection."
 cases:
+  - id: JE-UPSTREAM-01
+    title: inherit-junzi-without-duplicate-ceremony
+    prompt: "请同时使用君子和君子经济学家研究一项医院绩效制度变化。君子已经在本任务中启用。"
+    expected:
+      - "把 Junzi 作为人格、主线、主要矛盾、回溯与工具纪律的上层约束"
+      - "把 Junzi Economist 作为经济理论、制度、证据、估计与福利的专门化"
+      - "复用已启用的君子纪律，不重复宪章、五层清单或方法序言"
   - id: JE-METHOD-ORDER-01
     title: hospital-performance-reduced-form-mainline
     prompt: "医院管理绩效项目里已有方差分析、A/B test、机器学习预测和结构模型材料。请决定当前研究主线和下一步方法。项目根目录说明研究已经重启，旧模型仅作档案。"

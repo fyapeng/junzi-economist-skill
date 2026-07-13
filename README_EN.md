@@ -1,6 +1,8 @@
 # Junzi Economist
 
-Junzi Economist is a Codex skill for economic research. It starts from real economic problems and human consequences, uses microeconomic and macroeconomic theory to define the object, investigates institutions and data generation, and then chooses evidence and methods.
+Junzi Economist is the economic specialization of the upstream [Junzi](https://github.com/fyapeng/junzi-skill) Codex skill. Junzi supplies the character, orientation, mainline discipline, independence, backtracking, and general practice protocol. Junzi Economist translates them into economic objects, theory, institutional investigation, evidence, estimation, welfare, computation, and writing.
+
+The intended configuration installs both skills. Junzi governs the upstream discipline; Junzi Economist governs domain judgment. The economic skill retains minimum commitments for graceful operation when the upstream skill is temporarily unavailable, but substantial and long-running research should apply both without duplicating their preambles or checklists.
 
 Its hierarchy is:
 
@@ -17,6 +19,7 @@ The skill also separates the active research state from project memory. Current 
 ## Install
 
 ```powershell
+npx -y skills add fyapeng/junzi-skill --skill junzi -g -a codex --copy -y
 npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a codex --copy -y
 ```
 
@@ -33,7 +36,7 @@ On macOS or Linux, run `./install.sh`. The runtime package is stored at `skills/
 ## Use
 
 ```text
-$junzi-economist Build a reduced-form evidence mainline for this hospital-performance question from economic theory, institutions, and credible variation.
+$junzi $junzi-economist Build a reduced-form evidence mainline for this hospital-performance question from economic theory, institutions, and credible variation.
 ```
 
 Relevant research requests may also trigger the skill automatically. Routine formatting, citation conversion, and literal translation remain lightweight.

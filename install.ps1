@@ -15,6 +15,20 @@ $SkillsRoot = if ($DestinationRoot) {
 } else {
     Join-Path $HOME '.codex\skills'
 }
+$JunziCandidates = if ($DestinationRoot) {
+    @(
+        (Join-Path $DestinationRoot '.codex\skills\junzi\SKILL.md'),
+        (Join-Path $DestinationRoot '.agents\skills\junzi\SKILL.md')
+    )
+} else {
+    @(
+        (Join-Path $HOME '.codex\skills\junzi\SKILL.md'),
+        (Join-Path $HOME '.agents\skills\junzi\SKILL.md')
+    )
+}
+if (-not ($JunziCandidates | Where-Object { Test-Path -LiteralPath $_ } | Select-Object -First 1)) {
+    Write-Warning 'Upstream Junzi was not found. For the full configuration, install it first: npx -y skills add fyapeng/junzi-skill --skill junzi -g -a codex --copy -y'
+}
 $Destination = Join-Path $SkillsRoot 'junzi-economist'
 $TransactionId = [Guid]::NewGuid().ToString('N')
 $Stage = Join-Path $SkillsRoot ".junzi-economist.install-$TransactionId"

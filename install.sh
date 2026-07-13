@@ -12,6 +12,10 @@ test -f "$source_dir/SKILL.md" || { echo "Runtime package not found: $source_dir
 
 root="$HOME/.codex/skills"
 dest="$root/junzi-economist"
+if [ ! -f "$HOME/.codex/skills/junzi/SKILL.md" ] && [ ! -f "$HOME/.agents/skills/junzi/SKILL.md" ]; then
+  printf '%s\n' 'Warning: upstream Junzi was not found. For the full configuration, install it first:' >&2
+  printf '%s\n' 'npx -y skills add fyapeng/junzi-skill --skill junzi -g -a codex --copy -y' >&2
+fi
 tx="$$"
 stage="$root/.junzi-economist.install-$tx"
 backup="$root/.junzi-economist.backup-$tx"

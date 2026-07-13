@@ -1,0 +1,106 @@
+.inheritance {
+  padding: 105px 0;
+  background: #1c2422;
+  color: #eee7dc;
+}
+.inheritance-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+.inheritance h2 {
+  font: 400 clamp(43px, 5vw, 67px) / 1.18 var(--serif);
+  margin: 34px 0 24px;
+}
+.inheritance h2 em {
+  font-style: normal;
+  color: #d1665b;
+}
+.inheritance-grid > div:first-child > p:last-child {
+  font: 15px/1.95 var(--serif);
+  color: #afb3ae;
+}
+.inheritance-map {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+}
+.inheritance-map article {
+  width: min(100%, 460px);
+  padding: 24px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 22px;
+  align-items: center;
+}
+.inheritance-map article.economist {
+  background: #eee5d5;
+  color: #1c2422;
+  border-color: #eee5d5;
+}
+.inheritance-map article span {
+  grid-row: 1/3;
+  width: 46px;
+  height: 46px;
+  border: 1px solid #a95247;
+  color: #c86a5d;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+}
+.inheritance-map article b {
+  font: 23px var(--serif);
+}
+.inheritance-map article small {
+  color: #969d97;
+}
+.inheritance-map article.economist small {
+  color: #6d675e;
+}
+.inheritance-map > i {
+  font-style: normal;
+  color: #b9a270;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+}
+.inheritance-map > p {
+  margin: 0;
+  padding: 15px 24px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #aeb4ae;
+}
+.terminal code span {
+  display: block;
+}
+.terminal code span + span {
+  margin-top: 13px;
+  padding-top: 13px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+@media (max-width: 900px) {
+  .inheritance-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+}
+@media (max-width: 600px) {
+  .inheritance {
+    padding-block: 80px;
+  }
+  .inheritance h2 {
+    font-size: 41px;
+  }
+  .inheritance-map article {
+    padding: 20px;
+  }
+  .inheritance-map article b {
+    font-size: 20px;
+  }
+  .inheritance-map > p {
+    letter-spacing: 0.04em;
+  }
+}

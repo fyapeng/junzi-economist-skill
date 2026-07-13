@@ -16,7 +16,27 @@
 
 > 天行健，君子以自强不息；地势坤，君子以厚德载物。
 
-`junzi-economist` 是面向 Codex 的经济学研究技能。它把君子的道、法、势、术、器落实为一条研究纪律：从真实经济问题与人的处境出发，用微观和宏观理论组织对象，调查制度和数据生成过程，优先建立透明的描述事实与简约式计量证据，再为必要的参数、均衡、福利和反事实引入结构方法。
+`junzi-economist` 是面向 Codex 的经济学研究技能，也是 [`junzi`](https://github.com/fyapeng/junzi-skill) 的领域专门化。完整的君子技能提供人格、立场与一般实践纪律；君子经济学家把这些要求落实到经济对象、理论、制度、证据、估计、福利、计算与写作之中。
+
+## 一体两层
+
+| 上层：[`junzi`](https://github.com/fyapeng/junzi-skill) | 下层：`junzi-economist` |
+|---|---|
+| 求真、人的主体性、独立判断、开放学习 | 微观与宏观理论组织经济对象 |
+| 主要矛盾、主线守护、分支回溯 | 制度调查、数据生成与前沿判断 |
+| 创造、笃行、工具纪律与实践检验 | 简约式识别、结构分析、福利与经济写作 |
+
+两者构成继承关系：
+
+```text
+Junzi 人格与一般实践纪律
+            ↓ 专门化
+Junzi Economist 经济学理论、证据与研究实践
+            ↓ 调用
+计量、结构、计算、检索、阅读与写作工具
+```
+
+完整配置应同时安装两个技能。经济学技能保留最低限度的君子原则，以便依赖暂时不可用时仍能完成任务；长期、复杂或高后果研究应让 `junzi` 先作为上层纪律进入任务，再由 `junzi-economist` 承担领域判断。重复调用不会重复加载宪章或运行两套清单。
 
 ## 五层经济学体系
 
@@ -66,9 +86,10 @@
 
 ## 安装
 
-推荐从 GitHub 直接安装：
+推荐依次安装上层君子技能和经济学专门化：
 
 ```powershell
+npx -y skills add fyapeng/junzi-skill --skill junzi -g -a codex --copy -y
 npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a codex --copy -y
 ```
 
@@ -78,7 +99,7 @@ npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a co
 npx -y skills add fyapeng/junzi-economist-skill --list
 ```
 
-也可以克隆后使用本项目的事务式安装脚本：
+也可以分别克隆两个仓库。先安装 `junzi`，再使用本项目的事务式安装脚本：
 
 ```powershell
 git clone https://github.com/fyapeng/junzi-economist-skill.git
@@ -94,15 +115,15 @@ cd junzi-economist-skill
 ./install.sh
 ```
 
-已有同名技能时，脚本会先停止；确认替换后使用 PowerShell 的 `-Force` 或 shell 的 `--force`。运行包位于 `skills/junzi-economist/`，开发评测与历史记录不会复制到个人技能目录。
+本项目的安装脚本会检查常见 Codex 技能目录；若没有发现完整的 `junzi`，会给出一次明确提示，但仍允许安装经济学技能。已有同名技能时，脚本会先停止；确认替换后使用 PowerShell 的 `-Force` 或 shell 的 `--force`。运行包位于 `skills/junzi-economist/`，开发评测与历史记录不会复制到个人技能目录。
 
 ## 使用
 
 ```text
-$junzi-economist 请从经济理论、制度背景和可识别变异出发，为医院管理绩效研究建立简约式证据主线。
+$junzi $junzi-economist 请从经济理论、制度背景和可识别变异出发，为医院管理绩效研究建立简约式证据主线。
 ```
 
-符合描述的经济研究任务也可由 Codex 自动加载。普通格式转换、逐字翻译和简单引用调整保持轻量。
+第一次进入长期经济研究时可显式调用两者；后续轮次继续应用即可，无须反复写出技能名称。符合描述的经济研究任务也可由 Codex 自动加载。普通格式转换、逐字翻译和简单引用调整保持轻量。
 
 ## 验证与边界
 

@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import "../styles/inheritance.css";
 
 const base = import.meta.env.BASE_URL;
 const repo = "https://github.com/fyapeng/junzi-economist-skill";
@@ -24,7 +25,7 @@ const layers = [
   <body>
     <header>
       <a class="brand" href={base}><span>经</span><b>君子经济学家<small>JUNZI ECONOMIST</small></b></a>
-      <nav><a href="#hierarchy">五层</a><a href="#evidence">证据</a><a href="#roles">边界</a><a href="#install">安装</a></nav>
+      <nav><a href="#inheritance">继承</a><a href="#hierarchy">五层</a><a href="#evidence">证据</a><a href="#install">安装</a></nav>
       <a class="github" href={repo}>GitHub ↗</a>
     </header>
 
@@ -33,7 +34,7 @@ const layers = [
         <div class="hero-copy">
           <p class="eyebrow"><i></i> ECONOMICS BEFORE METHODS</p>
           <h1>让经济学<br /><em>决定方法</em></h1>
-          <p class="lead">从真实经济问题出发，以理论定对象，以制度察情势，以简约式证据辨机制，再为必要的参数、均衡、福利与反事实引入结构。</p>
+          <p class="lead">承接君子人格与实践纪律，从真实经济问题出发，以理论定对象，以制度察情势，以简约式证据辨机制，再为必要的参数、均衡、福利与反事实引入结构。</p>
           <div class="actions"><a class="primary" href="#evidence">查看研究次序</a><a href={`${repo}/blob/main/skills/junzi-economist/SKILL.md`}>阅读技能核心 ↗</a></div>
           <p class="traits">问题意识 · 前沿视野 · 人文关怀 · 计量判断 · 结构能力</p>
         </div>
@@ -41,6 +42,19 @@ const layers = [
           <div class="seal"><span>经</span><small>ECONOMIST</small></div>
           <svg viewBox="0 0 520 520" aria-hidden="true"><circle cx="260" cy="260" r="205"/><circle cx="260" cy="260" r="148"/><path d="M103 336C165 230 225 302 282 195S402 155 430 208"/><path d="M104 380h326"/></svg>
           <div class="figure-note"><b>经世济民</b><span>理论扎根于现实，方法服务于问题</span></div>
+        </div>
+      </section>
+
+      <section id="inheritance" class="inheritance">
+        <div class="shell inheritance-grid">
+          <div><p class="eyebrow"><i></i> ONE SYSTEM · TWO LEVELS</p><h2>君子立其本<br /><em>经济学明其用</em></h2><p>君子经济学家承接完整 Junzi 的人格、主线、主要矛盾、独立判断、分支回溯与工具纪律，并把它们专门化为经济理论、制度调查、证据、估计、福利与写作。</p></div>
+          <div class="inheritance-map">
+            <article><span>上层</span><b>Junzi · 君子</b><small>道与一般实践纪律</small></article>
+            <i>↓　领域专门化</i>
+            <article class="economist"><span>下层</span><b>Junzi Economist</b><small>经济理论与研究判断</small></article>
+            <i>↓　按需调用</i>
+            <p>计量 · 结构 · 计算 · 检索 · 阅读 · 写作</p>
+          </div>
         </div>
       </section>
 
@@ -83,7 +97,7 @@ const layers = [
       </section>
 
       <section id="install" class="install">
-        <div class="shell install-grid"><div><p class="eyebrow"><i></i> BEGIN THE PRACTICE</p><h2>安装到 Codex<br /><em>开始经济学研究</em></h2><p>本项目当前专注于 Codex skill。运行包与开发评测分离，安装不会复制历史测试记录。</p></div><div class="terminal"><p>从 GitHub 安装</p><code>npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a codex --copy -y</code><div><a href={repo}>查看 GitHub 仓库</a><a href={`${repo}/blob/main/README.md#安装`}>其他安装方式 ↗</a></div></div></div>
+        <div class="shell install-grid"><div><p class="eyebrow"><i></i> BEGIN THE PRACTICE</p><h2>先立君子之本<br /><em>再成经济学之用</em></h2><p>完整配置依次安装 Junzi 与 Junzi Economist。两者进入同一任务后分层协作，不重复宪章和检查清单。</p></div><div class="terminal"><p>从 GitHub 安装完整双层系统</p><code><span>npx -y skills add fyapeng/junzi-skill --skill junzi -g -a codex --copy -y</span><span>npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a codex --copy -y</span></code><div><a href={repo}>查看 GitHub 仓库</a><a href={`${repo}/blob/main/README.md#安装`}>其他安装方式 ↗</a></div></div></div>
       </section>
     </main>
 
