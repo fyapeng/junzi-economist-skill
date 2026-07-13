@@ -49,19 +49,19 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Fourteen strict raw executions now cover welfare, backtracking, writing, a non-trigger, theory, frontier, structural estimation, cross-disciplinary correction, macro dynamics, and multi-turn state; exact client/model provenance and automatic trigger-dispatch coverage remain incomplete."
+    gap: "Nineteen strict raw executions now include positive, negative, failed coexistence, invalid precommit, and committed coexistence dispatch runs; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
-    evidence: [evals/legacy_capabilities.yaml]
-    gap: "Real PDF and long-manuscript parity plus an explicit retirement decision."
+    evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020]
+    gap: "Committed routing now places Junzi Economist before econ-paper for live claims; real PDF and long-manuscript parity plus an explicit retirement decision remain."
   codex:
     status: proved
-    evidence: [agents/openai.yaml, evals/runs]
-    gap: "Third-party replay remains limited by historical run provenance."
+    evidence: [agents/openai.yaml, evals/executions/JE-X016, evals/executions/JE-X017, evals/executions/JE-X020]
+    gap: "Fresh-context tests prove positive auto-invocation, negative restraint, and upstream-before-writing order; provenance is self-reported because dispatch telemetry is unavailable."
   claude_code:
     status: partial
     evidence: [evals/platform_compatibility.yaml, scripts/validate_compatibility.py]
-    gap: "Real Claude Code discovery, invocation, non-trigger, routing, and backtracking runs."
+    gap: "The package is installed at the official personal skill path with parity and current documentation confirms the layout; Claude Code itself is not installed or authenticated, so real discovery, invocation, non-trigger, routing, and backtracking runs remain."
   public_release:
     status: missing
     evidence: ["repository release candidate at C:/Users/ENAN/junzi-economist-skill"]
@@ -70,6 +70,6 @@ release_gate:
   ready: false
   blockers:
     - real Claude Code runtime behavior
-    - clean strict theory/frontier passes and automatic-trigger cases
+    - clean strict theory/frontier endpoint passes
     - public remote and anonymous installation test
     - final legacy retirement or documented coexistence decision

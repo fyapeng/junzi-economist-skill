@@ -1,0 +1,35 @@
+schema_version: 1
+execution_id: JE-X020
+case_id: JE-T10
+timestamp_utc: "2026-07-13T03:00:17Z"
+skill_commit: "fdb16e6"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: trigger_writing-commit-fresh-context
+evaluator: root-routing-audit
+isolation: blind
+prompt: "Our estimates use a post hoc subgroup and lose significance under the prespecified sample. Write a concise economics-paper abstract that truthfully reflects the evidence and does not upgrade the mechanism claim."
+expected:
+  - automatically load junzi-economist first
+  - load econ-paper only downstream
+  - preserve exploratory subgroup and unresolved mechanism status
+forbidden:
+  - direct-to-writing routing without claim governance
+  - promote the subgroup or mechanism
+loaded_files:
+  - SKILL.md
+  - "C:/Users/ENAN/.codex/skills/econ-paper/SKILL.md"
+response_file: response.md
+response_sha256: "e9dcbba788f6ed0acf6da58ed30ac3972451a5cf4d112a90073efb2d7770044c"
+rubric:
+  - criterion: committed automatic load order
+    score: 2
+    max_score: 2
+  - criterion: evidence-calibrated prose
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - provenance is self-reported by a fresh Codex subagent because platform-level dispatch telemetry is unavailable
+  - exact client and model versions unavailable
