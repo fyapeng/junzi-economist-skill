@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Deterministic algebra and numerical checks for JE-X005's provider model."""
+"""Deterministic algebra, boundary, and benchmark-distance checks for the provider model."""
 from __future__ import annotations
 import math
 import random
 
 def treatment(p: float, alpha: float, v: float, q: float, c: float) -> float:
     return (p + alpha * v) / (c + alpha * q)
+
+def bounded_treatment(p: float, alpha: float, v: float, q: float, c: float, cap: float) -> float:
+    return min(cap, max(0.0, treatment(p, alpha, v, q, c)))
 
 def benefit(t: float, v: float, q: float) -> float:
     return v * t - 0.5 * q * t * t
@@ -50,10 +53,22 @@ def main() -> int:
 
     # With an upper treatment bound, payment is weakly rather than strictly increasing.
     cap = 1.0
-    bounded_low = min(cap, treatment(2, 0, 1, 1, 1))
-    bounded_high = min(cap, treatment(3, 0, 1, 1, 1))
+    bounded_low = bounded_treatment(2, 0, 1, 1, 1, cap)
+    bounded_high = bounded_treatment(3, 0, 1, 1, 1, cap)
     close(bounded_low, bounded_high)
-    print("provider model checks passed: formulas and examples verified; strict payment monotonicity fails at the cap")
+
+    # Starting exactly at the social optimum, any nonzero movement increases distance.
+    social = 1 / 2
+    at_social = bounded_treatment(0, 1, 1, 1, 1, 3)
+    more_altruistic = bounded_treatment(0, 2, 1, 1, 1, 3)
+    close(at_social, social)
+    assert abs(more_altruistic - social) > abs(at_social - social)
+
+    # Payment can raise treatment while moving it away from the social optimum.
+    paid_more = bounded_treatment(0.4, 1, 1, 1, 1, 3)
+    assert paid_more > at_social
+    assert abs(paid_more - social) > abs(at_social - social)
+    print("provider model checks passed: formulas, boundaries, and benchmark-distance counterexamples verified")
     return 0
 
 if __name__ == "__main__":

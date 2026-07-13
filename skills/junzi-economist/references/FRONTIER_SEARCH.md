@@ -23,12 +23,18 @@ For every source used, record:
 
 - title, authors, outlet or series, DOI or stable URL;
 - publication status: working paper, forthcoming, published, corrected, retracted, or official rule;
-- first issue date, latest revision date, and retrieval date as separate fields;
+- first issue date, document/effective date, webpage publication date, latest manuscript revision date, and retrieval date as separate fields when applicable;
 - exact version read and whether full text, abstract, metadata, code, or official text was inspected;
 - the claim it can support and the claim it cannot support;
 - verification status: `full-text-verified`, `abstract-verified`, `metadata-only`, `official-text-verified`, or `unverified`.
 
 Never infer a revision date from the current year, webpage copyright, file path, conference appearance, or search-engine date. If the author page and repository disagree, report both and identify which version was read. A DOI that resolves poorly remains unverified until an authoritative publisher, repository, or full text confirms it.
+
+Treat the webpage and the document as different dated objects. A page retrieved or regenerated in 2026 does not make the linked manuscript a 2026 version. Enter a document date only when it appears in the manuscript, repository version history, publisher record, or an explicit author-supplied version label. Otherwise write `unknown`; do not replace missing provenance with the page's footer, build date, copyright year, current status, or retrieval date.
+
+Before finalizing the matrix, audit every date cell against its cited field or document header. When authoritative surfaces conflict, preserve the conflict in the row (for example, landing-page date versus current-PDF date), name the version actually used for substantive claims, and avoid silently collapsing the records into one “latest” date.
+
+For mutable working-paper URLs or other consequential versioned files, record the retrieval timestamp, visible version header, and file hash when tools permit. A later fetch from the same URL may return different bytes. Do not let a cached search result, landing page, or prior audit silently override the artifact actually inspected.
 
 ## Build a frontier map
 
@@ -48,7 +54,7 @@ Search the proposed contribution under alternative vocabulary, neighboring field
 
 ## Stop for a reason
 
-Stop when each live mechanism has foundational and recent evidence, serious rivals and nulls have been searched, official institutional facts are verified, and another result is unlikely to change the question, design, or next discriminating test. Record what remains unsearched and why it is unlikely to alter the current decision.
+Stop when the mechanisms decisive for the current decision have foundational and recent evidence, serious rivals and nulls have been searched, official institutional facts are verified, and another result is unlikely to change the question, design, or next discriminating test. Distinguish fully supported mechanism lanes from hypotheses retained for later search. Record what remains unsearched and why it is unlikely to alter the current decision. Do not claim that every mechanism is covered when some appear only as plausible branches in the map.
 
 Do not claim exhaustive coverage. Set a reopening condition such as a new version, policy implementation, dataset, contradiction, or literature lane.
 

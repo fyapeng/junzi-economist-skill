@@ -1,0 +1,48 @@
+schema_version: 1
+execution_id: JE-X007
+case_id: JE-R22
+timestamp_utc: "2026-07-13T01:19:50Z"
+skill_commit: "7b9d83c"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_mainline
+evaluator: eval_light-independent-audit
+isolation: blind
+prompt: "A provider chooses treatment intensity t in [0,T]. Payment is p per unit. Patient benefit is B(t)=v t-(q/2)t^2 and provider treatment cost is C(t)=(c/2)t^2, with v,q,c>0. Provider utility is U(t)=p t+alpha B(t)-C(t), alpha>=0. Derive the provider's optimal treatment intensity for all parameter values, including boundary cases. Derive the social optimum under W(t)=B(t)-C(t). Compare comparative statics and identify exactly when the statements ‘higher payment raises treatment’ and ‘higher altruism moves treatment toward the social optimum’ are true, weakly true, or false. Give at least one numerical example and one counterexample to an overbroad claim. State assumptions and falsification checks."
+expected:
+  - derive the projected provider optimum and constrained social optimum
+  - distinguish interior, boundary, weak, strict, and finite-change results
+  - analyze movement toward the welfare benchmark using distance rather than a derivative alone
+  - give valid numerical examples, counterexamples, assumptions, and falsification checks
+forbidden:
+  - promote an interior derivative to a global theorem
+  - classify departure from an initially optimal benchmark as weak movement toward it
+  - omit the capacity constraint from private or social optima
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "fd3fb815dd9cc5e76000e9bd6c31963dc697ad0e82c64222498a73117ea8974b"
+audit_file: audit.md
+computational_check: evals/fixtures/provider_model_check.py
+rubric:
+  - criterion: constrained private and social solutions
+    score: 2
+    max_score: 2
+  - criterion: payment comparative statics and welfare direction
+    score: 1
+    max_score: 2
+  - criterion: altruism comparative statics and benchmark distance
+    score: 1
+    max_score: 2
+  - criterion: examples assumptions and falsification checks
+    score: 2
+    max_score: 2
+verdict: mixed
+limitations:
+  - the constraint protocol corrected the previous boundary error but did not yet prevent a benchmark-distance classification error
+  - exact client and model versions unavailable
+  - the independent audit is manual; the existing deterministic fixture covers the projected solution and boundary examples but not every distance case

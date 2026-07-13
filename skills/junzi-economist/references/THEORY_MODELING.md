@@ -42,6 +42,15 @@ For every claimed sign:
 
 Translate the algebra into a discriminating observable implication. Do not describe a sign as a mechanism unless rival models predict something different.
 
+When claiming that a parameter moves a choice **toward a benchmark**, analyze the distance to that benchmark rather than only the sign of the choice derivative. For a scalar choice `x(theta)` and fixed benchmark `x_B`:
+
+- away from `x = x_B`, a local change moves toward the benchmark only when `(x - x_B) x'(theta) < 0`;
+- at `x = x_B`, any nonzero local movement increases distance, even though the product above equals zero;
+- zero first derivative establishes no movement only to first order; inspect higher-order or finite changes before calling it weak improvement;
+- at kinks, corners, or moving benchmarks, use one-sided or finite-change distance comparisons.
+
+Do not infer “weakly toward” merely from a nonpositive product when the initial choice equals the benchmark. State whether the claim concerns an infinitesimal direction, a one-sided change, or every finite increase.
+
 ## Define welfare independently
 
 List affected parties, real resource costs, transfers, fiscal costs, risk, externalities, distributional weights, and omitted outcomes. A private objective, patient benefit, profit, consumer surplus, or model fit is not automatically social welfare.

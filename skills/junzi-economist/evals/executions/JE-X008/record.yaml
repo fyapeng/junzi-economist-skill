@@ -1,0 +1,50 @@
+schema_version: 1
+execution_id: JE-X008
+case_id: JE-R23
+timestamp_utc: "2026-07-13T01:23:09Z"
+skill_commit: "7b9d83c"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_research
+evaluator: eval_light-independent-audit-with-root-adjudication
+isolation: blind
+prompt: "As of 2026-07-13, map the current research frontier on how hospital capacity constraints interact with patient choice and physician referral decisions. I need a mechanism map, major competing explanations, a compact claim-level source matrix using primary or official sources, and 3 research designs that could distinguish mechanisms. For every time-sensitive source, separately record first issue/publication date, latest revision date if known, retrieval date, and verification status (full text, abstract, metadata, official, or unverified). Include contradictory or null evidence. Stop when additional search is unlikely to change the mechanism map or next discriminating design, and state why."
+expected:
+  - map patient physician hospital and capacity mechanisms rather than list papers
+  - use primary or official sources with claim-level support boundaries
+  - separate document version dates retrieval dates and verification status
+  - include contradictions nulls discriminating designs and a decision-linked stop rule
+forbidden:
+  - infer a manuscript revision date from a webpage date or footer
+  - collapse document date webpage publication date revision date and retrieval date
+  - claim exhaustive mechanism coverage without evidence for each lane
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/SITUATION_AND_FRONTIER.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/FRONTIER_SEARCH.md
+  - references/SOURCE_PROTOCOL.md
+response_file: response.md
+response_sha256: "819d1dc22afbd706cecfe28c8ac5eb2414de5f09b8747ba038a2950f2e3195f1"
+audit_file: audit.md
+adjudication_file: adjudication.md
+rubric:
+  - criterion: mechanism map rivals contradictions and designs
+    score: 2
+    max_score: 2
+  - criterion: primary and official claim-level provenance
+    score: 1
+    max_score: 2
+  - criterion: date version and retrieval separation
+    score: 1
+    max_score: 2
+  - criterion: bounded stop and reopening rule
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - mutable working-paper URLs and stale metadata make a file hash necessary for exact version replay
+  - the full response was preserved but the underlying browser trace and downloaded source files were not bundled
+  - exact client and model versions unavailable

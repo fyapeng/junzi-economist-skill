@@ -16,12 +16,12 @@ requirements:
     gap: "Dynamic equilibrium, heterogeneous agents, monetary-fiscal interaction, finance, and transition tests."
   institutions_and_frontier:
     status: partial
-    evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/runs/2026-07-13-round-02.md]
-    gap: "The first real search found a strong mechanism map but misreported source-version dates; preserve the mixed run and complete a clean retest."
+    evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/executions/JE-X008]
+    gap: "JE-X008 produced a strong mechanism map and caught a mutable-source conflict, but still conflated document/page dates, inferred one revision date, and overstated stop-rule coverage; complete a clean retest with artifact hashes."
   theory_modeling:
     status: partial
-    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/THEORY_MODELING.md, evals/executions/JE-X005]
-    gap: "JE-X005 exposed an interior-to-global error; the new constraint protocol requires a clean independent retest."
+    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/THEORY_MODELING.md, evals/executions/JE-X005, evals/executions/JE-X007]
+    gap: "JE-X007 fixed the earlier constrained-solution errors but misclassified movement from an initially optimal benchmark and omitted an exact welfare-direction condition for payment; retest the new distance protocol."
   causal_identification:
     status: proved
     evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/runs/2026-07-13-round-04.md]
@@ -48,8 +48,8 @@ requirements:
     gap: "A behavior test where medical, legal, historical, or organizational evidence changes the economic model."
   reproducible_behavior_evaluation:
     status: partial
-    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions/JE-X001, evals/executions/JE-X002, evals/executions/JE-X003, evals/executions/JE-X004]
-    gap: "Strict raw coverage now includes welfare, backtracking, writing, and a non-trigger; historical runs lack full raw outputs and exact client/model provenance, while theory and trigger-dispatch coverage remain incomplete."
+    evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions/JE-X001, evals/executions/JE-X002, evals/executions/JE-X003, evals/executions/JE-X004, evals/executions/JE-X005, evals/executions/JE-X007, evals/executions/JE-X008]
+    gap: "Strict raw coverage now includes welfare, backtracking, writing, a non-trigger, repeated theory modeling, and frontier search; exact client/model provenance, clean theory/frontier passes, and automatic trigger-dispatch coverage remain incomplete."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml]
@@ -70,6 +70,6 @@ release_gate:
   ready: false
   blockers:
     - real Claude Code runtime behavior
-    - strict raw execution coverage for theory and automatic-trigger cases
+    - clean strict theory/frontier passes and automatic-trigger cases
     - public remote and anonymous installation test
     - final legacy retirement or documented coexistence decision
