@@ -104,9 +104,14 @@ closure_requirements:
   - every_required_check_passes
   - report_scope_matches_closed_scope
 failure_path_evidence:
+  predicate_check_id: ""
+  same_predicate_function_as_normal_verifier: true
+  isolated_injected_value: ""
+  violated_constraint: ""
   exact_command_or_injected_condition: ""
   numeric_exit_code_required: true
   failure_record_required: true
+  unconditional_failure_stub_forbidden: true
 handoff_receipt_requirements:
   reopen_and_hash:
     - frozen_contract

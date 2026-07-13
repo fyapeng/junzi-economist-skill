@@ -78,7 +78,7 @@ The verifier's coverage map names one predicate per claim and records pass, fail
 
 Leave unexecuted predicates explicitly unverified. A verifier failure writes its record and exits nonzero.
 
-Exercise the failure path before release. Save the exact command or injected failing condition, numeric process exit code, and resulting failure record. A nonempty status string is not evidence of nonzero exit behavior.
+Exercise the failure path before release. Feed an invalid isolated fixture or in-memory value through the same predicate function and failure path used in the normal verifier. Save the predicate `check_id`, injected value, violated constraint, exact command, numeric process exit code, and resulting failure record. An unconditional early return, a failure-record stub, or a nonempty status string does not test the predicate and is not evidence of nonzero assertion behavior. Do not mutate the frozen production artifacts to conduct this test.
 
 Close the release matrix mechanically:
 
