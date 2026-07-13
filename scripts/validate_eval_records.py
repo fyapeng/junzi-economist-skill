@@ -22,6 +22,19 @@ records = sorted(EXECUTIONS.glob("*/record.yaml")) if EXECUTIONS.exists() else [
 if not records:
     errors.append("no strict execution records found")
 
+TEXT_SUFFIXES = {".csv", ".json", ".md", ".py", ".txt", ".yaml", ".yml"}
+
+
+def valid_hash(path: Path, expected: str) -> bool:
+    """Compare exact bytes; for text artifacts also tolerate CRLF/LF checkout conversion."""
+    data = path.read_bytes()
+    candidates = {hashlib.sha256(data).hexdigest()}
+    if path.suffix.lower() in TEXT_SUFFIXES:
+        lf = data.replace(b"\r\n", b"\n")
+        crlf = lf.replace(b"\n", b"\r\n")
+        candidates.update({hashlib.sha256(lf).hexdigest(), hashlib.sha256(crlf).hexdigest()})
+    return expected.lower() in candidates
+
 for record in records:
     text = record.read_text(encoding="utf-8")
     for field in REQUIRED:
@@ -37,8 +50,7 @@ for record in records:
         if not response.is_file():
             errors.append(f"{record}: response file missing: {response.name}")
         elif hash_match:
-            actual = hashlib.sha256(response.read_bytes()).hexdigest()
-            if actual != hash_match.group(1).lower():
+            if not valid_hash(response, hash_match.group(1)):
                 errors.append(f"{record}: response hash mismatch")
         else:
             errors.append(f"{record}: invalid response_sha256")
@@ -56,8 +68,7 @@ for record in records:
         if not artifact.is_file():
             errors.append(f"{record}: artifact missing: {artifact_name}")
             continue
-        actual = hashlib.sha256(artifact.read_bytes()).hexdigest()
-        if actual != expected_hash.lower():
+        if not valid_hash(artifact, expected_hash):
             errors.append(f"{record}: artifact hash mismatch: {artifact_name}")
 
 if errors:
