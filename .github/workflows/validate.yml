@@ -17,14 +17,13 @@ jobs:
         with:
           python-version: '3.12'
       - name: Validate package
-        working-directory: skills/junzi-economist
         run: |
-          python scripts/validate.py
-          python scripts/validate_compatibility.py
+          python skills/junzi-economist/scripts/validate.py
+          python skills/junzi-economist/scripts/validate_compatibility.py
           python scripts/test_utilities.py
           python scripts/validate_eval_records.py
           python evals/fixtures/provider_model_check.py
-          python -m compileall -q scripts
+          python -m compileall -q skills/junzi-economist/scripts scripts
 
   install:
     strategy:

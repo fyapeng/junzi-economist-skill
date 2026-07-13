@@ -36,6 +36,8 @@
 
 仓库中的运行包位于 `skills/junzi-economist/`。安装脚本复制这一目录，不会修改仓库源文件。
 
+评测语料、历史运行记录和开发检查保存在仓库根目录的 `evals/` 与 `scripts/`，不会复制进个人技能目录。
+
 ### Windows PowerShell
 
 ```powershell
@@ -111,10 +113,11 @@ $junzi-economist 请审查这个结构模型的经济对象、识别和政策反
 ```powershell
 python .\skills\junzi-economist\scripts\validate.py
 python .\skills\junzi-economist\scripts\validate_compatibility.py
-python .\skills\junzi-economist\scripts\test_utilities.py
+python .\scripts\test_utilities.py
+python .\scripts\validate_eval_records.py
 ```
 
-行为评测位于 `skills/junzi-economist/evals/`。测试记录保留失败、修订和复测过程，不只保留通过结果。
+行为评测位于 `evals/`。测试记录保留失败、修订和复测过程，不只保留通过结果；它们用于项目开发和复核，不进入运行时技能。
 
 ## 当前状态
 

@@ -68,11 +68,11 @@ requirements:
     gap: "Fresh-context tests prove positive auto-invocation, negative restraint, and upstream-before-writing order; provenance is self-reported because dispatch telemetry is unavailable."
   claude_code:
     status: partial
-    evidence: [evals/platform_compatibility.yaml, scripts/validate_compatibility.py]
+    evidence: [evals/platform_compatibility.yaml, skills/junzi-economist/scripts/validate_compatibility.py]
     gap: "The package is installed at the official personal skill path with parity and current documentation confirms the layout; Claude Code itself is not installed or authenticated, so real discovery, invocation, non-trigger, routing, and backtracking runs remain."
   public_release:
     status: missing
-    evidence: ["repository release candidate at C:/Users/ENAN/junzi-economist-skill"]
+    evidence: ["local repository release candidate with a separated runtime package"]
     gap: "Public remote, anonymous clone test, v0.1.0 tag, release date, and release checks."
 release_gate:
   ready: false

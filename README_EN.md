@@ -32,6 +32,8 @@ cd junzi-economist-skill
 
 The runtime package is stored at `skills/junzi-economist/`. Manual installation copies this directory to `~/.codex/skills/` or `~/.claude/skills/`.
 
+Evaluation cases, historical executions, and development checks remain in the repository-level `evals/` and `scripts/` directories. They are not copied into a user's skill directory.
+
 The installers preflight every selected destination before making changes. Existing installations are preserved unless `-Force` on PowerShell or `--force` on the shell installer is supplied. Forced updates stage and verify the new package, retain a temporary backup, and restore the previous installation if the transaction fails.
 
 ## Use
@@ -55,7 +57,8 @@ Relevant research requests may also trigger the skill automatically. Routine for
 ```text
 python skills/junzi-economist/scripts/validate.py
 python skills/junzi-economist/scripts/validate_compatibility.py
-python skills/junzi-economist/scripts/test_utilities.py
+python scripts/test_utilities.py
+python scripts/validate_eval_records.py
 ```
 
 Codex structure and behavioral tests currently pass. Claude Code static compatibility follows the official skill layout; an independent Claude runtime test remains pending. The installed runtime directory includes its Apache-2.0 license.

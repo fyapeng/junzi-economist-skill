@@ -28,43 +28,46 @@ def read(relative: str) -> str:
         return ""
 
 
-REQUIRED = [
-    "SKILL.md",
-    "agents/openai.yaml",
+ROUTED_REFERENCES = [
+    "references/BILINGUAL_ECONOMIC_WRITING.md",
+    "references/BRANCH_AND_DECISION_PROTOCOL.md",
+    "references/DATA_AND_MEASUREMENT.md",
     "references/ECONOMIC_FOUNDATIONS.md",
-    "references/MICROECONOMIC_LAW.md",
-    "references/MACROECONOMIC_LAW.md",
-    "references/POLITICAL_ECONOMY_AND_HISTORY.md",
-    "references/THEORY_ROUTER.md",
-    "references/SITUATION_AND_FRONTIER.md",
-    "references/FRONTIER_SEARCH.md",
+    "references/ECONOMIC_WRITING.md",
     "references/EMPIRICAL_AND_STRUCTURAL_METHODS.md",
-    "references/THEORY_MODELING.md",
+    "references/FRONTIER_SEARCH.md",
     "references/HUMAN_WELFARE_AND_INSTITUTIONS.md",
+    "references/INTERDISCIPLINARY_BRIDGES.md",
+    "references/MACROECONOMIC_LAW.md",
+    "references/MICROECONOMIC_LAW.md",
+    "references/PAPER_READING.md",
+    "references/POLITICAL_ECONOMY_AND_HISTORY.md",
+    "references/SITUATION_AND_FRONTIER.md",
     "references/SOFTWARE_AND_COMPUTATION.md",
     "references/SOURCE_MAP.md",
     "references/SOURCE_PROTOCOL.md",
-    "references/BRANCH_AND_DECISION_PROTOCOL.md",
-    "references/ECONOMIC_WRITING.md",
-    "references/PAPER_READING.md",
-    "assets/templates/RESEARCH_MAINLINE.yaml",
-    "assets/templates/CLAIM_LEDGER.yaml",
-    "assets/templates/MODEL_CARD.md",
+    "references/STRUCTURAL_VERIFICATION_GATE.md",
+    "references/THEORY_MODELING.md",
+    "references/THEORY_ROUTER.md",
+]
+
+REQUIRED = [
+    "SKILL.md",
+    "agents/openai.yaml",
+    *ROUTED_REFERENCES,
+    "assets/templates/BILINGUAL_CLAIM_MAP.yaml",
     "assets/templates/BRANCH_LOG.yaml",
-    "assets/templates/PAPER_EVIDENCE_MAP.yaml",
+    "assets/templates/CLAIM_LEDGER.yaml",
+    "assets/templates/DATA_CONSTRUCTION_MAP.yaml",
+    "assets/templates/INTERDISCIPLINARY_BRIDGE.yaml",
     "assets/templates/MANUSCRIPT_CLAIM_MAP.yaml",
-    "evals/triggers.yaml",
-    "evals/cases.yaml",
-    "evals/legacy_capabilities.yaml",
-    "evals/platform_compatibility.yaml",
-    "evals/run_schema.yaml",
-    "evals/completion_audit.yaml",
-    "evals/fixtures/provider_model_check.py",
+    "assets/templates/MODEL_CARD.md",
+    "assets/templates/PAPER_EVIDENCE_MAP.yaml",
+    "assets/templates/RESEARCH_MAINLINE.yaml",
+    "assets/templates/STRUCTURAL_RELEASE_MATRIX.yaml",
     "scripts/check_citekeys.py",
     "scripts/prose_lint.py",
-    "scripts/test_utilities.py",
     "scripts/validate_compatibility.py",
-    "scripts/validate_eval_records.py",
     "LICENSE.txt",
 ]
 
@@ -89,7 +92,7 @@ else:
 if len(skill.splitlines()) >= 300:
     fail("SKILL.md should stay below 300 lines")
 
-for relative in REQUIRED[2:18]:
+for relative in ROUTED_REFERENCES:
     if f"`{relative}`" not in skill:
         fail(f"SKILL.md does not route to {relative}")
 
@@ -161,16 +164,6 @@ for phrase in ["Causal identification", "Structural modeling and estimation", "N
     if phrase.casefold() not in methods_folded:
         fail(f"method reference missing: {phrase}")
 
-cases = read("evals/cases.yaml")
-case_count = len(re.findall(r"(?m)^  - id: JE-R\d{2}$", cases))
-if case_count < 24:
-    fail(f"need at least twenty-four core eval cases; found {case_count}")
-
-triggers = read("evals/triggers.yaml")
-trigger_count = len(re.findall(r"(?m)^  - id: JE-T\d{2}$", triggers))
-if trigger_count < 10:
-    fail(f"need at least ten trigger cases; found {trigger_count}")
-
 interface = read("agents/openai.yaml")
 for phrase in ["display_name:", "short_description:", "$junzi-economist", "allow_implicit_invocation: true"]:
     if phrase not in interface:
@@ -184,6 +177,5 @@ if ERRORS:
 
 print(
     "Junzi Economist validation passed: "
-    f"{len(REQUIRED)} required files, {case_count} core cases, "
-    f"{trigger_count} trigger cases, and progressive reference routing."
+    f"{len(REQUIRED)} runtime files and {len(ROUTED_REFERENCES)} progressively routed references."
 )
