@@ -37,7 +37,7 @@ State the object, leverage, main finding, and bounded update. Include a mechanis
 
 ### Introduction
 
-Move from the economic problem to the unresolved margin, research leverage, central result, interpretation, and literature position. Present the main result before a long review. A structural model should enter because reduced-form or descriptive evidence cannot answer a specified primitive, equilibrium, or policy question.
+Move from the economic problem to the unresolved mechanism or policy target, structural environment, evidence that disciplines it, central result, interpretation, and literature position. Present the main result before a long review. For a structural paper, explain early how descriptive and reduced-form evidence motivates, identifies, benchmarks, or validates the model, and which equilibrium, welfare, or counterfactual conclusion the integrated structure makes possible.
 
 ### Setting and data
 

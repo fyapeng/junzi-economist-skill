@@ -1,4 +1,4 @@
-schema_version: 2
+schema_version: 3
 economic_object:
   real_phenomenon_or_allocation: ""
   affected_people_or_groups: []
@@ -17,12 +17,21 @@ research_target:
   estimand_parameter_or_counterfactual: ""
   population_margin_and_support: ""
   observable_implications: []
+structural_program:
+  model_artifact: ""
+  primitives_states_timing_and_equilibrium: ""
+  mapping_from_model_to_data: ""
+  identification_and_normalizations: []
+  evidence_to_structure_map: [] # evidence | role: motivate/identify/moment/benchmark/validate | model_object | support
+  model_dependent_claims: []
 evidence_path:
   institutional_facts: []
+  facts_the_model_must_explain: []
+  reduced_form_evidence: []
   measurement_or_data_map: ""
   analysis_dataset_or_sources: []
-  design_or_model_artifact: ""
-  identifying_variation_or_model_mapping: ""
+  identifying_variation_or_moments: ""
+  targeted_and_untargeted_validation: []
   success_evidence: []
 claims:
   ledger: ""

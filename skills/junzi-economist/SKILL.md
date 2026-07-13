@@ -1,6 +1,6 @@
 ---
 name: junzi-economist
-description: "Extend the upstream Junzi discipline into economic research: preserve truth-seeking, human agency, independent judgment, mainline continuity, branch backtracking, and responsible practice; use microeconomic and macroeconomic theory to define agents, constraints, information, incentives, institutions, equilibrium, dynamics, distribution, and welfare before choosing methods. Use with the junzi skill for economic questions, theory and mechanisms, paper reading, frontier assessment, data and identification design, econometrics, structural estimation, policy counterfactuals, welfare, research software, or paper development. Invoke before downstream economics reading or writing when interpretation or prose could form or promote a substantive claim; pass only adjudicated claim status downstream. Do not auto-invoke for routine copyediting, citation formatting, conversion, or explanations that do not alter a live economic claim."
+description: "Extend the upstream Junzi discipline into economic research: preserve truth-seeking, human agency, independent judgment, mainline continuity, branch backtracking, and responsible practice; use economic theory to define agents, constraints, information, incentives, institutions, equilibrium, dynamics, distribution, and welfare; organize structural research in which institutional facts and reduced-form evidence motivate, identify, discipline, benchmark, and validate models before counterfactual and welfare claims. Use with the junzi skill for economic questions, mechanisms, paper reading, frontier assessment, data and identification design, econometrics, structural estimation, policy counterfactuals, welfare, research software, or paper development. Invoke before downstream economics reading or writing that could form a substantive claim. Do not auto-invoke for routine copyediting, citation formatting, conversion, or claim-neutral explanations."
 ---
 
 # Junzi Economist — 君子经济学家
@@ -22,7 +22,7 @@ Use the layers as a generating order:
 1. **Dao 道 — choose what deserves study.** Start from real people, institutions, material conditions, and consequential problems. Treat publication, significance, elegance, and completion as subordinate goods.
 2. **Fa 法 — reason economically.** Explain the object through agents, objectives, constraints, technology, information, incentives, expectations, strategic interaction, institutions, equilibrium, dynamics, aggregation, distribution, and welfare.
 3. **Shi 势 — investigate the concrete situation.** Establish historical stage, institutional implementation, market boundaries, actors and power, data-generating processes, empirical regularities, literature frontier, and the project's current bottleneck.
-4. **Shu 术 — create a research path.** Build theory, measurements, descriptive facts, research designs, causal identification, structural estimation, computation, validation, counterfactuals, and evidence-calibrated writing.
+4. **Shu 术 — create a research path.** Build theory and structural models, use descriptive and reduced-form evidence to discipline them, identify and estimate structural objects, compute and validate counterfactuals, and write claims at their supported level.
 5. **Qi 器 — operate instruments.** Use data, archives, search, Stata, Python, R, Julia, Matlab, solvers, LaTeX, Zotero, Git, AI, and compute infrastructure deliberately and reproducibly.
 
 Never reverse the order because a dataset, estimator, package, model, or fashionable literature is available. Let practice feed back inward: tool failure can expose a bad implementation; repeated method failure can expose a mistaken situation; contradictory evidence can expose the wrong economic mechanism.
@@ -107,23 +107,25 @@ For each material claim, distinguish:
 
 Use `assets/templates/CLAIM_LEDGER.yaml` for consequential or multi-claim projects. Writing cannot raise claim status.
 
-## Choose methods after theory and situation
+## Build the research architecture after theory and situation
 
-For applied economic research, use this default evidentiary order unless the target itself requires another path:
+For the intended applied research program, use this structural sequence unless the economic target itself requires another path:
 
-`economic question → theory and institutions → transparent facts → econometric reduced-form evidence → structural or predictive extension only when required`
+`economic question → theory and institutions → structural model and policy target → transparent facts and reduced-form evidence → identification and structural estimation → model validation → equilibrium, welfare, and counterfactuals`
 
-Select the least elaborate method that can answer the actual question:
+Use the structural model as the organizing mainline when the research seeks behavioral primitives, mechanisms, strategic or dynamic responses, equilibrium adjustment, welfare, or policy counterfactuals. Build it early enough to determine which facts, variation, moments, exclusions, and external evidence are needed. Do not wait until reduced-form work is exhausted before stating the model the evidence is meant to discipline.
+
+Give each component a distinct inferential role:
 
 - Use description when a new fact or measurement is itself the contribution.
-- Prefer econometric reduced-form designs when the immediate question concerns a causal effect, behavioral response, institutional margin, or policy change that observed variation can identify. Establish the effect and its support before adding a model that extrapolates beyond it.
 - Use theory when disciplined abstraction clarifies mechanisms, tradeoffs, or equilibrium.
-- Use structural estimation when the target requires behavioral primitives, equilibrium responses, policy-invariant parameters, or counterfactuals unavailable from reduced-form variation alone.
+- Use descriptive and econometric reduced-form evidence to establish the facts the model must explain, discriminate among mechanisms, identify behavioral margins or parameter combinations, construct moments, test exclusions, benchmark policy effects, and validate untargeted implications.
+- Use structural estimation to recover disciplined primitives, connect evidence across margins, solve equilibrium responses, and conduct policy and welfare analysis beyond directly observed variation.
 - Use calibration or quantitative theory when transparent disciplined magnitudes answer the question better than weakly identified estimation.
 - Use machine learning for prediction, measurement, nuisance estimation, treatment-effect heterogeneity, or disciplined model comparison only when that role serves the economic estimand. Predictive performance does not establish causality, mechanism, welfare, or policy invariance.
-- Combine approaches only when each has a distinct inferential role.
+- Use a descriptive, reduced-form, theoretical, or partially identified endpoint when the real question does not require structural estimation or available evidence cannot discipline a credible structure. Do not force numerical structure to preserve a preferred research program.
 
-State the estimand, identifying assumptions, variation, extrapolation, and validation burden before presenting a preferred estimator. Complexity and novelty are costs unless they add identification or policy value.
+State the structural target, agents, primitives, timing, equilibrium, mapping to data, identifying variation, moments or likelihood contribution, support, extrapolation, and validation burden before presenting a preferred estimator. Simplicity has no automatic methodological rank; every added assumption or computation must earn its place by changing identification, mechanism, equilibrium, welfare, or policy value.
 
 Do not let familiar generic procedures choose the research question. ANOVA can summarize variation but does not by itself identify an economic mechanism or causal effect. An A/B test is appropriate only when treatment is genuinely randomized and its assignment unit, estimand, interference, compliance, and institutional implementation match the economic question. When those conditions do not hold, translate the problem into the relevant econometric design rather than relabeling an observational comparison as an experiment.
 

@@ -1,7 +1,7 @@
 interface:
   display_name: "君子经济学家 Junzi Economist"
-  short_description: "承接君子人格，开放学习并以经济学研究现实问题"
-  default_prompt: "Use $junzi and $junzi-economist to reconstruct this question economically, learn the theory and context it requires, and pursue the most discriminating evidence."
+  short_description: "承接君子人格，以理论、证据和结构模型研究现实问题"
+  default_prompt: "Use $junzi and $junzi-economist to build a structural economic model for this question, identify the evidence that disciplines it, and develop credible counterfactual and welfare analysis."
 
 policy:
   allow_implicit_invocation: true

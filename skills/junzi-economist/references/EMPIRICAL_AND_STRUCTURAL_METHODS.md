@@ -4,11 +4,11 @@
 
 Classify the target as a descriptive object, causal effect, mechanism, behavioral primitive, equilibrium relationship, forecast, policy counterfactual, or welfare comparison. Different targets require different evidence.
 
-For ordinary applied work, begin with the most transparent evidence that can discriminate among the economic mechanisms. The normal progression is institutional facts and descriptive regularities, followed by a reduced-form econometric design for the relevant margin. Structural estimation enters when the research target truly requires primitives, equilibrium adjustment, welfare, or unsupported counterfactuals. Prediction enters when prediction is the target or when it performs a named supporting role. Do not begin from the most elaborate method already present in a project directory.
+For the intended applied program, formulate a structural model early from theory and institutions, then design descriptive and reduced-form work around the objects that can identify, discipline, challenge, or validate it. The model organizes the research question, mechanisms, equilibrium, counterfactuals, and welfare; the evidence determines which parts of that structure deserve belief. Prediction enters when it is the target or performs a named supporting role. Do not begin from an estimator or inherited codebase.
 
 ## Descriptive economic facts
 
-Build economically meaningful measurements before causal work. Examine levels, distributions, transitions, concentration, decomposition, heterogeneity, market boundaries, balance identities, and institutional timing. Validate definitions and denominators. A carefully established fact can be a complete contribution.
+Build economically meaningful measurements before and alongside estimation. Examine levels, distributions, transitions, concentration, decomposition, heterogeneity, market boundaries, balance identities, and institutional timing. Use them to define states, choices, constraints, heterogeneity, moments, support, and validation targets. A carefully established fact can also be a complete contribution when the research target is descriptive.
 
 ## Causal identification
 
@@ -25,6 +25,8 @@ population and margin:
 
 Then choose among experiments, differences-in-differences, event studies, instrumental variables, regression discontinuity, synthetic controls, panel methods, matching/weighting, or other designs. The design name never substitutes for the assumption.
 
+Within a structural program, reduced-form evidence may enter before estimation to motivate the mechanism, during estimation to identify parameters or construct moments, and after estimation to benchmark causal margins or test untargeted implications. Record which model object each design disciplines and which conclusions remain model-dependent.
+
 For the chosen design, retrieve current methodological guidance when estimators, diagnostics, or failure modes have materially evolved. Translate it into the live setting rather than importing a fashionable implementation. At minimum, examine timing and anticipation, assignment and exposure, compliance and selection, spillovers and equilibrium responses, composition and attrition, measurement change, support, clustering, and treatment-effect heterogeneity where they can alter the estimand or inference.
 
 Treat ANOVA, mean comparisons, correlations, and predictive importance as descriptive diagnostics unless an assignment mechanism or defensible identification argument gives them a causal interpretation. Use experimental language only for genuine randomized assignment with a defined unit, exposure, estimand, and interference structure.
@@ -37,11 +39,20 @@ Use robustness analysis to probe named threats and rival explanations. A pattern
 
 Use a structural model when the question requires latent preferences or technology, strategic or dynamic responses, equilibrium feedback, or policy counterfactuals outside observed variation.
 
-Before building it, state what the preceding facts or reduced-form evidence can already establish and name the unanswered object that requires structure. If no economically consequential target remains beyond the reduced-form evidence, stop rather than adding structure for its own sake.
+Build it early enough to guide evidence collection and identification. State which economic objects the model adds, which facts and reduced-form results motivate it, which pieces of evidence identify or discipline it, and which conclusions would survive without it.
+
+Maintain an evidence-to-structure map:
+
+- descriptive facts define the phenomenon, state space, heterogeneity, support, and model targets;
+- causal or quasi-experimental margins discipline parameter combinations and behavioral responses;
+- institutional variation supplies exclusions, timing, equilibrium shifts, or policy regimes;
+- targeted moments or likelihood contributions estimate the structural objects;
+- untargeted facts and external reduced-form estimates test implications the model was not fitted to;
+- counterfactuals and welfare results inherit the uncertainty, support, and misspecification revealed by all preceding evidence.
 
 Document the economic environment, timing, information, actions, equilibrium or solution concept, mapping to data, sources of identification, normalizations, estimator, approximation, targeted and untargeted fit, counterfactual support, and welfare criterion. Keep computation, sample geometry, population identification, estimator performance, and policy extrapolation as distinct diagnoses. Convergence establishes only a numerical result under the implemented problem; fit does not establish identification or policy validity.
 
-Match verification to the claim. Use analytic arguments, observational-equivalence searches, rank or sensitivity analysis, simulated recovery, repeated samples, alternative algorithms, and external evidence only when each can change a named identification, estimation, equilibrium, or counterfactual judgment. Declare observed support, interpolation, and extrapolation separately. Report unresolved regions and failed solutions rather than converting them into favorable evidence.
+Match verification to the claim. Use analytic arguments, observational-equivalence searches, rank or sensitivity analysis, simulated recovery, repeated samples, alternative algorithms, reduced-form benchmarks, untargeted moments, and external evidence only when each can change a named identification, estimation, equilibrium, or counterfactual judgment. Declare observed support, interpolation, and extrapolation separately. Report unresolved regions and failed solutions rather than converting them into favorable evidence.
 
 ## Computation and numerical verification
 

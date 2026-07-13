@@ -30,9 +30,9 @@ agents → objectives → constraints/information → choices → interaction
 
 Then identify a rival that changes a different link while matching the headline fact.
 
-## Reduced-form and structural bridge
+## Evidence-to-structure bridge
 
-Economic theory should determine the objects to estimate, not predetermine a structural estimator. A theoretical mechanism may be tested with descriptive facts, quasi-experimental variation, experiments, calibrated models, structural estimation, or combinations. Use structural estimation only when latent primitives and equilibrium counterfactuals are essential to the target question.
+Economic theory should determine the structural objects, interactions, equilibrium, and policy target. Use descriptive facts, quasi-experimental variation, experiments, calibrated moments, and external evidence to decide which mechanisms enter, identify parameter combinations, and test implications. For the intended applied program, let structural estimation integrate these pieces when the target concerns primitives, equilibrium, welfare, or counterfactuals. If the available evidence cannot discipline the proposed model, narrow, partially identify, redesign, or abandon the structure rather than treating computation as evidence.
 
 ## Cross-disciplinary bridge
 

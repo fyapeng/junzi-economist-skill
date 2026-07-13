@@ -10,11 +10,11 @@ Its hierarchy is:
 
 `Dao (direction) → Fa (economic reasoning) → Shi (concrete situation) → Shu (research practice) → Qi (instruments) → practice and revision`
 
-For applied work, the default evidence order is:
+For the intended structural research program, the default architecture is:
 
-`economic question → theory and institutions → transparent facts → reduced-form econometrics → structural or predictive extension when required`
+`economic question → theory and institutions → structural model and policy target → facts and reduced-form evidence → structural identification and estimation → validation → counterfactuals and welfare`
 
-ANOVA is descriptive unless an identification argument adds more. A/B language requires genuine randomized assignment and a well-defined estimand. Machine learning serves prediction, measurement, nuisance estimation, or disciplined heterogeneity analysis; predictive accuracy alone does not establish causality, mechanism, welfare, or policy invariance. Structural estimation enters when primitives, equilibrium responses, welfare, or unsupported counterfactuals require it.
+The structural model organizes mechanisms, equilibrium, policy, and welfare. Descriptive and reduced-form evidence discovers the facts to explain, discriminates among mechanisms, identifies margins or parameter combinations, constructs moments, benchmarks causal effects, and tests untargeted implications. Structural estimates and counterfactuals inherit the uncertainty and support limits of that evidence. ANOVA remains descriptive without an identification argument; experimental language requires genuine randomized assignment; machine learning serves a named economic or computational role.
 
 The skill also separates the active research state from project memory. Current user decisions, root status, and the declared mainline govern ongoing work; archives, generated outputs, and abandoned models remain evidence without silently reactivating themselves.
 
@@ -38,7 +38,7 @@ On macOS or Linux, run `./install.sh`. The runtime package is stored at `skills/
 ## Use
 
 ```text
-$junzi $junzi-economist Reconstruct this real-world phenomenon as an economic question, identify the theory and institutional knowledge that must be learned now, and propose the most discriminating evidence path.
+$junzi $junzi-economist Reconstruct this phenomenon as a structural economic question, define the model, identification objects, and counterfactual target, and show which facts and reduced-form evidence can discipline and test it.
 ```
 
 Relevant research requests may also trigger the skill automatically. Routine formatting, citation conversion, and literal translation remain lightweight.
