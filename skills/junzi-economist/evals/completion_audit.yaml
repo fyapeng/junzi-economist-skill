@@ -15,13 +15,13 @@ requirements:
     evidence: [references/MACROECONOMIC_LAW.md, evals/executions/JE-X014]
     gap: "JE-X014 passes fiscal closure, overlapping generations, transition dynamics, feasibility, and cohort incidence; monetary-fiscal interaction, incomplete markets, finance, open economy, and aggregate uncertainty remain."
   institutions_and_frontier:
-    status: partial
-    evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/executions/JE-X008, evals/executions/JE-X010]
-    gap: "JE-X010 cleanly separated dates and hashed mutable artifacts, but its design omitted the patient's observed choice margin and relied on unverified rollout or threshold variation."
+    status: proved
+    evidence: [references/SITUATION_AND_FRONTIER.md, references/FRONTIER_SEARCH.md, evals/executions/JE-X008, evals/executions/JE-X010, evals/executions/JE-X026]
+    gap: "JE-X026 independently reverified three mutable primary sources, preserved version conflicts, restored the full patient choice chain, rejected unverified rollout and threshold claims, and stopped at the assignment-evidence bottleneck; future breadth should cover non-health institutions."
   theory_modeling:
-    status: partial
-    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/THEORY_MODELING.md, evals/executions/JE-X005, evals/executions/JE-X007, evals/executions/JE-X009]
-    gap: "JE-X009 correctly handled constrained finite benchmark distance, but did not explicitly characterize the kink derivatives or execute its proposed domain-restricted grid check."
+    status: proved
+    evidence: [references/ECONOMIC_FOUNDATIONS.md, references/THEORY_MODELING.md, evals/executions/JE-X005, evals/executions/JE-X007, evals/executions/JE-X009, evals/executions/JE-X025]
+    gap: "JE-X025 closes the prior endpoint with global constrained solutions, necessary-and-sufficient finite classifications, all one-sided kinks, an executed exact regression suite, fiscal-resource-cost extension, and explicit separation of analytic proof from finite computation; broaden later to strategic and stochastic models."
   causal_identification:
     status: proved
     evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/runs/2026-07-13-round-04.md]
@@ -49,7 +49,7 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Twenty-three strict raw executions now include automatic routing, real PDF, long manuscript, legacy-only baselines, and integrated comparisons; exact client/model provenance and platform-level telemetry remain unavailable."
+    gap: "Twenty-five strict raw executions now include automatic routing, real PDF, long manuscript, legacy-only baselines, integrated comparisons, and clean theory/frontier endpoints; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
@@ -70,5 +70,4 @@ release_gate:
   ready: false
   blockers:
     - real Claude Code runtime behavior
-    - clean strict theory/frontier endpoint passes
     - public remote and anonymous installation test

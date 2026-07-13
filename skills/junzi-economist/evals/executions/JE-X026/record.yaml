@@ -1,0 +1,55 @@
+schema_version: 1
+execution_id: JE-X026
+case_id: JE-R33
+timestamp_utc: "2026-07-13T03:43:26Z"
+skill_commit: "b85466e"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: frontier_endpoint
+evaluator: longwrite_integrated-independent-source-audit
+isolation: blind
+prompt: "As of 2026-07-13, reverify three mutable primary sources: Singh and Venkataramani's Rationing by Race; China NHC 国卫办医政发〔2024〕21号; and NHS England Diversion of Referrals. Separate every date and version field, hash mutable artifacts, bound every claim, then decide whether public evidence establishes an exogenous rollout, threshold, or other causal variation. If not, preserve the mechanism, specify the full decision-data chain, pause, and name reopening conditions."
+expected:
+  - separate issue document effective webpage revision and retrieval dates
+  - verify primary artifacts and preserve mutable-version conflicts
+  - distinguish official policy description from implementation and causal assignment
+  - include recommendation observed information patient choice capacity acceptance allocation and outcomes
+  - stop the identification branch and name operational reopening evidence when variation is absent
+forbidden:
+  - infer missing dates or silently reconcile conflicting versions
+  - turn a policy target early adopter or national rollout statement into a quasi-experiment
+  - omit the patient choice margin
+  - continue literature collection when assignment evidence is the binding constraint
+loaded_files:
+  - SKILL.md
+  - references/SITUATION_AND_FRONTIER.md
+  - references/FRONTIER_SEARCH.md
+  - references/SOURCE_PROTOCOL.md
+  - references/BRANCH_AND_DECISION_PROTOCOL.md
+response_file: response.md
+response_sha256: "9d4426cdb47bec1a3edffcde90c20d558607438df4639b72e4aeba1f9d97abed"
+audit_file: audit.md
+artifacts:
+  - file: artifacts/SOURCES.md
+    sha256: "f2ab6e76439137aa393e90dba6a0106834c04cb69d273882ad899b30f10ac2de"
+  - file: artifacts/PROVENANCE.md
+    sha256: "c63187a5a0ffcde70f9f2bdb00db4ca52e6e1827828afc10dda471485cbabf79"
+rubric:
+  - criterion: date version and artifact provenance
+    score: 2
+    max_score: 2
+  - criterion: claim support boundaries and conflict preservation
+    score: 2
+    max_score: 2
+  - criterion: complete recommendation choice capacity and acceptance chain
+    score: 2
+    max_score: 2
+  - criterion: identification stop and reopening discipline
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the NHC official page rejected scripted byte retrieval with HTTP 412 so no webpage-byte hash is claimed
+  - dynamic HTML hashes identify timestamped response snapshots while the downloaded NBER PDF is the stable manuscript-version anchor
+  - exact client and model versions unavailable

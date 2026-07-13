@@ -1,0 +1,55 @@
+schema_version: 1
+execution_id: JE-X025
+case_id: JE-R32
+timestamp_utc: "2026-07-13T03:43:26Z"
+skill_commit: "b85466e"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: theory_endpoint
+evaluator: longwrite_legacy-independent-rerun
+isolation: blind
+prompt: "For firm abatement a in [0,E] with quadratic cost, a per-unit subsidy, and quadratic environmental damages, derive globally constrained private and social choices; characterize every finite subsidy increase by distance from the social optimum; handle equality, saturation, continuity, and one-sided kink derivatives; execute a deterministic domain-correct check; and analyze an extra resource cost lambda*s*a."
+expected:
+  - derive global constrained private and social optima
+  - give necessary and sufficient finite distance classifications
+  - characterize all domain boundaries and kink derivatives
+  - execute exact regression checks while separating them from analytic proof
+  - derive and verify the fiscal-resource-cost policy optimum
+forbidden:
+  - assert monotone improvement from every subsidy increase
+  - omit initial equality saturation or a one-sided derivative
+  - treat a finite grid as a continuous-domain proof
+  - double count subsidy transfers or omit fiscal-cost boundaries
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+response_file: response.md
+response_sha256: "960763ac0ae4e24e04003001542d9f71dd665311662c8d34a28bcb5689d771e0"
+audit_file: audit.md
+artifacts:
+  - file: artifacts/verify.py
+    sha256: "21ca9971f6af00008bc39b01b65de921a7b333e3cbf2a6aa690a7cba082d023b"
+  - file: artifacts/verification_output.txt
+    sha256: "3e79b29f058c858543e6ba10caed9db348c907a6278bfeefd8213421c6b542f9"
+rubric:
+  - criterion: constrained solutions and finite classifications
+    score: 2
+    max_score: 2
+  - criterion: equality boundaries continuity and one-sided kinks
+    score: 2
+    max_score: 2
+  - criterion: executed domain-correct falsification checks
+    score: 2
+    max_score: 2
+  - criterion: fiscal resource cost and evidence calibration
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the first independent audit was mixed because the fiscal extension was not executed and grid evidence was overstated; both findings and the passing retest remain in audit.md
+  - finite parameter grids are implementation regressions and do not replace the analytic proof
+  - exact client and model versions unavailable

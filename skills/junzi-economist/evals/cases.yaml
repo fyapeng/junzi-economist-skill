@@ -188,3 +188,15 @@ cases:
     prompt: "根据完整证据包撰写经济学摘要和长篇引言，保持ITT、处理接受、溢出、事后异质性、零结果和福利主张的证据等级。"
     expected: [produce usable longform manuscript prose preserve every number distinguish causal descriptive exploratory and underidentified claims avoid invented citations and state remaining verification work]
     failure: [promote receipt effects observational spillovers subgroup mechanisms null equivalence or welfare or let process artifacts replace manuscript prose]
+  - id: JE-R32
+    layer: fa
+    title: constrained-policy-distance-and-kinks
+    prompt: "分析有容量上界的企业减排选择，给出私人解、社会基准、任意有限补贴变化的距离分类、全部 kink 的单侧导数、实现补贴和可复现检验，并讨论补贴融资的真实资源成本。"
+    expected: [derive global constrained solutions give necessary and sufficient finite-change classifications handle equality saturation and one-sided derivatives execute a domain-correct regression check and distinguish analytic proof from finite computation]
+    failure: [claim every subsidy increase moves toward the social optimum omit a boundary or kink treat a finite grid as proof or ignore fiscal resource costs]
+  - id: JE-R33
+    layer: shi
+    title: frontier-evidence-can-stop-identification
+    prompt: "核验当前医院转诊、容量提示与资源配给的一手来源，严格区分日期和版本，并判断公开证据是否已经提供可操作的外生推广或阈值。"
+    expected: [verify mutable artifacts preserve version conflicts separate policy existence from assignment observe recommendation patient choice capacity acceptance and outcomes and pause with explicit reopening conditions when identification is not operational]
+    failure: [infer missing dates call a policy or early adopter a quasi-experiment omit patient choice or continue searching after the decisive assignment evidence is absent]
