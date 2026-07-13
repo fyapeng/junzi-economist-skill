@@ -1,0 +1,152 @@
+{
+  "seed": 52077,
+  "sample": {
+    "N": 1200,
+    "T": 14,
+    "rows": 16800,
+    "regimes_observed": [
+      0,
+      0.8
+    ]
+  },
+  "transition_estimates": [
+    {
+      "a": 0,
+      "r": 0,
+      "n": 2474,
+      "success": 719,
+      "qhat": 0.2907070707070707
+    },
+    {
+      "a": 0,
+      "r": 1,
+      "n": 6064,
+      "success": 4716,
+      "qhat": 0.7776586974443529
+    },
+    {
+      "a": 1,
+      "r": 0,
+      "n": 1907,
+      "success": 827,
+      "qhat": 0.4337002096436059
+    },
+    {
+      "a": 1,
+      "r": 1,
+      "n": 3028,
+      "success": 2577,
+      "qhat": 0.8509409045889733
+    },
+    {
+      "a": 2,
+      "r": 0,
+      "n": 1154,
+      "success": 611,
+      "qhat": 0.5294372294372295
+    },
+    {
+      "a": 2,
+      "r": 1,
+      "n": 2173,
+      "success": 1988,
+      "qhat": 0.9146734130634775
+    }
+  ],
+  "true_theta": [
+    1.15,
+    1.35,
+    2.1,
+    0.91
+  ],
+  "nfxp_theta": [
+    1.1695613858349188,
+    1.3117408483544684,
+    2.0675870696421317,
+    0.9164678693043184
+  ],
+  "nfxp_objective": 15513.19045149536,
+  "fixed_point": {
+    "residuals": [
+      0.0,
+      2.9345414986892138e-12
+    ],
+    "iterations": [
+      7,
+      6
+    ]
+  },
+  "ccp_theta": [
+    1.8131687640558152,
+    1.3773176353330434,
+    2.0259315162248135,
+    0.7828421455799364
+  ],
+  "ccp_objective": 0.10644285064287991,
+  "population_local_rank": {
+    "rank": 4,
+    "columns": 4,
+    "singular_values": [
+      21.456330677323233,
+      3.4217169389663753,
+      2.0009058734896117,
+      0.5748594986135623
+    ],
+    "claim": "continuous local population rank under maintained state/action support and normalization; no global identification claim"
+  },
+  "restricted_alternative": {
+    "restriction": "beta <= 0.78 via beta=0.55+0.23*logistic(z)",
+    "theta": [
+      1.825758668676818,
+      1.2939584814362683,
+      2.0381771257760737,
+      0.7799228694699928
+    ],
+    "objective": 15515.525096916721,
+    "objective_gap": 2.3346454213606194,
+    "realized_slack": 7.713053000724113e-05,
+    "acceptance_tolerance": 1e-12,
+    "feasible": true
+  },
+  "policy_support": {
+    "observed": [
+      0,
+      0.8
+    ],
+    "model_based_interpolation": [
+      0.4
+    ],
+    "extrapolation": []
+  },
+  "counterfactuals": [
+    {
+      "rebate": 0,
+      "private_flow_payoff": 2.3935863273574274,
+      "government_transfers": 0.0,
+      "real_resource_cost": 0.27750065442786553,
+      "social_welfare_flow": 2.116085672929562,
+      "retrofit_share": 0.08384985467744269
+    },
+    {
+      "rebate": 0.4,
+      "private_flow_payoff": 2.379336239577325,
+      "government_transfers": 0.04811412184095143,
+      "real_resource_cost": 0.3098532364142912,
+      "social_welfare_flow": 2.0213688813220823,
+      "retrofit_share": 0.12028530460237856
+    },
+    {
+      "rebate": 0.8,
+      "private_flow_payoff": 2.382443588065811,
+      "government_transfers": 0.13575195756403002,
+      "real_resource_cost": 0.35377058918811555,
+      "social_welfare_flow": 1.8929210413136652,
+      "retrofit_share": 0.16968994695503753
+    }
+  ],
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

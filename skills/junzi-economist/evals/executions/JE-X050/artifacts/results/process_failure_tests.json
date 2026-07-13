@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "requirement": "each isolated whole-replication failure writes diagnostics and exits nonzero",
+  "records": [
+    {
+      "stage": "simulation",
+      "exit_code": 2,
+      "diagnostic_written_before_exit": true,
+      "diagnostic": {
+        "status": "failed",
+        "stage": "simulation",
+        "reason": "declared exact-count DGP not realized",
+        "details": {
+          "expected_rows": 200,
+          "realized_rows": 199,
+          "no_redraw_attempted": true
+        }
+      }
+    },
+    {
+      "stage": "equilibrium",
+      "exit_code": 2,
+      "diagnostic_written_before_exit": true,
+      "diagnostic": {
+        "status": "failed",
+        "stage": "equilibrium",
+        "reason": "forced whole-replication equilibrium failure",
+        "details": {
+          "market": 0,
+          "all_markets_required": true,
+          "partial_sample_not_estimated": true
+        }
+      }
+    },
+    {
+      "stage": "estimation",
+      "exit_code": 2,
+      "diagnostic_written_before_exit": true,
+      "diagnostic": {
+        "status": "failed",
+        "stage": "estimation",
+        "reason": "rank-deficient instrument system",
+        "details": {
+          "whole_replication_failed": true,
+          "estimates_not_reported": true
+        }
+      }
+    }
+  ]
+}

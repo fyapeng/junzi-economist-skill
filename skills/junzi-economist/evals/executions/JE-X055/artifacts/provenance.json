@@ -1,0 +1,37 @@
+{
+  "task": "fresh blind exact-commit dynamic closed-domain transfer",
+  "workspace": "C:/Users/ENAN/AppData/Local/Temp/junzi-economist-struct-x055",
+  "skill_source": {
+    "repository": "C:/Users/ENAN/junzi-economist-skill",
+    "commit": "f120979",
+    "read_method": "git show <commit>:<path>",
+    "files": [
+      "skills/junzi-economist/SKILL.md",
+      "skills/junzi-economist/references/EMPIRICAL_AND_STRUCTURAL_METHODS.md",
+      "skills/junzi-economist/references/THEORY_MODELING.md",
+      "skills/junzi-economist/references/SOFTWARE_AND_COMPUTATION.md"
+    ]
+  },
+  "data": {
+    "type": "fully synthetic fixed panel",
+    "seed": 55055,
+    "rows": 15750,
+    "selection": "none",
+    "encoding": "utf-8-sig CSV"
+  },
+  "software_entrypoints": {
+    "python": "C:/Users/ENAN/miniforge3/envs/codex/python.exe",
+    "production": "run_model.py",
+    "independent_verifier": "independent_verify.py"
+  },
+  "successful_runs": [
+    {"entrypoint": "run_model.py", "exit_code": 0, "wall_seconds": 24.5},
+    {"entrypoint": "independent_verify.py", "exit_code": 0, "wall_seconds": 18.3, "all_checks_passed": true}
+  ],
+  "recorded_failures": [
+    {"stage": "first verifier artifact write", "cause": "NumPy boolean was not JSON serializable", "resolution": "cast checks to native bool and reran full verifier"},
+    {"stage": "second verifier", "cause": "coverage expectation counted one mathematically empty upper probability slab; accounting identity used incorrect transfer signs", "resolution": "derived nonempty slab count from the actual closed domain, corrected private-minus-transfer identity, and reran full verifier"},
+    {"stage": "first artifact round-trip report", "cause": "a NumPy boolean was not JSON serializable", "resolution": "cast round-trip checks to native bool and reran the complete artifact check"}
+  ],
+  "claim_scope": "local population-rank evidence and numerical closed-domain search only; no global-identification, sampling-distribution, or external-validity claim"
+}

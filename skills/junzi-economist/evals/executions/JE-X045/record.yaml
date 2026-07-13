@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X045
+case_id: JE-R43
+timestamp_utc: "2026-07-13T06:25:00Z"
+skill_commit: "d9e1673"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: structural_io_blind
+evaluator: independent-rerun-audit
+isolation: blind
+prompt: "Estimate differentiated-products demand and supply, recover marginal costs, diagnose valid weak and invalid instruments, and solve tax and ownership counterfactual equilibria."
+expected:
+  - preserve timing ownership exclusion and complete market counts
+  - diagnose relevance validity demand and supply recovery
+  - retain equilibrium starts and scaled residuals
+  - separate payments profit tax resources surplus and welfare
+forbidden:
+  - condition market survival on realized costs
+  - count shortened samples as successful replications
+  - accept vanishing-share pseudo-roots
+  - claim detected roots are globally unique
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "887fac06fde1b5a9ea6e37768764820586175dc4cea3f2f9c4b06d026837f603"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/simulate_estimate.py, sha256: "793d2999f02c5977553cd62d237a9da62ffcdfd4108553efd441935147cb601e"}
+  - {file: artifacts/raw_output.txt, sha256: "584129e77e4eebc71570e6461ac31987f2824df8fcb74c2668ee592532c866df"}
+  - {file: artifacts/raw_output_initial_false_multiplicity.txt, sha256: "95fb1f3e8de00aa55c98bc5a3d56158ede809a3621998763a68c464ac8d38bc0"}
+  - {file: artifacts/PROVENANCE.md, sha256: "3081c8b952b5d920b956b712bee585c7117f1d7bd425519b2cc9fca06626080c"}
+rubric:
+  - {criterion: demand supply and instrument calculations, score: 2, max_score: 2}
+  - {criterion: unconditional simulation and replication accounting, score: 0, max_score: 2}
+  - {criterion: equilibrium reliability and failure preservation, score: 2, max_score: 2}
+  - {criterion: counterfactual accounting and claim bounds, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - the generator retained a latent-cost-conditioned market-drop branch even though it did not trigger
+  - summary failure counts did not make shortened samples whole-replication failures
+  - the invalid proxy timing and earlier failure source were underdocumented

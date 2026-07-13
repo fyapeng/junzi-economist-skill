@@ -1,0 +1,862 @@
+[
+  {
+    "n_agents": 400,
+    "seed": 1103,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.7065583247924847,
+          3.4309980154760944
+        ],
+        "fun": 3741.178870420229,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.00018189893944058725
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.7065583934792892,
+          3.430998185325316
+        ],
+        "fun": 3741.1788704202213,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nit": 6,
+        "jac_norm": 0.0
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.7065583844079469,
+          3.4309980605365125
+        ],
+        "fun": 3741.178870420224,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.00018189893944058725
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.7065584462829124,
+          3.4309983269061752
+        ],
+        "fun": 3741.1788704202227,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 9.094946972029363e-05
+      }
+    ],
+    "empirical_ccp": [
+      0.027579493835171966,
+      0.1694265562710825,
+      0.4204152249134948,
+      0.6506524317912218,
+      0.805327868852459,
+      0.9202127659574468
+    ],
+    "ccp_residuals": [
+      -0.039547947332511324,
+      0.028614393867767207,
+      -0.032131603472104864,
+      -0.02191468074635239,
+      0.13413176722121278,
+      0.5011342845068558
+    ]
+  },
+  {
+    "n_agents": 400,
+    "seed": 2207,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.6715286491716943,
+          3.1965924841745013
+        ],
+        "fun": 3844.572588520674,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.000727595757762349
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.6715288233932231,
+          3.196592728351703
+        ],
+        "fun": 3844.5725885206075,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 4.54747353650178e-05
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6715290081967997,
+          3.196593468517036
+        ],
+        "fun": 3844.5725885206093,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.00013642420609505338
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6715289072847002,
+          3.1965931882807626
+        ],
+        "fun": 3844.5725885205998,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 9.094946972029363e-05
+      }
+    ],
+    "empirical_ccp": [
+      0.03965736040609137,
+      0.1799015081563558,
+      0.4316455696202532,
+      0.6438763376932224,
+      0.8073929961089494,
+      0.9120370370370371
+    ],
+    "ccp_residuals": [
+      0.09131205239246754,
+      -0.004733630991789806,
+      -0.014292936263606393,
+      -0.029483272355832035,
+      0.1513117732262934,
+      0.3923435015924568
+    ]
+  },
+  {
+    "n_agents": 400,
+    "seed": 3313,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.64848032472095,
+          3.121060886967069
+        ],
+        "fun": 3911.2244246297246,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.0008640199623427895
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.648480524081235,
+          3.121061220877744
+        ],
+        "fun": 3911.22442462966,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nit": 10,
+        "jac_norm": 0.0
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6484804936500104,
+          3.121061116169871
+        ],
+        "fun": 3911.224424629661,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 4.54747353650178e-05
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.648480485136564,
+          3.1210610828676666
+        ],
+        "fun": 3911.2244246296614,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 9,
+        "jac_norm": 4.547473486014681e-05
+      }
+    ],
+    "empirical_ccp": [
+      0.04332010582010582,
+      0.1813018114829598,
+      0.42811264822134387,
+      0.6450292397660818,
+      0.766260162601626,
+      0.9151785714285714
+    ],
+    "ccp_residuals": [
+      0.15840549382089053,
+      -0.010587904364046885,
+      -0.02802903331899742,
+      -0.013458486013690596,
+      0.11478223733734261,
+      0.7746800275257488
+    ]
+  },
+  {
+    "n_agents": 400,
+    "seed": 4421,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.6090349242370664,
+          3.080070307370728
+        ],
+        "fun": 3910.58949006967,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 4.54747353650178e-05
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.6090348629039378,
+          3.0800700504416376
+        ],
+        "fun": 3910.589490069667,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 6,
+        "jac_norm": 4.547473486014681e-05
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6090349157845234,
+          3.0800702498886894
+        ],
+        "fun": 3910.5894900696685,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 4.54747353650178e-05
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6090348572939251,
+          3.0800700958424856
+        ],
+        "fun": 3910.5894900696685,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 9,
+        "jac_norm": 9.094946972029363e-05
+      }
+    ],
+    "empirical_ccp": [
+      0.04593522802379379,
+      0.18430195830701201,
+      0.3774752475247525,
+      0.636021505376344,
+      0.809433962264151,
+      0.8883928571428571
+    ],
+    "ccp_residuals": [
+      0.12452749998546997,
+      0.026485985519106192,
+      -0.10904305369756928,
+      0.1030284178278622,
+      0.18703405561219988,
+      0.10054388262075697
+    ]
+  },
+  {
+    "n_agents": 400,
+    "seed": 5531,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.661262816995103,
+          3.2768581266809527
+        ],
+        "fun": 3839.876937635097,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.0006366462880420554
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.6612629327177358,
+          3.2768583281875383
+        ],
+        "fun": 3839.876937635071,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 9.094946972029363e-05
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6612629836276532,
+          3.2768584782957055
+        ],
+        "fun": 3839.876937635073,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 9.094946972029363e-05
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6612628158602982,
+          3.2768577969419135
+        ],
+        "fun": 3839.87693763509,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 4.54747353650178e-05
+      }
+    ],
+    "empirical_ccp": [
+      0.035881958417169686,
+      0.17226758793969849,
+      0.41252955082742315,
+      0.6188524590163934,
+      0.8346303501945526,
+      0.9
+    ],
+    "ccp_residuals": [
+      0.041292053697613795,
+      0.0076998090099438254,
+      -0.017208269838487666,
+      -0.03003125707916432,
+      0.2522596251662925,
+      0.03441571218593609
+    ]
+  },
+  {
+    "n_agents": 2000,
+    "seed": 1103,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.6514312765244504,
+          3.1935911352027166
+        ],
+        "fun": 19300.66292459839,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.0025465851521682217
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.6514312379507771,
+          3.1935906305985253
+        ],
+        "fun": 19300.662924598317,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.000727595757762349
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6514314331903809,
+          3.193591343863004
+        ],
+        "fun": 19300.662924598313,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0010913936366435237
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6514311882292697,
+          3.1935903902919316
+        ],
+        "fun": 19300.662924598404,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0003637978829201424
+      }
+    ],
+    "empirical_ccp": [
+      0.03562524603070463,
+      0.1799740644683216,
+      0.41683276858680485,
+      0.6314750290360046,
+      0.7909159159159159,
+      0.9028846153846154
+    ],
+    "ccp_residuals": [
+      -0.024958065989499456,
+      0.024051113029716742,
+      -0.027026555067934943,
+      -0.0289757431709301,
+      0.12075781714834832,
+      0.3826295524969172
+    ]
+  },
+  {
+    "n_agents": 2000,
+    "seed": 2207,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.6441072810492244,
+          3.1889797656211627
+        ],
+        "fun": 19288.624697960146,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.003274180909930571
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.6441073362309533,
+          3.1889796035764437
+        ],
+        "fun": 19288.62469795995,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0007275957658402848
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6441071609173863,
+          3.1889786915582303
+        ],
+        "fun": 19288.62469796022,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0007275957658402848
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6441073462094852,
+          3.1889796368720336
+        ],
+        "fun": 19288.624697959953,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nit": 8,
+        "jac_norm": 0.0
+      }
+    ],
+    "empirical_ccp": [
+      0.04056888189802071,
+      0.174009222333001,
+      0.4146377380718633,
+      0.6315355628827132,
+      0.7944444444444444,
+      0.8893967093235832
+    ],
+    "ccp_residuals": [
+      0.05280749061125389,
+      -0.008872599447909968,
+      0.001280602698280564,
+      -0.016076914974672896,
+      0.05278691605862562,
+      0.10932262241781388
+    ]
+  },
+  {
+    "n_agents": 2000,
+    "seed": 3313,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.656889551899339,
+          3.1741095836656785
+        ],
+        "fun": 19415.232125844363,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.004365574546574095
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.656889922756404,
+          3.174110606831324
+        ],
+        "fun": 19415.23212584391,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.0003637978829201424
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6568897701652123,
+          3.1741099675245565
+        ],
+        "fun": 19415.232125843922,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0003637978829201424
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6568897439617345,
+          3.174109925863768
+        ],
+        "fun": 19415.232125843933,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 9,
+        "jac_norm": 0.0003637978788811745
+      }
+    ],
+    "empirical_ccp": [
+      0.037861768204043876,
+      0.18416666666666667,
+      0.4143980343980344,
+      0.6425566721196542,
+      0.8172849250197316,
+      0.9025096525096525
+    ],
+    "ccp_residuals": [
+      0.001039318769766151,
+      0.02488979813860892,
+      -0.0435307750420586,
+      0.010659894192681207,
+      0.15231172827116346,
+      0.1613788814264776
+    ]
+  },
+  {
+    "n_agents": 2000,
+    "seed": 4421,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.6298303613726937,
+          3.1098215113135197
+        ],
+        "fun": 19549.31410892578,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.004729372425455269
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.629830493788063,
+          3.109821543281859
+        ],
+        "fun": 19549.314108925446,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 5,
+        "jac_norm": 0.0007275957658402848
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6298306506336427,
+          3.1098223268633496
+        ],
+        "fun": 19549.31410892536,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0010913936366435237
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6298306133589461,
+          3.10982200943652
+        ],
+        "fun": 19549.31410892533,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.0003637978829201424
+      }
+    ],
+    "empirical_ccp": [
+      0.03930628096959957,
+      0.18410984264116015,
+      0.40683938852491563,
+      0.6400688863375431,
+      0.7739622641509434,
+      0.878448275862069
+    ],
+    "ccp_residuals": [
+      -0.09253167073361768,
+      0.02435562665410984,
+      -0.017095830287933378,
+      0.016992013090807667,
+      -0.05409176273977945,
+      0.06220684205173477
+    ]
+  },
+  {
+    "n_agents": 2000,
+    "seed": 5531,
+    "runs": [
+      {
+        "start": [
+          0.25,
+          1.5
+        ],
+        "x": [
+          0.6490941946305506,
+          3.234228558686425
+        ],
+        "fun": 19257.583417635342,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.003637978788811745
+      },
+      {
+        "start": [
+          0.65,
+          3.2
+        ],
+        "x": [
+          0.6490942095355408,
+          3.234228218854329
+        ],
+        "fun": 19257.583417635182,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 7,
+        "jac_norm": 0.0003637978788811745
+      },
+      {
+        "start": [
+          1.2,
+          5.5
+        ],
+        "x": [
+          0.6490944615490427,
+          3.234229239337284
+        ],
+        "fun": 19257.58341763542,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+        "nit": 8,
+        "jac_norm": 0.000727595757762349
+      },
+      {
+        "start": [
+          1.8,
+          7.5
+        ],
+        "x": [
+          0.6490941844876436,
+          3.2342281190264215
+        ],
+        "fun": 19257.5834176352,
+        "success": true,
+        "status": 0,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+        "nit": 8,
+        "jac_norm": 0.0
+      }
+    ],
+    "empirical_ccp": [
+      0.037159428108983004,
+      0.17220060256088376,
+      0.4055845915602013,
+      0.6365402193784278,
+      0.7816051136363636,
+      0.8943014705882353
+    ],
+    "ccp_residuals": [
+      0.030224063667299905,
+      0.008509466268550536,
+      -0.02102927352743622,
+      0.004003338488152153,
+      0.032982118087844015,
+      0.25449315326081745
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "independence": "fresh equations from CSV primitives; does not import production solver or trust stored residuals/summary",
+  "checks": [
+    {
+      "name": "exact_counts",
+      "value": 200,
+      "pass": true
+    },
+    {
+      "name": "shares_from_primitives",
+      "value": 1.0755285551056204e-16,
+      "pass": true
+    },
+    {
+      "name": "baseline_foc",
+      "value": 7.771561172376096e-16,
+      "pass": true
+    },
+    {
+      "name": "subsidy_foc",
+      "value": 8.881784197001252e-16,
+      "pass": true
+    },
+    {
+      "name": "iv_equation_recovery",
+      "value": [
+        4.884981308350689e-15,
+        1.1000000000000025,
+        -1.6000000000000036
+      ],
+      "pass": true
+    },
+    {
+      "name": "baseline_accounting_identity",
+      "value": 0.0,
+      "pass": true
+    },
+    {
+      "name": "subsidy_accounting_identity",
+      "value": 2.2737367544323206e-13,
+      "pass": true
+    }
+  ]
+}

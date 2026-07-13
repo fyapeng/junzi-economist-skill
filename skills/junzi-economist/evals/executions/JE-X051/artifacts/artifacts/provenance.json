@@ -1,0 +1,13 @@
+{
+  "created_by": "study.py",
+  "exact_skill_commit": "77aa2f1",
+  "seed": 51051,
+  "integration_seed": 9117,
+  "command": "C:/Users/ENAN/miniforge3/envs/codex/python.exe study.py",
+  "permitted_sources": [
+    "skills/junzi-economist/SKILL.md",
+    "references/EMPIRICAL_AND_STRUCTURAL_METHODS.md",
+    "references/THEORY_MODELING.md",
+    "references/SOFTWARE_AND_COMPUTATION.md"
+  ]
+}

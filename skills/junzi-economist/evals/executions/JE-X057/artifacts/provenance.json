@@ -1,0 +1,72 @@
+{
+  "production_completed_at_utc": "2026-07-13T07:57:59.512297+00:00",
+  "workspace": "C:\\Users\\ENAN\\AppData\\Local\\Temp\\junzi-economist-struct-x057",
+  "source_instruction_commit": "f120979",
+  "random_seed": 57013,
+  "python": "3.11.15",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1",
+  "artifacts": {
+    "production.py": {
+      "sha256": "219f47604625b2b77c6ec8a78e1bfee78e6e214a128a240cc1af63799b9a34d2",
+      "mtime_utc": "2026-07-13T07:57:21.798304+00:00",
+      "bytes": 20124
+    },
+    "model_data.csv": {
+      "sha256": "a69bf1eed318b11a9ae5f3bc9e81d3a197a81ee919c8f4c08ffb2907429256d8",
+      "mtime_utc": "2026-07-13T07:57:36.692292+00:00",
+      "bytes": 72248
+    },
+    "transition_estimates.csv": {
+      "sha256": "ffe877fb4285499874afef434657e3fa686b3e4a36c805b4dcf2b2fbb8ee1462",
+      "mtime_utc": "2026-07-13T07:57:36.696292+00:00",
+      "bytes": 619
+    },
+    "choice_cells.csv": {
+      "sha256": "b67a3d0727827a3dbfae4ee1394ebf9051b043276528d6e5d3c4204afd61d28d",
+      "mtime_utc": "2026-07-13T07:57:36.699798+00:00",
+      "bytes": 362
+    },
+    "nfxp_starts.csv": {
+      "sha256": "281c0ac9d8b07e56356496e6d09b61266925c719fb1e13540b5e765ed8f1012f",
+      "mtime_utc": "2026-07-13T07:57:38.251841+00:00",
+      "bytes": 2758
+    },
+    "ccp_starts.csv": {
+      "sha256": "1f2f868f83789e4a22761c53c4d271fb262e4f070dcdf127237e59c749f51e48",
+      "mtime_utc": "2026-07-13T07:57:38.430434+00:00",
+      "bytes": 3116
+    },
+    "local_rank.json": {
+      "sha256": "3712edfdb14ea6faec1ccdf6e06780fe94eb591e51072a6bddd8b8a5f01d7ca8",
+      "mtime_utc": "2026-07-13T07:57:38.448458+00:00",
+      "bytes": 940
+    },
+    "restricted_search.csv": {
+      "sha256": "f837f6aa20ada12e5ae5427925c4fd13a30ea29ab63fe7618c925db5391f67b1",
+      "mtime_utc": "2026-07-13T07:57:59.450206+00:00",
+      "bytes": 737959
+    },
+    "policy_results.csv": {
+      "sha256": "73ea65d0b0a143c722a359af9c20171ce7f2d310775e6cca6a1ac7f6a802429e",
+      "mtime_utc": "2026-07-13T07:57:59.458366+00:00",
+      "bytes": 1039
+    },
+    "summary.json": {
+      "sha256": "484ce04d131d515988dc15159339567b3b317c191dda33260cc6399da49bfebe",
+      "mtime_utc": "2026-07-13T07:57:59.511293+00:00",
+      "bytes": 2288
+    },
+    "response.md": {
+      "sha256": "38c4d1065b84c8fe1b4a76ee8ac1d68bbec89efed81b2195e8fb83a58aad76eb",
+      "mtime_utc": "2026-07-13T07:57:59.512297+00:00",
+      "bytes": 2322
+    },
+    "production_stdout.txt": {
+      "sha256": "53af7b23c5f642b4ed851605987e582ec59b9fcaee464803f91d3129df36387c",
+      "mtime_utc": "2026-07-13T07:57:59.512297+00:00",
+      "bytes": 137
+    }
+  }
+}

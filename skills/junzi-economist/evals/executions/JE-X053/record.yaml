@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X053
+case_id: JE-R43
+timestamp_utc: "2026-07-13T07:35:00Z"
+skill_commit: "539a1e8"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_io_roundtrip
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer full-precision round-trip traces, comprehensive independent coverage, failure signaling, timing, equilibrium, and accounting rules to a new structural market model."
+expected:
+  - preserve unconditional DGP and executable valid and invalid instrument timing
+  - reproduce every accepted and rejected diagnostic after serialization
+  - cover all decisive headline claims with a separate verifier
+  - write failures before distinct nonzero process exits
+forbidden:
+  - round away the residual evidence
+  - omit rejected starts or invalid-instrument failures
+  - let algebraic identities substitute for stored-level recomputation
+  - claim roots outside the searched domain
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "797f81e60af4110be8a9b631daa93637750201ff2c0298995a7b50070a0e6418"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/model.py, sha256: "7d742e38edc02d5655c1bfe71f540f4f1fa691b7e82ccb44c2218275a344eddc"}
+  - {file: artifacts/verifier.py, sha256: "1375b140dad6fe0730d14da1b12bcd1a2f9c5601581af3aafb4ff9e7cf39bc29"}
+  - {file: artifacts/roundtrip_diagnostics.json, sha256: "8dd00683532178896b9cd49175affff8047e4b7d922fc11b4cc59af82c246a73"}
+  - {file: artifacts/process_failure_manifest.json, sha256: "42f5563d28f2c9c22dbe52986bc1bb5b9ed5323c7d2f802dd3090b828e0156be"}
+  - {file: artifacts/independent_verification.json, sha256: "0978a94b105071b879abefb1d4809f1772764208472de99c0d1a950ac6c52fb9"}
+rubric:
+  - {criterion: unconditional DGP instrument timing and estimation, score: 2, max_score: 2}
+  - {criterion: full-precision trace round trip and equilibrium evidence, score: 2, max_score: 2}
+  - {criterion: accounting and nonzero failure signaling, score: 2, max_score: 2}
+  - {criterion: comprehensive independent verification, score: 2, max_score: 2}
+verdict: pass
+limitations:
+  - the exercise is a deliberately constructed finite-population recovery test rather than general estimator-performance evidence
+  - historical exclusive read scope rests on provenance rather than an operating-system access log

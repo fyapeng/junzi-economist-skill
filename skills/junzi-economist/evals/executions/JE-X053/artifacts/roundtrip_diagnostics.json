@@ -1,0 +1,322 @@
+[
+  {
+    "kind": "valid",
+    "id": 0,
+    "bitwise_equal": true,
+    "raw_max": 1.5365486660812166e-15,
+    "scaled_max": 1.5365486660812166e-15,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "valid",
+    "id": 1,
+    "bitwise_equal": true,
+    "raw_max": 1.5365486660812166e-15,
+    "scaled_max": 1.5365486660812166e-15,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "valid",
+    "id": 2,
+    "bitwise_equal": true,
+    "raw_max": 1.5365486660812166e-15,
+    "scaled_max": 1.5365486660812166e-15,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "valid",
+    "id": 3,
+    "bitwise_equal": true,
+    "raw_max": 2.015054789694659e-16,
+    "scaled_max": 2.015054789694659e-16,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "valid",
+    "id": 4,
+    "bitwise_equal": true,
+    "raw_max": 1.5654144647214707e-15,
+    "scaled_max": 4.6926121997114575e-15,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "valid",
+    "id": 5,
+    "bitwise_equal": true,
+    "raw_max": 1.5365486660812166e-15,
+    "scaled_max": 1.5365486660812166e-15,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "invalid",
+    "id": 0,
+    "bitwise_equal": true,
+    "raw_max": 0.0929533547574027,
+    "scaled_max": 0.22883926771794846,
+    "accepted": false,
+    "expected_accepted": false,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "invalid",
+    "id": 1,
+    "bitwise_equal": true,
+    "raw_max": 0.09295335475503101,
+    "scaled_max": 0.22883926771210966,
+    "accepted": false,
+    "expected_accepted": false,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "invalid",
+    "id": 2,
+    "bitwise_equal": true,
+    "raw_max": 0.09295335475752486,
+    "scaled_max": 0.2288392677182492,
+    "accepted": false,
+    "expected_accepted": false,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "invalid",
+    "id": 3,
+    "bitwise_equal": true,
+    "raw_max": 0.09295335475812784,
+    "scaled_max": 0.22883926771973365,
+    "accepted": false,
+    "expected_accepted": false,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "invalid",
+    "id": 4,
+    "bitwise_equal": true,
+    "raw_max": 0.09295335476091907,
+    "scaled_max": 0.2288392677266053,
+    "accepted": false,
+    "expected_accepted": false,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "invalid",
+    "id": 5,
+    "bitwise_equal": true,
+    "raw_max": 0.09295335475594654,
+    "scaled_max": 0.22883926771436358,
+    "accepted": false,
+    "expected_accepted": false,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 0,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.694394830095233e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 1,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.694394830095233e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 2,
+    "bitwise_equal": true,
+    "raw_max": 1.3855583347321954e-13,
+    "scaled_max": 7.561627967474282e-15,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 3,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.694394830095233e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 4,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.786657729724149e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 5,
+    "bitwise_equal": true,
+    "raw_max": 3.552713678800501e-15,
+    "scaled_max": 1.9573315459448297e-16,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 6,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.786657729724149e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 7,
+    "bitwise_equal": true,
+    "raw_max": 3.552713678800501e-15,
+    "scaled_max": 1.9573315459448297e-16,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 8,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.847208969933807e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 9,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.847208969933807e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 10,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.847208969933807e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 11,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.847208969933807e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 12,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.994613413724745e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 13,
+    "bitwise_equal": true,
+    "raw_max": 3.552713678800501e-15,
+    "scaled_max": 1.998922682744949e-16,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 14,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.994613413724745e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 15,
+    "bitwise_equal": true,
+    "raw_max": 3.055333763768431e-13,
+    "scaled_max": 1.7190735071606562e-14,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 16,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.788597286374386e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 17,
+    "bitwise_equal": true,
+    "raw_max": 0.0,
+    "scaled_max": 0.0,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 18,
+    "bitwise_equal": true,
+    "raw_max": 0.0,
+    "scaled_max": 0.0,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  },
+  {
+    "kind": "equilibrium",
+    "id": 19,
+    "bitwise_equal": true,
+    "raw_max": 1.7763568394002505e-15,
+    "scaled_max": 9.788597286374386e-17,
+    "accepted": true,
+    "expected_accepted": true,
+    "diagnostic_reproduced": true
+  }
+]

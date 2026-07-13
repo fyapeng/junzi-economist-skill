@@ -1,0 +1,231 @@
+{
+  "sample": {
+    "rows": 540,
+    "markets": 180,
+    "price_min": 1.1759267042757846,
+    "share_min": 0.002305663721598622,
+    "share_max": 0.6414378114434706,
+    "outside_share_min": 0.2103720711191276,
+    "outside_share_max": 0.7902325103760359,
+    "true_corr_price_xi": 0.2414216736846771,
+    "true_corr_xi_omega": 0.3886809184884191,
+    "simulation_failures": []
+  },
+  "valid": {
+    "mode": "valid",
+    "ols": {
+      "coef_intercept_beta_alpha": [
+        -0.5372337940242632,
+        1.2399083427150632,
+        0.8653709243192008
+      ],
+      "se": [
+        0.096645126595508,
+        0.03650098162197645,
+        0.04256677114547951
+      ]
+    },
+    "iv": {
+      "coef_intercept_beta_alpha": [
+        0.049877936816393416,
+        1.2818848308058535,
+        1.139507722969455
+      ],
+      "se": [
+        0.11402821046967536,
+        0.0372021182667989,
+        0.04868181916307914
+      ]
+    },
+    "first_stage": {
+      "partial_F_homoskedastic": 647.8339256048429,
+      "df_num": 2,
+      "df_den": 536,
+      "p_value": 9.402468794496179e-144
+    },
+    "moments": [
+      4.366877230192282e-16,
+      1.1834155055078521e-15,
+      0.0020997760156238323,
+      -0.005225239382715953
+    ],
+    "max_abs_moment": 0.005225239382715953,
+    "jacobian_rank": 3,
+    "jacobian_condition": 30.504732818809774,
+    "normal_matrix_condition": 203.96340324406674
+  },
+  "weak": {
+    "mode": "weak",
+    "ols": {
+      "coef_intercept_beta_alpha": [
+        -1.7553754295005246,
+        1.0391976904401385,
+        0.18697813231910054
+      ],
+      "se": [
+        0.14657846349584677,
+        0.03631152445893893,
+        0.07437916572650947
+      ]
+    },
+    "iv": {
+      "coef_intercept_beta_alpha": [
+        26.28716349963163,
+        3.9495833109793335,
+        14.537711351110417
+      ],
+      "se": [
+        128.35072403338103,
+        13.338475631350347,
+        65.68002608364826
+      ]
+    },
+    "first_stage": {
+      "partial_F_homoskedastic": 0.043999506707376006,
+      "df_num": 1,
+      "df_den": 537,
+      "p_value": 0.8339340860340733
+    },
+    "moments": [
+      8.552829226741946e-16,
+      5.113605012680906e-15,
+      3.634908012444342e-12
+    ],
+    "max_abs_moment": 3.634908012444342e-12,
+    "jacobian_rank": 3,
+    "jacobian_condition": 2846.702005470243,
+    "normal_matrix_condition": 4397007.222158301
+  },
+  "invalid": {
+    "mode": "invalid",
+    "ols": {
+      "coef_intercept_beta_alpha": [
+        -0.5372337940242632,
+        1.2399083427150632,
+        0.8653709243192008
+      ],
+      "se": [
+        0.096645126595508,
+        0.03650098162197645,
+        0.04256677114547951
+      ]
+    },
+    "iv": {
+      "coef_intercept_beta_alpha": [
+        -0.7119029612904295,
+        1.2274200924648468,
+        0.7838136264115427
+      ],
+      "se": [
+        0.11200840021079471,
+        0.037257445492154824,
+        0.0498802575499325
+      ]
+    },
+    "first_stage": {
+      "partial_F_homoskedastic": 693.3197133565629,
+      "df_num": 2,
+      "df_den": 536,
+      "p_value": 2.1455639260660295e-149
+    },
+    "moments": [
+      8.297889124790985e-16,
+      -3.649344201314172e-16,
+      -0.122982315038194,
+      0.25975965766411996
+    ],
+    "max_abs_moment": 0.25975965766411996,
+    "jacobian_rank": 3,
+    "jacobian_condition": 29.04352539360557,
+    "normal_matrix_condition": 200.4216361450091
+  },
+  "cost_recovery_valid": {
+    "cost_coef_intercept_z_w": [
+      0.8122290008351714,
+      0.6366727861826875,
+      0.26041261962049145
+    ],
+    "cost_se": [
+      0.008504799230998299,
+      0.00905482207256692,
+      0.013808405994435124
+    ],
+    "mean_markup": 1.236649224437406,
+    "min_mc": 0.10379376743887114,
+    "negative_mc_count": 0,
+    "mean_abs_mc_error": 0.04441563179105231,
+    "max_markup_matrix_condition": 105.23273211411797
+  },
+  "cost_failures_valid": [],
+  "derivative_check": {
+    "max_abs_dsdp_error": 2.575933910620165e-11,
+    "step": 1e-06
+  },
+  "counterfactual_aggregates": {
+    "baseline": {
+      "consumer_surplus": 109.75295515314075,
+      "producer_profit_net_of_tax": 119.14997984604143,
+      "tax_revenue": 0.0,
+      "real_cost": 68.79661542745038,
+      "mean_price": 2.2635996194687067,
+      "mean_inside_share": 0.15840223214398771,
+      "max_abs_foc": 5.258349311532129e-12,
+      "max_abs_scaled_foc": 1.3192814150932217e-11,
+      "markets_solved": 180,
+      "markets_failed": 0,
+      "max_detected_equilibria": 1,
+      "markets_multiple_detected": 0
+    },
+    "tax": {
+      "consumer_surplus": 88.81897372952821,
+      "producer_profit_net_of_tax": 96.74328438432083,
+      "tax_revenue": 25.61878686713563,
+      "real_cost": 58.16827143793937,
+      "mean_price": 2.5439147040253443,
+      "mean_inside_share": 0.13554913686315148,
+      "max_abs_foc": 7.940453849997198e-13,
+      "max_abs_scaled_foc": 1.2551882063215115e-11,
+      "markets_solved": 180,
+      "markets_failed": 0,
+      "max_detected_equilibria": 1,
+      "markets_multiple_detected": 0
+    },
+    "merger": {
+      "consumer_surplus": 89.79032484345348,
+      "producer_profit_net_of_tax": 123.81448485424731,
+      "tax_revenue": 0.0,
+      "real_cost": 59.03227538552177,
+      "mean_price": 2.579483921522038,
+      "mean_inside_share": 0.1381269538402692,
+      "max_abs_foc": 5.7618354531996374e-12,
+      "max_abs_scaled_foc": 1.1351773587113175e-11,
+      "markets_solved": 180,
+      "markets_failed": 0,
+      "max_detected_equilibria": 1,
+      "markets_multiple_detected": 0
+    }
+  },
+  "monte_carlo": {
+    "draws": 30,
+    "valid": {
+      "successful": 30,
+      "failures": 0,
+      "beta_mean": 1.2469176127845174,
+      "beta_bias": -0.003082387215482596,
+      "alpha_mean": 1.1561044433396919,
+      "alpha_bias": 0.05610444333969178,
+      "alpha_rmse": 0.07299104192230003,
+      "F_median": 661.725561465217
+    },
+    "invalid": {
+      "successful": 30,
+      "failures": 0,
+      "beta_mean": 1.1725615954094308,
+      "beta_bias": -0.07743840459056917,
+      "alpha_mean": 0.7548554076262558,
+      "alpha_bias": -0.3451445923737443,
+      "alpha_rmse": 0.3495783589614973,
+      "F_median": 700.0016268251568
+    }
+  }
+}

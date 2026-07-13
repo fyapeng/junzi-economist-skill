@@ -1,0 +1,203 @@
+{
+  "status": "pass",
+  "failure_counts": {
+    "simulation": 0,
+    "equilibrium": 0,
+    "estimation": 0
+  },
+  "accepted_replications": 5,
+  "equilibrium": {
+    "attempted_start_rows": 9600,
+    "accepted_start_rows": 9600,
+    "market_scenario_cases": 1200,
+    "detected_roots": 1200,
+    "roots_per_case_min": 1,
+    "roots_per_case_max": 1,
+    "max_raw_foc": 1.4654943925052066e-14,
+    "max_share_scaled_foc": 6.655182922373121e-14,
+    "scaled_jacobian_condition_min": 1.0000000000005267,
+    "scaled_jacobian_condition_max": 1.0000000000493017,
+    "price_bounds": "private marginal cost + [1e-8, 10]",
+    "claim": "One root detected per finite eight-start scan; no global uniqueness claim."
+  },
+  "estimation": {
+    "OLS": {
+      "constant": {
+        "mean": 0.10036839914584653,
+        "min": 0.0088395516477416,
+        "max": 0.1696062778348759,
+        "truth": 2.0
+      },
+      "price": {
+        "mean": -0.5324302524385262,
+        "min": -0.5550455463081682,
+        "max": -0.5001423912322405,
+        "truth": -1.2
+      },
+      "x": {
+        "mean": 0.27730403319408015,
+        "min": 0.2622103734310643,
+        "max": 0.2919729032843883,
+        "truth": 0.4
+      }
+    },
+    "IV_2SLS": {
+      "constant": {
+        "mean": 2.1588261758429375,
+        "min": 1.7040578214937698,
+        "max": 2.641132858554497,
+        "truth": 2.0
+      },
+      "price": {
+        "mean": -1.2548149243893925,
+        "min": -1.4237400315339892,
+        "max": -1.095878498888292,
+        "truth": -1.2
+      },
+      "x": {
+        "mean": 0.4061366011154188,
+        "min": 0.3576039118655599,
+        "max": 0.4498446305179422,
+        "truth": 0.4
+      }
+    },
+    "GMM_2step": {
+      "constant": {
+        "mean": 2.161569865751688,
+        "min": 1.690570129745873,
+        "max": 2.641094406343855,
+        "truth": 2.0
+      },
+      "price": {
+        "mean": -1.255824997612439,
+        "min": -1.4237467945836546,
+        "max": -1.0914865339667417,
+        "truth": -1.2
+      },
+      "x": {
+        "mean": 0.40678767671695565,
+        "min": 0.3573435062591628,
+        "max": 0.4519233336867434,
+        "truth": 0.4
+      }
+    },
+    "INVALID_PROXY_IV": {
+      "constant": {
+        "mean": 1.1985508404214413,
+        "min": 0.9914779782183007,
+        "max": 1.4120208714522244,
+        "truth": 2.0
+      },
+      "price": {
+        "mean": -0.9178169883060763,
+        "min": -0.9942171875565182,
+        "max": -0.8447225323278876,
+        "truth": -1.2
+      },
+      "x": {
+        "mean": 0.34603185125628133,
+        "min": 0.3184438088420034,
+        "max": 0.376144761919491,
+        "truth": 0.4
+      }
+    }
+  },
+  "moment_and_support_diagnostics": {
+    "max_abs_sample_moment_by_method": {
+      "GMM_2step": 0.0057092973608723,
+      "INVALID_PROXY_IV": 0.0033149753489193,
+      "IV_2SLS": 0.0053572583140956,
+      "OLS": 3.431051739018661e-15
+    },
+    "ZX_condition_max_by_method": {
+      "GMM_2step": 164.816714257265,
+      "INVALID_PROXY_IV": 139.0435698297914,
+      "IV_2SLS": 164.816714257265,
+      "OLS": 4204.521049614886
+    },
+    "mean_corr_valid_w_xi": -0.03249296950714242,
+    "mean_corr_invalid_proxy_xi": 0.2140223464693892,
+    "mean_first_stage_w_coefficient": 0.20320224416149757,
+    "observed_real_mc": [
+      1.1188756162425744,
+      2.107610051684756
+    ],
+    "observed_share_min": 0.0863569119919577,
+    "observed_outside_share_min": 0.5933335521631504,
+    "declared_support": {
+      "x": [
+        -1,
+        1
+      ],
+      "w": [
+        -1,
+        1
+      ],
+      "u": [
+        -1,
+        1
+      ],
+      "v": [
+        -1,
+        1
+      ],
+      "e": [
+        -1,
+        1
+      ],
+      "xi": [
+        -0.4,
+        0.4
+      ],
+      "omega": [
+        -0.17,
+        0.17
+      ],
+      "real_mc": [
+        1.03,
+        2.17
+      ],
+      "private_mc_subsidy": [
+        0.83,
+        1.97
+      ]
+    }
+  },
+  "recovery": {
+    "markup_mean_error": -0.04501479651325994,
+    "markup_rmse": 0.1188252563762951,
+    "mc_mean_error": 0.045014796513259944,
+    "mc_rmse": 0.1188252563762951
+  },
+  "welfare_market_means": {
+    "baseline": {
+      "consumer_payment": 0.9353233498265471,
+      "producer_revenue": 0.9353233498265471,
+      "producer_profit": 0.4106064779104984,
+      "tax_payment": 0.0,
+      "subsidy_payment": 0.0,
+      "real_resource_cost": 0.5247168719160487,
+      "consumer_surplus": 0.33326960745561185,
+      "welfare_CS_plus_profit_minus_net_fiscal": 0.7438760853661103
+    },
+    "subsidy": {
+      "consumer_payment": 0.9882076762613294,
+      "producer_revenue": 0.9882076762613294,
+      "producer_profit": 0.479979075359261,
+      "tax_payment": 0.0,
+      "subsidy_payment": 0.07290389993968174,
+      "real_resource_cost": 0.58113250084175,
+      "consumer_surplus": 0.37843645834697154,
+      "welfare_CS_plus_profit_minus_net_fiscal": 0.785511633766551
+    }
+  },
+  "independent_check": {
+    "checks": 1200,
+    "failures": 0,
+    "status": "pass",
+    "note": "Separate equation implementation, fresh root solve, and finite-difference profit gradient.",
+    "max_raw_foc": 1.3156142841808103e-14,
+    "max_finite_difference_profit_gradient": 1.1102230246251564e-10,
+    "max_fresh_solve_price_gap": 7.719113348514384e-09
+  }
+}

@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X044
+case_id: JE-R42
+timestamp_utc: "2026-07-13T06:20:00Z"
+skill_commit: "d9e1673"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: structural_dynamic_blind
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Estimate a dynamic replacement model with estimated transitions, NFXP and CCP estimators, discount profiling, recovery evidence, and a subsidy counterfactual."
+expected:
+  - distinguish grid sample and continuous population identification
+  - retain every optimizer start and use valid constrained diagnostics
+  - independently recompute the decisive model objects
+  - separate private value transfers resources and welfare
+forbidden:
+  - call a finite profile point identification
+  - generalize from a few recovery draws
+  - omit profile starts
+  - label imported production code independent verification
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "a45ab5d99c5c3ea74949c4dafc76f0bea1f0be43f57cfe99df8f8417439d5360"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_analysis.py, sha256: "ee8a7f709d142e2a288720733e18cd9b8eea27537b9331af2aaeec1dec97729d"}
+  - {file: artifacts/optimizer_starts.json, sha256: "d5ccaed449795530e9468deef56d0f8120ca55c5367e28246c852c1cbd372f1f"}
+  - {file: artifacts/population_beta_profile.csv, sha256: "636cd2ca716f16ad4989e1748deaeaf6fa5e283eb6669e4bee3e605ea08c238c"}
+  - {file: artifacts/PROVENANCE.md, sha256: "4148afec35073b8d14c0ba7f2071823ef4c20fb56604657a8d2f8190da6d2ed2"}
+rubric:
+  - {criterion: economic model transitions and estimators, score: 2, max_score: 2}
+  - {criterion: identification and recovery language, score: 1, max_score: 2}
+  - {criterion: optimizer and independent-verification evidence, score: 0, max_score: 2}
+  - {criterion: counterfactual accounting, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - the population profile is a finite grid and does not prove continuous point identification
+  - beta-profile starts were omitted and the verifier imported production functions
+  - five seeds per cell are only a recovery demonstration

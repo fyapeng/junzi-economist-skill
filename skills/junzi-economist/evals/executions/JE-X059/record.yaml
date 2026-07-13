@@ -1,0 +1,27 @@
+schema_version: 1
+execution_id: JE-X059
+case_id: JE-R42
+timestamp_utc: "2026-07-13T08:10:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_kkt
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer projected-gradient, dynamic estimation, restricted grid, arbitrary-policy, and independent-verifier rules."
+expected: [accept all starts by projected gradients, evaluate arbitrary policies correctly, audit full restricted grid and accounting, detect shared implementation errors]
+forbidden: [use uninitialized policy probabilities, duplicate production policy bugs in verifier, rely on algebraic identities alone, claim global identification]
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "1468b2302b4a42e413569e3bb9dc0aa7b8ff95deb38c98f4a7523fe0c832e765"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/production.py, sha256: "3487268a0eb27a6750b1f18683ed567315cf25a7088fdb74e020907ba2e7cb38"}
+  - {file: artifacts/verify.py, sha256: "5c64f710201e27f4d40f9a757b93d67fa991c8135a25acfaa0c530139f3e7dd4"}
+  - {file: artifacts/artifacts/verification.json, sha256: "fe40a0582b2c6e3e566fb77438acb53975b8cddf58d07a31d84cd09430620846"}
+rubric:
+  - {criterion: estimation gradients rank and grid, score: 2, max_score: 2}
+  - {criterion: arbitrary-policy correctness and independent detection, score: 0, max_score: 2}
+verdict: fail
+limitations: [midpoint policy used uninitialized probabilities and the verifier duplicated the bug]

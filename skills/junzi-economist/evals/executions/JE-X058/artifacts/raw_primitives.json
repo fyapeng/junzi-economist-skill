@@ -1,0 +1,30 @@
+{
+  "study": "minimal_two_support_binomial_mixture",
+  "observation_model": "Each unit has six binary opportunities; only its success count is observed. A latent coordinate-A type occurs with mass pi and has success probability p_a; coordinate-B has probability p_b.",
+  "intended_unit_count": 160,
+  "trials_per_unit": 6,
+  "success_count_frequencies": [19, 11, 5, 13, 34, 49, 29],
+  "parameter_bounds": {
+    "pi": [0.05, 0.95],
+    "p_a": [0.02, 0.98],
+    "p_b": [0.02, 0.98]
+  },
+  "profile_grid_pi": [0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85],
+  "lr_cutoff": 3.841458820694124,
+  "optimizer": {
+    "method": "L-BFGS-B",
+    "gtol": 1e-10,
+    "ftol": 1e-14,
+    "maxiter": 4000,
+    "accept_kkt_inf": 0.00001
+  },
+  "intended_starts": {
+    "unrestricted": 6,
+    "per_profile_grid_point": 5
+  },
+  "policy": {
+    "name": "common_log_odds_shift",
+    "log_odds_shift": 0.4,
+    "mapping_scope": "selected_profile_points_only"
+  }
+}

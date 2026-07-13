@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X051
+case_id: JE-R44
+timestamp_utc: "2026-07-13T07:25:00Z"
+skill_commit: "77aa2f1"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_profile_repair
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer profile-hole, best-accepted selection, set-image, support, KKT, and branch rules to a latent value-of-time mode-choice model."
+expected:
+  - compare distinct structural estimators and a simpler model
+  - resolve every reported profile index and select its best accepted conditional optimum
+  - compute LR distance from the unrestricted optimum of the same likelihood
+  - map only selected in-set solutions into policy effects
+forbidden:
+  - use the best finite profile-grid point as the unrestricted LR reference
+  - call a discrete grid set a continuous confidence set
+  - pool inferior starts into the policy image
+  - hide profile holes or failed starts
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "0e02b236841dec29e17089c13dd06c8ac071a452e98a8e56a985f149af9b74ae"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/study.py, sha256: "a93033803d3fdbf87a4f6048ae4cedea84b27d39d27cfac96873f51cc63cc075"}
+  - {file: artifacts/artifacts/profile_all_starts.csv, sha256: "78f0ff1352167b460bb5426ad5287bd3415d01f54ea0de9c72aba7311103c383"}
+  - {file: artifacts/artifacts/profile_selected.csv, sha256: "92ab9acabb9f1ef1b35c0b340ed4087377dfeb8c4642ec9b677bd4950bfdf361"}
+  - {file: artifacts/verify.py, sha256: "4ae8670e5a4b4f13bb9d8e338538b9f357291047b0086b97d145010ab9931a29"}
+rubric:
+  - {criterion: estimators starts KKT and support distinctions, score: 2, max_score: 2}
+  - {criterion: conditional-profile acceptance and best-start selection, score: 2, max_score: 2}
+  - {criterion: unrestricted LR reference and grid-set construction, score: 0, max_score: 2}
+  - {criterion: policy mapping and branch judgment, score: 1, max_score: 2}
+verdict: mixed
+limitations:
+  - LR statistics used the best nine-point grid likelihood instead of the unrestricted likelihood
+  - the corrected evaluated-grid set excludes sigma 0.3 and narrows the policy image

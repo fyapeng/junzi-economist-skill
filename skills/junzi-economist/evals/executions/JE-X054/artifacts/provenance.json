@@ -1,0 +1,23 @@
+{
+  "instruction_source": {
+    "repository": "C:/Users/ENAN/junzi-economist-skill",
+    "commit": "f120979",
+    "files": [
+      "skills/junzi-economist/SKILL.md",
+      "skills/junzi-economist/references/EMPIRICAL_AND_STRUCTURAL_METHODS.md",
+      "skills/junzi-economist/references/THEORY_MODELING.md",
+      "skills/junzi-economist/references/SOFTWARE_AND_COMPUTATION.md"
+    ]
+  },
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "script": "study.py",
+  "seed": 731904,
+  "acceptance": {
+    "projected_gradient_max": 0.0002,
+    "finite_objective": true
+  },
+  "profile_rule": "best accepted conditional objective per index; LR reference is accepted unrestricted optimum of same likelihood"
+}

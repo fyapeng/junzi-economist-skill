@@ -1,0 +1,8 @@
+{
+  "t0": "planned market IDs and z_cost drawn and observed",
+  "t1": "omega and eta realized; marginal costs and demand intercept fixed",
+  "t2": "Cournot quantities and price solved using only t0-t1 objects",
+  "t3": "z_invalid_post = eta + independent noise constructed after outcomes; unavailable to and unused by the t2 decision rule",
+  "valid_exclusion": "z_cost is independent of eta by construction and absent from inverse demand",
+  "invalid_exclusion": "z_invalid_post contains eta directly, so E[z_invalid_post * eta] != 0"
+}

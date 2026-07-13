@@ -1,0 +1,14 @@
+{
+  "events": [
+    "draw observed x and z_cost",
+    "draw omega and xi; orthogonalize xi to valid instruments in this designed finite population",
+    "merge z_cost into marginal cost before pricing",
+    "solve prices and shares",
+    "construct z_invalid = xi + noise after outcomes",
+    "merge z_invalid only into estimation table"
+  ],
+  "claims": {
+    "valid": "z_cost is observed before pricing, shifts marginal cost and price, and is exactly orthogonal to designed xi",
+    "invalid": "z_invalid is constructed after outcomes and contains xi, so it violates the demand exclusion; it is never input to pricing"
+  }
+}

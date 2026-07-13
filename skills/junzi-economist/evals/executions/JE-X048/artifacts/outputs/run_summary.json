@@ -1,0 +1,98 @@
+{
+  "predeclared": {
+    "seeds": [
+      48101,
+      48102,
+      48103,
+      48104,
+      48105
+    ],
+    "markets_per_seed": 120,
+    "products_per_market": 2,
+    "rows_per_seed": 240,
+    "scenarios": [
+      "baseline",
+      "subsidy"
+    ],
+    "starts_per_market_scenario": 8,
+    "raw_foc_tolerance": 1e-10,
+    "scaled_foc_tolerance": 1e-09
+  },
+  "primitive_support": {
+    "x": [
+      -1,
+      1
+    ],
+    "w": [
+      -1,
+      1
+    ],
+    "u": [
+      -1,
+      1
+    ],
+    "v": [
+      -1,
+      1
+    ],
+    "e": [
+      -1,
+      1
+    ],
+    "xi": [
+      -0.4,
+      0.4
+    ],
+    "omega": [
+      -0.17,
+      0.17
+    ],
+    "real_mc": [
+      1.03,
+      2.17
+    ],
+    "private_mc_subsidy": [
+      0.83,
+      1.97
+    ]
+  },
+  "failure_counts": {
+    "simulation": 0,
+    "equilibrium": 0,
+    "estimation": 0
+  },
+  "replication_status": [
+    {
+      "seed": 48101,
+      "status": "complete",
+      "detail": "exact counts accepted"
+    },
+    {
+      "seed": 48102,
+      "status": "complete",
+      "detail": "exact counts accepted"
+    },
+    {
+      "seed": 48103,
+      "status": "complete",
+      "detail": "exact counts accepted"
+    },
+    {
+      "seed": 48104,
+      "status": "complete",
+      "detail": "exact counts accepted"
+    },
+    {
+      "seed": 48105,
+      "status": "complete",
+      "detail": "exact counts accepted"
+    }
+  ],
+  "versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

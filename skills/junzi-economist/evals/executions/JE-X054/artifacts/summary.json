@@ -1,0 +1,115 @@
+{
+  "design": {
+    "N": 900,
+    "T": 4,
+    "seed": 731904,
+    "true": {
+      "a1": -0.8,
+      "a2": 1.05,
+      "b1": 0.72,
+      "b2": 1.48,
+      "gamma": 0.62,
+      "pi": 0.37
+    },
+    "policy_subsidy": 0.45,
+    "baseline_price_support": [
+      0.35,
+      3.8
+    ],
+    "post_policy_price_support": [
+      -0.10000000000000003,
+      3.3499999999999996
+    ],
+    "post_policy_share_below_observed_min": 0.03277777777777778
+  },
+  "unrestricted": {
+    "objective": 1316.9230782435004,
+    "parameters": {
+      "a1": -2.0209576691605418,
+      "a2": 1.3225332467543631,
+      "b1": 0.1353352832366127,
+      "b2": 1.623322516379201,
+      "gamma": 0.5381854602783698,
+      "pi": 0.4800373722866663
+    },
+    "selected_start": 3,
+    "projected_gradient_max": 1.1369414981032833e-05,
+    "policy_effect": 0.05266331782071512
+  },
+  "em": {
+    "objective": 1316.923078422088,
+    "parameters": [
+      -2.020931737611168,
+      1.3228875202739676,
+      0.1353352832366127,
+      1.6234970311642425,
+      0.5381906292722282,
+      0.4799695463113317
+    ],
+    "projected_gradient_max": 0.0010601883630242455,
+    "iterations": 800
+  },
+  "homogeneous": {
+    "objective": 1320.3516706995601,
+    "parameters": [
+      -0.19331471985003781,
+      0.9238278071063789,
+      0.5100349269470443
+    ],
+    "gradient_max": 2.0803701400451402e-07,
+    "optimizer_success": true
+  },
+  "comparison": {
+    "lr_heterogeneity_vs_homogeneous": 6.857184912119465,
+    "aic_mixture": 2645.846156487001,
+    "aic_homogeneous": 2646.7033413991203
+  },
+  "profile": {
+    "grid": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9
+    ],
+    "cutoff": 3.841458820694124,
+    "holes": [],
+    "accepted_indices": 17,
+    "in_set_count": 15,
+    "in_set_values": [
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8
+    ],
+    "left_endpoint_censored": true,
+    "right_endpoint_censored": false,
+    "policy_effect_range_on_selected_in_set_solutions": [
+      0.05062648840805483,
+      0.053827418517399084
+    ]
+  }
+}

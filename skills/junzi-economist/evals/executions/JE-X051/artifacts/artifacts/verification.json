@@ -1,0 +1,93 @@
+{
+  "all_pass": true,
+  "checks": [
+    {
+      "check": "sample_count",
+      "pass": true,
+      "detail": "(900, 4)"
+    },
+    {
+      "check": "profile_count_reconciliation",
+      "pass": true,
+      "detail": "rows=9, resolved=9"
+    },
+    {
+      "check": "best_accepted_sigma_0.00",
+      "pass": true,
+      "detail": "selected=1749.284292210857, best=1749.284292210857"
+    },
+    {
+      "check": "best_accepted_sigma_0.10",
+      "pass": true,
+      "detail": "selected=1748.0787319590465, best=1748.0787319590465"
+    },
+    {
+      "check": "best_accepted_sigma_0.20",
+      "pass": true,
+      "detail": "selected=1745.0957839661758, best=1745.0957839661758"
+    },
+    {
+      "check": "best_accepted_sigma_0.30",
+      "pass": true,
+      "detail": "selected=1741.8548392168752, best=1741.8548392168752"
+    },
+    {
+      "check": "best_accepted_sigma_0.40",
+      "pass": true,
+      "detail": "selected=1739.9734280825735, best=1739.9734280825735"
+    },
+    {
+      "check": "best_accepted_sigma_0.50",
+      "pass": true,
+      "detail": "selected=1740.498591779385, best=1740.498591779385"
+    },
+    {
+      "check": "best_accepted_sigma_0.60",
+      "pass": true,
+      "detail": "selected=1743.7190281437825, best=1743.7190281437825"
+    },
+    {
+      "check": "best_accepted_sigma_0.70",
+      "pass": true,
+      "detail": "selected=1749.427762592556, best=1749.427762592556"
+    },
+    {
+      "check": "best_accepted_sigma_0.80",
+      "pass": true,
+      "detail": "selected=1757.2395227786635, best=1757.2395227786635"
+    },
+    {
+      "check": "independent_likelihood_at_profile_min",
+      "pass": true,
+      "detail": "fresh=1739.9734280825737, saved=1739.9734280825735"
+    },
+    {
+      "check": "set_count_reconciliation",
+      "pass": true,
+      "detail": "inside=3"
+    }
+  ],
+  "coverage_map": {
+    "independently_recomputed": [
+      "training simulated likelihood at selected profile minimum from raw attributes, choices, and draws"
+    ],
+    "row_level_reconciled": [
+      "intended/realized sample counts",
+      "profile reported/resolved/hole counts",
+      "best accepted start at every resolved index",
+      "profile-set count"
+    ],
+    "not_covered": [
+      "optimizer search completeness between starts",
+      "SMM moments, criterion, and optimization",
+      "latent-class likelihood implementation",
+      "homogeneous likelihood implementation",
+      "gradients/KKT values",
+      "policy mapping arithmetic",
+      "asymptotic profile cutoff validity",
+      "population identification",
+      "finite-sample coverage",
+      "economic realism"
+    ]
+  }
+}

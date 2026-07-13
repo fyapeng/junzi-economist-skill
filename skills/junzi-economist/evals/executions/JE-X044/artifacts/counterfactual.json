@@ -1,0 +1,59 @@
+{
+  "designated_sample": {
+    "n_agents": 2000,
+    "seed": 1103
+  },
+  "estimate": {
+    "theta": 0.6514314331903809,
+    "RC": 3.193591343863004,
+    "p": 0.5967959949937421,
+    "beta": 0.9
+  },
+  "no_subsidy": {
+    "replacement_rate": 0.2826578184166939,
+    "private_inclusive_value_uniform_initial": -9.783889786337793,
+    "fiscal_outlay_per_period": 0.0,
+    "resource_cost_per_period": 1.4160914627613348,
+    "discounted_resource_cost_uniform_initial": 14.5720013008792,
+    "bellman_residual": 8.757439218243235e-13
+  },
+  "subsidy_1": {
+    "replacement_rate": 0.3538680370542888,
+    "private_inclusive_value_uniform_initial": -6.449421860931815,
+    "fiscal_outlay_per_period": 0.3538680370542888,
+    "resource_cost_per_period": 1.5154154035536402,
+    "discounted_resource_cost_uniform_initial": 15.673596935522951,
+    "bellman_residual": 8.570921750106208e-13
+  },
+  "effects": {
+    "replacement_rate": 0.07121021863759491,
+    "private_inclusive_value_uniform_initial": 3.3344679254059786,
+    "fiscal_outlay_per_period": 0.3538680370542888,
+    "resource_cost_per_period": 0.09932394079230544,
+    "discounted_resource_cost_uniform_initial": 1.1015956346437505
+  },
+  "conditional_parameter_uncertainty": {
+    "accepted_draws": 500,
+    "hessian_eigenvalues": [
+      722.7192588206517,
+      36117.724445201966
+    ],
+    "effect_quantiles_5_50_95": {
+      "replacement_rate": [
+        0.06947142906517591,
+        0.0712180300348603,
+        0.073109621204018
+      ],
+      "private_value": [
+        3.310215758467324,
+        3.3346359327833732,
+        3.360347555004649
+      ],
+      "resource_cost_per_period": [
+        0.09726267708682032,
+        0.09929835051268743,
+        0.10155618156405037
+      ]
+    }
+  }
+}

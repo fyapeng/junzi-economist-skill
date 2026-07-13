@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "policy_rows": 3,
+    "raw_rows": 6400,
+    "restricted_rows": 81,
+    "starts_total": 14
+  },
+  "production_files": {
+    "raw_primitives.npz": {
+      "bytes": 5853,
+      "sha256": "186df73c84ebc6d332f5b1f003aab50e4202487135b7c5fd6036c6f95c8de823"
+    },
+    "restricted_grid.json": {
+      "bytes": 21640,
+      "sha256": "069669cf5257cfea7fd5bf0c53c08ed86dae9acf1e77490e63bd2cd024e2cad9"
+    },
+    "starts.json": {
+      "bytes": 11145,
+      "sha256": "cf8c044ec623c808124d7519e1e8535a80ef3f8631d2798ec9a56e4bf5f6dc90"
+    },
+    "summary.json": {
+      "bytes": 7380,
+      "sha256": "22a37a822f2601cc59a81fa065ca4a4173d57f2f897acab99bf74c64e386c362"
+    }
+  }
+}

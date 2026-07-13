@@ -1,0 +1,285 @@
+{
+  "acceptance_rule": {
+    "fd_step": "2e-5*max(1,abs(parameter))",
+    "only_rule": "independently recomputed projected-gradient infinity norm <= 1e-6*(1+abs(objective))",
+    "solver_success_message_ftol": "recorded but never used for acceptance or selection"
+  },
+  "claim_status": "model-implied, locally rank-supported, simulated-data demonstration; no global or external identification claim",
+  "empirical_ccp": [
+    [
+      0.3743455497382199,
+      0.5825991189427313
+    ],
+    [
+      0.4537559704732957,
+      0.6387959866220736
+    ]
+  ],
+  "empirical_ccp_counts": [
+    {
+      "ccp": 0.3743455497382199,
+      "n": 2292,
+      "ones": 858,
+      "regime": 0.0,
+      "state": 0
+    },
+    {
+      "ccp": 0.5825991189427313,
+      "n": 908,
+      "ones": 529,
+      "regime": 0.0,
+      "state": 1
+    },
+    {
+      "ccp": 0.4537559704732957,
+      "n": 2303,
+      "ones": 1045,
+      "regime": 0.4,
+      "state": 0
+    },
+    {
+      "ccp": 0.6387959866220736,
+      "n": 897,
+      "ones": 573,
+      "regime": 0.4,
+      "state": 1
+    }
+  ],
+  "estimator_distinction": "NFXP solves the Bellman fixed point at every likelihood evaluation; CCP_two_step fixes empirical conditional choice probabilities and uses a policy-evaluation linear system, with no Bellman optimality solve in its criterion.",
+  "local_population_rank": {
+    "jacobian": [
+      [
+        0.22578069769074724,
+        -0.018104096974336237
+      ],
+      [
+        0.2090686429701005,
+        0.1443200288053781
+      ],
+      [
+        0.24226601849086646,
+        -0.021166057970201102
+      ],
+      [
+        0.19702042640123982,
+        0.12498226087953589
+      ]
+    ],
+    "numerical_rank_tolerance": 1e-08,
+    "population_mapping": "four exact model CCPs at states x observed regimes",
+    "rank": 2,
+    "scope": "local population-rank evidence under fixed estimated controlled transitions; not global identification",
+    "singular_values": [
+      0.45233733196992676,
+      0.15751834099669498
+    ]
+  },
+  "policy_accounting": [
+    {
+      "bellman_residual": 9.769962616701378e-14,
+      "government_transfer_per_period": 0.0,
+      "label": "observed_baseline",
+      "private_value_state0": 6.0897518613139425,
+      "real_resource_cost_per_period": 0.1246217567321132,
+      "social_resource_accounting_excludes_transfer": 0.1246217567321132,
+      "stationary_action1": 0.4154058557737107,
+      "stationary_state1": 0.23881717811775188,
+      "subsidy": 0.0,
+      "support": "observed"
+    },
+    {
+      "bellman_residual": 9.947598300641403e-14,
+      "government_transfer_per_period": 0.004978559069918953,
+      "label": "midpoint_counterfactual",
+      "private_value_state0": 6.947705761417044,
+      "real_resource_cost_per_period": 0.0074678386048784295,
+      "social_resource_accounting_excludes_transfer": 0.0074678386048784295,
+      "stationary_action1": 0.024892795349594765,
+      "stationary_state1": 0.24318236225963333,
+      "subsidy": 0.2,
+      "support": "model_interpolation"
+    },
+    {
+      "bellman_residual": 9.14823772291129e-14,
+      "government_transfer_per_period": 0.20055382192338775,
+      "label": "observed_high",
+      "private_value_state0": 7.893346756269002,
+      "real_resource_cost_per_period": 0.1504153664425408,
+      "social_resource_accounting_excludes_transfer": 0.1504153664425408,
+      "stationary_action1": 0.5013845548084693,
+      "stationary_state1": 0.21188487138456852,
+      "subsidy": 0.4,
+      "support": "observed"
+    }
+  ],
+  "restricted_domain": {
+    "all_boundaries_included": true,
+    "cartesian_rows_expected": 81,
+    "cartesian_rows_saved": 81,
+    "closed_domain": true,
+    "feasible_count": 36,
+    "hard_restriction": "theta0 + theta1 <= 0.50",
+    "infeasible_count": 45,
+    "restriction_boundary_count": 8,
+    "theta0_grid": [
+      -1.5,
+      -1.25,
+      -1.0,
+      -0.75,
+      -0.5,
+      -0.25,
+      0.0,
+      0.25,
+      0.5
+    ],
+    "theta1_grid": [
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25
+    ]
+  },
+  "selected": {
+    "CCP_two_step": {
+      "accepted": true,
+      "declared_pg_tolerance": 0.0043077907714055485,
+      "distance_from_selected_objective": 0.0,
+      "estimator": "CCP_two_step",
+      "iterations_record_only": 8,
+      "objective": 4306.790771405549,
+      "pg_norm_inf": 2.6284396881237623e-05,
+      "projected_gradient": [
+        -2.6284396881237623e-05,
+        -1.9255137851192695e-05
+      ],
+      "raw_gradient": [
+        -2.6284396881237623e-05,
+        -1.9255137851192695e-05
+      ],
+      "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "solver_status_record_only": 0,
+      "solver_success_record_only": true,
+      "start": [
+        -1.8,
+        0.15
+      ],
+      "start_id": 0,
+      "terminal": [
+        -0.4631737042922335,
+        1.1832084743034257
+      ]
+    },
+    "NFXP": {
+      "accepted": true,
+      "declared_pg_tolerance": 0.0043077897986216205,
+      "distance_from_selected_objective": 0.0,
+      "estimator": "NFXP",
+      "iterations_record_only": 11,
+      "objective": 4306.78979862162,
+      "pg_norm_inf": 1.7332999797144078e-05,
+      "projected_gradient": [
+        -8.003553375601768e-06,
+        1.7332999797144078e-05
+      ],
+      "raw_gradient": [
+        -8.003553375601768e-06,
+        1.7332999797144078e-05
+      ],
+      "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "solver_status_record_only": 0,
+      "solver_success_record_only": true,
+      "start": [
+        -1.8,
+        0.15
+      ],
+      "start_id": 0,
+      "terminal": [
+        -0.46316940476479607,
+        1.184552191358523
+      ]
+    }
+  },
+  "specification": {
+    "actions": [
+      0,
+      1
+    ],
+    "counterfactual_regime": 0.2,
+    "discount": 0.9,
+    "observed_regimes": [
+      0.0,
+      0.4
+    ],
+    "sample_predeclared": {
+      "agents": 800,
+      "periods": 8,
+      "rows": 6400
+    },
+    "shock": "iid type-I extreme value, scale normalized to one",
+    "states": [
+      0,
+      1
+    ],
+    "transition_truth_simulation_only": [
+      [
+        0.18,
+        0.08
+      ],
+      [
+        0.82,
+        0.35
+      ]
+    ],
+    "true_theta_simulation_only": [
+      -0.45,
+      1.15
+    ],
+    "utility_action0": 0,
+    "utility_action1": "theta0 + theta1*state + subsidy"
+  },
+  "transition_counts": [
+    {
+      "action": 0,
+      "n": 2692,
+      "next_one": 464,
+      "p1": 0.1723625557206538,
+      "state": 0
+    },
+    {
+      "action": 1,
+      "n": 1903,
+      "next_one": 149,
+      "p1": 0.07829742511823437,
+      "state": 0
+    },
+    {
+      "action": 0,
+      "n": 703,
+      "next_one": 593,
+      "p1": 0.8435277382645804,
+      "state": 1
+    },
+    {
+      "action": 1,
+      "n": 1102,
+      "next_one": 383,
+      "p1": 0.34754990925589835,
+      "state": 1
+    }
+  ],
+  "transition_estimates": [
+    [
+      0.1723625557206538,
+      0.07829742511823437
+    ],
+    [
+      0.8435277382645804,
+      0.34754990925589835
+    ]
+  ]
+}

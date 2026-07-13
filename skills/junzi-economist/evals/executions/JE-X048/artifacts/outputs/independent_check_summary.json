@@ -1,0 +1,6 @@
+{
+  "checks": 1200,
+  "failures": 0,
+  "status": "pass",
+  "note": "Separate equation implementation, fresh root solve, and finite-difference profit gradient."
+}

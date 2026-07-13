@@ -1,0 +1,87 @@
+{
+  "generated_at_utc": "2026-07-13T07:57:36.650052+00:00",
+  "seed": 57013,
+  "beta": 0.9,
+  "sample": {
+    "rows": 4800,
+    "agents": 240,
+    "periods_per_agent": 20,
+    "action_rate": 0.4552083333333333,
+    "action_rate_by_regime": {
+      "0": 0.3729166666666667,
+      "1": 0.5375
+    }
+  },
+  "estimated_transitions": {
+    "rows": 18,
+    "action_state_cells": 6,
+    "minimum_cell_total": 200,
+    "maximum_row_sum_error": 1.1102230246251565e-16
+  },
+  "nfxp": {
+    "theta": {
+      "state_harm": 0.7585435394988677,
+      "maintenance_cost": 1.2273187538521104,
+      "subsidy_loading": 0.8871519453404465
+    },
+    "objective": 3152.106538715204,
+    "starts": 8,
+    "successful_starts": 8,
+    "selected_start_id": 7,
+    "projected_gradient_inf": 9.094946972029364e-05
+  },
+  "ccp_wmd": {
+    "theta": {
+      "state_harm": 0.7747940698319838,
+      "maintenance_cost": 1.224177940665068,
+      "subsidy_loading": 0.8590366888952735
+    },
+    "objective": 0.0020964860522356,
+    "starts": 8,
+    "successful_starts": 8,
+    "selected_start_id": 7,
+    "projected_gradient_inf": 1.3140530410385508e-08
+  },
+  "local_rank": {
+    "rank": 3,
+    "singular_values": [
+      0.8110518060569872,
+      0.30131833726609264,
+      0.15811383259027845
+    ],
+    "claim_scope": "continuous local rank at the NFXP estimate, conditional on estimated transitions and normalization",
+    "global_identification_claim": false
+  },
+  "restricted_search": {
+    "domain": {
+      "state_harm": [
+        0.1,
+        2.0
+      ],
+      "maintenance_cost": [
+        0.2,
+        3.0
+      ],
+      "subsidy_loading": [
+        0.0,
+        2.0
+      ]
+    },
+    "nodes_per_axis": 17,
+    "total_rows": 4913,
+    "accepted_rows": 4793,
+    "boundary_rows": 1538,
+    "delta": 0.35,
+    "tolerance": 1e-12,
+    "best_row_id": 2168,
+    "best_objective_ccp_sse": 0.0050775982567933,
+    "best_slack": 0.0226812461478894,
+    "interpretation": "exact exhaustive result on the declared closed 17^3 lattice; not continuous global identification"
+  },
+  "policy": {
+    "rows": 3,
+    "observed_regime_rows": 2,
+    "interpolation_rows": 1,
+    "maximum_accounting_error": 5.551115123125783e-17
+  }
+}

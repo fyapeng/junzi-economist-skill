@@ -1,0 +1,48 @@
+{
+  "implementation": "independent probability/objective formulas; central differences do not import production functions",
+  "max_objective_abs_difference": 2.2737367544323206e-13,
+  "max_selected_minus_min_accepted": 0.0,
+  "gradient_checks": [
+    {
+      "rep": "n600_s104",
+      "model": "single",
+      "finite_difference_gradient": [
+        7.105427357601002e-07,
+        -1.0800249583553523e-06,
+        -8.526512829121202e-07
+      ],
+      "saved_raw_gradient": [
+        1.0092786203452775e-05,
+        -4.525068739846816e-05,
+        -2.8137059331800884e-05
+      ],
+      "max_abs_difference": 4.417066244011281e-05
+    },
+    {
+      "rep": "n600_s104",
+      "model": "mixture",
+      "finite_difference_gradient": [
+        2.8421709430404007e-08,
+        5.115907697472721e-07,
+        0.1517671535111731,
+        5.6843418860808015e-08,
+        -2.4442670110147446e-06
+      ],
+      "saved_raw_gradient": [
+        -6.036248128893362e-06,
+        1.6712774326688162e-06,
+        0.1517621335679682,
+        -1.332577789114886e-06,
+        4.848279270319722e-05
+      ],
+      "max_abs_difference": 5.0927059714211964e-05
+    }
+  ],
+  "profile_set": {
+    "delta_min": 0.15,
+    "delta_max": 3.0,
+    "policy_effect_min": 0.0721481205047013,
+    "policy_effect_max": 0.0761023220798095
+  },
+  "passed": true
+}

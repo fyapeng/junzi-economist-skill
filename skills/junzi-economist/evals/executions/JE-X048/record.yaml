@@ -1,0 +1,39 @@
+schema_version: 1
+execution_id: JE-X048
+case_id: JE-R43
+timestamp_utc: "2026-07-13T06:58:00Z"
+skill_commit: "e25b4d0"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_io_selection
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer unconditional simulation, complete counts, invalid-instrument timing, scaled-equilibrium, all-start, and accounting rules to a new differentiated-products model."
+expected:
+  - guarantee valid primitive support without redraw or drop
+  - make invalid-instrument timing and exclusion executable
+  - preserve whole-replication failures and every equilibrium start
+  - independently recompute estimation equilibrium and accounting objects
+forbidden:
+  - condition survival on latent costs or solver outcomes
+  - let written failure diagnostics coexist with a successful process status
+  - infer instrument validity from strength
+  - claim finite searched roots are globally unique
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "7967b34858d9592dde14ea31c6602fab2320a6d07bd923f0b4c99146b70949a6"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/replication.py, sha256: "d78b56f65af2e99bb7db42adc869a41cb1fe9c183115d214772f12f29403e73b"}
+  - {file: artifacts/outputs/compact_results.json, sha256: "d8c832afe8bf37fff82bff8043d20fe3f094096264076bfea0216e90d2031a3c"}
+  - {file: artifacts/independent_check.py, sha256: "a4ff7d95987962824a12c57ce37aab37c7f4e5f1f34e5eb4b6ef624cf4f2fadd"}
+rubric:
+  - {criterion: unconditional DGP and complete-count accounting, score: 2, max_score: 2}
+  - {criterion: invalid-instrument executable timing, score: 1, max_score: 2}
+  - {criterion: equilibrium starts residuals and independent checks, score: 2, max_score: 2}
+  - {criterion: artifact and process failure signaling, score: 1, max_score: 2}
+verdict: mixed
+limitations:
+  - the invalid proxy was constructed before pricing despite later-recording language
+  - forced failures wrote correct records but the process still exited successfully

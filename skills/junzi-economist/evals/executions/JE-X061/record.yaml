@@ -1,0 +1,28 @@
+schema_version: 1
+execution_id: JE-X061
+case_id: JE-R42
+timestamp_utc: "2026-07-13T08:40:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_complete_verify
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Produce a minimal dynamic endpoint with comprehensive final independent verification and self-hashed manifest."
+expected: [recompute all cells estimators gradients rank restricted rows policies accounting headlines and hashes, test arbitrary policy inputs, limit claims to local rank]
+forbidden: [hard-code policies, overclaim verifier coverage, publish stale hashes, claim global identification]
+loaded_files: [SKILL.md, references/MICROECONOMIC_LAW.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "660447bcfb5cf132a086eb1590127f38754b46fe380338682f56bb3583457180"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/production.py, sha256: "1ac0324705ab1cb3ca683744c442e968bbf20297c5b469ab3be1d94a3c7f95f3"}
+  - {file: artifacts/verifier.py, sha256: "02b480988daeade7e6b8b35e83a7aa08a860d1f26a49949795c0acf7497390f6"}
+  - {file: artifacts/final_manifest.json, sha256: "ce5747c88f1437f1f5c84f1c39f35a2747dd2f6aa608a92220cee6d5f53eb7b5"}
+  - {file: artifacts/verification.json, sha256: "81d4b19eca41b4bfcc8115adca960aa1522fca1a37281f15f9a6598b35f70d7c"}
+rubric:
+  - {criterion: complete numerical and cross-artifact verification, score: 2, max_score: 2}
+  - {criterion: exact verifier coverage language, score: 1, max_score: 2}
+verdict: mixed
+limitations: [all substantive objects pass; coverage wording called finite saved levels arbitrary and did not bind each policy key to its level]

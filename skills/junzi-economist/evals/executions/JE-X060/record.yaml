@@ -1,0 +1,27 @@
+schema_version: 1
+execution_id: JE-X060
+case_id: JE-R42
+timestamp_utc: "2026-07-13T08:25:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_policy
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer arbitrary-policy, KKT, transition, estimator, rank, domain, accounting, and verification rules."
+expected: [solve observed and unobserved policy inputs, recompute estimator and gradient headlines independently, verify keys domains levels accounting and hashes, bound identification claims]
+forbidden: [hard-code policy regimes, omit estimator or gradient coverage, overstate arbitrary-input coverage, claim global identification]
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "9f698090fe59887c4c4a3635d20cfe7dab83d9625c29e25fe299816bb02a27d9"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/production.py, sha256: "ebedb41da435761fbebfacde41a1e4820bec962c5b3ad2f62ea0603bd1970bc0"}
+  - {file: artifacts/verify.py, sha256: "065953fa417c041e98cc9e2ebb23bd1237eed57423229d412877755d89d6f6b9"}
+  - {file: artifacts/artifacts/verification.json, sha256: "af82ce3c7f2799239d0fb98771b2dbc440791f53009b36c5bb70be6b954cec18"}
+rubric:
+  - {criterion: numerical model and arbitrary-policy correctness, score: 2, max_score: 2}
+  - {criterion: exact independent coverage wording, score: 1, max_score: 2}
+verdict: mixed
+limitations: [substantive results pass but bundled verifier omitted several headline checks]

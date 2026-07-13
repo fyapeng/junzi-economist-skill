@@ -28,8 +28,8 @@ requirements:
     gap: "Coverage now includes DID, common counterfactual failures, protected-choice ITTs, two-stage saturation designs, partial interference, displacement, total-policy effects, and finite-population support; broaden to networks, measurement error, and mediation."
   structural_estimation:
     status: partial
-    evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/executions/JE-X011, evals/executions/JE-X012]
-    gap: "Dynamic NFXP estimation, repeated recovery, local population rank, failure accounting, and bounded global searches now pass; broaden to discrete-choice equilibrium, estimated transitions or discounting, misspecification, and alternative estimators."
+    evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/SOFTWARE_AND_COMPUTATION.md, evals/executions/JE-X044, evals/executions/JE-X045, evals/executions/JE-X046, evals/executions/JE-X053, evals/executions/JE-X058, evals/executions/JE-X059, evals/executions/JE-X061]
+    gap: "Demand-supply equilibrium and latent-profile endpoints now have clean exact-commit passes with unconditional samples, executable timing, full-precision traces, nonzero failure signaling, unrestricted-reference profiles, and raw-primitives-only verification. Dynamic NFXP/CCP, estimated transitions, local rank, closed domains, arbitrary-policy accounting, and projected gradients reproduce substantively, but the latest packaged verifier still overstates narrow coverage semantics; retain partial until a clean transfer closes that last auditability gap."
   computation_and_instruments:
     status: partial
     evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py, evals/executions/JE-X039, evals/executions/JE-X042, evals/executions/JE-X043]
@@ -49,7 +49,7 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Forty-two strict executions now include automatic routing, real PDF, long manuscript, legacy comparisons, theory/frontier and Dao endpoints, micro and macro law families, preserved failures, and clean exact-commit transfer tests at 9a3e5fe, d6866bb, and 845a0ae; exact client/model provenance and platform-level telemetry remain unavailable."
+    gap: "Sixty strict executions now include automatic routing, real PDF, long manuscript, legacy comparisons, theory/frontier and Dao endpoints, micro and macro law families, structural demand-supply, dynamic choice, misspecification, profile sets, preserved failures, and clean exact-commit transfers through f120979; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]

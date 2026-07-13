@@ -1,0 +1,36 @@
+{
+  "model": "finite-state dynamic equipment replacement with type-I extreme-value shocks",
+  "seed": 60213,
+  "sample_rows": 15000,
+  "agents": 500,
+  "periods": 30,
+  "states": 5,
+  "beta": 0.9,
+  "observed_policy_regimes": [
+    0.0,
+    1.0
+  ],
+  "model_interpolation_policy": 0.5,
+  "transition_count_total": 15000,
+  "ccp_count_total": 15000,
+  "transition_rows": 50,
+  "ccp_rows": 10,
+  "optimizer_start_rows": 10,
+  "accepted_optimizer_starts": 10,
+  "required_projected_gradient_tolerance": 2e-05,
+  "closed_domain_rows": 4,
+  "closed_domain_corner_rows": 4,
+  "local_rank": 2,
+  "local_rank_singular_values": [
+    1.7322569727240198,
+    0.16432355672775767
+  ],
+  "saved_policy_level_rows": 3,
+  "production_solver_contract": "solve_policy(theta, transitions, policy) accepts any finite scalar policy",
+  "identification_scope": "local rank diagnostic only",
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  }
+}

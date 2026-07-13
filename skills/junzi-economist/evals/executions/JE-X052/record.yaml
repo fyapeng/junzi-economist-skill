@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X052
+case_id: JE-R42
+timestamp_utc: "2026-07-13T07:27:00Z"
+skill_commit: "77aa2f1"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_hard_constraint
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer hard-constraint, search-trace, verifier-scope, local-rank, support, and accounting rules to a dynamic household technology-choice model."
+expected:
+  - estimate transitions preferences and discounting with NFXP and CCP methods
+  - establish only local continuous population rank
+  - search the entire declared closed restricted domain with auditable traces
+  - bound verifier and counterfactual claims to executed evidence
+forbidden:
+  - let transformed-coordinate caps narrow the declared economic domain silently
+  - call a feasible candidate the full restricted optimum without adequate search
+  - conflate observed policy support and model interpolation
+  - use a partial verifier as blanket pipeline validation
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "60ea72fd8ab398ac2fae235593caa421ebb9d419c97f319dcba896d9a9617e42"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_model.py, sha256: "3b7cd6f02309817ccfa1ff548e063f1cd3ec860162cc5592b264293e16ee5714"}
+  - {file: artifacts/artifacts/restricted_search.json, sha256: "7e53ffe7d8317208136b26265901d92f65b550fbeed73f50d1f994fb4e79e059"}
+  - {file: artifacts/artifacts/local_starts.json, sha256: "c6ae6225f4d7fd5e7245809c7dc05e349a5d3dc1ec1ad7c662dd77997103e407"}
+  - {file: artifacts/verify_independent.py, sha256: "b0884ef5e56cb7109b8f64d8de183d157e6eacfc54521b5656debcecd10599db"}
+rubric:
+  - {criterion: transition NFXP CCP and local-rank evidence, score: 2, max_score: 2}
+  - {criterion: hard feasibility and declared-domain coverage, score: 1, max_score: 2}
+  - {criterion: search retention and verifier scope, score: 1, max_score: 2}
+  - {criterion: support and counterfactual accounting, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - the transformed coordinate cap excluded the exact beta boundary and missed a better candidate
+  - retained summaries did not allow full optimizer replay

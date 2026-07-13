@@ -1,0 +1,56 @@
+{
+  "verifier": "independent arithmetic/schema recomputation; does not import production solver",
+  "coverage_map": [
+    {
+      "name": "controlled_transitions",
+      "pass": true,
+      "coverage": "saved transition estimates only; not preference estimation",
+      "detail": {
+        "max_abs_diff": 0.0
+      }
+    },
+    {
+      "name": "local_rank_arithmetic",
+      "pass": true,
+      "coverage": "rank calculation for saved population Jacobian; not proof of global identification",
+      "detail": {
+        "rank": 4,
+        "sv": [
+          21.456330677323233,
+          3.4217169389663753,
+          2.0009058734896117,
+          0.5748594986135623
+        ]
+      }
+    },
+    {
+      "name": "hard_constraint",
+      "pass": true,
+      "coverage": "selected restricted candidate feasibility and reported slack only; not global optimality",
+      "detail": {
+        "recomputed_slack": 7.713053000724113e-05,
+        "tol": 1e-12
+      }
+    },
+    {
+      "name": "welfare_accounting",
+      "pass": true,
+      "coverage": "accounting identity in saved counterfactual rows; not normative completeness or external validity",
+      "detail": {
+        "max_identity_error": 0.0
+      }
+    },
+    {
+      "name": "search_metadata",
+      "pass": true,
+      "coverage": "presence/count of retained restricted-search starts and traces; not optimizer correctness",
+      "detail": {
+        "initial": 32,
+        "generations": 30,
+        "polish": 8
+      }
+    }
+  ],
+  "all_checked_objects_pass": true,
+  "blanket_pipeline_pass_claimed": false
+}

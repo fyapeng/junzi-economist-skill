@@ -1,0 +1,16 @@
+{
+  "levels": {
+    "consumer_expenditure": 450274.0678393667,
+    "producer_revenue": 450274.0678393667,
+    "variable_cost": 237372.48455230324,
+    "producer_profit": 212901.5832870634,
+    "consumer_surplus": 315357.8373235403,
+    "total_welfare": 528259.4206106038
+  },
+  "identity_residuals": {
+    "expenditure_minus_revenue": 0.0,
+    "profit_minus_revenue_plus_cost": -2.9103830456733704e-11,
+    "welfare_minus_cs_minus_profit": 5.820766091346741e-11
+  },
+  "scope": "market totals summed over all planned markets; transfers absent; only variable production cost included"
+}

@@ -1,0 +1,150 @@
+{
+  "passed": true,
+  "independence": "verify.py does not import production.py and uses an algebraically different arbitrary-policy root solver",
+  "coverage": {
+    "covered": [
+      "production file immutability",
+      "transition and CCP row counts/probabilities",
+      "headline count reconciliation",
+      "inclusive closed domain, every corner, and all saved slacks",
+      "all-start projected-gradient acceptance",
+      "observed, midpoint, and two off-regime interior policy solutions",
+      "direct Bellman residuals, economic monotonicity, and separate accounting levels",
+      "saved midpoint levels and saved local singular values"
+    ],
+    "not_claimed": [
+      "global identification",
+      "out-of-support causal policy validity",
+      "sampling uncertainty"
+    ]
+  },
+  "checks": {
+    "production_hashes": {
+      "passed": true,
+      "files_checked": 12,
+      "mismatches": []
+    },
+    "saved_transition_and_ccp_counts": {
+      "passed": true,
+      "transition_total_recomputed": 15000,
+      "ccp_total_recomputed": 15000,
+      "transition_rows_compared": 50,
+      "ccp_rows_compared": 10,
+      "transition_mismatches": [],
+      "ccp_mismatches": []
+    },
+    "headline_reconciliation": {
+      "passed": true,
+      "sample_rows_recomputed": 15000
+    },
+    "closed_domain_and_optimizer_acceptance": {
+      "passed": true,
+      "inclusive_domain_rows_checked": 4,
+      "all_closed_domain_corners_checked": 4,
+      "optimizer_start_rows_checked": 10,
+      "all_starts_pass_post_optimizer_projected_gradient_rule": true
+    },
+    "arbitrary_policy_and_saved_levels": {
+      "passed": true,
+      "method": "nonlinear root with analytic Newton Jacobian; production uses value iteration",
+      "arbitrary_policy_values_evaluated": [
+        0.0,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "observed_policy_values": [
+        0.0,
+        1.0
+      ],
+      "off_regime_interior_values": [
+        0.25,
+        0.75
+      ],
+      "saved_level_comparisons": [
+        {
+          "policy": 0.0,
+          "vector_max_abs_errors": {
+            "value": 9.885425811262394e-12,
+            "replacement_ccp": 5.828670879282072e-14,
+            "stationary_distribution": 1.554312234475219e-14
+          },
+          "level_abs_errors": {
+            "replacement_rate": 1.459943277382081e-14,
+            "deterioration_resource_cost": 5.051514762044462e-14,
+            "replacement_resource_cost": 4.829470157119431e-14,
+            "fiscal_subsidy_transfer": 0.0,
+            "private_flow_cost": 2.220446049250313e-15,
+            "social_resource_cost": 2.220446049250313e-15
+          }
+        },
+        {
+          "policy": 0.5,
+          "vector_max_abs_errors": {
+            "value": 8.127720718675846e-12,
+            "replacement_ccp": 2.220446049250313e-16,
+            "stationary_distribution": 1.1102230246251565e-16
+          },
+          "level_abs_errors": {
+            "replacement_rate": 5.551115123125783e-17,
+            "deterioration_resource_cost": 2.220446049250313e-16,
+            "replacement_resource_cost": 2.220446049250313e-16,
+            "fiscal_subsidy_transfer": 2.7755575615628914e-17,
+            "private_flow_cost": 0.0,
+            "social_resource_cost": 0.0
+          }
+        },
+        {
+          "policy": 1.0,
+          "vector_max_abs_errors": {
+            "value": 8.419043240337487e-12,
+            "replacement_ccp": 7.771561172376096e-16,
+            "stationary_distribution": 1.942890293094024e-16
+          },
+          "level_abs_errors": {
+            "replacement_rate": 0.0,
+            "deterioration_resource_cost": 2.220446049250313e-16,
+            "replacement_resource_cost": 0.0,
+            "fiscal_subsidy_transfer": 0.0,
+            "private_flow_cost": 0.0,
+            "social_resource_cost": 2.220446049250313e-16
+          }
+        }
+      ],
+      "maximum_saved_level_or_vector_error": 9.885425811262394e-12,
+      "saved_midpoint_accounting_level_max_error": 2.220446049250313e-16,
+      "direct_bellman_residuals": {
+        "0.0": 2.717825964282383e-13,
+        "0.25": 3.552713678800501e-15,
+        "0.5": 0.0,
+        "0.75": 2.220446049250313e-14,
+        "1.0": 8.881784197001252e-16
+      },
+      "economic_sanity": {
+        "replacement_ccp_weakly_increases_with_state_each_policy": true,
+        "replacement_ccp_weakly_increases_with_policy_each_state": true,
+        "aggregate_replacement_rate_strictly_increases_with_policy": true,
+        "private_flow_cost_strictly_decreases_with_subsidy": true,
+        "stationary_distributions_valid": true
+      }
+    },
+    "saved_local_singular_values": {
+      "passed": true,
+      "scope": "local rank at saved NFXP estimate only",
+      "recomputed_singular_values": [
+        1.7322569727200914,
+        0.16432355672365456
+      ],
+      "saved_singular_values": [
+        1.7322569727240198,
+        0.16432355672775767
+      ],
+      "absolute_errors": [
+        3.928413150333654e-12,
+        4.103106743258422e-12
+      ],
+      "recomputed_local_rank": 2
+    }
+  }
+}

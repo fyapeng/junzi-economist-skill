@@ -1,0 +1,16 @@
+{
+  "completed": true,
+  "selected_fits": 48,
+  "start_records": 384,
+  "software_successful_starts": 384,
+  "kkt_accepted_starts": 296,
+  "rejected_starts_preserved": 88,
+  "selected_fits_kkt_accepted": 48,
+  "profile_start_records": 177,
+  "independent_verification_passed": true,
+  "production_exit_code": 0,
+  "verification_exit_code": 0,
+  "source_skill_commit": "e25b4d0",
+  "source_repository_modified_by_task": false,
+  "note": "The source repository already showed a modified evals/cases.yaml at final inspection; this task neither read nor modified eval content."
+}

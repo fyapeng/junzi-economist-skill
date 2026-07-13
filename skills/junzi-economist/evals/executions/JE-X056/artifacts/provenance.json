@@ -1,0 +1,51 @@
+{
+  "files": {
+    "simulate.py": {
+      "sha256": "8edd2739ea6163d04e7b1c06b382367fbfb12a0c09a4005a45ad9b21b0b19908",
+      "bytes": 1537
+    },
+    "estimate_profile.py": {
+      "sha256": "71c66547d5a2e7cbe670428fecd527dc047d0159f00901599bf1c119cef51fc1",
+      "bytes": 8274
+    },
+    "independent_verify.py": {
+      "sha256": "a82a489ec84fabaf37db937b9591736013b4737b436eb070683f5fa5b6e4830a",
+      "bytes": 6579
+    },
+    "audit.py": {
+      "sha256": "1b32491ab46b0b9f21cd96690aa2aff9760c62fccb6bc1a01eb73f47a664ecfb",
+      "bytes": 5027
+    },
+    "raw_primitives.json": {
+      "sha256": "4a90936c4545f970aa83d8d9006d1fcdb2c138a81516c4766fa4341ce7d52782",
+      "bytes": 276745
+    },
+    "production_results.json": {
+      "sha256": "a0fd094413ca7d6605d3198fee0b77748e88c91f80821c1080af2b8812297dc3",
+      "bytes": 1352568
+    },
+    "profile_selected.csv": {
+      "sha256": "b3c8180f533d482149aa81098f3d00c83b0492a209c81af4df0fab254aa82871",
+      "bytes": 5103
+    },
+    "independent_results.json": {
+      "sha256": "09107ba7f7ef6c6ae20cb810f3630e8778b12db577802c8de7e0697307e08103",
+      "bytes": 722884
+    },
+    "audit.json": {
+      "sha256": "f8a5367ae22f272f8fd1ae2b0ed52018b6aa6ae50626ca8b0f50580a1f5f57eb",
+      "bytes": 2261
+    },
+    "response.md": {
+      "sha256": "037aae9258337a4f0575f38bb5b4b722366c94340312aad2fcf6856e608f4316",
+      "bytes": 5248
+    }
+  },
+  "commands": [
+    "C:/Users/ENAN/miniforge3/envs/codex/python.exe simulate.py",
+    "C:/Users/ENAN/miniforge3/envs/codex/python.exe estimate_profile.py",
+    "C:/Users/ENAN/miniforge3/envs/codex/python.exe independent_verify.py",
+    "C:/Users/ENAN/miniforge3/envs/codex/python.exe audit.py"
+  ],
+  "source_skill_commit": "f120979 (read via git show only)"
+}

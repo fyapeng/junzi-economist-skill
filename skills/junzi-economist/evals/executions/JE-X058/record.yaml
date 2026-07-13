@@ -1,0 +1,27 @@
+schema_version: 1
+execution_id: JE-X058
+case_id: JE-R44
+timestamp_utc: "2026-07-13T08:05:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_profile_minimal
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Produce a minimal latent-profile endpoint with raw-primitives-only independent verification."
+expected: [resolve and audit every grid point, use unrestricted LR reference, retain all KKT starts, report holes censoring support and selected policy image]
+forbidden: [read stored terminals in independent verification, hide LR exclusions as holes, overclaim continuous sets, add unused routing layers]
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "22d1b027fc3b80eefa3e6f8b80c34938f25f40f32bf6d838c240cccee97a99c6"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_profile.py, sha256: "b860b09c2599b893c34337533b0c77e255caa25e37d5132c7eb11d04e7518be8"}
+  - {file: artifacts/independent_verify.py, sha256: "5290f3b6e400dadd61752623324192724bc0b19cb6b9017c67f04012371b1f40"}
+  - {file: artifacts/verification_report.json, sha256: "30801daaf21cd4aa63d43ca84ed8e4bca78a86943060d5abaf21f73af6a2997a"}
+rubric:
+  - {criterion: profile set and KKT evidence, score: 2, max_score: 2}
+  - {criterion: independent reconstruction and reconciliation, score: 2, max_score: 2}
+verdict: pass
+limitations: [finite simulated evaluated-grid evidence only]

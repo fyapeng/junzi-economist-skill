@@ -1,0 +1,10 @@
+{
+  "status": "failed",
+  "stage": "equilibrium",
+  "reason": "forced whole-replication equilibrium failure",
+  "details": {
+    "market": 0,
+    "all_markets_required": true,
+    "partial_sample_not_estimated": true
+  }
+}

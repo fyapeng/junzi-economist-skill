@@ -1,0 +1,202 @@
+[
+  {
+    "start_id": 0,
+    "start": [
+      0.08,
+      0.3
+    ],
+    "terminal": [
+      0.42919580549852004,
+      2.147405532813878
+    ],
+    "objective": 9111.515741167586,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 10,
+    "raw_grad": [
+      0.0031212039175443347,
+      -0.0009415113685545558
+    ],
+    "projected_grad": [
+      0.0031212039175443347,
+      -0.0009415113685545558
+    ],
+    "projected_grad_inf": 0.0031212039175443347,
+    "objective_gap": 3.4560798667371273e-10
+  },
+  {
+    "start_id": 1,
+    "start": [
+      0.2,
+      1.0
+    ],
+    "terminal": [
+      0.4291957590977643,
+      2.147405724596711
+    ],
+    "objective": 9111.515741167337,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 9,
+    "raw_grad": [
+      0.0016951162251643834,
+      -0.0004916357620385343
+    ],
+    "projected_grad": [
+      0.0016951162251643834,
+      -0.0004916357620385343
+    ],
+    "projected_grad_inf": 0.0016951162251643834,
+    "objective_gap": 9.640643838793039e-11
+  },
+  {
+    "start_id": 2,
+    "start": [
+      0.4,
+      2.0
+    ],
+    "terminal": [
+      0.4291955410546539,
+      2.1474053834091835
+    ],
+    "objective": 9111.515741167324,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 6,
+    "raw_grad": [
+      -0.0005071342457085848,
+      -0.000203464729159832
+    ],
+    "projected_grad": [
+      -0.0005071342457085848,
+      -0.000203464729159832
+    ],
+    "projected_grad_inf": 0.0005071342457085848,
+    "objective_gap": 8.36735125631094e-11
+  },
+  {
+    "start_id": 3,
+    "start": [
+      0.8,
+      3.0
+    ],
+    "terminal": [
+      0.4291956636968231,
+      2.1474057945914597
+    ],
+    "objective": 9111.51574116724,
+    "success": true,
+    "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "nit": 9,
+    "raw_grad": [
+      -6.266418495215476e-05,
+      -4.3284952827873365e-05
+    ],
+    "projected_grad": [
+      -6.266418495215476e-05,
+      -4.3284952827873365e-05
+    ],
+    "projected_grad_inf": 6.266418495215476e-05,
+    "objective_gap": 0.0
+  },
+  {
+    "start_id": 4,
+    "start": [
+      1.45,
+      4.8
+    ],
+    "terminal": [
+      0.42919566990152397,
+      2.147405814713968
+    ],
+    "objective": 9111.51574116724,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 8,
+    "raw_grad": [
+      -3.765308065339923e-05,
+      -3.621197095991991e-05
+    ],
+    "projected_grad": [
+      -3.765308065339923e-05,
+      -3.621197095991991e-05
+    ],
+    "projected_grad_inf": 3.765308065339923e-05,
+    "objective_gap": 0.0
+  },
+  {
+    "start_id": 5,
+    "start": [
+      1.2,
+      1.0
+    ],
+    "terminal": [
+      0.42919581975354826,
+      2.1474054619394316
+    ],
+    "objective": 9111.515741167706,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 8,
+    "raw_grad": [
+      0.0036025085137225683,
+      -0.0010972440769313752
+    ],
+    "projected_grad": [
+      0.0036025085137225683,
+      -0.0010972440769313752
+    ],
+    "projected_grad_inf": 0.0036025085137225683,
+    "objective_gap": 4.656612873077393e-10
+  },
+  {
+    "start_id": 6,
+    "start": [
+      0.1,
+      4.5
+    ],
+    "terminal": [
+      0.42919564217110484,
+      2.147405772858521
+    ],
+    "objective": 9111.515741167244,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 9,
+    "raw_grad": [
+      -0.0003234163159504533,
+      2.7106037270256672e-06
+    ],
+    "projected_grad": [
+      -0.0003234163159504533,
+      2.7106037270256672e-06
+    ],
+    "projected_grad_inf": 0.0003234163159504533,
+    "objective_gap": 3.637978807091713e-12
+  },
+  {
+    "start_id": 7,
+    "start": [
+      0.7,
+      2.3
+    ],
+    "terminal": [
+      0.42919560860554007,
+      2.147405584166672
+    ],
+    "objective": 9111.515741167268,
+    "success": true,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 7,
+    "raw_grad": [
+      -0.00016925696399994192,
+      -0.0001529797112862887
+    ],
+    "projected_grad": [
+      -0.00016925696399994192,
+      -0.0001529797112862887
+    ],
+    "projected_grad_inf": 0.00016925696399994192,
+    "objective_gap": 2.7284841053187847e-11
+  }
+]

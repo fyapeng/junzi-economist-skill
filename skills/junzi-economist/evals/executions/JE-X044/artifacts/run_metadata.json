@@ -1,0 +1,30 @@
+{
+  "true_parameters": {
+    "theta": 0.65,
+    "RC": 3.2,
+    "p": 0.6,
+    "beta": 0.9
+  },
+  "T": 25,
+  "train_T": 20,
+  "initial_state_law": "iid discrete uniform on states 0,...,5",
+  "timing": "observe x_t; draw EV1 shocks and choose; draw Bernoulli deterioration; realize x_{t+1}",
+  "seeds": [
+    1103,
+    2207,
+    3313,
+    4421,
+    5531
+  ],
+  "sample_sizes_agents": [
+    400,
+    2000
+  ],
+  "versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "production": {
+    "command": "C:/Users/ENAN/miniforge3/envs/codex/python.exe study.py",
+    "exit": 0
+  },
+  "smm_first_attempt": {
+    "command": "C:/Users/ENAN/miniforge3/envs/codex/python.exe smm.py",
+    "exit": 1,
+    "failure": "IndexError in post-estimation policy-share reporting: a three-dimensional array was indexed with four dimensions",
+    "reuse": "none"
+  },
+  "smm_full_rerun_after_repair": {
+    "command": "C:/Users/ENAN/miniforge3/envs/codex/python.exe smm.py",
+    "exit": 0
+  },
+  "verification": {
+    "command": "C:/Users/ENAN/miniforge3/envs/codex/python.exe verify.py",
+    "independent_implementation": "loop-based training likelihood recomputation without importing production solver"
+  }
+}

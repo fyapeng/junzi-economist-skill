@@ -1,0 +1,227 @@
+{
+  "model": {
+    "states": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "actions": {
+      "0": "keep",
+      "1": "replace"
+    },
+    "timing": "observe state and subsidy; choose; controlled transition; iid type-I EV shocks integrated out",
+    "discount_factor_fixed": 0.93,
+    "utility": {
+      "keep": "-cost_slope*state",
+      "replace": "-replacement_cost+subsidy"
+    },
+    "observed_policy_regimes": [
+      0.0,
+      0.4
+    ],
+    "interpolation_policy": [
+      0.2
+    ],
+    "shock_normalization": "Euler constant omitted from integrated value; policy differences unaffected"
+  },
+  "sample": {
+    "seed": 55055,
+    "agents": 450,
+    "periods": 35,
+    "rows": 15750,
+    "selection": "none; all simulated histories retained"
+  },
+  "true_parameters": [
+    0.42,
+    2.15,
+    0.72,
+    0.86
+  ],
+  "declared_closed_domain": {
+    "names": [
+      "cost_slope",
+      "replacement_cost",
+      "p_increment_keep",
+      "p_reset_replace"
+    ],
+    "bounds": [
+      [
+        0.05,
+        1.5
+      ],
+      [
+        0.2,
+        5.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "boundaries_included": true,
+    "discount_factor": 0.93
+  },
+  "transition_estimates": {
+    "p_increment_keep": 0.7222005081102209,
+    "p_reset_replace": 0.8588694682037933,
+    "eligible_keep_transitions": 10234,
+    "replacement_transitions": 5378
+  },
+  "nfxp": {
+    "estimate": [
+      0.4291956636968231,
+      2.1474057945914597,
+      0.7222005081102209,
+      0.8588694682037933
+    ],
+    "choice_nll": 9111.51574116724,
+    "selected_start_id": 3,
+    "accepted_starts": 6,
+    "total_starts": 8,
+    "max_bellman_residual": 9.139355938714289e-13,
+    "domain_slack": [
+      0.3791956636968231,
+      1.9474057945914598,
+      0.27779949188977915,
+      0.14113053179620672
+    ]
+  },
+  "ccp_minimum_distance": {
+    "estimate": [
+      0.42890312613220266,
+      2.141525338835547,
+      0.7222005081102209,
+      0.8588694682037933
+    ],
+    "objective": 0.001356076921812042,
+    "selected_start_id": 6,
+    "accepted_starts": 8,
+    "total_starts": 8,
+    "smoothing": "Jeffreys 0.5 pseudo-count in each binary choice cell"
+  },
+  "population_local_rank_evidence": {
+    "mapping": "10 model CCPs across two observed regimes plus two controlled-transition probabilities",
+    "jacobian_shape": [
+      12,
+      4
+    ],
+    "singular_values": [
+      2.126572014084452,
+      1.014702211526307,
+      0.9923192657311096,
+      0.2127536934046856
+    ],
+    "rank_tolerance": 1e-07,
+    "numerical_rank": 4,
+    "claim": "continuous local population-rank evidence at the NFXP estimate under fixed beta and maintained model; not global identification"
+  },
+  "restricted_alternative_search": {
+    "restriction": "closed box and max_j |theta_j-theta_hat_j| >= 0.15",
+    "coverage": "exact finite union of all nonempty lower/upper closed slabs for each parameter; direct bounded coordinates include economic boundaries",
+    "feasibility_tolerance": 1e-10,
+    "optimizer_projected_gradient_acceptance": 2e-06,
+    "evaluations": 378,
+    "accepted": 378,
+    "selected": {
+      "slab_id": 3,
+      "dimension": 1,
+      "side": "upper",
+      "rerun_seed": 991,
+      "start_id": 17,
+      "slab_bounds": [
+        [
+          0.05,
+          1.5
+        ],
+        [
+          2.2974057945914597,
+          5.0
+        ],
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "start": [
+        0.0630179915042997,
+        2.2974057945914597,
+        0.932369182371574,
+        0.34245599564072104
+      ],
+      "terminal": [
+        0.45275637107968736,
+        2.2974057945914597,
+        0.7255399911945896,
+        0.863054972245567
+      ],
+      "objective": 0.0009849321516048203,
+      "success": true,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 23,
+      "raw_grad": [
+        4.398391373339194e-09,
+        0.012745559345264123,
+        -1.1405492435917484e-08,
+        -8.94323677613773e-09
+      ],
+      "projected_grad_inf": 1.1405492435917484e-08,
+      "restriction_slack": -8.326672684688674e-17,
+      "box_slack": 0.13694502775443296
+    },
+    "interpretation": "auditable continuous-domain search; failure to find a closer alternative is not a proof of global identification"
+  },
+  "policy_accounting": [
+    {
+      "subsidy": 0.0,
+      "support": "observed",
+      "replacement_rate": 0.3188788643539341,
+      "private_value": -13.265472033883405,
+      "fiscal_transfer": 0.0,
+      "real_resource_cost": 13.265472033883405,
+      "social_welfare_private_plus_transfer_cancellation": -13.265472033883405,
+      "bellman_residual": 8.79296635503124e-13,
+      "stationary_residual": 5.551115123125783e-16,
+      "iterations": 369
+    },
+    {
+      "subsidy": 0.2,
+      "support": "model interpolation",
+      "replacement_rate": 0.33610833700041154,
+      "private_value": -12.544330208162746,
+      "fiscal_transfer": 0.9603095342868908,
+      "real_resource_cost": 13.504639742449635,
+      "social_welfare_private_plus_transfer_cancellation": -13.504639742449635,
+      "bellman_residual": 8.93507490218326e-13,
+      "stationary_residual": 1.1102230246251565e-16,
+      "iterations": 366
+    },
+    {
+      "subsidy": 0.4,
+      "support": "observed",
+      "replacement_rate": 0.3549772665703025,
+      "private_value": -11.771564399181006,
+      "fiscal_transfer": 2.028441523258873,
+      "real_resource_cost": 13.800005922439881,
+      "social_welfare_private_plus_transfer_cancellation": -13.800005922439881,
+      "bellman_residual": 9.139355938714289e-13,
+      "stationary_residual": 2.220446049250313e-16,
+      "iterations": 362
+    }
+  ],
+  "software": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

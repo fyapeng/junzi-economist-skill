@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "checks": {
+    "unrestricted_objective_agreement": true,
+    "unrestricted_parameter_agreement": true,
+    "same_grid": true,
+    "every_conditional_reconstructed": true,
+    "conditional_objectives_agree": true,
+    "evaluated_grid_membership_agrees": true,
+    "policy_selected_image_agrees": true,
+    "production_no_profile_holes": true,
+    "verifier_no_profile_holes": true,
+    "not_boundary_censored": true,
+    "closed_lower_support_reported": true,
+    "all_selected_kkt": true,
+    "raw_sample_complete": true
+  },
+  "coverage_map": {
+    "unrestricted global search on declared box": "covered by independent raw-primitive reconstruction and objective/parameter agreement",
+    "every conditional optimum on evaluated delta grid": "covered independently at all 27 values; objective and set membership compared",
+    "selected-only policy image": "covered by independent remapping of each independently selected conditional optimum",
+    "constraint/KKT acceptance": "covered with analytic projected gradients in production and finite-difference KKT in verifier",
+    "holes, grid censoring, and closed support boundary": "covered mechanically in both implementations and reconciled; delta=0 is support-bounded, not grid-censored",
+    "sample construction": "covered only for expected-versus-realized row count and declared x support",
+    "population identification on continuous parameter domain": "UNVERIFIED; grid separation and sample likelihood geometry do not prove it",
+    "counterfactual external validity at policy_x=2.10": "UNVERIFIED; this is model-based extrapolation beyond observed x=1.60",
+    "frequentist LR coverage in this finite mixture/sample": "UNVERIFIED; chi-square cutoff is a reference approximation, not Monte Carlo validated here",
+    "welfare": "NOT CLAIMED; adoption probability is not social welfare"
+  },
+  "branch_rule": {
+    "continue": "all required checks pass, no holes, and neither endpoint is censored",
+    "refine": "any reported-set endpoint is censored or a grid hole remains",
+    "backtrack": "unrestricted/conditional reconstruction, KKT acceptance, likelihood agreement, or membership comparison fails"
+  },
+  "branch_decision": "continue"
+}

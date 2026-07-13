@@ -1,0 +1,108 @@
+{
+  "status": "success",
+  "dgp": {
+    "declared_population": "40 markets x 5 products",
+    "expected_rows": 200,
+    "realized_rows": 200,
+    "latent_conditioned_selection": false,
+    "redraws": 0,
+    "support": {
+      "x": [
+        -0.8,
+        0.8
+      ],
+      "z_cost": [
+        -0.7,
+        0.7
+      ],
+      "omega": [
+        -0.12,
+        0.12
+      ],
+      "abs_xi_max": 0.35
+    }
+  },
+  "timing": [
+    "draw observed x and z_cost",
+    "draw omega and xi; orthogonalize xi to valid instruments in this designed finite population",
+    "merge z_cost into marginal cost before pricing",
+    "solve prices and shares",
+    "construct z_invalid = xi + noise after outcomes",
+    "merge z_invalid only into estimation table"
+  ],
+  "instrument_claims": {
+    "valid": "z_cost is observed before pricing, shifts marginal cost and price, and is exactly orthogonal to designed xi",
+    "invalid": "z_invalid is constructed after outcomes and contains xi, so it violates the demand exclusion; it is never input to pricing"
+  },
+  "truth": {
+    "alpha": 1.6,
+    "beta_x": 1.1
+  },
+  "valid_iv": {
+    "intercept": 5.684341886080802e-16,
+    "beta_x": 1.0999999999999999,
+    "price_coefficient": -1.6,
+    "alpha": 1.6,
+    "max_abs_sample_moment": 5.329070518200751e-16,
+    "instrument": "z_cost_pre_pricing",
+    "rank_Z": 3,
+    "rank_ZtX": 3
+  },
+  "deliberately_invalid_iv": {
+    "intercept": -36.76614810827161,
+    "beta_x": -5.556656414022542,
+    "price_coefficient": 15.551712278363546,
+    "alpha": -15.551712278363546,
+    "max_abs_sample_moment": 3.579359031391505e-15,
+    "instrument": "z_invalid_post_outcome",
+    "rank_Z": 3,
+    "rank_ZtX": 3
+  },
+  "equilibrium": {
+    "baseline": {
+      "markets": 40,
+      "raw_max_foc": 3.3306690738754696e-16,
+      "scaled_max_foc": 1.9413706810499912e-16,
+      "max_root_spread_across_accepted_starts": 4.440892098500626e-16,
+      "root_claim": "a root was recovered from every declared start in the bounded box; this finite search is not a uniqueness proof"
+    },
+    "subsidy": {
+      "markets": 40,
+      "raw_max_foc": 4.440892098500626e-16,
+      "scaled_max_foc": 2.3932886921422975e-16,
+      "max_root_spread_across_accepted_starts": 4.440892098500626e-16,
+      "root_claim": "a root was recovered from every declared start in the bounded box; this finite search is not a uniqueness proof"
+    }
+  },
+  "accounting": {
+    "baseline": {
+      "consumer_payment": 2543.553154756086,
+      "fiscal_payment": 0.0,
+      "producer_receipts": 2543.553154756086,
+      "real_resource_cost": 1772.1500364654091,
+      "producer_profit": 771.4031182906767,
+      "consumer_surplus_euler_zero_normalization": 807.9669318868923,
+      "social_welfare": 1579.370050177569,
+      "direct_welfare_check": 1579.370050177569,
+      "accounting_identity_abs_error": 0.0
+    },
+    "subsidy": {
+      "consumer_payment": 2809.033460122552,
+      "fiscal_payment": 166.9758038413656,
+      "producer_receipts": 2976.0092639639174,
+      "real_resource_cost": 2069.7059473178706,
+      "producer_profit": 906.3033166460468,
+      "consumer_surplus_euler_zero_normalization": 957.6536360216678,
+      "social_welfare": 1696.981148826349,
+      "direct_welfare_check": 1696.981148826349,
+      "accounting_identity_abs_error": 0.0
+    }
+  },
+  "claim_scope": "one designed finite-population recovery demonstration at one seed; no broad estimator-performance claim",
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1"
+  }
+}

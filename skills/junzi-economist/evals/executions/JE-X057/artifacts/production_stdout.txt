@@ -1,0 +1,1 @@
+production_complete rows=4800 nfxp_starts=8 ccp_starts=8 restricted_rows=4913 accepted=4793 max_accounting_error=5.5511151231257827e-17

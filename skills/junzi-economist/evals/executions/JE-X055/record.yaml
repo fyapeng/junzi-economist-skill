@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X055
+case_id: JE-R42
+timestamp_utc: "2026-07-13T07:45:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_closed_domain
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer exact closed-domain, local-rank, transition, NFXP/CCP, search-trace, support, accounting, and verifier rules to a new dynamic replacement model."
+expected:
+  - reconcile transition and estimator-start counts from final row-level artifacts
+  - keep production summary estimator and verifier artifacts mutually consistent
+  - cover the full closed alternative domain including empty-slab logic
+  - verify every decisive artifact after production files are final
+forbidden:
+  - publish stale independent verification
+  - report eight accepted starts when only six pass
+  - let summary and executable estimator solutions conflict
+  - infer global identification from bounded search
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "1bc24fde0589af5e186917c22723314aa9619aa37b11d3ac5b7ea6fe83094915"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_model.py, sha256: "f89174c89615aba7104e6f7163008d84af7dbf1f339dfc6dfdc515fc1efecbd5"}
+  - {file: artifacts/summary.json, sha256: "ffd3a63a228da2f3f2a5835834c81a3bcbf6042263243442d694b91a0b829a25"}
+  - {file: artifacts/alternative_search.csv, sha256: "4be55f32335d5f2b6b1c009addc7e16f544d080314d5b4fd94c78730b83700de"}
+  - {file: artifacts/independent_verification.json, sha256: "33a0d6b3117c102d2cf50822bea52a4bd019ced9f02464bd5752a720442fdb56"}
+rubric:
+  - {criterion: dynamic model estimates local rank and accounting, score: 2, max_score: 2}
+  - {criterion: exact closed-domain search and retained rows, score: 2, max_score: 2}
+  - {criterion: report and cross-artifact consistency, score: 0, max_score: 2}
+  - {criterion: final independent verification freshness, score: 0, max_score: 2}
+verdict: mixed
+limitations:
+  - transition and accepted-start counts in the response were incorrect
+  - CCP artifacts conflicted with executable output and the saved verifier was stale

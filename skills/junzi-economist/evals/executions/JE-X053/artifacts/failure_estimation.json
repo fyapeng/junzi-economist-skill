@@ -1,0 +1,14 @@
+{
+  "max_nfev": 1,
+  "solver_success": false,
+  "terminal": [
+    11.0,
+    1.4
+  ],
+  "raw_max": 7.0,
+  "tolerance": 1e-09,
+  "accepted": false,
+  "mode": "estimation",
+  "required_unit_failed": true,
+  "process_must_exit_nonzero": true
+}

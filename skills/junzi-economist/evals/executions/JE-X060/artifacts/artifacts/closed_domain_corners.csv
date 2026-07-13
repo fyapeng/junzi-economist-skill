@@ -1,0 +1,5 @@
+﻿theta_x,replacement_cost,theta_x_lower_slack,theta_x_upper_slack,replacement_cost_lower_slack,replacement_cost_upper_slack,boundary_count
+0.15,1.0,0.0,1.35,0.0,5.0,2
+0.15,6.0,0.0,1.35,5.0,0.0,2
+1.5,1.0,1.35,0.0,0.0,5.0,2
+1.5,6.0,1.35,0.0,5.0,0.0,2

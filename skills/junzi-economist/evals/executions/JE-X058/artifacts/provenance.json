@@ -1,0 +1,13 @@
+{
+  "entrypoint": "run_profile.py",
+  "likelihood": "two-support binomial mixture including binomial coefficients",
+  "numpy": "2.4.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "production_code_sha256": "b860b09c2599b893c34337533b0c77e255caa25e37d5132c7eb11d04e7518be8",
+  "python": "3.11.15",
+  "randomness": "none; deterministic declared starts",
+  "raw_primitives": "raw_primitives.json",
+  "raw_sha256": "029f30b59dac8fa270c5e92a0254a60a95719914e30c7a87d627440c5f35989a",
+  "scipy": "1.17.1",
+  "serialization": "JSON numeric values use Python round-trip-safe float representation"
+}

@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X050
+case_id: JE-R43
+timestamp_utc: "2026-07-13T07:16:00Z"
+skill_commit: "c467e60"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_io_failure_signal
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer executable instrument timing, whole-replication failure signaling, bounded equilibrium, and accounting rules to a new differentiated-products simulation."
+expected:
+  - generate exact unconditional samples with executable instrument timing
+  - preserve all starts and reproduce raw and scaled residuals from traces
+  - write failure diagnostics before nonzero process exit
+  - independently verify every decisive headline claim
+forbidden:
+  - round terminal vectors below reproducible diagnostic precision
+  - claim broader independent coverage than executed
+  - return success after a required unit fails
+  - claim global root uniqueness
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "2366a5d581fb69a8e50d3d2e18cf06c119384c1203d5d45a190fbde1a90a1c3e"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_simulation.py, sha256: "6b559459e3d973ba2eb9f3e86b78c7a33177f3a21291e3598ffc1699983bac09"}
+  - {file: artifacts/results/success/equilibrium_starts.jsonl, sha256: "fcc3e9484badfba8fa69998b8dae7960c14a376ce6168086682c37a25bac83ea"}
+  - {file: artifacts/results/process_failure_tests.json, sha256: "174f77696ffdc4d267839371cde887f4a80741c24c7da3bd0a13e3c5be23e50a"}
+  - {file: artifacts/verify_independent.py, sha256: "081f5a991c6f95cfab81336e4b48a6eaf33e12da3f101a57cb0be9452b99ddf5"}
+rubric:
+  - {criterion: DGP instruments estimation and accounting, score: 2, max_score: 2}
+  - {criterion: process-level failure signaling, score: 2, max_score: 2}
+  - {criterion: round-trip trace auditability, score: 1, max_score: 2}
+  - {criterion: independent verification coverage, score: 1, max_score: 2}
+verdict: mixed
+limitations:
+  - serialized vectors reproduced only the weaker acceptance tolerance rather than stored machine-epsilon residuals
+  - the bundled verifier omitted several material headline claims

@@ -1,0 +1,17 @@
+[
+  {
+    "mode": "simulation",
+    "exit_code": 31,
+    "diagnostic_exists": true
+  },
+  {
+    "mode": "equilibrium",
+    "exit_code": 32,
+    "diagnostic_exists": true
+  },
+  {
+    "mode": "estimation",
+    "exit_code": 33,
+    "diagnostic_exists": true
+  }
+]

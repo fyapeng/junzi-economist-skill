@@ -1,0 +1,211 @@
+{
+  "pass": true,
+  "checks": {
+    "data_rows": true,
+    "controlled_transitions": true,
+    "nfxp_independent_value_iteration": true,
+    "ccp_independent_inversion": true,
+    "continuous_local_rank": true,
+    "restricted_trace_coverage": true,
+    "selected_alternative_recomputed": true,
+    "restricted_search_independent_rerun": true,
+    "private_transfer_resource_welfare_identity": true,
+    "policy_support_labels": true
+  },
+  "independent_nfxp_runs": [
+    {
+      "start": [
+        0.07,
+        0.25
+      ],
+      "terminal": [
+        0.42919563678295153,
+        2.1474056519218045
+      ],
+      "objective": 9111.515741167255,
+      "success": true
+    },
+    {
+      "start": [
+        0.45,
+        2.2
+      ],
+      "terminal": [
+        0.429195698369572,
+        2.14740592779403
+      ],
+      "objective": 9111.515741167237,
+      "success": true
+    },
+    {
+      "start": [
+        1.4,
+        4.8
+      ],
+      "terminal": [
+        0.42919560887200564,
+        2.1474055308759095
+      ],
+      "objective": 9111.515741167277,
+      "success": true
+    },
+    {
+      "start": [
+        0.9,
+        1.2
+      ],
+      "terminal": [
+        0.42919569233667276,
+        2.1474058907967084
+      ],
+      "objective": 9111.515741167239,
+      "success": true
+    }
+  ],
+  "independent_ccp_runs": [
+    {
+      "start": [
+        0.06,
+        0.3
+      ],
+      "terminal": [
+        0.4284716669577491,
+        2.1408941450643835
+      ],
+      "objective": 0.0013439237901090146,
+      "success": true
+    },
+    {
+      "start": [
+        0.45,
+        2.2
+      ],
+      "terminal": [
+        0.4284716657243714,
+        2.1408941431744313
+      ],
+      "objective": 0.0013439237901090764,
+      "success": true
+    },
+    {
+      "start": [
+        1.45,
+        4.8
+      ],
+      "terminal": [
+        0.42847166792828956,
+        2.140894148562389
+      ],
+      "objective": 0.0013439237901089764,
+      "success": true
+    }
+  ],
+  "independent_singular_values": [
+    2.1265720855263917,
+    1.0147022110429003,
+    0.9923192672436955,
+    0.21275370357290857
+  ],
+  "selected_alternative_recomputed": {
+    "objective": 0.00098493224566678,
+    "restriction_slack": -8.326672684688674e-17,
+    "box_slack": 0.13694502809753217
+  },
+  "independent_restricted_reruns": [
+    {
+      "dimension": 0,
+      "side": "lower",
+      "best_objective": 0.03653008300754856,
+      "all_objectives": [
+        0.03653008300754862,
+        0.03653008300754869,
+        0.03653008300754856
+      ]
+    },
+    {
+      "dimension": 0,
+      "side": "upper",
+      "best_objective": 0.02258669684105749,
+      "all_objectives": [
+        0.02258669684105749,
+        0.022586696841057977,
+        0.022586696841057536
+      ]
+    },
+    {
+      "dimension": 1,
+      "side": "lower",
+      "best_objective": 0.0011107392528961404,
+      "all_objectives": [
+        0.0011107392528961404,
+        0.001110739252896144,
+        0.0011107392528962345
+      ]
+    },
+    {
+      "dimension": 1,
+      "side": "upper",
+      "best_objective": 0.0009849322456668664,
+      "all_objectives": [
+        0.0009849322456668827,
+        0.0009849322456668664,
+        0.0009849322456668987
+      ]
+    },
+    {
+      "dimension": 2,
+      "side": "lower",
+      "best_objective": 0.022517703819661047,
+      "all_objectives": [
+        0.022517703819661186,
+        0.022517703819661162,
+        0.022517703819661047
+      ]
+    },
+    {
+      "dimension": 2,
+      "side": "upper",
+      "best_objective": 0.022511445996610605,
+      "all_objectives": [
+        0.022511445996610605,
+        0.022511445996611,
+        0.022511445996610913
+      ]
+    },
+    {
+      "dimension": 3,
+      "side": "lower",
+      "best_objective": 0.022508701704116243,
+      "all_objectives": [
+        0.022508701704116243,
+        0.022508701704116573,
+        0.02250870170411654
+      ]
+    }
+  ],
+  "accounting": [
+    {
+      "subsidy": 0.0,
+      "identity_residual": 0.0
+    },
+    {
+      "subsidy": 0.2,
+      "identity_residual": -1.7763568394002505e-15
+    },
+    {
+      "subsidy": 0.4,
+      "identity_residual": 1.7763568394002505e-15
+    }
+  ],
+  "coverage_map": {
+    "controlled transition estimates": "independently recomputed from row-level transitions",
+    "NFXP estimate and objective": "independently reoptimized using value iteration from four new starts",
+    "distinct CCP estimate": "independently reoptimized from empirical CCP inversion; no Bellman solver",
+    "continuous local population rank": "independent finite-difference Jacobian and SVD at reported estimate; local only",
+    "restricted alternative result": "all nonempty closed slabs/two saved seeds audited; selected candidate recomputed; each nonempty slab independently rerun from three starts",
+    "closed-domain global identification": "not claimed and not verified; finite numerical searches cannot prove it",
+    "policy accounting": "stationary private, transfer, resource, and welfare identity checked",
+    "sampling/estimator distribution": "not covered; one fixed simulated sample only",
+    "external validity": "not covered; synthetic model"
+  }
+}

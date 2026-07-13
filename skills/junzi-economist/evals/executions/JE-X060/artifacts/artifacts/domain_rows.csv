@@ -1,0 +1,5 @@
+﻿estimator,parameter,lower_inclusive,upper_inclusive,estimate,lower_slack,upper_slack,at_lower_boundary,at_upper_boundary
+NFXP,theta_x,0.15,1.5,0.6141485388723869,0.46414853887238683,0.8858514611276131,False,False
+NFXP,replacement_cost,1.0,6.0,3.3091664821549203,2.3091664821549203,2.6908335178450797,False,False
+CCP,theta_x,0.15,1.5,0.6165996876033254,0.4665996876033254,0.8834003123966746,False,False
+CCP,replacement_cost,1.0,6.0,3.3364627193601204,2.3364627193601204,2.6635372806398796,False,False

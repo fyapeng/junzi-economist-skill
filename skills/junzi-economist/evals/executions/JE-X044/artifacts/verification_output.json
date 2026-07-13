@@ -1,0 +1,16 @@
+{
+  "keep_transition_rows_sum_to_one": true,
+  "replace_transition_rows_sum_to_one": true,
+  "choice_probabilities_in_unit_interval": true,
+  "truth_bellman_residual": 8.79296635503124e-13,
+  "truth_bellman_iterations": 263,
+  "ten_recovery_runs_present": true,
+  "all_best_nfxp_runs_successful": true,
+  "max_saved_bellman_residual": 8.917311333789257e-13,
+  "sample_profile_has_50_points": true,
+  "population_profile_has_50_points": true,
+  "population_grid_min_beta": 0.9,
+  "sample_grid_min_beta": 0.99,
+  "subsidy_raises_replacement": true,
+  "subsidy_accounting_keeps_private_and_resource_objects_separate": true
+}

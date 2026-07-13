@@ -1,0 +1,62 @@
+[
+  {
+    "path": "production.py",
+    "bytes": 18515,
+    "sha256": "ebedb41da435761fbebfacde41a1e4820bec962c5b3ad2f62ea0603bd1970bc0"
+  },
+  {
+    "path": "README.md",
+    "bytes": 1736,
+    "sha256": "9f698090fe59887c4c4a3635d20cfe7dab83d9625c29e25fe299816bb02a27d9"
+  },
+  {
+    "path": "artifacts/ccp_rows.csv",
+    "bytes": 468,
+    "sha256": "ecbc2ec1f3970c03d29ca440045df1917cea71513e62114e194d096c1eb5839b"
+  },
+  {
+    "path": "artifacts/closed_domain_corners.csv",
+    "bytes": 256,
+    "sha256": "6dd2d93f4afc88b8c77958385d243d7bac35fde0217316c6c046307b53abbc2c"
+  },
+  {
+    "path": "artifacts/domain_rows.csv",
+    "bytes": 508,
+    "sha256": "d076d8dc9d8f962d611a674fa171f8ab9a1f74b0a7eff0770bf8c998364e98a4"
+  },
+  {
+    "path": "artifacts/estimates.json",
+    "bytes": 281,
+    "sha256": "a112dcd43e0a44a8973b19f6dedf75055cbfe2729a394897482bf8ecfa03039a"
+  },
+  {
+    "path": "artifacts/headline.json",
+    "bytes": 999,
+    "sha256": "3dae601f0c0e07c4a8e3b7401a2b79f955077144deaee2832f10359b6bccacee"
+  },
+  {
+    "path": "artifacts/local_rank.json",
+    "bytes": 1052,
+    "sha256": "95c575665d78fee0c0713db8764b5c196f45bc0c367de51c37295956b8c71ac6"
+  },
+  {
+    "path": "artifacts/optimizer_starts.csv",
+    "bytes": 3032,
+    "sha256": "2de900355b2293edf30064b77cb3a019cab07922bc15992593906c9bacfd9f21"
+  },
+  {
+    "path": "artifacts/panel.csv",
+    "bytes": 261748,
+    "sha256": "df769a2566714f1ab08f4759a1eb3038254b6a9a192086fac2d30526733856f2"
+  },
+  {
+    "path": "artifacts/policy_levels.json",
+    "bytes": 2738,
+    "sha256": "105959c0b16ee867fd68f6c1ab09776f186d1c9700307e292272febed01219f1"
+  },
+  {
+    "path": "artifacts/transition_rows.csv",
+    "bytes": 1250,
+    "sha256": "acfa1ce59d3abb80caa94c599f42166c6d6eb73e9a2b0b6c2d14a4f637b25edb"
+  }
+]

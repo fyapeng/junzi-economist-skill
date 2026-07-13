@@ -1,0 +1,15 @@
+{
+  "seed": 73051,
+  "markets": 40,
+  "products_per_market": 5,
+  "expected_rows": 200,
+  "market_size": 200,
+  "force_failure": "estimation",
+  "price_box_width": 4.0,
+  "starts": [
+    0.05,
+    0.8,
+    2.5
+  ],
+  "solver_tolerance": 1e-10
+}

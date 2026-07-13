@@ -1,0 +1,129 @@
+{
+  "true_parameters": {
+    "b_s": 1.15,
+    "a_q": 0.9,
+    "k_low": -0.3,
+    "delta": 1.5,
+    "pi_low": 0.58
+  },
+  "k_high": 1.2,
+  "normalization": "EV1 scale normalized to 1; low-cost type first; delta=k_high-k_low>0; pi is low-cost mass",
+  "supports": {
+    "training": {
+      "q": [
+        0.8,
+        2.2
+      ],
+      "s": [
+        -0.5,
+        1.5
+      ]
+    },
+    "interpolation_holdout": {
+      "q": [
+        0.95,
+        2.05
+      ],
+      "s": [
+        -0.35,
+        1.35
+      ]
+    },
+    "baseline_policy_population": {
+      "q": [
+        0.5,
+        2.5
+      ],
+      "s": [
+        -1.0,
+        2.0
+      ]
+    },
+    "price_shift": -0.5,
+    "post_policy": {
+      "q": [
+        0.0,
+        2.0
+      ],
+      "s": [
+        -1.0,
+        2.0
+      ]
+    },
+    "stress": {
+      "q": [
+        -0.5,
+        3.0
+      ],
+      "s": [
+        -1.2,
+        2.2
+      ]
+    }
+  },
+  "optimizer_boxes": {
+    "mixture": [
+      [
+        0.05,
+        2.5
+      ],
+      [
+        0.05,
+        2.2
+      ],
+      [
+        -2.5,
+        1.5
+      ],
+      [
+        0.02,
+        4.0
+      ],
+      [
+        0.03,
+        0.97
+      ]
+    ],
+    "single": [
+      [
+        0.05,
+        2.5
+      ],
+      [
+        0.05,
+        2.2
+      ],
+      [
+        -2.5,
+        2.5
+      ]
+    ]
+  },
+  "profile_economic_delta_bounds": [
+    0.1,
+    3.0
+  ],
+  "sample_sizes": [
+    600,
+    3000
+  ],
+  "seeds": [
+    104,
+    211,
+    307,
+    419,
+    523,
+    631
+  ],
+  "starts_per_fit": 8,
+  "kkt_tolerance": 2e-05,
+  "versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "skill_repo": "C:/Users/ENAN/junzi-economist-skill",
+  "skill_commit": "e25b4d0"
+}

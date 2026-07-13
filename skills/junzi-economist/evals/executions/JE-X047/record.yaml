@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X047
+case_id: JE-R42
+timestamp_utc: "2026-07-13T06:55:00Z"
+skill_commit: "e25b4d0"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_identification
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer new identification, KKT, start-retention, EV1-normalization, and verifier rules to a different preventive-maintenance model."
+expected:
+  - estimate controlled transitions and compare NFXP with a distinct CCP estimator
+  - establish only warranted continuous local rank and bounded alternative-search evidence
+  - retain all starts with constrained diagnostics
+  - scope independent recomputation and counterfactual accounting precisely
+forbidden:
+  - infer global identification from a grid or bounded search
+  - enforce a declared restriction only with an infeasible soft penalty
+  - omit decisive search traces
+  - call a partial verifier end-to-end independent validation
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "f07f1fa9c273c64460c1e2c2a9908a8a6aa2a523a38a517a4fefd794d752f993"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/analysis.py, sha256: "41594213cb091ade8aebb15799d2ac812ffda1176d233541fa047f56ea102ffa"}
+  - {file: artifacts/full_start_traces.json, sha256: "670d1fe2f81d8fcee3bca500ea43ba001f0bd8d38a0d4001a0324feb07e0173f"}
+  - {file: artifacts/results.json, sha256: "aa705a273f6cd21274b5b3fef2e1cb67a300299e4fd4f8760651630d09612b66"}
+  - {file: artifacts/verify.py, sha256: "a47b67fd1a4023d50d018157cdad2de80cb46c41822d656a5790a721a8586611"}
+rubric:
+  - {criterion: transition utility and estimator recovery, score: 2, max_score: 2}
+  - {criterion: local identification and constrained alternative search, score: 1, max_score: 2}
+  - {criterion: trace completeness and independent-verifier scope, score: 1, max_score: 2}
+  - {criterion: subsidy support and accounting, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - the selected alternative violated the stated hard distance constraint by a small amount
+  - the verifier checked Bellman and rank objects rather than the full estimation pipeline
+  - intermediate policy values were model-based interpolation between two observed regimes

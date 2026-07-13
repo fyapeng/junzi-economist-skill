@@ -1,0 +1,27 @@
+schema_version: 1
+execution_id: JE-X057
+case_id: JE-R42
+timestamp_utc: "2026-07-13T08:00:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_dynamic_consistent
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer dynamic estimation, exact lattice, final-artifact reconciliation, KKT, and verifier rules."
+expected: [reconcile all transition estimator and search counts, accept starts by projected gradients, finalize production before fresh verification, separate support and accounting]
+forbidden: [rely on ftol as KKT acceptance, publish stale verifier output, omit substantive verifier coverage, claim global identification]
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "38c4d1065b84c8fe1b4a76ee8ac1d68bbec89efed81b2195e8fb83a58aad76eb"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/production.py, sha256: "219f47604625b2b77c6ec8a78e1bfee78e6e214a128a240cc1af63799b9a34d2"}
+  - {file: artifacts/summary.json, sha256: "484ce04d131d515988dc15159339567b3b317c191dda33260cc6399da49bfebe"}
+  - {file: artifacts/verification_report.json, sha256: "f0d8cd74261ebbc9ef6e0065307ba5c61d86abeb6959230d5dc266c3a98eeb2b"}
+rubric:
+  - {criterion: model search and accounting, score: 2, max_score: 2}
+  - {criterion: KKT acceptance and verifier coverage, score: 1, max_score: 2}
+verdict: mixed
+limitations: [most NFXP starts stopped on objective reduction rather than configured gradient tolerance, bundled verifier coverage was incomplete]

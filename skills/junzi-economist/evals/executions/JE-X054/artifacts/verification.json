@@ -1,0 +1,150 @@
+{
+  "coverage_map": "independent derivative-free recomputation covers selected conditional objectives, LR reference arithmetic, evaluated-grid membership/count, holes, and endpoint censoring; it does not independently validate simulation generation, EM, or policy mapping",
+  "all_indices_recomputed": true,
+  "max_objective_difference": 2.7284841053187847e-11,
+  "objective_agreement": true,
+  "in_set_values": [
+    0.1,
+    0.15,
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.4,
+    0.45,
+    0.5,
+    0.55,
+    0.6,
+    0.65,
+    0.7,
+    0.75,
+    0.8
+  ],
+  "in_set_count": 15,
+  "count_agreement": true,
+  "values_agreement": true,
+  "holes_recomputed": [],
+  "left_endpoint_censored": true,
+  "right_endpoint_censored": false,
+  "details": [
+    {
+      "pi": 0.1,
+      "objective": 1318.1292187509443,
+      "lr": 2.412281014887867,
+      "in_set": true,
+      "objective_difference_from_reported": -2.2737367544323206e-13
+    },
+    {
+      "pi": 0.15,
+      "objective": 1317.821422628193,
+      "lr": 1.7966887693851277,
+      "in_set": true,
+      "objective_difference_from_reported": 0.0
+    },
+    {
+      "pi": 0.2,
+      "objective": 1317.5749500099623,
+      "lr": 1.3037435329238178,
+      "in_set": true,
+      "objective_difference_from_reported": -2.2737367544323206e-13
+    },
+    {
+      "pi": 0.25,
+      "objective": 1317.3748685725532,
+      "lr": 0.9035806581055112,
+      "in_set": true,
+      "objective_difference_from_reported": 0.0
+    },
+    {
+      "pi": 0.3,
+      "objective": 1317.213354565455,
+      "lr": 0.580552643908959,
+      "in_set": true,
+      "objective_difference_from_reported": -9.094947017729282e-13
+    },
+    {
+      "pi": 0.35,
+      "objective": 1317.087006718586,
+      "lr": 0.3278569501712809,
+      "in_set": true,
+      "objective_difference_from_reported": -9.094947017729282e-13
+    },
+    {
+      "pi": 0.4,
+      "objective": 1316.9950889436955,
+      "lr": 0.14402140039010192,
+      "in_set": true,
+      "objective_difference_from_reported": -4.547473508864641e-13
+    },
+    {
+      "pi": 0.45,
+      "objective": 1316.9385151480074,
+      "lr": 0.030873809013883147,
+      "in_set": true,
+      "objective_difference_from_reported": 0.0
+    },
+    {
+      "pi": 0.5,
+      "objective": 1316.9375092074354,
+      "lr": 0.028861927869911597,
+      "in_set": true,
+      "objective_difference_from_reported": 5.229594535194337e-12
+    },
+    {
+      "pi": 0.55,
+      "objective": 1317.0787100683488,
+      "lr": 0.3112636496966843,
+      "in_set": true,
+      "objective_difference_from_reported": 1.4779288903810084e-11
+    },
+    {
+      "pi": 0.6,
+      "objective": 1317.3270854481327,
+      "lr": 0.8080144092646151,
+      "in_set": true,
+      "objective_difference_from_reported": 2.1600499167107046e-11
+    },
+    {
+      "pi": 0.65,
+      "objective": 1317.6431810486513,
+      "lr": 1.4402056103017458,
+      "in_set": true,
+      "objective_difference_from_reported": 2.7284841053187847e-11
+    },
+    {
+      "pi": 0.7,
+      "objective": 1318.0001159733642,
+      "lr": 2.1540754597276646,
+      "in_set": true,
+      "objective_difference_from_reported": 1.546140993013978e-11
+    },
+    {
+      "pi": 0.75,
+      "objective": 1318.3799178499048,
+      "lr": 2.913679212808802,
+      "in_set": true,
+      "objective_difference_from_reported": 2.4101609596982598e-11
+    },
+    {
+      "pi": 0.8,
+      "objective": 1318.7709034916118,
+      "lr": 3.6956504962226973,
+      "in_set": true,
+      "objective_difference_from_reported": 1.7053025658242404e-11
+    },
+    {
+      "pi": 0.85,
+      "objective": 1319.1658744927647,
+      "lr": 4.485592498528604,
+      "in_set": false,
+      "objective_difference_from_reported": 1.5234036254696548e-11
+    },
+    {
+      "pi": 0.9,
+      "objective": 1319.5609781479138,
+      "lr": 5.275799808826832,
+      "in_set": false,
+      "objective_difference_from_reported": 7.73070496506989e-12
+    }
+  ]
+}

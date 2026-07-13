@@ -1,0 +1,28 @@
+schema_version: 1
+execution_id: JE-X056
+case_id: JE-R44
+timestamp_utc: "2026-07-13T07:58:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_profile_independent
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer all profile and independent-reconstruction rules to a fresh latent-heterogeneity model."
+expected: [recompute unrestricted and all conditional optima from raw primitives, retain all starts and KKT diagnostics, form an unrestricted-reference evaluated-grid set, map selected policy effects only]
+forbidden: [import production objectives into the verifier, use stored terminals as independent seeds, misstate coverage counts, route numerical failure forward]
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "037aae9258337a4f0575f38bb5b4b722366c94340312aad2fcf6856e608f4316"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/estimate_profile.py, sha256: "71c66547d5a2e7cbe670428fecd527dc047d0159f00901599bf1c119cef51fc1"}
+  - {file: artifacts/independent_verify.py, sha256: "a82a489ec84fabaf37db937b9591736013b4737b436eb070683f5fa5b6e4830a"}
+  - {file: artifacts/profile_selected.csv, sha256: "b3c8180f533d482149aa81098f3d00c83b0492a209c81af4df0fab254aa82871"}
+rubric:
+  - {criterion: profile calculations and independent reconstruction, score: 2, max_score: 2}
+  - {criterion: starts KKT supports and policy image, score: 2, max_score: 2}
+  - {criterion: coverage and routing artifact accuracy, score: 1, max_score: 2}
+verdict: mixed
+limitations: [the self-audit misstated profile coverage and sample coverage, a routing branch contradicted backtracking]

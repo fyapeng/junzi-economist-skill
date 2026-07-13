@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "C:\Users\ENAN\AppData\Local\Temp\junzi-economist-struct-x044\run_analysis.py", line 326, in <module>
+    main()
+  File "C:\Users\ENAN\AppData\Local\Temp\junzi-economist-struct-x044\run_analysis.py", line 210, in main
+    states, actions = simulate(n_agents, seed)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ENAN\AppData\Local\Temp\junzi-economist-struct-x044\run_analysis.py", line 55, in simulate
+    _, prob, _, _ = solve(**TRUE)
+                    ^^^^^^^^^^^^^
+TypeError: solve() got an unexpected keyword argument 'RC'

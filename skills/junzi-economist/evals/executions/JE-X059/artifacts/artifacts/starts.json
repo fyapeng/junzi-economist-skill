@@ -1,0 +1,408 @@
+[
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.0043077897986216205,
+    "distance_from_selected_objective": 0.0,
+    "estimator": "NFXP",
+    "iterations_record_only": 11,
+    "objective": 4306.78979862162,
+    "pg_norm_inf": 1.7332999797144078e-05,
+    "projected_gradient": [
+      -8.003553375601768e-06,
+      1.7332999797144078e-05
+    ],
+    "raw_gradient": [
+      -8.003553375601768e-06,
+      1.7332999797144078e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -1.8,
+      0.15
+    ],
+    "start_id": 0,
+    "terminal": [
+      -0.46316940476479607,
+      1.184552191358523
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307789798621621,
+    "distance_from_selected_objective": 9.094947017729282e-13,
+    "estimator": "NFXP",
+    "iterations_record_only": 8,
+    "objective": 4306.789798621621,
+    "pg_norm_inf": 4.602043190971016e-05,
+    "projected_gradient": [
+      4.602043190971016e-05,
+      -1.339804710554523e-05
+    ],
+    "raw_gradient": [
+      4.602043190971016e-05,
+      -1.339804710554523e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -1.2,
+      2.2
+    ],
+    "start_id": 1,
+    "terminal": [
+      -0.4631693417361068,
+      1.1845519291665263
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307789798621621,
+    "distance_from_selected_objective": 9.094947017729282e-13,
+    "estimator": "NFXP",
+    "iterations_record_only": 7,
+    "objective": 4306.789798621621,
+    "pg_norm_inf": 3.1377567211166024e-05,
+    "projected_gradient": [
+      -3.1377567211166024e-05,
+      1.3052536017886879e-05
+    ],
+    "raw_gradient": [
+      -3.1377567211166024e-05,
+      1.3052536017886879e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -0.7,
+      0.7
+    ],
+    "start_id": 2,
+    "terminal": [
+      -0.46316942044488724,
+      1.1845521750678825
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307789798621625,
+    "distance_from_selected_objective": 4.547473508864641e-12,
+    "estimator": "NFXP",
+    "iterations_record_only": 7,
+    "objective": 4306.789798621625,
+    "pg_norm_inf": 3.581769008637483e-05,
+    "projected_gradient": [
+      5.934452929068356e-06,
+      3.581769008637483e-05
+    ],
+    "raw_gradient": [
+      5.934452929068356e-06,
+      3.581769008637483e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -0.1,
+      1.8
+    ],
+    "start_id": 3,
+    "terminal": [
+      -0.463169405868728,
+      1.1845523185719569
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307789798621623,
+    "distance_from_selected_objective": 2.7284841053187847e-12,
+    "estimator": "NFXP",
+    "iterations_record_only": 8,
+    "objective": 4306.789798621623,
+    "pg_norm_inf": 8.931237971410154e-05,
+    "projected_gradient": [
+      -8.931237971410154e-05,
+      -2.648897189418402e-06
+    ],
+    "raw_gradient": [
+      -8.931237971410154e-05,
+      -2.648897189418402e-06
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      0.7,
+      0.25
+    ],
+    "start_id": 4,
+    "terminal": [
+      -0.4631694560268349,
+      1.1845520972467547
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307789798621623,
+    "distance_from_selected_objective": 2.7284841053187847e-12,
+    "estimator": "NFXP",
+    "iterations_record_only": 10,
+    "objective": 4306.789798621623,
+    "pg_norm_inf": 6.625668902415782e-05,
+    "projected_gradient": [
+      -6.625668902415782e-05,
+      1.5202364983486979e-05
+    ],
+    "raw_gradient": [
+      -6.625668902415782e-05,
+      1.5202364983486979e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      0.8,
+      2.3
+    ],
+    "start_id": 5,
+    "terminal": [
+      -0.46316944949341077,
+      1.1845522137288844
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.00430778979862163,
+    "distance_from_selected_objective": 1.000444171950221e-11,
+    "estimator": "NFXP",
+    "iterations_record_only": 5,
+    "objective": 4306.78979862163,
+    "pg_norm_inf": 0.0001024091034196317,
+    "projected_gradient": [
+      0.0001024091034196317,
+      5.2805177005310366e-05
+    ],
+    "raw_gradient": [
+      0.0001024091034196317,
+      5.2805177005310366e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -0.45,
+      1.15
+    ],
+    "start_id": 6,
+    "terminal": [
+      -0.4631693405769385,
+      1.184552380311929
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.0043077907714055485,
+    "distance_from_selected_objective": 0.0,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 8,
+    "objective": 4306.790771405549,
+    "pg_norm_inf": 2.6284396881237623e-05,
+    "projected_gradient": [
+      -2.6284396881237623e-05,
+      -1.9255137851192695e-05
+    ],
+    "raw_gradient": [
+      -2.6284396881237623e-05,
+      -1.9255137851192695e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -1.8,
+      0.15
+    ],
+    "start_id": 0,
+    "terminal": [
+      -0.4631737042922335,
+      1.1832084743034257
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.0043077907714055485,
+    "distance_from_selected_objective": 0.0,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 7,
+    "objective": 4306.790771405549,
+    "pg_norm_inf": 4.565663402900099e-05,
+    "projected_gradient": [
+      -4.565663402900099e-05,
+      -9.031850414627573e-06
+    ],
+    "raw_gradient": [
+      -4.565663402900099e-05,
+      -9.031850414627573e-06
+    ],
+    "solver_message_record_only": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -1.2,
+      2.2
+    ],
+    "start_id": 1,
+    "terminal": [
+      -0.4631737263399557,
+      1.1832085625028106
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307790771405551,
+    "distance_from_selected_objective": 1.8189894035458565e-12,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 8,
+    "objective": 4306.790771405551,
+    "pg_norm_inf": 6.743903213646263e-05,
+    "projected_gradient": [
+      -6.743903213646263e-05,
+      -1.4969812019878252e-05
+    ],
+    "raw_gradient": [
+      -6.743903213646263e-05,
+      -1.4969812019878252e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -0.7,
+      0.7
+    ],
+    "start_id": 2,
+    "terminal": [
+      -0.4631737396876242,
+      1.1832085328464819
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307790771405562,
+    "distance_from_selected_objective": 1.3642420526593924e-11,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 8,
+    "objective": 4306.790771405563,
+    "pg_norm_inf": 6.33190092350355e-05,
+    "projected_gradient": [
+      -5.25233190273866e-06,
+      6.33190092350355e-05
+    ],
+    "raw_gradient": [
+      -5.25233190273866e-06,
+      6.33190092350355e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -0.1,
+      1.8
+    ],
+    "start_id": 3,
+    "terminal": [
+      -0.4631737419290238,
+      1.1832090704459512
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.00430779077140556,
+    "distance_from_selected_objective": 1.0913936421275139e-11,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 7,
+    "objective": 4306.79077140556,
+    "pg_norm_inf": 9.436007530894129e-05,
+    "projected_gradient": [
+      9.436007530894129e-05,
+      5.509426975235636e-05
+    ],
+    "raw_gradient": [
+      9.436007530894129e-05,
+      5.509426975235636e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      0.7,
+      0.25
+    ],
+    "start_id": 4,
+    "terminal": [
+      -0.46317365761717,
+      1.1832089442802092
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307790771405552,
+    "distance_from_selected_objective": 2.7284841053187847e-12,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 8,
+    "objective": 4306.790771405552,
+    "pg_norm_inf": 7.421476766467094e-05,
+    "projected_gradient": [
+      7.421476766467094e-05,
+      -1.7218167920906733e-05
+    ],
+    "raw_gradient": [
+      7.421476766467094e-05,
+      -1.7218167920906733e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      0.8,
+      2.3
+    ],
+    "start_id": 5,
+    "terminal": [
+      -0.4631736260260079,
+      1.1832084234105167
+    ]
+  },
+  {
+    "accepted": true,
+    "declared_pg_tolerance": 0.004307790771405557,
+    "distance_from_selected_objective": 8.185452315956354e-12,
+    "estimator": "CCP_two_step",
+    "iterations_record_only": 5,
+    "objective": 4306.790771405557,
+    "pg_norm_inf": 5.098192694847469e-05,
+    "projected_gradient": [
+      -2.7648638933897015e-05,
+      -5.098192694847469e-05
+    ],
+    "raw_gradient": [
+      -2.7648638933897015e-05,
+      -5.098192694847469e-05
+    ],
+    "solver_message_record_only": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "solver_status_record_only": 0,
+    "solver_success_record_only": true,
+    "start": [
+      -0.45,
+      1.15
+    ],
+    "start_id": 6,
+    "terminal": [
+      -0.4631736845053763,
+      1.1832082407566633
+    ]
+  }
+]

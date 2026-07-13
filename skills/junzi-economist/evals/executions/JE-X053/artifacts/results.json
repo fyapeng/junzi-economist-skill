@@ -1,0 +1,1554 @@
+{
+  "dgp": {
+    "seed": 20260713,
+    "planned_markets": 4000,
+    "realized_markets": 4000,
+    "firms_per_market": 3,
+    "realized_rows": 12000,
+    "redraws": 0,
+    "dropped_markets": 0,
+    "market_ids_exact": true,
+    "all_quantities_positive": true
+  },
+  "true_parameters": [
+    18.0,
+    0.7,
+    4.0,
+    0.8
+  ],
+  "estimator_bounds": {
+    "lower": [
+      10.0,
+      0.2,
+      2.0,
+      0.1
+    ],
+    "upper": [
+      25.0,
+      1.5,
+      6.0,
+      1.5
+    ]
+  },
+  "instrument_results": {
+    "corr_valid_eta": 0.013601559298342012,
+    "corr_invalid_eta": 0.9924409483701151,
+    "first_stage_corr_valid_Q": -0.5353375132966784,
+    "iv_beta_valid": 0.7196258126936521,
+    "iv_beta_invalid": -0.2438869172965705
+  },
+  "valid_estimation": [
+    {
+      "label": "valid",
+      "start_id": 0,
+      "start": [
+        18.0,
+        0.7,
+        4.0,
+        0.8
+      ],
+      "terminal": [
+        18.30006468092623,
+        0.7196258126936521,
+        3.9009829552525352,
+        0.8138124452218396
+      ],
+      "terminal_hex": [
+        "0x1.24cd109f74349p+4",
+        "0x1.7072cb65c0d94p-1",
+        "0x1.f35368d38812bp+1",
+        "0x1.a0ac065a9c76ap-1"
+      ],
+      "objective": 2.3775968302682475e-30,
+      "raw": [
+        -1.5365486660812166e-15,
+        -9.992007221626408e-18,
+        -1.2390088954816748e-16,
+        -1.1028215377943221e-17
+      ],
+      "scaled": [
+        -1.5365486660812166e-15,
+        -2.9952843827945477e-17,
+        -1.2390088954816748e-16,
+        -1.914219809929899e-17
+      ],
+      "raw_max": 1.5365486660812166e-15,
+      "scaled_max": 1.5365486660812166e-15,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 7,
+      "accepted": true,
+      "trace_length": 31
+    },
+    {
+      "label": "valid",
+      "start_id": 1,
+      "start": [
+        11.0,
+        0.25,
+        2.2,
+        0.2
+      ],
+      "terminal": [
+        18.30006468092623,
+        0.7196258126936521,
+        3.9009829552525352,
+        0.8138124452218396
+      ],
+      "terminal_hex": [
+        "0x1.24cd109f74349p+4",
+        "0x1.7072cb65c0d94p-1",
+        "0x1.f35368d38812bp+1",
+        "0x1.a0ac065a9c76ap-1"
+      ],
+      "objective": 2.3775968302682475e-30,
+      "raw": [
+        -1.5365486660812166e-15,
+        -9.992007221626408e-18,
+        -1.2390088954816748e-16,
+        -1.1028215377943221e-17
+      ],
+      "scaled": [
+        -1.5365486660812166e-15,
+        -2.9952843827945477e-17,
+        -1.2390088954816748e-16,
+        -1.914219809929899e-17
+      ],
+      "raw_max": 1.5365486660812166e-15,
+      "scaled_max": 1.5365486660812166e-15,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 10,
+      "accepted": true,
+      "trace_length": 46
+    },
+    {
+      "label": "valid",
+      "start_id": 2,
+      "start": [
+        24.0,
+        1.4,
+        5.8,
+        1.4
+      ],
+      "terminal": [
+        18.30006468092623,
+        0.7196258126936521,
+        3.900982955252535,
+        0.8138124452218396
+      ],
+      "terminal_hex": [
+        "0x1.24cd109f74349p+4",
+        "0x1.7072cb65c0d94p-1",
+        "0x1.f35368d38812ap+1",
+        "0x1.a0ac065a9c76ap-1"
+      ],
+      "objective": 2.4645629384979933e-30,
+      "raw": [
+        -1.5365486660812166e-15,
+        -9.992007221626408e-18,
+        3.2018832030189513e-16,
+        -7.364479396680204e-18
+      ],
+      "scaled": [
+        -1.5365486660812166e-15,
+        -2.9952843827945477e-17,
+        3.2018832030189513e-16,
+        -1.278287725422986e-17
+      ],
+      "raw_max": 1.5365486660812166e-15,
+      "scaled_max": 1.5365486660812166e-15,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 12,
+      "accepted": true,
+      "trace_length": 60
+    },
+    {
+      "label": "valid",
+      "start_id": 3,
+      "start": [
+        15.0,
+        1.2,
+        3.0,
+        1.2
+      ],
+      "terminal": [
+        18.30006468092623,
+        0.7196258126936522,
+        3.9009829552525344,
+        0.8138124452218397
+      ],
+      "terminal_hex": [
+        "0x1.24cd109f74349p+4",
+        "0x1.7072cb65c0d95p-1",
+        "0x1.f35368d388129p+1",
+        "0x1.a0ac065a9c76bp-1"
+      ],
+      "objective": 5.987369407807717e-32,
+      "raw": [
+        1.3500311979441903e-16,
+        -5.551115123125783e-18,
+        2.015054789694659e-16,
+        -1.5950204120448082e-17
+      ],
+      "scaled": [
+        1.3500311979441903e-16,
+        -1.6640468793303043e-17,
+        2.015054789694659e-16,
+        -2.7685528123482765e-17
+      ],
+      "raw_max": 2.015054789694659e-16,
+      "scaled_max": 2.015054789694659e-16,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 9,
+      "accepted": true,
+      "trace_length": 45
+    },
+    {
+      "label": "valid",
+      "start_id": 4,
+      "start": [
+        22.0,
+        0.35,
+        5.0,
+        0.4
+      ],
+      "terminal": [
+        18.300064680925978,
+        0.7196258126936355,
+        3.9009829552526187,
+        0.8138124452218254
+      ],
+      "terminal_hex": [
+        "0x1.24cd109f74302p+4",
+        "0x1.7072cb65c0cfep-1",
+        "0x1.f35368d3881e7p+1",
+        "0x1.a0ac065a9c6eap-1"
+      ],
+      "objective": 2.292208059393137e-29,
+      "raw": [
+        9.210410212290298e-16,
+        1.5654144647214707e-15,
+        -2.304822999121825e-16,
+        3.293661639721298e-18
+      ],
+      "scaled": [
+        9.210410212290298e-16,
+        4.6926121997114575e-15,
+        -2.304822999121825e-16,
+        5.716965204153054e-18
+      ],
+      "raw_max": 1.5654144647214707e-15,
+      "scaled_max": 4.6926121997114575e-15,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "success": true,
+      "status": 1,
+      "message": "`gtol` termination condition is satisfied.",
+      "nfev": 8,
+      "accepted": true,
+      "trace_length": 40
+    },
+    {
+      "label": "valid",
+      "start_id": 5,
+      "start": [
+        19.5,
+        0.95,
+        3.5,
+        1.0
+      ],
+      "terminal": [
+        18.30006468092623,
+        0.7196258126936521,
+        3.900982955252535,
+        0.8138124452218396
+      ],
+      "terminal_hex": [
+        "0x1.24cd109f74349p+4",
+        "0x1.7072cb65c0d94p-1",
+        "0x1.f35368d38812ap+1",
+        "0x1.a0ac065a9c76ap-1"
+      ],
+      "objective": 2.4645629384979933e-30,
+      "raw": [
+        -1.5365486660812166e-15,
+        -9.992007221626408e-18,
+        3.2018832030189513e-16,
+        -7.364479396680204e-18
+      ],
+      "scaled": [
+        -1.5365486660812166e-15,
+        -2.9952843827945477e-17,
+        3.2018832030189513e-16,
+        -1.278287725422986e-17
+      ],
+      "raw_max": 1.5365486660812166e-15,
+      "scaled_max": 1.5365486660812166e-15,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 10,
+      "accepted": true,
+      "trace_length": 45
+    }
+  ],
+  "invalid_estimation": [
+    {
+      "label": "invalid",
+      "start_id": 0,
+      "start": [
+        18.0,
+        0.7,
+        4.0,
+        0.8
+      ],
+      "terminal": [
+        11.95715132345038,
+        0.2965600847268636,
+        5.999999999999999,
+        0.45508095437980767
+      ],
+      "terminal_hex": [
+        "0x1.7ea0fbcff15c3p+3",
+        "0x1.2fad7264cdb07p-2",
+        "0x1.7ffffffffffffp+2",
+        "0x1.d200bde05ffdep-2"
+      ],
+      "objective": 0.0527503389815731,
+      "raw": [
+        -0.0028428679555682302,
+        0.0929533547574027,
+        0.019358746379014885,
+        -0.0001685310985022984
+      ],
+      "scaled": [
+        -0.0028428679555682302,
+        0.22883926771794846,
+        0.019358746379014885,
+        -0.00029252744554442416
+      ],
+      "raw_max": 0.0929533547574027,
+      "scaled_max": 0.22883926771794846,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 9,
+      "accepted": false,
+      "trace_length": 45
+    },
+    {
+      "label": "invalid",
+      "start_id": 1,
+      "start": [
+        11.0,
+        0.25,
+        2.2,
+        0.2
+      ],
+      "terminal": [
+        11.957151323205876,
+        0.2965600847123084,
+        5.999999999999999,
+        0.4550809543984437
+      ],
+      "terminal_hex": [
+        "0x1.7ea0fbcfcfc17p+3",
+        "0x1.2fad72648dacbp-2",
+        "0x1.7ffffffffffffp+2",
+        "0x1.d200bde0b1f43p-2"
+      ],
+      "objective": 0.052750338981573074,
+      "raw": [
+        -0.0028428679293841658,
+        0.09295335475503101,
+        0.0193587464516262,
+        -0.00016853110816365498
+      ],
+      "scaled": [
+        -0.0028428679293841658,
+        0.22883926771210966,
+        0.0193587464516262,
+        -0.0002925274623141004
+      ],
+      "raw_max": 0.09295335475503101,
+      "scaled_max": 0.22883926771210966,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 18,
+      "accepted": false,
+      "trace_length": 54
+    },
+    {
+      "label": "invalid",
+      "start_id": 2,
+      "start": [
+        24.0,
+        1.4,
+        5.8,
+        1.4
+      ],
+      "terminal": [
+        11.957151323461039,
+        0.296560084727574,
+        5.999999999999999,
+        0.45508095440732116
+      ],
+      "terminal_hex": [
+        "0x1.7ea0fbcff2d33p+3",
+        "0x1.2fad7264d0d04p-2",
+        "0x1.7ffffffffffffp+2",
+        "0x1.d200bde0d8ff5p-2"
+      ],
+      "objective": 0.05275033898157307,
+      "raw": [
+        -0.0028428679555711194,
+        0.09295335475752486,
+        0.01935874637522355,
+        -0.00016853110746695968
+      ],
+      "scaled": [
+        -0.0028428679555711194,
+        0.2288392677182492,
+        0.01935874637522355,
+        -0.00029252746110481324
+      ],
+      "raw_max": 0.09295335475752486,
+      "scaled_max": 0.2288392677182492,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "accepted": false,
+      "trace_length": 60
+    },
+    {
+      "label": "invalid",
+      "start_id": 3,
+      "start": [
+        15.0,
+        1.2,
+        3.0,
+        1.2
+      ],
+      "terminal": [
+        11.957151323524162,
+        0.2965600847312941,
+        5.999999999999999,
+        0.4550809543959308
+      ],
+      "terminal_hex": [
+        "0x1.7ea0fbcffb802p+3",
+        "0x1.2fad7264e12cbp-2",
+        "0x1.7ffffffffffffp+2",
+        "0x1.d200bde0a6e6fp-2"
+      ],
+      "objective": 0.052750338981573074,
+      "raw": [
+        -0.0028428679628947798,
+        0.09295335475812784,
+        0.01935874635672301,
+        -0.0001685311027974803
+      ],
+      "scaled": [
+        -0.0028428679628947798,
+        0.22883926771973365,
+        0.01935874635672301,
+        -0.00029252745299977577
+      ],
+      "raw_max": 0.09295335475812784,
+      "scaled_max": 0.22883926771973365,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "success": true,
+      "status": 3,
+      "message": "`xtol` termination condition is satisfied.",
+      "nfev": 21,
+      "accepted": false,
+      "trace_length": 69
+    },
+    {
+      "label": "invalid",
+      "start_id": 4,
+      "start": [
+        22.0,
+        0.35,
+        5.0,
+        0.4
+      ],
+      "terminal": [
+        11.957151323808482,
+        0.2965600847483542,
+        5.999999999999999,
+        0.4550809544059613
+      ],
+      "terminal_hex": [
+        "0x1.7ea0fbd02293cp+3",
+        "0x1.2fad72652c34bp-2",
+        "0x1.7ffffffffffffp+2",
+        "0x1.d200bde0d3044p-2"
+      ],
+      "objective": 0.05275033898157307,
+      "raw": [
+        -0.002842867991322197,
+        0.09295335476091907,
+        0.019358746271338097,
+        -0.00016853110205522327
+      ],
+      "scaled": [
+        -0.002842867991322197,
+        0.2288392677266053,
+        0.019358746271338097,
+        -0.0002925274517114049
+      ],
+      "raw_max": 0.09295335476091907,
+      "scaled_max": 0.2288392677266053,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 12,
+      "accepted": false,
+      "trace_length": 60
+    },
+    {
+      "label": "invalid",
+      "start_id": 5,
+      "start": [
+        19.5,
+        0.95,
+        3.5,
+        1.0
+      ],
+      "terminal": [
+        11.957151323341316,
+        0.2965600847187635,
+        5.999999999999999,
+        0.4550809544031097
+      ],
+      "terminal_hex": [
+        "0x1.7ea0fbcfe25edp+3",
+        "0x1.2fad7264aa108p-2",
+        "0x1.7ffffffffffffp+2",
+        "0x1.d200bde0c679ap-2"
+      ],
+      "objective": 0.05275033898157307,
+      "raw": [
+        -0.002842867968001062,
+        0.09295335475594654,
+        0.019358746419311165,
+        -0.00016853110817187164
+      ],
+      "scaled": [
+        -0.002842867968001062,
+        0.22883926771436358,
+        0.019358746419311165,
+        -0.0002925274623283625
+      ],
+      "raw_max": 0.09295335475594654,
+      "scaled_max": 0.22883926771436358,
+      "active_lower": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "active_upper": [
+        false,
+        false,
+        true,
+        false
+      ],
+      "success": true,
+      "status": 2,
+      "message": "`ftol` termination condition is satisfied.",
+      "nfev": 14,
+      "accepted": false,
+      "trace_length": 58
+    }
+  ],
+  "equilibrium": [
+    {
+      "market": 0,
+      "start_id": 0,
+      "start": [
+        5.566248478849555,
+        3.7135708849982056,
+        6.274462549746297
+      ],
+      "terminal": [
+        5.566248478849555,
+        3.7135708849982056,
+        6.274462549746297
+      ],
+      "terminal_hex": [
+        "0x1.643d6a428463cp+2",
+        "0x1.db564a6f38f81p+1",
+        "0x1.9190cb5ec8c69p+2"
+      ],
+      "analytic": [
+        5.566248478849555,
+        3.7135708849982056,
+        6.274462549746297
+      ],
+      "raw": [
+        0.0,
+        0.0,
+        1.7763568394002505e-15
+      ],
+      "scaled": [
+        0.0,
+        0.0,
+        9.694394830095233e-17
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.694394830095233e-17,
+      "distance_to_analytic": 0.0,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 4
+    },
+    {
+      "market": 0,
+      "start_id": 1,
+      "start": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "terminal": [
+        5.566248478849556,
+        3.713570884998204,
+        6.274462549746297
+      ],
+      "terminal_hex": [
+        "0x1.643d6a428463dp+2",
+        "0x1.db564a6f38f7dp+1",
+        "0x1.9190cb5ec8c69p+2"
+      ],
+      "analytic": [
+        5.566248478849555,
+        3.7135708849982056,
+        6.274462549746297
+      ],
+      "raw": [
+        0.0,
+        0.0,
+        1.7763568394002505e-15
+      ],
+      "scaled": [
+        0.0,
+        0.0,
+        9.694394830095233e-17
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.694394830095233e-17,
+      "distance_to_analytic": 1.7763568394002505e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 48
+    },
+    {
+      "market": 0,
+      "start_id": 2,
+      "start": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "terminal": [
+        5.566248478849493,
+        3.7135708849983846,
+        6.2744625497461985
+      ],
+      "terminal_hex": [
+        "0x1.643d6a42845f6p+2",
+        "0x1.db564a6f39114p+1",
+        "0x1.9190cb5ec8bfap+2"
+      ],
+      "analytic": [
+        5.566248478849555,
+        3.7135708849982056,
+        6.274462549746297
+      ],
+      "raw": [
+        3.019806626980426e-14,
+        -1.3855583347321954e-13,
+        5.684341886080802e-14
+      ],
+      "scaled": [
+        1.6480471211161896e-15,
+        -7.561627967474282e-15,
+        3.1022063456304744e-15
+      ],
+      "raw_max": 1.3855583347321954e-13,
+      "scaled_max": 7.561627967474282e-15,
+      "distance_to_analytic": 1.7896795156957523e-13,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 0,
+      "start_id": 3,
+      "start": [
+        19.163689627919286,
+        19.316127144020903,
+        4.242380995804796
+      ],
+      "terminal": [
+        5.566248478849555,
+        3.713570884998206,
+        6.274462549746297
+      ],
+      "terminal_hex": [
+        "0x1.643d6a428463cp+2",
+        "0x1.db564a6f38f82p+1",
+        "0x1.9190cb5ec8c69p+2"
+      ],
+      "analytic": [
+        5.566248478849555,
+        3.7135708849982056,
+        6.274462549746297
+      ],
+      "raw": [
+        0.0,
+        0.0,
+        1.7763568394002505e-15
+      ],
+      "scaled": [
+        0.0,
+        0.0,
+        9.694394830095233e-17
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.694394830095233e-17,
+      "distance_to_analytic": 4.440892098500626e-16,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 40
+    },
+    {
+      "market": 17,
+      "start_id": 0,
+      "start": [
+        4.43345816709008,
+        5.4959243819299495,
+        5.628070591133771
+      ],
+      "terminal": [
+        4.43345816709008,
+        5.4959243819299495,
+        5.628070591133771
+      ],
+      "terminal_hex": [
+        "0x1.1bbdc752f5810p+2",
+        "0x1.5fbd399e6b66cp+2",
+        "0x1.68324efe1fee9p+2"
+      ],
+      "analytic": [
+        4.43345816709008,
+        5.4959243819299495,
+        5.628070591133771
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        1.7763568394002505e-15
+      ],
+      "scaled": [
+        9.786657729724149e-17,
+        9.786657729724149e-17,
+        9.786657729724149e-17
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.786657729724149e-17,
+      "distance_to_analytic": 0.0,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 4
+    },
+    {
+      "market": 17,
+      "start_id": 1,
+      "start": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "terminal": [
+        4.433458167090079,
+        5.49592438192995,
+        5.628070591133773
+      ],
+      "terminal_hex": [
+        "0x1.1bbdc752f580ep+2",
+        "0x1.5fbd399e6b66dp+2",
+        "0x1.68324efe1feebp+2"
+      ],
+      "analytic": [
+        4.43345816709008,
+        5.4959243819299495,
+        5.628070591133771
+      ],
+      "raw": [
+        0.0,
+        -1.7763568394002505e-15,
+        -3.552713678800501e-15
+      ],
+      "scaled": [
+        0.0,
+        -9.786657729724149e-17,
+        -1.9573315459448297e-16
+      ],
+      "raw_max": 3.552713678800501e-15,
+      "scaled_max": 1.9573315459448297e-16,
+      "distance_to_analytic": 1.7763568394002505e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 44
+    },
+    {
+      "market": 17,
+      "start_id": 2,
+      "start": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "terminal": [
+        4.43345816709008,
+        5.495924381929948,
+        5.628070591133773
+      ],
+      "terminal_hex": [
+        "0x1.1bbdc752f5810p+2",
+        "0x1.5fbd399e6b66ap+2",
+        "0x1.68324efe1feebp+2"
+      ],
+      "analytic": [
+        4.43345816709008,
+        5.4959243819299495,
+        5.628070591133771
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        9.786657729724149e-17,
+        9.786657729724149e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.786657729724149e-17,
+      "distance_to_analytic": 1.7763568394002505e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 17,
+      "start_id": 3,
+      "start": [
+        2.806327689435697,
+        12.257055979240112,
+        11.468854969751723
+      ],
+      "terminal": [
+        4.43345816709008,
+        5.495924381929949,
+        5.628070591133773
+      ],
+      "terminal_hex": [
+        "0x1.1bbdc752f5810p+2",
+        "0x1.5fbd399e6b66bp+2",
+        "0x1.68324efe1feebp+2"
+      ],
+      "analytic": [
+        4.43345816709008,
+        5.4959243819299495,
+        5.628070591133771
+      ],
+      "raw": [
+        0.0,
+        -1.7763568394002505e-15,
+        -3.552713678800501e-15
+      ],
+      "scaled": [
+        0.0,
+        -9.786657729724149e-17,
+        -1.9573315459448297e-16
+      ],
+      "raw_max": 3.552713678800501e-15,
+      "scaled_max": 1.9573315459448297e-16,
+      "distance_to_analytic": 1.7763568394002505e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 901,
+      "start_id": 0,
+      "start": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399417
+      ],
+      "terminal": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399417
+      ],
+      "terminal_hex": [
+        "0x1.4d3656caa7636p+2",
+        "0x1.2cedd5fdb77a7p+2",
+        "0x1.6b329336d21bcp+2"
+      ],
+      "analytic": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399417
+      ],
+      "raw": [
+        0.0,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        0.0,
+        9.847208969933807e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.847208969933807e-17,
+      "distance_to_analytic": 0.0,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 4
+    },
+    {
+      "market": 901,
+      "start_id": 1,
+      "start": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "terminal": [
+        5.2064415911714175,
+        4.702016351480701,
+        5.674961856399418
+      ],
+      "terminal_hex": [
+        "0x1.4d3656caa7636p+2",
+        "0x1.2cedd5fdb77a8p+2",
+        "0x1.6b329336d21bdp+2"
+      ],
+      "analytic": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399417
+      ],
+      "raw": [
+        0.0,
+        -1.7763568394002505e-15,
+        -1.7763568394002505e-15
+      ],
+      "scaled": [
+        0.0,
+        -9.847208969933807e-17,
+        -9.847208969933807e-17
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.847208969933807e-17,
+      "distance_to_analytic": 8.881784197001252e-16,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 44
+    },
+    {
+      "market": 901,
+      "start_id": 2,
+      "start": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "terminal": [
+        5.206441591171416,
+        4.7020163514807,
+        5.674961856399418
+      ],
+      "terminal_hex": [
+        "0x1.4d3656caa7634p+2",
+        "0x1.2cedd5fdb77a7p+2",
+        "0x1.6b329336d21bdp+2"
+      ],
+      "analytic": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399417
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        9.847208969933807e-17,
+        9.847208969933807e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.847208969933807e-17,
+      "distance_to_analytic": 1.7763568394002505e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 901,
+      "start_id": 3,
+      "start": [
+        19.53353884579959,
+        17.48951351518956,
+        0.7974098417525144
+      ],
+      "terminal": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399418
+      ],
+      "terminal_hex": [
+        "0x1.4d3656caa7636p+2",
+        "0x1.2cedd5fdb77a7p+2",
+        "0x1.6b329336d21bdp+2"
+      ],
+      "analytic": [
+        5.2064415911714175,
+        4.7020163514807,
+        5.674961856399417
+      ],
+      "raw": [
+        0.0,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        0.0,
+        9.847208969933807e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.847208969933807e-17,
+      "distance_to_analytic": 8.881784197001252e-16,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 36
+    },
+    {
+      "market": 2026,
+      "start_id": 0,
+      "start": [
+        4.249837012617018,
+        4.97456875397051,
+        5.740601540569383
+      ],
+      "terminal": [
+        4.249837012617018,
+        4.97456875397051,
+        5.740601540569383
+      ],
+      "terminal_hex": [
+        "0x1.0ffd5461a14ecp+2",
+        "0x1.3e5f559f806f9p+2",
+        "0x1.6f6604010736cp+2"
+      ],
+      "analytic": [
+        4.249837012617018,
+        4.97456875397051,
+        5.740601540569383
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        9.994613413724745e-17,
+        9.994613413724745e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.994613413724745e-17,
+      "distance_to_analytic": 0.0,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 4
+    },
+    {
+      "market": 2026,
+      "start_id": 1,
+      "start": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "terminal": [
+        4.249837012617014,
+        4.974568753970514,
+        5.740601540569379
+      ],
+      "terminal_hex": [
+        "0x1.0ffd5461a14e8p+2",
+        "0x1.3e5f559f806fep+2",
+        "0x1.6f66040107368p+2"
+      ],
+      "analytic": [
+        4.249837012617018,
+        4.97456875397051,
+        5.740601540569383
+      ],
+      "raw": [
+        3.552713678800501e-15,
+        -1.7763568394002505e-15,
+        3.552713678800501e-15
+      ],
+      "scaled": [
+        1.998922682744949e-16,
+        -9.994613413724745e-17,
+        1.998922682744949e-16
+      ],
+      "raw_max": 3.552713678800501e-15,
+      "scaled_max": 1.998922682744949e-16,
+      "distance_to_analytic": 4.440892098500626e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 44
+    },
+    {
+      "market": 2026,
+      "start_id": 2,
+      "start": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "terminal": [
+        4.249837012617019,
+        4.974568753970509,
+        5.740601540569382
+      ],
+      "terminal_hex": [
+        "0x1.0ffd5461a14edp+2",
+        "0x1.3e5f559f806f8p+2",
+        "0x1.6f6604010736bp+2"
+      ],
+      "analytic": [
+        4.249837012617018,
+        4.97456875397051,
+        5.740601540569383
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        9.994613413724745e-17,
+        9.994613413724745e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.994613413724745e-17,
+      "distance_to_analytic": 8.881784197001252e-16,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 2026,
+      "start_id": 3,
+      "start": [
+        11.98608720727581,
+        9.151071391600956,
+        9.783343647447658
+      ],
+      "terminal": [
+        4.249837012617407,
+        4.974568753970327,
+        5.740601540569224
+      ],
+      "terminal_hex": [
+        "0x1.0ffd5461a16a2p+2",
+        "0x1.3e5f559f8062bp+2",
+        "0x1.6f660401072b9p+2"
+      ],
+      "analytic": [
+        4.249837012617018,
+        4.97456875397051,
+        5.740601540569383
+      ],
+      "raw": [
+        -3.055333763768431e-13,
+        9.592326932761353e-14,
+        7.993605777301127e-14
+      ],
+      "scaled": [
+        -1.7190735071606562e-14,
+        5.397091243411363e-15,
+        4.4975760361761355e-15
+      ],
+      "raw_max": 3.055333763768431e-13,
+      "scaled_max": 1.7190735071606562e-14,
+      "distance_to_analytic": 3.8902214782865485e-13,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 3999,
+      "start_id": 0,
+      "start": [
+        4.6293028991819085,
+        5.59260297163834,
+        4.446226561604791
+      ],
+      "terminal": [
+        4.6293028991819085,
+        5.59260297163834,
+        4.446226561604791
+      ],
+      "terminal_hex": [
+        "0x1.28467faad0ea0p+2",
+        "0x1.65ed3503acbddp+2",
+        "0x1.1c8ef9da2cbe3p+2"
+      ],
+      "analytic": [
+        4.6293028991819085,
+        5.59260297163834,
+        4.446226561604791
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        1.7763568394002505e-15,
+        0.0
+      ],
+      "scaled": [
+        9.788597286374386e-17,
+        9.788597286374386e-17,
+        0.0
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.788597286374386e-17,
+      "distance_to_analytic": 0.0,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 4
+    },
+    {
+      "market": 3999,
+      "start_id": 1,
+      "start": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "terminal": [
+        4.629302899181909,
+        5.592602971638341,
+        4.4462265616047905
+      ],
+      "terminal_hex": [
+        "0x1.28467faad0ea1p+2",
+        "0x1.65ed3503acbdep+2",
+        "0x1.1c8ef9da2cbe2p+2"
+      ],
+      "analytic": [
+        4.6293028991819085,
+        5.59260297163834,
+        4.446226561604791
+      ],
+      "raw": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scaled": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_max": 0.0,
+      "scaled_max": 0.0,
+      "distance_to_analytic": 8.881784197001252e-16,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 44
+    },
+    {
+      "market": 3999,
+      "start_id": 2,
+      "start": [
+        10.0,
+        10.0,
+        10.0
+      ],
+      "terminal": [
+        4.629302899181909,
+        5.592602971638342,
+        4.4462265616047905
+      ],
+      "terminal_hex": [
+        "0x1.28467faad0ea1p+2",
+        "0x1.65ed3503acbdfp+2",
+        "0x1.1c8ef9da2cbe2p+2"
+      ],
+      "analytic": [
+        4.6293028991819085,
+        5.59260297163834,
+        4.446226561604791
+      ],
+      "raw": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scaled": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "raw_max": 0.0,
+      "scaled_max": 0.0,
+      "distance_to_analytic": 1.7763568394002505e-15,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 32
+    },
+    {
+      "market": 3999,
+      "start_id": 3,
+      "start": [
+        18.80127576354036,
+        17.440129636080158,
+        10.713485171972437
+      ],
+      "terminal": [
+        4.6293028991819085,
+        5.592602971638341,
+        4.446226561604792
+      ],
+      "terminal_hex": [
+        "0x1.28467faad0ea0p+2",
+        "0x1.65ed3503acbdep+2",
+        "0x1.1c8ef9da2cbe4p+2"
+      ],
+      "analytic": [
+        4.6293028991819085,
+        5.59260297163834,
+        4.446226561604791
+      ],
+      "raw": [
+        1.7763568394002505e-15,
+        0.0,
+        -1.7763568394002505e-15
+      ],
+      "scaled": [
+        9.788597286374386e-17,
+        0.0,
+        -9.788597286374386e-17
+      ],
+      "raw_max": 1.7763568394002505e-15,
+      "scaled_max": 9.788597286374386e-17,
+      "distance_to_analytic": 8.881784197001252e-16,
+      "matrix_min_eigenvalue": 0.6999999999999998,
+      "within_bounds": true,
+      "success": true,
+      "accepted": true,
+      "trace_length": 36
+    }
+  ],
+  "headline": {
+    "all_valid_starts_accepted": true,
+    "all_invalid_starts_accepted": false,
+    "all_equilibrium_starts_accepted": true,
+    "valid_terminal_spread": 2.5224267119483557e-13,
+    "valid_max_abs_parameter_error": 0.30006468092622995,
+    "all_roundtrip_diagnostics_reproduced": true
+  }
+}

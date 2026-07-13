@@ -1,0 +1,134 @@
+{
+  "study": "latent value-of-time heterogeneity in repeated urban mode choice",
+  "seed": 51051,
+  "true_parameters": {
+    "asc_drive": 0.55,
+    "asc_transit": 0.25,
+    "mu_time": -0.8,
+    "sigma_time": 0.35,
+    "beta_cost": -0.55,
+    "beta_rel": -0.4
+  },
+  "sample": {
+    "intended": 900,
+    "realized": 900,
+    "train": 700,
+    "validation": 200,
+    "tasks_per_person": 4
+  },
+  "support": {
+    "predeclared_before_estimation": true,
+    "training_support": {
+      "people": "simulated agents 0-699, four repeated trips",
+      "policy_charge": 0,
+      "attributes": {
+        "cost_dollars": "drive [4,12], transit [1.5,5], micromobility [0.2,2]",
+        "time_10min": "drive [1.5,4.5], transit [2.5,6.5], micromobility [2,5.5]",
+        "reliability_10min_sd": "drive [.3,1.2], transit [.5,1.8], micromobility [.2,.8]"
+      }
+    },
+    "interpolation_support": "new people drawn from same population with attributes inside the training boxes and zero charge",
+    "validation_support": "agents 700-899, same predeclared attribute boxes and zero charge",
+    "baseline_policy_support": "zero congestion charge only; this regime is observed",
+    "post_policy_support": "$3 added to drive cost; implied drive cost [7,15]",
+    "extrapolation_support": "the charge regime is unobserved; drive costs (12,15] are outside observed attribute support; no equilibrium congestion feedback modeled",
+    "profile_domain": "sigma_time in [0,0.8], where one unit is utility SD per 10 minutes; upper bound permits substantial heterogeneity while limiting economically implausible mass with positive time utility"
+  },
+  "models": [
+    {
+      "model": "normal_random_coefficient_msl",
+      "train_nll": 1739.851639113888,
+      "validation_nll": 524.340004066203,
+      "parameters": [
+        0.6590993567403443,
+        0.3096406450454383,
+        -0.770894139448943,
+        0.4306865171598903,
+        -0.5590131448096968,
+        -0.6566919837007335
+      ],
+      "aic": 3491.703278227776,
+      "numerically_accepted": true,
+      "projected_gradient_inf": 2.273736755629115e-05
+    },
+    {
+      "model": "homogeneous_logit",
+      "train_nll": 1749.284292210858,
+      "validation_nll": 525.8503396369225,
+      "parameters": [
+        0.6448337022151753,
+        0.28563932089967387,
+        -0.7113232738009047,
+        -0.5266529846136588,
+        -0.6202018786180348
+      ],
+      "aic": 3508.568584421716,
+      "numerically_accepted": true,
+      "projected_gradient_inf": 4.54747351125823e-05
+    },
+    {
+      "model": "two_point_latent_class_mle",
+      "train_nll": 1740.0054168559702,
+      "validation_nll": 524.0246782699328,
+      "parameters": [
+        0.6681232848250043,
+        0.3211089120871277,
+        -0.8553820987914608,
+        -0.20444288361527843,
+        -0.5597952355161764,
+        -0.6603943658468041,
+        -0.4314215982955586
+      ],
+      "aic": 3494.0108337119404,
+      "numerically_accepted": true,
+      "projected_gradient_inf": 4.547473486014681e-05
+    }
+  ],
+  "profile": {
+    "grid": [
+      0.0,
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "cutoff": 3.841459,
+    "acceptance_projected_gradient_inf": 0.002,
+    "reported_indices": 9,
+    "resolved_indices": 9,
+    "holes": 0,
+    "inside_count": 3,
+    "set_sigma": [
+      0.3,
+      0.4,
+      0.5
+    ],
+    "set_policy_change": [
+      -0.0771080647017473,
+      -0.07657271690876238,
+      -0.07604605757906667
+    ],
+    "left_endpoint_censored": false,
+    "right_endpoint_censored": false
+  },
+  "inference_eligibility": {
+    "eligible": true,
+    "scope": "model-conditional one-parameter LR profile only; grid and asymptotic cutoff are approximations",
+    "not_established": [
+      "population injectivity",
+      "finite-sample coverage",
+      "policy invariance outside observed charge regime",
+      "equilibrium congestion response"
+    ]
+  },
+  "software": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X049
+case_id: JE-R44
+timestamp_utc: "2026-07-13T07:00:00Z"
+skill_commit: "e25b4d0"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_constrained_mixture
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer projected-KKT, start-retention, inference-eligibility, support, profile-set, and branch-backtracking rules to a new latent-type adoption model."
+expected:
+  - retain all starts and distinguish software numerical and inferential success
+  - execute an accepted conditional profile at every reported point
+  - select one best accepted objective per index before cutoff and policy mapping
+  - keep support and branch-abandonment claims evidence proportional
+forbidden:
+  - treat an unresolved profile point as likelihood rejection
+  - pool inferior local starts into the profiled set image
+  - call finite-sample weak geometry partial identification
+  - hide boundary solutions or failed starts
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "522f719ae449bade34a0eecb59faa98db0716c66f0ead4a59cf8d283becefee2"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_analysis.py, sha256: "d3f3952db6fd331c87a796b2edc26f80ea84cd53e8d2e64dd8a687f709ed1d2f"}
+  - {file: artifacts/outputs/start_records.csv, sha256: "614cdb4aefb313aadf9d154a9f49b0b7245ecbc96f8336756cc775a44919ebf9"}
+  - {file: artifacts/outputs/profile_delta.csv, sha256: "132a1bc5f1f46be8cee396c7588ce7e1c06f14a9943e28ac2c33fe51080345ee"}
+  - {file: artifacts/independent_verify.py, sha256: "a9bdd63200c7f70db1200c58e7582baad92a14adcd1a3ca296707d83775a34f9"}
+rubric:
+  - {criterion: projected KKT starts and inference eligibility, score: 2, max_score: 2}
+  - {criterion: support and misspecification comparisons, score: 2, max_score: 2}
+  - {criterion: profile construction and policy-set mapping, score: 0, max_score: 2}
+  - {criterion: evidence-proportional branch decision, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - two profile grid points lacked accepted optima and were incorrectly treated as excluded
+  - the reported policy range pooled inferior accepted local starts
+  - the headline boundary count was off by one

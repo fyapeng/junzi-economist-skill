@@ -1,0 +1,1512 @@
+{
+  "design": {
+    "true": [
+      0.18,
+      3.2,
+      0.91
+    ],
+    "N": 2400,
+    "T": 40,
+    "seed": 47013,
+    "observed_subsidies": [
+      0.0,
+      0.75
+    ],
+    "EV1_normalization": "iid type-I extreme-value shocks shifted by minus Euler constant, so each shock has mean zero and E[max_a(v_a+eps_a)]=logsumexp(v); only value levels depend on this additive normalization"
+  },
+  "transition_estimates": {
+    "run": [
+      [
+        0.5854305338248164,
+        0.31501763504733615,
+        0.09955183112784746,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.579220450518856,
+        0.31975027419218766,
+        0.10102927528895639,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.5790982040504394,
+        0.3206916316392816,
+        0.10021016431027895
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.5701275045537341,
+        0.42987249544626593
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "overhaul": [
+      [
+        0.8630977083045143,
+        0.13690229169548576,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8630977083045143,
+        0.13690229169548576,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8630977083045143,
+        0.13690229169548576,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8630977083045143,
+        0.13690229169548576,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.8630977083045143,
+        0.13690229169548576,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "run_counts": [
+      [
+        22076.0,
+        11879.0,
+        3754.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        13731.0,
+        7580.0,
+        2395.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        6062.0,
+        3357.0,
+        1049.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1252.0,
+        944.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        234.0
+      ]
+    ],
+    "overhaul_counts": [
+      18718.0,
+      2969.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "full_nfxp_best": {
+    "label": "full_nfxp",
+    "initial": [
+      0.4,
+      5.0,
+      0.98
+    ],
+    "final": [
+      0.1766824341149428,
+      3.19987942133443,
+      0.9160409188328862
+    ],
+    "objective": 40408.07693676974,
+    "raw_gradient": [
+      -0.007947164704091847,
+      0.00043339055591195733,
+      -0.0017349520931020377
+    ],
+    "projected_gradient": [
+      -0.007947164704091847,
+      0.00043339055591195733,
+      -0.0017349520931020377
+    ],
+    "projected_gradient_inf": 0.007947164704091847,
+    "active_bounds": [],
+    "success": true,
+    "status": 0,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 12,
+    "objective_distance": 0.0,
+    "kkt_accepted": true
+  },
+  "fixed_beta_nfxp_best": {
+    "label": "fixed_beta_nfxp",
+    "initial": [
+      0.5,
+      6.0
+    ],
+    "final": [
+      0.17796033819524054,
+      3.193720553546097
+    ],
+    "objective": 40408.14420733288,
+    "raw_gradient": [
+      -0.0019179424270987509,
+      0.0002485524210394741
+    ],
+    "projected_gradient": [
+      -0.0019179424270987509,
+      0.0002485524210394741
+    ],
+    "projected_gradient_inf": 0.0019179424270987509,
+    "active_bounds": [],
+    "success": true,
+    "status": 0,
+    "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+    "nit": 9,
+    "objective_distance": 0.0,
+    "kkt_accepted": true
+  },
+  "ccp_fixed_beta": {
+    "estimate": [
+      0.1767059889466745,
+      3.18712971357363,
+      0.91
+    ],
+    "objective": 457.6284624438608,
+    "cells": {
+      "0.0": {
+        "p_overhaul": [
+          0.05457964145889141,
+          0.12897675398553268,
+          0.35745638099418414,
+          0.6712904046831255,
+          0.8852896341463414
+        ],
+        "n": [
+          19411,
+          14238,
+          9112,
+          3928,
+          1311
+        ]
+      },
+      "0.75": {
+        "p_overhaul": [
+          0.0990225738887596,
+          0.20458063608218408,
+          0.4375152401853207,
+          0.7112563775510204,
+          0.9128865979381443
+        ],
+        "n": [
+          21484,
+          14211,
+          8201,
+          3135,
+          969
+        ]
+      }
+    }
+  },
+  "continuous_profile": {
+    "beta": 0.916040797288114,
+    "objective": 40408.076936769656,
+    "success": true,
+    "message": "Solution found.",
+    "selected_inner": {
+      "label": "profile_beta=0.916040797288",
+      "initial": [
+        0.18,
+        3.2
+      ],
+      "final": [
+        0.1766824739035221,
+        3.1998793023749665
+      ],
+      "objective": 40408.076936769656,
+      "raw_gradient": [
+        -0.002015804057009518,
+        7.321708509530911e-05
+      ],
+      "projected_gradient": [
+        -0.002015804057009518,
+        7.321708509530911e-05
+      ],
+      "projected_gradient_inf": 0.002015804057009518,
+      "active_bounds": [],
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "nit": 5,
+      "objective_distance": 0.0,
+      "kkt_accepted": true
+    },
+    "evaluations": 10
+  },
+  "population_local_identification": {
+    "mapping": "10 population CCP logits (5 states x 2 observed subsidy regimes) as function of theta,F,beta at truth",
+    "jacobian": [
+      [
+        0.6724145794390068,
+        -0.9014218698144559,
+        0.6334465171509152
+      ],
+      [
+        3.1530011228020345,
+        -0.6523491315579832,
+        2.0272186474712406
+      ],
+      [
+        6.580541976469733,
+        -0.44665780724040255,
+        2.44741224811329
+      ],
+      [
+        10.683019865742605,
+        -0.32866367006834096,
+        2.324933551067776
+      ],
+      [
+        16.776838511600722,
+        -0.28798230027327065,
+        2.212043674876263
+      ],
+      [
+        0.5495991066473138,
+        -0.9032372891848438,
+        0.4577606934841327
+      ],
+      [
+        2.7606784310463257,
+        -0.6606275767429004,
+        1.4807566230401468
+      ],
+      [
+        6.114419971053885,
+        -0.4666888300502991,
+        1.8530296695323798
+      ],
+      [
+        10.382681349635492,
+        -0.35884143606002,
+        1.8349769910497302
+      ],
+      [
+        16.642527295229748,
+        -0.3216802284766729,
+        1.7843675531148404
+      ]
+    ],
+    "singular_values": [
+      30.097767376962892,
+      2.9977842414245703,
+      1.012114289686884
+    ],
+    "rank": 3,
+    "claim": "full column rank implies local identification under maintained transition, EV1, stationarity, subsidy exogeneity, and parametric utility restrictions; it is not a global result"
+  },
+  "continuous_alternative_search": {
+    "candidate": [
+      0.1963730401572677,
+      3.028947942208831,
+      0.8107038573688355
+    ],
+    "max_abs_ccp_gap": 0.011485387774495537,
+    "scaled_distance_from_truth": 0.9999945034155397,
+    "optimizer_objective": 0.011485417986936265,
+    "success": true,
+    "claim": "bounded numerical search evidence, not proof of global injectivity"
+  },
+  "counterfactuals": [
+    {
+      "subsidy": 0,
+      "overhaul_rate": 0.20771638003913798,
+      "private_inclusive_value_initial_stationary": -5.504441710302654,
+      "private_deterministic_flow": -0.8491678648798131,
+      "government_transfer_flow": 0.0,
+      "real_resource_cost_flow": 0.8491678648798131,
+      "social_welfare_flow_excluding_EV_shocks": -0.8491678648798131,
+      "support": "observed",
+      "private_value_difference_vs_s0": 0.0,
+      "social_welfare_difference_vs_s0": 0.0
+    },
+    {
+      "subsidy": 0.75,
+      "overhaul_rate": 0.2441927032187707,
+      "private_inclusive_value_initial_stationary": -3.4104926204723074,
+      "private_deterministic_flow": -0.7429628376486803,
+      "government_transfer_flow": 0.18314452741407802,
+      "real_resource_cost_flow": 0.9261073650627584,
+      "social_welfare_flow_excluding_EV_shocks": -0.9261073650627584,
+      "support": "observed",
+      "private_value_difference_vs_s0": 2.0939490898303466,
+      "social_welfare_difference_vs_s0": -0.07693950018294526
+    },
+    {
+      "subsidy": 0.25,
+      "overhaul_rate": 0.21810397324345354,
+      "private_inclusive_value_initial_stationary": -4.8407347812174635,
+      "private_deterministic_flow": -0.8146027470979053,
+      "government_transfer_flow": 0.05452599331086338,
+      "real_resource_cost_flow": 0.8691287404087686,
+      "social_welfare_flow_excluding_EV_shocks": -0.8691287404087686,
+      "support": "interpolation",
+      "private_value_difference_vs_s0": 0.6637069290851905,
+      "social_welfare_difference_vs_s0": -0.019960875528955535
+    },
+    {
+      "subsidy": 0.5,
+      "overhaul_rate": 0.2301551426387194,
+      "private_inclusive_value_initial_stationary": -4.144514038719045,
+      "private_deterministic_flow": -0.7793466955596157,
+      "government_transfer_flow": 0.1150775713193597,
+      "real_resource_cost_flow": 0.8944242668789755,
+      "social_welfare_flow_excluding_EV_shocks": -0.8944242668789755,
+      "support": "interpolation",
+      "private_value_difference_vs_s0": 1.359927671583609,
+      "social_welfare_difference_vs_s0": -0.045256401999162366
+    },
+    {
+      "subsidy": 1.25,
+      "overhaul_rate": 0.2797568687047764,
+      "private_inclusive_value_initial_stationary": -1.802714833597205,
+      "private_deterministic_flow": -0.6639790452271013,
+      "government_transfer_flow": 0.34969608588097056,
+      "real_resource_cost_flow": 1.0136751311080718,
+      "social_welfare_flow_excluding_EV_shocks": -1.0136751311080718,
+      "support": "extrapolation",
+      "private_value_difference_vs_s0": 3.701726876705449,
+      "social_welfare_difference_vs_s0": -0.16450726622825873
+    },
+    {
+      "subsidy": 2.0,
+      "overhaul_rate": 0.35825231740524743,
+      "private_inclusive_value_initial_stationary": 1.0889733366222194,
+      "private_deterministic_flow": -0.510636405356124,
+      "government_transfer_flow": 0.7165046348104949,
+      "real_resource_cost_flow": 1.2271410401666187,
+      "social_welfare_flow_excluding_EV_shocks": -1.2271410401666187,
+      "support": "extrapolation",
+      "private_value_difference_vs_s0": 6.593415046924873,
+      "social_welfare_difference_vs_s0": -0.37797317528680563
+    }
+  ],
+  "recovery_demonstration": {
+    "replications": 16,
+    "N": 450,
+    "T": 25,
+    "fixed_beta": 0.91,
+    "results": [
+      {
+        "rep": 0,
+        "estimate": [
+          0.16934309368391923,
+          3.0727399133553592
+        ],
+        "accepted": true,
+        "objective": 4887.6177227344715,
+        "starts": [
+          {
+            "label": "recovery_0",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.16934309368391923,
+              3.0727399133553592
+            ],
+            "objective": 4887.6177227344715,
+            "raw_gradient": [
+              -0.00020650077203754333,
+              3.473421319818356e-05
+            ],
+            "projected_gradient": [
+              -0.00020650077203754333,
+              3.473421319818356e-05
+            ],
+            "projected_gradient_inf": 0.00020650077203754333,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_0",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.1693430584731911,
+              3.072739473122707
+            ],
+            "objective": 4887.617722734505,
+            "raw_gradient": [
+              -0.000567160896025598,
+              -0.0001275117272228731
+            ],
+            "projected_gradient": [
+              -0.000567160896025598,
+              -0.0001275117272228731
+            ],
+            "projected_gradient_inf": 0.000567160896025598,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 3.3651303965598345e-11,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 1,
+        "estimate": [
+          0.18046427463330636,
+          3.2412321318032005
+        ],
+        "accepted": true,
+        "objective": 4708.594050237012,
+        "starts": [
+          {
+            "label": "recovery_1",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.1804642082020254,
+              3.241231132490253
+            ],
+            "objective": 4708.594050237045,
+            "raw_gradient": [
+              -0.0003633886080933734,
+              -0.00019650531344928606
+            ],
+            "projected_gradient": [
+              -0.0003633886080933734,
+              -0.00019650531344928606
+            ],
+            "projected_gradient_inf": 0.0003633886080933734,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 9,
+            "objective_distance": 3.2741809263825417e-11,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_1",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.18046427463330636,
+              3.2412321318032005
+            ],
+            "objective": 4708.594050237012,
+            "raw_gradient": [
+              -0.0002550223143771291,
+              0.00017400100999727963
+            ],
+            "projected_gradient": [
+              -0.0002550223143771291,
+              0.00017400100999727963
+            ],
+            "projected_gradient_inf": 0.0002550223143771291,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 2,
+        "estimate": [
+          0.1697170830500215,
+          3.144402530906339
+        ],
+        "accepted": true,
+        "objective": 4795.764391861182,
+        "starts": [
+          {
+            "label": "recovery_2",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.1697170830500215,
+              3.144402530906339
+            ],
+            "objective": 4795.764391861182,
+            "raw_gradient": [
+              -0.00032359821489080787,
+              -9.255758501232616e-06
+            ],
+            "projected_gradient": [
+              -0.00032359821489080787,
+              -9.255758501232616e-06
+            ],
+            "projected_gradient_inf": 0.00032359821489080787,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_2",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.1697170914158718,
+              3.1444027323138064
+            ],
+            "objective": 4795.764391861187,
+            "raw_gradient": [
+              -0.0005559286364587024,
+              8.690288948661478e-05
+            ],
+            "projected_gradient": [
+              -0.0005559286364587024,
+              8.690288948661478e-05
+            ],
+            "projected_gradient_inf": 0.0005559286364587024,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 4.547473508864641e-12,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 3,
+        "estimate": [
+          0.1734395413449175,
+          3.150269105263987
+        ],
+        "accepted": true,
+        "objective": 4761.919082185681,
+        "starts": [
+          {
+            "label": "recovery_3",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.17343953354397112,
+              3.150268915502605
+            ],
+            "objective": 4761.919082185685,
+            "raw_gradient": [
+              -0.00032327989174518734,
+              -4.474909366659981e-05
+            ],
+            "projected_gradient": [
+              -0.00032327989174518734,
+              -4.474909366659981e-05
+            ],
+            "projected_gradient_inf": 0.00032327989174518734,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 3.637978807091713e-12,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_3",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.1734395413449175,
+              3.150269105263987
+            ],
+            "objective": 4761.919082185681,
+            "raw_gradient": [
+              -0.0005441052053356543,
+              4.639470270355267e-05
+            ],
+            "projected_gradient": [
+              -0.0005441052053356543,
+              4.639470270355267e-05
+            ],
+            "projected_gradient_inf": 0.0005441052053356543,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 4,
+        "estimate": [
+          0.18234707678271647,
+          3.201121983553069
+        ],
+        "accepted": true,
+        "objective": 4748.912516685237,
+        "starts": [
+          {
+            "label": "recovery_4",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.18234705192880868,
+              3.2011215757094797
+            ],
+            "objective": 4748.912516685251,
+            "raw_gradient": [
+              -9.245013643521814e-05,
+              -0.00010679977323906275
+            ],
+            "projected_gradient": [
+              -9.245013643521814e-05,
+              -0.00010679977323906275
+            ],
+            "projected_gradient_inf": 0.00010679977323906275,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 1.3642420526593924e-11,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_4",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.18234707678271647,
+              3.201121983553069
+            ],
+            "objective": 4748.912516685237,
+            "raw_gradient": [
+              -0.00019936123862862584,
+              5.8329318043273714e-05
+            ],
+            "projected_gradient": [
+              -0.00019936123862862584,
+              5.8329318043273714e-05
+            ],
+            "projected_gradient_inf": 0.00019936123862862584,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 5,
+        "estimate": [
+          0.19214261170531982,
+          3.292327980214538
+        ],
+        "accepted": true,
+        "objective": 4610.644230641868,
+        "starts": [
+          {
+            "label": "recovery_5",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.19214261170531982,
+              3.292327980214538
+            ],
+            "objective": 4610.644230641868,
+            "raw_gradient": [
+              -0.00032973730412777513,
+              -8.096790438001093e-05
+            ],
+            "projected_gradient": [
+              -0.00032973730412777513,
+              -8.096790438001093e-05
+            ],
+            "projected_gradient_inf": 0.00032973730412777513,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_5",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.19214246703085647,
+              3.2923277352947076
+            ],
+            "objective": 4610.644230642309,
+            "raw_gradient": [
+              -0.00600621206103824,
+              0.00021197791213910998
+            ],
+            "projected_gradient": [
+              -0.00600621206103824,
+              0.00021197791213910998
+            ],
+            "projected_gradient_inf": 0.00600621206103824,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 4.411049303598702e-10,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 6,
+        "estimate": [
+          0.1913178162414919,
+          3.2385880704419048
+        ],
+        "accepted": true,
+        "objective": 4719.577514351727,
+        "starts": [
+          {
+            "label": "recovery_6",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.1913178162414919,
+              3.2385880704419048
+            ],
+            "objective": 4719.577514351727,
+            "raw_gradient": [
+              -0.0003449713403824716,
+              -6.630410982131736e-05
+            ],
+            "projected_gradient": [
+              -0.0003449713403824716,
+              -6.630410982131736e-05
+            ],
+            "projected_gradient_inf": 0.0003449713403824716,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_6",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.19131773134427335,
+              3.2385882984315133
+            ],
+            "objective": 4719.57751435198,
+            "raw_gradient": [
+              -0.0049021309678209946,
+              0.00032503333885995866
+            ],
+            "projected_gradient": [
+              -0.0049021309678209946,
+              0.00032503333885995866
+            ],
+            "projected_gradient_inf": 0.0049021309678209946,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 2.53749021794647e-10,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 7,
+        "estimate": [
+          0.17657742753123976,
+          3.190196673679252
+        ],
+        "accepted": true,
+        "objective": 4751.418399352155,
+        "starts": [
+          {
+            "label": "recovery_7",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.1765774323291296,
+              3.190196918257498
+            ],
+            "objective": 4751.418399352176,
+            "raw_gradient": [
+              -0.0008983079169411211,
+              0.00016432614021464684
+            ],
+            "projected_gradient": [
+              -0.0008983079169411211,
+              0.00016432614021464684
+            ],
+            "projected_gradient_inf": 0.0008983079169411211,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 2.091837814077735e-11,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_7",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.17657742753123976,
+              3.190196673679252
+            ],
+            "objective": 4751.418399352155,
+            "raw_gradient": [
+              -0.0003428795025683939,
+              3.3369840712593175e-05
+            ],
+            "projected_gradient": [
+              -0.0003428795025683939,
+              3.3369840712593175e-05
+            ],
+            "projected_gradient_inf": 0.0003428795025683939,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 8,
+        "estimate": [
+          0.16775683408817654,
+          3.081432576138557
+        ],
+        "accepted": true,
+        "objective": 4867.960166594177,
+        "starts": [
+          {
+            "label": "recovery_8",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.16775683408817654,
+              3.081432576138557
+            ],
+            "objective": 4867.960166594177,
+            "raw_gradient": [
+              -0.0002691649569896981,
+              -1.109776051939954e-05
+            ],
+            "projected_gradient": [
+              -0.0002691649569896981,
+              -1.109776051939954e-05
+            ],
+            "projected_gradient_inf": 0.0002691649569896981,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "nit": 7,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_8",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.16775681035558018,
+              3.0814323039518805
+            ],
+            "objective": 4867.960166594203,
+            "raw_gradient": [
+              -0.0006306436262093484,
+              -0.00010398248341320893
+            ],
+            "projected_gradient": [
+              -0.0006306436262093484,
+              -0.00010398248341320893
+            ],
+            "projected_gradient_inf": 0.0006306436262093484,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 2.546585164964199e-11,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 9,
+        "estimate": [
+          0.18066486078680066,
+          3.2481259966118974
+        ],
+        "accepted": true,
+        "objective": 4672.581970359226,
+        "starts": [
+          {
+            "label": "recovery_9",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.18066486078680066,
+              3.2481259966118974
+            ],
+            "objective": 4672.581970359226,
+            "raw_gradient": [
+              -0.00026379893824923784,
+              5.2977131353565094e-05
+            ],
+            "projected_gradient": [
+              -0.00026379893824923784,
+              5.2977131353565094e-05
+            ],
+            "projected_gradient_inf": 0.00026379893824923784,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "nit": 9,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_9",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.18066481949424096,
+              3.24812538249726
+            ],
+            "objective": 4672.581970359276,
+            "raw_gradient": [
+              -0.0003450622898526489,
+              -0.000173379735392118
+            ],
+            "projected_gradient": [
+              -0.0003450622898526489,
+              -0.000173379735392118
+            ],
+            "projected_gradient_inf": 0.0003450622898526489,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 5.002220859751105e-11,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 10,
+        "estimate": [
+          0.17681482753884392,
+          3.168142389674317
+        ],
+        "accepted": true,
+        "objective": 4785.394028166414,
+        "starts": [
+          {
+            "label": "recovery_10",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.17681482979098,
+              3.1681424337065285
+            ],
+            "objective": 4785.3940281664145,
+            "raw_gradient": [
+              -0.00031377567211166024,
+              1.7411102820271042e-05
+            ],
+            "projected_gradient": [
+              -0.00031377567211166024,
+              1.7411102820271042e-05
+            ],
+            "projected_gradient_inf": 0.00031377567211166024,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+            "nit": 7,
+            "objective_distance": 9.094947017729282e-13,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_10",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.17681482753884392,
+              3.168142389674317
+            ],
+            "objective": 4785.394028166414,
+            "raw_gradient": [
+              -0.0002849446900654584,
+              -1.8372804550445447e-06
+            ],
+            "projected_gradient": [
+              -0.0002849446900654584,
+              -1.8372804550445447e-06
+            ],
+            "projected_gradient_inf": 0.0002849446900654584,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 11,
+        "estimate": [
+          0.18014811939540756,
+          3.212975680798802
+        ],
+        "accepted": true,
+        "objective": 4706.30173205856,
+        "starts": [
+          {
+            "label": "recovery_11",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.18014811939540756,
+              3.212975680798802
+            ],
+            "objective": 4706.30173205856,
+            "raw_gradient": [
+              -0.00029740476747974753,
+              -7.089470033038005e-05
+            ],
+            "projected_gradient": [
+              -0.00029740476747974753,
+              -7.089470033038005e-05
+            ],
+            "projected_gradient_inf": 0.00029740476747974753,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_11",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.18014810742800005,
+              3.2129758008843647
+            ],
+            "objective": 4706.301732058568,
+            "raw_gradient": [
+              -0.0012641521607292816,
+              3.818604398931284e-05
+            ],
+            "projected_gradient": [
+              -0.0012641521607292816,
+              3.818604398931284e-05
+            ],
+            "projected_gradient_inf": 0.0012641521607292816,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 7.275957614183426e-12,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 12,
+        "estimate": [
+          0.17560219589616152,
+          3.185075696899368
+        ],
+        "accepted": true,
+        "objective": 4786.531209355208,
+        "starts": [
+          {
+            "label": "recovery_12",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.17560219589616152,
+              3.185075696899368
+            ],
+            "objective": 4786.531209355208,
+            "raw_gradient": [
+              -0.0011897100193891674,
+              4.334631539951514e-05
+            ],
+            "projected_gradient": [
+              -0.0011897100193891674,
+              4.334631539951514e-05
+            ],
+            "projected_gradient_inf": 0.0011897100193891674,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_12",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.17560219722764564,
+              3.185075496103887
+            ],
+            "objective": 4786.531209355211,
+            "raw_gradient": [
+              -0.0004528374120127409,
+              -8.19525250588649e-05
+            ],
+            "projected_gradient": [
+              -0.0004528374120127409,
+              -8.19525250588649e-05
+            ],
+            "projected_gradient_inf": 0.0004528374120127409,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 2.7284841053187847e-12,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 13,
+        "estimate": [
+          0.1742113433322409,
+          3.197459374000418
+        ],
+        "accepted": true,
+        "objective": 4732.404335022392,
+        "starts": [
+          {
+            "label": "recovery_13",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.17421131885518218,
+              3.1974590327467545
+            ],
+            "objective": 4732.404335022408,
+            "raw_gradient": [
+              -0.0007044036465231328,
+              -6.614720962213683e-05
+            ],
+            "projected_gradient": [
+              -0.0007044036465231328,
+              -6.614720962213683e-05
+            ],
+            "projected_gradient_inf": 0.0007044036465231328,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 1.6370904631912708e-11,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_13",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.1742113433322409,
+              3.197459374000418
+            ],
+            "objective": 4732.404335022392,
+            "raw_gradient": [
+              -0.0005439233063952997,
+              5.6931251743193465e-05
+            ],
+            "projected_gradient": [
+              -0.0005439233063952997,
+              5.6931251743193465e-05
+            ],
+            "projected_gradient_inf": 0.0005439233063952997,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 8,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 14,
+        "estimate": [
+          0.18231746926223963,
+          3.218058736215838
+        ],
+        "accepted": true,
+        "objective": 4718.620738993439,
+        "starts": [
+          {
+            "label": "recovery_14",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.18231746926223963,
+              3.218058736215838
+            ],
+            "objective": 4718.620738993439,
+            "raw_gradient": [
+              -8.749339031055568e-05,
+              -6.999137721113332e-05
+            ],
+            "projected_gradient": [
+              -8.749339031055568e-05,
+              -6.999137721113332e-05
+            ],
+            "projected_gradient_inf": 8.749339031055568e-05,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_14",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.18231761796391618,
+              3.2180583689878595
+            ],
+            "objective": 4718.620738994203,
+            "raw_gradient": [
+              0.008292863640235737,
+              -0.0007592645117501253
+            ],
+            "projected_gradient": [
+              0.008292863640235737,
+              -0.0007592645117501253
+            ],
+            "projected_gradient_inf": 0.008292863640235737,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 7.639755494892597e-10,
+            "kkt_accepted": true
+          }
+        ]
+      },
+      {
+        "rep": 15,
+        "estimate": [
+          0.1855333996542259,
+          3.287174765130103
+        ],
+        "accepted": true,
+        "objective": 4637.586355343231,
+        "starts": [
+          {
+            "label": "recovery_15",
+            "initial": [
+              0.1,
+              2.0
+            ],
+            "final": [
+              0.1855333996542259,
+              3.287174765130103
+            ],
+            "objective": 4637.586355343231,
+            "raw_gradient": [
+              -3.051354724448174e-05,
+              -1.6849796951936356e-05
+            ],
+            "projected_gradient": [
+              -3.051354724448174e-05,
+              -1.6849796951936356e-05
+            ],
+            "projected_gradient_inf": 3.051354724448174e-05,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 0.0,
+            "kkt_accepted": true
+          },
+          {
+            "label": "recovery_15",
+            "initial": [
+              0.3,
+              4.5
+            ],
+            "final": [
+              0.18553324494087922,
+              3.2871749491573636
+            ],
+            "objective": 4637.58635534391,
+            "raw_gradient": [
+              -0.00809923221822828,
+              0.0005689642120220219
+            ],
+            "projected_gradient": [
+              -0.00809923221822828,
+              0.0005689642120220219
+            ],
+            "projected_gradient_inf": 0.00809923221822828,
+            "active_bounds": [],
+            "success": true,
+            "status": 0,
+            "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+            "nit": 7,
+            "objective_distance": 6.793925422243774e-10,
+            "kkt_accepted": true
+          }
+        ]
+      }
+    ],
+    "mean_estimate": [
+      0.17864987343293934,
+      3.195582725292934
+    ],
+    "label": "finite repeated-sample recovery demonstration; not general estimator-performance or coverage support"
+  },
+  "versions": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.4.6",
+    "platform": "Windows-10-10.0.26200-SP0"
+  }
+}

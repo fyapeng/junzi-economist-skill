@@ -1,0 +1,17 @@
+{
+  "gradient_max_abs_error": 6.458583978741217e-08,
+  "population_jacobian_singular_values": [
+    0.2863054286196368,
+    0.1095206081370746,
+    0.001212830068909296,
+    0.00030521637235418663
+  ],
+  "population_jacobian_condition": 938.0408606894629,
+  "best_single_logit": [
+    -0.4201461362600272,
+    1.207543529297767
+  ],
+  "training_population_rmse": 0.00036881378943507,
+  "training_population_max_abs_gap": 0.0009231703825245963,
+  "note": "Full column rank on this dense design is numerical evidence of local population identification, not a global injectivity proof."
+}

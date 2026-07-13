@@ -1,0 +1,40 @@
+schema_version: 1
+execution_id: JE-X054
+case_id: JE-R44
+timestamp_utc: "2026-07-13T07:40:00Z"
+skill_commit: "f120979"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: transfer_profile_unrestricted
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Transfer unrestricted-likelihood LR reference, evaluated-grid set, profile acceptance, selected policy image, KKT, support, and branch rules to a new latent-type adoption model."
+expected:
+  - compute every conditional profile optimum and unrestricted reference correctly
+  - retain and reconcile all constrained starts and acceptance decisions
+  - independently recode and resolve the decisive likelihood objects from primitives
+  - map only selected in-set solutions and bound support claims
+forbidden:
+  - import production objectives into an independent verifier
+  - seed independent optimization from stored selected terminals
+  - call a grid set a continuous interval
+  - hide boundary or extrapolation limits
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "4e26b16b6dfd00494ce4bfdcf81a6c1449521942a802d29a00fc43e74af1f8eb"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/study.py, sha256: "5ab4125160024067b55dd7664962b49cac7b940fdd50efe0ad5a1e2ee23efca2"}
+  - {file: artifacts/profile.csv, sha256: "5800e7dc08fa5e58b89ed38ce36fc799ca1743c85a80a35ec75237f37aad1dfa"}
+  - {file: artifacts/verify.py, sha256: "e0529ee03d3d98de9547ea94844cb0df227f176047d372317ffba733c9cafbde"}
+  - {file: artifacts/verification.json, sha256: "7f2f4d65ef21c82ab864f859f09c9b096573312f126dc969335f0b342dab7ecb"}
+rubric:
+  - {criterion: profile objectives LR set and policy mapping, score: 2, max_score: 2}
+  - {criterion: starts KKT counts support and branch judgment, score: 2, max_score: 2}
+  - {criterion: independent verifier implementation, score: 0, max_score: 2}
+  - {criterion: independent audit recomputation, score: 2, max_score: 2}
+verdict: mixed
+limitations:
+  - the supplied verifier imported a production objective and used stored profile terminals as seeds
+  - numerical and economic conclusions nevertheless passed a fresh external audit

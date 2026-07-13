@@ -1,0 +1,358 @@
+{
+  "coverage": [
+    "raw controlled transitions and cell counts",
+    "empirical CCP and support",
+    "objectives plus independently central/projected gradients for every optimizer start",
+    "gradient-only acceptance and selected estimates",
+    "every row, boundary, slack, feasibility flag, objective, and count in the closed restricted grid",
+    "local population Jacobian, singular values, and rank",
+    "observed-policy labels versus midpoint model interpolation",
+    "transfer and real-resource accounting separately",
+    "cross-file SHA-256, byte sizes, and row counts"
+  ],
+  "failures": [],
+  "passed": true,
+  "recomputed": {
+    "ccp": [
+      [
+        0.3743455497382199,
+        0.5825991189427313
+      ],
+      [
+        0.4537559704732957,
+        0.6387959866220736
+      ]
+    ],
+    "counts": {
+      "policy_rows": 3,
+      "raw_rows": 6400,
+      "restricted_rows": 81,
+      "starts_total": 14
+    },
+    "hashes": {
+      "raw_primitives.npz": "186df73c84ebc6d332f5b1f003aab50e4202487135b7c5fd6036c6f95c8de823",
+      "restricted_grid.json": "069669cf5257cfea7fd5bf0c53c08ed86dae9acf1e77490e63bd2cd024e2cad9",
+      "starts.json": "cf8c044ec623c808124d7519e1e8535a80ef3f8631d2798ec9a56e4bf5f6dc90",
+      "summary.json": "22a37a822f2601cc59a81fa065ca4a4173d57f2f897acab99bf74c64e386c362"
+    },
+    "local_rank": {
+      "jacobian": [
+        [
+          0.22578069769074724,
+          -0.01810409696878512
+        ],
+        [
+          0.2090686429701005,
+          0.1443200288053781
+        ],
+        [
+          0.24226601849919313,
+          -0.021166057964649987
+        ],
+        [
+          0.19702042640123982,
+          0.12498226087953589
+        ]
+      ],
+      "rank": 2,
+      "singular_values": [
+        0.45233733197540255,
+        0.15751834099239276
+      ]
+    },
+    "policy_accounting": [
+      {
+        "government_transfer_per_period": 0.0,
+        "label": "observed_baseline",
+        "private_value_state0": 6.0897518613139425,
+        "real_resource_cost_per_period": 0.1246217567321132,
+        "social_resource_accounting_excludes_transfer": 0.1246217567321132,
+        "stationary_action1": 0.4154058557737107,
+        "stationary_state1": 0.23881717811775188,
+        "subsidy": 0.0,
+        "support": "observed"
+      },
+      {
+        "government_transfer_per_period": 0.004978559069918953,
+        "label": "midpoint_counterfactual",
+        "private_value_state0": 6.947705761417044,
+        "real_resource_cost_per_period": 0.0074678386048784295,
+        "social_resource_accounting_excludes_transfer": 0.0074678386048784295,
+        "stationary_action1": 0.024892795349594765,
+        "stationary_state1": 0.24318236225963333,
+        "subsidy": 0.2,
+        "support": "model_interpolation"
+      },
+      {
+        "government_transfer_per_period": 0.20055382192338775,
+        "label": "observed_high",
+        "private_value_state0": 7.893346756269002,
+        "real_resource_cost_per_period": 0.1504153664425408,
+        "social_resource_accounting_excludes_transfer": 0.1504153664425408,
+        "stationary_action1": 0.5013845548084693,
+        "stationary_state1": 0.21188487138456852,
+        "subsidy": 0.4,
+        "support": "observed"
+      }
+    ],
+    "restricted_counts": {
+      "boundary": 8,
+      "feasible": 36,
+      "infeasible": 45
+    },
+    "selected": {
+      "CCP_two_step": {
+        "accepted": true,
+        "central_gradient": [
+          9.310952009400351e-05,
+          5.7554006943950926e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.790771405543,
+        "projected_gradient": [
+          9.310952009400351e-05,
+          5.7554006943950926e-05
+        ],
+        "start_id": 4,
+        "tolerance": 0.0043077907714055425
+      },
+      "NFXP": {
+        "accepted": true,
+        "central_gradient": [
+          -8.822098607197403e-05,
+          7.6203781463703305e-06
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621473,
+        "projected_gradient": [
+          -8.822098607197403e-05,
+          7.6203781463703305e-06
+        ],
+        "start_id": 4,
+        "tolerance": 0.004307789798621473
+      }
+    },
+    "starts": [
+      {
+        "accepted": true,
+        "central_gradient": [
+          -3.2059688237495716e-06,
+          2.2477234509917736e-05
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621549,
+        "projected_gradient": [
+          -3.2059688237495716e-06,
+          2.2477234509917736e-05
+        ],
+        "start_id": 0,
+        "tolerance": 0.004307789798621549
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          4.39968061982654e-05,
+          -1.489525007722507e-05
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621887,
+        "projected_gradient": [
+          4.39968061982654e-05,
+          -1.489525007722507e-05
+        ],
+        "start_id": 1,
+        "tolerance": 0.004307789798621887
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -2.980868885060772e-05,
+          1.5586263597829626e-05
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621996,
+        "projected_gradient": [
+          -2.980868885060772e-05,
+          1.5586263597829626e-05
+        ],
+        "start_id": 2,
+        "tolerance": 0.004307789798621996
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          2.205524651799351e-06,
+          3.965667080302808e-05
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621515,
+        "projected_gradient": [
+          2.205524651799351e-06,
+          3.965667080302808e-05
+        ],
+        "start_id": 3,
+        "tolerance": 0.004307789798621515
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -8.822098607197403e-05,
+          7.6203781463703305e-06
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621473,
+        "projected_gradient": [
+          -8.822098607197403e-05,
+          7.6203781463703305e-06
+        ],
+        "start_id": 4,
+        "tolerance": 0.004307789798621473
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -6.893969839438796e-05,
+          1.8599863218432934e-05
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621713,
+        "projected_gradient": [
+          -6.893969839438796e-05,
+          1.8599863218432934e-05
+        ],
+        "start_id": 5,
+        "tolerance": 0.004307789798621713
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          0.00010752501111710443,
+          4.9695602786895144e-05
+        ],
+        "estimator": "NFXP",
+        "objective": 4306.789798621701,
+        "projected_gradient": [
+          0.00010752501111710443,
+          4.9695602786895144e-05
+        ],
+        "start_id": 6,
+        "tolerance": 0.004307789798621701
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -2.5715962692629543e-05,
+          -1.3432476405173347e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.790771405684,
+        "projected_gradient": [
+          -2.5715962692629543e-05,
+          -1.3432476405173347e-05
+        ],
+        "start_id": 0,
+        "tolerance": 0.004307790771405684
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -4.36102709500119e-05,
+          -7.936498343066357e-06
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.790771405603,
+        "projected_gradient": [
+          -4.36102709500119e-05,
+          -7.936498343066357e-06
+        ],
+        "start_id": 1,
+        "tolerance": 0.004307790771405602
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -6.523350748466328e-05,
+          -1.500824542686125e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.79077140562,
+        "projected_gradient": [
+          -6.523350748466328e-05,
+          -1.500824542686125e-05
+        ],
+        "start_id": 2,
+        "tolerance": 0.00430779077140562
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -3.4333424991928037e-06,
+          5.959097045154631e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.79077140569,
+        "projected_gradient": [
+          -3.4333424991928037e-06,
+          5.959097045154631e-05
+        ],
+        "start_id": 3,
+        "tolerance": 0.00430779077140569
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          9.310952009400351e-05,
+          5.7554006943950926e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.790771405543,
+        "projected_gradient": [
+          9.310952009400351e-05,
+          5.7554006943950926e-05
+        ],
+        "start_id": 4,
+        "tolerance": 0.0043077907714055425
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          7.021299097687006e-05,
+          -1.2317908077345107e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.790771405576,
+        "projected_gradient": [
+          7.021299097687006e-05,
+          -1.2317908077345107e-05
+        ],
+        "start_id": 5,
+        "tolerance": 0.004307790771405576
+      },
+      {
+        "accepted": true,
+        "central_gradient": [
+          -3.099103196291253e-05,
+          -5.029012545200085e-05
+        ],
+        "estimator": "CCP_two_step",
+        "objective": 4306.790771405808,
+        "projected_gradient": [
+          -3.099103196291253e-05,
+          -5.029012545200085e-05
+        ],
+        "start_id": 6,
+        "tolerance": 0.004307790771405808
+      }
+    ],
+    "transition": [
+      [
+        0.1723625557206538,
+        0.07829742511823437
+      ],
+      [
+        0.8435277382645804,
+        0.34754990925589835
+      ]
+    ]
+  }
+}

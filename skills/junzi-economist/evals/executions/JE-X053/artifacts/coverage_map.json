@@ -1,0 +1,115 @@
+{
+  "DGP has unconditional exact market count, exact IDs, three firms, zero selection/redraws": {
+    "passed": true,
+    "evidence": {
+      "count": 4000,
+      "shape": [
+        4000,
+        3
+      ]
+    }
+  },
+  "DGP equations and equilibrium outcomes reproduce from primitives": {
+    "passed": true,
+    "evidence": {
+      "q_max_diff": 0.0
+    }
+  },
+  "Instrument timing is executable: invalid instrument equals post-shock eta plus saved noise proxy and was excluded from reconstructed t2 rule": {
+    "passed": true,
+    "evidence": {
+      "noise_sd": 0.04985075438266283
+    }
+  },
+  "Valid instrument has sample near-exclusion, relevance, and recovers beta; invalid post-outcome instrument violates exclusion and distorts beta": {
+    "passed": true,
+    "evidence": {
+      "corr_valid_eta": 0.013601559298342012,
+      "corr_invalid_eta": 0.9924409483701151,
+      "beta_valid": 0.7196258126936521,
+      "beta_invalid": -0.2438869172965705
+    }
+  },
+  "All bounded valid estimator starts reach the independently solved root with raw and scaled residual acceptance": {
+    "passed": true,
+    "evidence": {
+      "independent_unconstrained_root": [
+        18.30006468092623,
+        0.7196258126936522,
+        3.9009829552525344,
+        0.8138124452218396
+      ],
+      "max_start_spread": 2.5224267119483557e-13
+    }
+  },
+  "All bounded invalid-instrument starts reach the same boundary candidate, while raw and scaled residual rules correctly reject it because the unconstrained moment root is outside the declared box": {
+    "passed": true,
+    "evidence": {
+      "independent_unconstrained_root": [
+        3.8478968487499134,
+        -0.24388691729657083,
+        8.72550649322977,
+        -0.005495055829637759
+      ],
+      "max_start_spread": 6.026059651276228e-10
+    }
+  },
+  "Every estimator trace row has independently reproduced raw and scaled residual vectors": {
+    "passed": true,
+    "evidence": {
+      "trace_rows": 613
+    }
+  },
+  "All equilibrium starts recover the unique positive bounded linear-system solution with raw and scaled residual acceptance": {
+    "passed": true,
+    "evidence": {
+      "terminal_count": 20
+    }
+  },
+  "Every equilibrium trace row has independently reproduced raw and scaled residual vectors": {
+    "passed": true,
+    "evidence": {
+      "trace_rows": 580
+    }
+  },
+  "Separate accounting levels and all three accounting identities reproduce": {
+    "passed": true,
+    "evidence": {
+      "recomputed": {
+        "revenue": 450274.0678393667,
+        "cost": 237372.48455230324,
+        "profit": 212901.5832870634,
+        "cs": 315357.8373235403,
+        "welfare": 528259.4206106038
+      }
+    }
+  },
+  "Simulation, equilibrium, and estimation isolated failures wrote diagnostics and exited nonzero": {
+    "passed": true,
+    "evidence": {
+      "manifest": [
+        {
+          "mode": "simulation",
+          "exit_code": 31,
+          "diagnostic_exists": true
+        },
+        {
+          "mode": "equilibrium",
+          "exit_code": 32,
+          "diagnostic_exists": true
+        },
+        {
+          "mode": "estimation",
+          "exit_code": 33,
+          "diagnostic_exists": true
+        }
+      ]
+    }
+  },
+  "Full-precision terminal vectors survived actual reload and reproduced both acceptance and rejection diagnostics": {
+    "passed": true,
+    "evidence": {
+      "checks": 32
+    }
+  }
+}

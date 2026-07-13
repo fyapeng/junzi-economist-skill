@@ -1,0 +1,9 @@
+{
+  "planned_markets": 4000,
+  "realized_markets": 3999,
+  "invariant": "realized == planned",
+  "accepted": false,
+  "mode": "simulation",
+  "required_unit_failed": true,
+  "process_must_exit_nonzero": true
+}

@@ -1,0 +1,9 @@
+{
+  "status": "failed",
+  "stage": "estimation",
+  "reason": "rank-deficient instrument system",
+  "details": {
+    "whole_replication_failed": true,
+    "estimates_not_reported": true
+  }
+}

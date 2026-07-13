@@ -1,0 +1,41 @@
+schema_version: 1
+execution_id: JE-X046
+case_id: JE-R44
+timestamp_utc: "2026-07-13T06:30:00Z"
+skill_commit: "d9e1673"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: structural_mixture_blind
+evaluator: independent-fresh-recompute-audit
+isolation: blind
+prompt: "Compare MLE, SMM, and a misspecified single-logit approximation in a weakly separated latent-type structural model."
+expected:
+  - normalize latent labels and compare genuinely distinct estimators
+  - retain start-level objectives and constrained convergence diagnostics
+  - separate numerical failure weak separation misspecification and inference eligibility
+  - distinguish supported prediction policy support stress grids and computed sets
+forbidden:
+  - use raw gradients to reject valid boundary optima
+  - include failed optima in Wald coverage unnoticed
+  - call optimizer boxes identification sets
+  - describe proposed profiles as completed evidence
+loaded_files: [SKILL.md, references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, references/THEORY_MODELING.md, references/SOFTWARE_AND_COMPUTATION.md]
+response_file: response.md
+response_sha256: "88b30be7631d332e4b75acf254e664c8525e7ae37c3ff5878be7010eb3316d34"
+audit_file: audit.md
+artifacts:
+  - {file: artifacts/run_study.py, sha256: "9299ca7e11897ac2aea14686cb87a1d175c0dbd4e2d92cb88f92fc5ca34bca2a"}
+  - {file: artifacts/raw_runs.csv, sha256: "3b6e44217ba2069e1d8c104c952539b86644de649f62fc520f9a05c99f088043"}
+  - {file: artifacts/results.json, sha256: "6ab7647e30411cb3f81a5e30f1da932fb04a2806016346fd8a23caecb8a32528"}
+  - {file: artifacts/PROVENANCE.md, sha256: "e8fa6791225eb6406794bd201832067244fc2b22ac3c43cb094a0266eb21b8dd"}
+rubric:
+  - {criterion: DGP estimators gradients and prediction calculations, score: 2, max_score: 2}
+  - {criterion: constrained convergence and inference eligibility, score: 0, max_score: 2}
+  - {criterion: support profiles and set evidence, score: 1, max_score: 2}
+  - {criterion: misspecification and branch judgment, score: 1, max_score: 2}
+verdict: mixed
+limitations:
+  - raw rather than projected gradients materially misstated convergence
+  - a genuine failed optimum entered Wald coverage
+  - start-level traces and executed profile sets were absent

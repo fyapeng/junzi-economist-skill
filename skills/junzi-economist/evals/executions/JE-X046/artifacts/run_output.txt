@@ -1,0 +1,66 @@
+   n  reps  mle_success_rate  mle_strict_convergence_rate  mle_boundary_rate  mle_median_gradnorm  mle_start_disagreement_rate  mle_b_bias  mle_b_rmse  mle_a1_bias  mle_a1_rmse  mle_d_bias  mle_d_rmse  mle_pi_bias  mle_pi_rmse  smm_success_rate  smm_strict_convergence_rate  smm_boundary_rate  smm_median_gradnorm  smm_start_disagreement_rate  smm_b_bias  smm_b_rmse  smm_a1_bias  smm_a1_rmse  smm_d_bias  smm_d_rmse  smm_pi_bias  smm_pi_rmse  mle_wald_eligible_rate  mle_b_coverage_conditional  mle_a1_coverage_conditional  mle_d_coverage_conditional  mle_pi_coverage_conditional  mix_rmse_train_mean  smm_rmse_train_mean  logit_rmse_train_mean  mix_rmse_extra_mean  smm_rmse_extra_mean  logit_rmse_extra_mean  mix_rmse_policy_mean  smm_rmse_policy_mean  logit_rmse_policy_mean  mix_bin_mae_mean  smm_bin_mae_mean  logit_bin_mae_mean  smm_targeted_weighted_norm_mean  mix_heldout_brier_mean  smm_heldout_brier_mean  logit_heldout_brier_mean  true_cf_participation_mean  true_cf_change_mean  true_transfer_per_person_mean  mix_cf_participation_mean  mix_cf_participation_sd  mix_cf_change_mean  mix_cf_change_sd  mix_transfer_per_person_mean  mix_transfer_per_person_sd  smm_cf_participation_mean  smm_cf_participation_sd  smm_cf_change_mean  smm_cf_change_sd  smm_transfer_per_person_mean  smm_transfer_per_person_sd  logit_cf_participation_mean  logit_cf_participation_sd  logit_cf_change_mean  logit_cf_change_sd  logit_transfer_per_person_mean  logit_transfer_per_person_sd
+ 500    40               1.0                        0.225                0.8             0.049561                         0.60    2.034901    2.436683     0.990963     1.146026    3.987560     4.00531    -0.141867     0.268630               1.0                          0.8              0.775         1.297697e-04                         0.55    1.594802    2.058824     1.069922     1.254811    3.526091    3.825327    -0.054016     0.254886                     0.2                    1.000000                     1.000000                    0.875000                        1.000             0.030626             0.033005               0.020764             0.064065             0.067731               0.025023              0.072291              0.071562                0.021452          0.018782          0.019155            0.025349                         0.090679                0.211659                0.212210                  0.209224                    0.908791             0.162143                       0.908791                   0.927922                 0.068513            0.157260          0.039259                      0.927922                    0.068513                   0.934835                 0.064975            0.154707          0.039181                      0.934835                    0.064975                     0.915831                   0.025094              0.155519            0.009893                        0.915831                      0.025094
+2500    40               1.0                        0.625                0.4             0.000022                         0.65    1.631655    2.130383     0.565461     0.696611    3.282787     3.38967    -0.114533     0.289687               1.0                          1.0              0.450         5.085993e-08                         0.55    1.457663    1.989328     0.588632     0.728888    3.122498    3.342408    -0.093760     0.287182                     0.6                    0.666667                     0.916667                    0.583333                        0.625             0.015479             0.015578               0.011662             0.034004             0.034714               0.017629              0.048151              0.049059                0.014926          0.006759          0.006848            0.009574                         0.033552                0.208131                0.208156                  0.207399                    0.908791             0.162143                       0.908791                   0.922657                 0.052312            0.157212          0.027283                      0.922657                    0.052312                   0.923067                 0.053369            0.157011          0.027331                      0.923067                    0.053369                     0.911508                   0.015496              0.158156            0.005883                        0.911508                      0.015496
+{
+  "true": {
+    "b": -0.1,
+    "a1": 1.25,
+    "d": 0.8,
+    "pi": 0.58
+  },
+  "sizes": [
+    500,
+    2500
+  ],
+  "seeds": [
+    24001,
+    24002,
+    24003,
+    24004,
+    24005,
+    24006,
+    24007,
+    24008,
+    24009,
+    24010,
+    24011,
+    24012,
+    24013,
+    24014,
+    24015,
+    24016,
+    24017,
+    24018,
+    24019,
+    24020,
+    24021,
+    24022,
+    24023,
+    24024,
+    24025,
+    24026,
+    24027,
+    24028,
+    24029,
+    24030,
+    24031,
+    24032,
+    24033,
+    24034,
+    24035,
+    24036,
+    24037,
+    24038,
+    24039,
+    24040
+  ],
+  "training_design": "w iid Uniform[-1,1]",
+  "heldout": "interpolation grid [-.75,.75]; extrapolation grid (1,1.5]",
+  "policy": "heldout w Uniform[1,1.5], subsidy shifts wage index by tau=1; transfers=tau times participation",
+  "seconds": 51.10852098464966,
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.4.6",
+  "pandas": "2.3.3",
+  "scipy": "1.17.1"
+}

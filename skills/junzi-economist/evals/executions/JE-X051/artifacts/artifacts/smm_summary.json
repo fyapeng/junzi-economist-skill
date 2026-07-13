@@ -1,0 +1,26 @@
+{
+  "model": "normal_random_coefficient_diagonal_weighted_smm",
+  "parameters": [
+    0.6020812512272393,
+    0.2541275366080129,
+    -0.709404094571187,
+    4.109798814168529e-06,
+    -0.5187524795186408,
+    -0.6030723987265248
+  ],
+  "criterion": 0.06096310347074079,
+  "train_nll_evaluation": 1749.3381851348558,
+  "validation_nll_evaluation": 526.0835097402319,
+  "projected_gradient_inf": 3.090375162454771e-05,
+  "numerically_accepted": true,
+  "moments": {
+    "count": 11,
+    "definition": "drive/transit shares plus probability-weighted cost, time, and reliability for all three alternatives",
+    "weighting": "diagonal inverse contribution standard deviations; criterion is 2,800 times mean squared standardized gap"
+  },
+  "policy": {
+    "baseline_drive_share": 0.10780438727768696,
+    "post_drive_share": 0.030166559943197658,
+    "change": -0.0776378273344893
+  }
+}
