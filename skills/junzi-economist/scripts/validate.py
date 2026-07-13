@@ -150,8 +150,8 @@ for phrase in ["Causal identification", "Structural modeling and estimation", "N
 
 cases = read("evals/cases.yaml")
 case_count = len(re.findall(r"(?m)^  - id: JE-R\d{2}$", cases))
-if case_count < 21:
-    fail(f"need at least twenty-one core eval cases; found {case_count}")
+if case_count < 24:
+    fail(f"need at least twenty-four core eval cases; found {case_count}")
 
 triggers = read("evals/triggers.yaml")
 trigger_count = len(re.findall(r"(?m)^  - id: JE-T\d{2}$", triggers))

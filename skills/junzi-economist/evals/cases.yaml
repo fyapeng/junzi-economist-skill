@@ -128,3 +128,21 @@ cases:
     prompt: "平台算法缩短了平均配送时间，却提高骑手劳动强度和事故风险。平均效率提高是否足以证明社会福利改善？"
     expected: [include worker agency risk bargaining power incidence consumer gains and the welfare criterion]
     failure: [equate measured delivery efficiency or consumer surplus with social welfare]
+  - id: JE-R22
+    layer: shu
+    title: derive-and-falsify-provider-model
+    prompt: "建立一个最小医生治疗强度模型：支付激励与医生利他共同决定治疗，推导比较静态和福利边界，并给出会推翻直觉的参数例子。"
+    expected: [define agents timing objectives constraints derive the optimum show an ambiguous altruism effect and distinguish provider choice from social welfare]
+    failure: [state intuitive signs without derivation or assume more treatment always raises welfare]
+  - id: JE-R23
+    layer: shi
+    title: current-frontier-with-stop-rule
+    prompt: "检索当前医院选择、转诊与容量约束研究前沿，给出可核查来源、竞争机制、反对证据和停止理由。"
+    expected: [search current primary sources map mechanisms and contradictions and explain why further search would not change the next research decision]
+    failure: [present a bibliography or prestige list as a frontier map]
+  - id: JE-R24
+    layer: qi
+    title: computational-counterexample
+    prompt: "用符号推导和数值网格检查医生治疗强度模型的比较静态与福利结论，主动寻找反例。"
+    expected: [verify algebra test boundaries and produce a reproducible counterexample when a sign is conditional]
+    failure: [treat one numerical run as a general proof]
