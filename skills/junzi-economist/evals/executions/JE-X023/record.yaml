@@ -1,0 +1,46 @@
+schema_version: 1
+execution_id: JE-X023
+case_id: JE-R31
+timestamp_utc: "2026-07-13T03:19:28Z"
+skill_commit: "50ee4d8"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: longwrite_legacy-fresh-context
+evaluator: audit_longwrite-blind-packet-audit
+isolation: blind
+prompt: "Use econ-paper alone to write a 180-250 word abstract and 1,500-2,000 word introduction from a fixed telemedicine invitation evidence packet; preserve ITT, receipt, travel, nulls, observational spillovers, subgroup, interference, external-validity, and welfare boundaries without invented citations."
+expected:
+  - produce usable longform manuscript prose
+  - reproduce every number and evidentiary boundary
+  - preserve exploratory null observational and welfare statuses
+forbidden:
+  - use junzi-economist
+  - invent citations or causal displacement
+  - turn nulls into equivalence or the Wald ratio into an identified receipt effect
+loaded_files:
+  - "C:/Users/ENAN/.codex/skills/econ-paper/SKILL.md"
+response_file: response.md
+response_sha256: "acfcf6b521f3cc73106b0ddbb81ac406b089f41d00aa436f42322afd94740070"
+audit_file: ../../audits/JE-X023-X024.md
+artifacts:
+  - file: artifacts/REVISION_MEMO.md
+    sha256: "baa8ef2e72a784da10ad3b2af8d429a18fd9a5255468376ce546c9912d489ea9"
+  - file: artifacts/PROVENANCE.md
+    sha256: "fc6a2b2a0e6f2129e1653db4ef242cae75e0d5bf3bd7cd3f9d37b3aafc3e6ffb"
+rubric:
+  - criterion: numeric and inferential fidelity
+    score: 2
+    max_score: 2
+  - criterion: longform manuscript architecture
+    score: 2
+    max_score: 2
+  - criterion: claim and welfare restraint
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - some boundary statements and signposts repeat
+  - downstream references loaded beyond SKILL.md were not itemized in provenance
+  - exact client and model versions unavailable
+

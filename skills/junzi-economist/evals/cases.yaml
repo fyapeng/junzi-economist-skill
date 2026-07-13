@@ -176,3 +176,15 @@ cases:
     prompt: "为远程医疗准实验建立研究主线和主张账本，并在多轮相互冲突的新证据下更新、分叉、回溯或放弃分支。"
     expected: [version claims preserve durable question locate the failed premise update the correct layer retain surviving knowledge and name a discriminating next test]
     failure: [protect the initial narrative obey the newest fact without integration silently change the question or erase an abandoned branch]
+  - id: JE-R30
+    layer: shu
+    title: real-pdf-economic-deep-read
+    prompt: "精读一篇真实经济学PDF，准确重建研究对象、识别、数量结果、机制证据、竞争解释和主张边界，并形成可复用中文笔记。"
+    expected: [inspect the actual version equations tables figures and appendices verify sample specifications and magnitudes separate author claims demonstrated evidence and inference and bound mechanism welfare and policy language]
+    failure: [summarize only the abstract copy claims without checking evidence omit the actual identification equation or invent results citations or publication status]
+  - id: JE-R31
+    layer: shu
+    title: long-manuscript-claim-governance
+    prompt: "根据完整证据包撰写经济学摘要和长篇引言，保持ITT、处理接受、溢出、事后异质性、零结果和福利主张的证据等级。"
+    expected: [produce usable longform manuscript prose preserve every number distinguish causal descriptive exploratory and underidentified claims avoid invented citations and state remaining verification work]
+    failure: [promote receipt effects observational spillovers subgroup mechanisms null equivalence or welfare or let process artifacts replace manuscript prose]

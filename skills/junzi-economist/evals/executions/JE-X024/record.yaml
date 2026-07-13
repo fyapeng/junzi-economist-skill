@@ -1,0 +1,49 @@
+schema_version: 1
+execution_id: JE-X024
+case_id: JE-R31
+timestamp_utc: "2026-07-13T03:19:51Z"
+skill_commit: "50ee4d8"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: longwrite_integrated-fresh-context
+evaluator: audit_longwrite-blind-packet-audit
+isolation: blind
+prompt: "Use Junzi Economist upstream and econ-paper downstream to write a 180-250 word abstract and 1,500-2,000 word introduction from a fixed telemedicine invitation evidence packet; preserve ITT, receipt, travel, nulls, observational spillovers, subgroup, interference, external-validity, and welfare boundaries and create an inspectable claim audit."
+expected:
+  - match or improve legacy manuscript fidelity
+  - add material claim governance without replacing prose with process
+  - preserve all numbers and boundaries
+forbidden:
+  - invent citations or findings
+  - overpromote receipt spillover subgroup null or welfare claims
+loaded_files:
+  - SKILL.md
+  - references/ECONOMIC_WRITING.md
+  - "C:/Users/ENAN/.codex/skills/econ-paper/SKILL.md"
+response_file: response.md
+response_sha256: "3dc99d9260f1af5f94734a47feff24784d4703da22a8bfcd5d03b3367f3c3df5"
+audit_file: ../../audits/JE-X023-X024.md
+artifacts:
+  - file: artifacts/CLAIM_AUDIT.md
+    sha256: "0709605ee1995df8612c5f761423a4a8896b62636a8de35ce91e1fe125c682e1"
+  - file: artifacts/REVISION_MEMO.md
+    sha256: "29ca7dddd032833440d63b9be6622a9a1fd382942059ac18b52972177411d94c"
+  - file: artifacts/PROVENANCE.md
+    sha256: "d04cd01eea4e80b7ffad0aad12cfe0715677d66bf1ddf78ae267cdfe4e61bd5f"
+rubric:
+  - criterion: numeric and inferential fidelity
+    score: 2
+    max_score: 2
+  - criterion: longform manuscript architecture
+    score: 2
+    max_score: 2
+  - criterion: material inspectable claim governance
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - manuscript improvement over the already strong legacy output was marginal
+  - title foregrounded displacement although displacement remained unidentified in the body
+  - downstream references loaded beyond the named skills were not itemized in provenance
+  - exact client and model versions unavailable

@@ -36,8 +36,8 @@ requirements:
     gap: "Dynamic programming, NFXP, optimizer, gradient, tolerance, and heldout checks now have a reproducible run; broader data-construction, alternative-algorithm, and failure-region evidence remain."
   writing_and_reading:
     status: proved
-    evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/runs/2026-07-13-round-05.md]
-    gap: "Long-form bilingual manuscript and real-PDF end-to-end comparison."
+    evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
+    gap: "Real 69-page PDF and long-manuscript comparisons now pass; bilingual, theory-paper, structural-paper, and public-explanation breadth remains for later expansion."
   mainline_claims_and_backtracking:
     status: proved
     evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md, evals/executions/JE-X015]
@@ -49,11 +49,11 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Nineteen strict raw executions now include positive, negative, failed coexistence, invalid precommit, and committed coexistence dispatch runs; exact client/model provenance and platform-level telemetry remain unavailable."
+    gap: "Twenty-three strict raw executions now include automatic routing, real PDF, long manuscript, legacy-only baselines, and integrated comparisons; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
-    evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020]
-    gap: "Committed routing now places Junzi Economist before econ-paper for live claims; real PDF and long-manuscript parity plus an explicit retirement decision remain."
+    evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
+    gap: "A documented coexistence decision replaces premature deletion: legacy baselines passed, integrated reading was not uniformly more accurate, and integrated writing added governance with marginal prose gain. Broader paper types and remaining legacy tools must pass before retirement."
   codex:
     status: proved
     evidence: [agents/openai.yaml, evals/executions/JE-X016, evals/executions/JE-X017, evals/executions/JE-X020]
@@ -72,4 +72,3 @@ release_gate:
     - real Claude Code runtime behavior
     - clean strict theory/frontier endpoint passes
     - public remote and anonymous installation test
-    - final legacy retirement or documented coexistence decision

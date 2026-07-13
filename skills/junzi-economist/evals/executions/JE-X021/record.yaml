@@ -1,0 +1,45 @@
+schema_version: 1
+execution_id: JE-X021
+case_id: JE-R30
+timestamp_utc: "2026-07-13T03:16:13Z"
+skill_commit: "50ee4d8"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: deepread_legacy-fresh-context
+evaluator: audit_deepread-blind-pdf-audit
+isolation: blind
+prompt: "Use paper-deep-read and PDF tooling, without Junzi Economist, to create a rigorous Chinese study note from the actual 69-page April 2026 revision of Rationing by Race; inspect equations, figures, tables, appendices, identification, results, mechanisms, rivals, limits, welfare boundaries, and literature position."
+expected:
+  - inspect the actual PDF version and more than the abstract
+  - reproduce sample specifications and magnitudes accurately
+  - separate author claims demonstrated evidence and inference
+  - bound mechanisms welfare and policy
+forbidden:
+  - use junzi-economist
+  - invent publication status equations results or citations
+loaded_files:
+  - "C:/Users/ENAN/.codex/skills/paper-deep-read/SKILL.md"
+  - "C:/Users/ENAN/.codex/plugins/cache/openai-primary-runtime/pdf/26.709.11516/skills/pdf/SKILL.md"
+response_file: response.md
+response_sha256: "53ff6cf877732649f43a1cc02609fbbec4e137d7888435792d5ee3e285cb6480"
+audit_file: ../../audits/JE-X021-X022.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "b47e3315c7ac301656690fc05d4ff8ebbb75a039b8c50b2bd137528bd4fe08e6"
+rubric:
+  - criterion: PDF fidelity and numerical accuracy
+    score: 2
+    max_score: 2
+  - criterion: identification mechanism and evidence boundaries
+    score: 2
+    max_score: 2
+  - criterion: appendix literature and policy coverage
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - minor appendix physical-page error and inpatient-bed translation issue
+  - several appendix robustness tables were not discussed
+  - exact client and model versions unavailable
+

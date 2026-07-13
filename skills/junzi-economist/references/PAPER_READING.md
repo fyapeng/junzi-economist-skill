@@ -38,6 +38,8 @@ Read beyond the abstract. Recover the relevant subset of:
 
 Preserve exact equations only when they carry the identification, model, or result. Define every term and explain the economic job of the equation. Do not copy notation that is irrelevant to the reading purpose.
 
+For empirical equations, transcribe the interaction order, variable transformation, reference group, and inference procedure exactly. Do not call a two-way interaction a triple difference merely because its coefficient compares two differences. Distinguish continuous variables from indicators such as above-median transforms, and heteroskedasticity-robust standard errors from clustering. Recheck these labels against the equation, table notes, and appendix before finalizing the note.
+
 ## Separate four voices
 
 Label distinctions that matter:

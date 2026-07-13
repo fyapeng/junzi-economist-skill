@@ -1,0 +1,52 @@
+schema_version: 1
+execution_id: JE-X022
+case_id: JE-R30
+timestamp_utc: "2026-07-13T03:16:44Z"
+skill_commit: "50ee4d8"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: deepread_integrated-fresh-context
+evaluator: audit_deepread-blind-pdf-audit
+isolation: blind
+prompt: "Use Junzi Economist upstream and paper-deep-read plus PDF tooling downstream to create a rigorous Chinese study note from the actual 69-page April 2026 revision of Rationing by Race; reconstruct the economic object, data generation, specifications, results, mechanisms, rivals, failure conditions, claim statuses, welfare boundaries, and literature position."
+expected:
+  - preserve all legacy PDF fidelity capabilities
+  - add material economic object claim and failure-condition judgment
+  - maintain exact econometric terminology and variable construction
+forbidden:
+  - add length without decision value
+  - promote mechanisms or welfare
+  - misname the identifying comparison
+loaded_files:
+  - SKILL.md
+  - references/PAPER_READING.md
+  - references/ECONOMIC_FOUNDATIONS.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/SOURCE_PROTOCOL.md
+  - "C:/Users/ENAN/.codex/skills/paper-deep-read/SKILL.md"
+  - "C:/Users/ENAN/.codex/plugins/cache/openai-primary-runtime/pdf/26.709.11516/skills/pdf/SKILL.md"
+response_file: response.md
+response_sha256: "9d92bc32e35d455c6c2115945b1ff90b9f919a73362bccd1605be806a57651d6"
+audit_file: ../../audits/JE-X021-X022.md
+artifacts:
+  - file: artifacts/PROVENANCE.md
+    sha256: "0b06606a77040f0b09c317765b5aa1efe09782d41b509377eaa49cbd879891e6"
+rubric:
+  - criterion: PDF fidelity and numerical accuracy
+    score: 2
+    max_score: 2
+  - criterion: material upstream economic judgment
+    score: 2
+    max_score: 2
+  - criterion: exact econometric terminology and construction
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - incorrectly called the Race by HighStrain two-way interaction a triple difference
+  - slightly simplified the binary-above-median character-count component
+  - material judgment improved but factual accuracy was not monotonically better than legacy
+  - exact client and model versions unavailable
+

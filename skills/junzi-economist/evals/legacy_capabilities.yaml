@@ -61,7 +61,14 @@ legacy_skills:
         reason: refer to source figures unless an artifact requires placeholders
 readiness:
   conceptual_absorption: passed
-  behavior_tests: [JE-F12, JE-F13, JE-F14]
-  tooling_parity: scoped
+  behavior_tests:
+    - JE-X021: "paper-deep-read alone passed a real 69-page PDF audit"
+    - JE-X022: "integrated deep read added material economic judgment but was mixed because it mislabeled a two-way interaction"
+    - JE-X023: "econ-paper alone passed the long-manuscript evidence-packet audit"
+    - JE-X024: "integrated long writing passed and added inspectable claim governance, with only marginal manuscript improvement"
+  tooling_parity: "real PDF and long-manuscript outputs tested; legacy-specific convenience and formatting surfaces remain available downstream"
   deletion_authorized: false
-  next_gate: validate legacy scripts as optional tools or replace them with smaller tested utilities
+  current_decision: "coexist: Junzi Economist governs live economic claims upstream; paper-deep-read and econ-paper remain optional downstream execution skills"
+  reason: "Both legacy baselines passed. Integrated outputs were not uniformly more accurate, and the writing gain was mainly auditable governance rather than a large prose-quality improvement."
+  reopening_condition_for_retirement: "Retest multiple theory, structural, empirical, bilingual, and public-explanation papers with no loss of method accuracy, then inventory any legacy scripts or format surfaces still used."
+  next_gate: "retain routing tests and remove a legacy skill only after its remaining unique capabilities are absent or reproduced"
