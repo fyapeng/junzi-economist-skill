@@ -1,0 +1,35 @@
+schema_version: 1
+economic_question:
+  object: ""
+  baseline_mechanism: ""
+  principal_uncertainty: ""
+  affected_people_or_groups: []
+bridges:
+  - bridge_id: B1
+    field: ""
+    bridge_job: "" # ontology | constraint | mechanism | measurement | identification | evaluation | rival
+    proposition_in_field_terms: ""
+    source_and_version: ""
+    jurisdiction_population_or_setting: ""
+    uncertainty_and_disagreement: []
+    economic_element_changed: ""
+    primary_translation: ""
+    alternative_translation: ""
+    evidence_role: "" # defeats_assumption | establishes_feasibility | documents_use | identifies_effect
+    observable_or_design_consequence: ""
+    claim_ids_changed: []
+    content_left_outside_model: ""
+revised_account:
+  agents_states_or_events: []
+  constraints_information_or_technology: []
+  institutions_and_interactions: []
+  dynamics_or_equilibrium: ""
+  measurement_or_estimand_changes: []
+  welfare_or_rights_changes: []
+  strongest_rival: ""
+  discriminating_observation: ""
+decision:
+  research_path_change: ""
+  expert_or_participant_input_needed: ""
+  unresolved_conflict: ""
+  next_action: ""

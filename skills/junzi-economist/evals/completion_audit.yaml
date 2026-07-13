@@ -51,9 +51,9 @@ requirements:
     evidence: [SKILL.md, references/BRANCH_AND_DECISION_PROTOCOL.md, evals/runs/2026-07-13-round-17.md, evals/cases.yaml]
     gap: "A real long-running failure exposed verification-branch capture and produced explicit principal-contradiction, three-tier verification, and two-iteration stopping rules. The observed failure motivates the rule but does not prove corrected behavior; test it once inside a future substantive research task rather than launching a dedicated meta-verification campaign."
   cross_disciplinary_correction:
-    status: proved
-    evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, evals/executions/JE-X013]
-    gap: "JE-X013 proves clinical and institutional evidence can reconstruct agents, states, measurement, welfare, and claim status; extend behavior coverage to legal, historical, and organizational corrections."
+    status: partial
+    evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, references/INTERDISCIPLINARY_BRIDGES.md, assets/templates/INTERDISCIPLINARY_BRIDGE.yaml, evals/executions/JE-X013, evals/cases.yaml]
+    gap: "Clinical and institutional evidence has changed agents, states, measurement, welfare, and claim status in a real execution. The runtime now adds a general jurisdiction-preserving bridge for legal, historical, sociological, psychological, spatial, computational, and environmental correction. General behavior remains unproved beyond health; let the next substantive non-health project test it rather than opening a standalone audit campaign."
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]

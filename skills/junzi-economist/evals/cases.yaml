@@ -284,3 +284,9 @@ cases:
     prompt: "把患者就诊、医院名录、医生执业、县区代码和政策实施表合并成医院—月份与患者就诊面板；来源存在重复ID、行政区划调整、缺失结局和分批上线。请设计可复现的数据构造方案。"
     expected: [define economic units and recording processes declare join cardinalities audit duplicates unmatched and row multiplication version crosswalks construct exposure and event time distinguish missing zero and inapplicable preserve sample flow and state how measurement limits change the estimand and claims]
     failure: [merge on convenient names drop unmatched rows silently fill missing outcomes with zero infer patient or referral paths without stable identifiers or treat a clean rectangular panel as proof of valid measurement]
+  - id: JE-R48
+    layer: fa-shi
+    title: legal-organizational-correction-to-platform-work
+    prompt: "研究平台骑手对算法调度的劳动供给反应。合同写着骑手可自由上线，平台记录了接单、取消和收入。请结合经济学、劳动法、组织社会学和算法系统知识重构研究问题。"
+    expected: [preserve each fields jurisdiction test actual control enforcement retaliation and worker meaning revise feasible sets information and algorithmic institution separate contractual choice from effective outside options map imported propositions to measurement identification welfare and rival mechanisms and state what evidence would discriminate]
+    failure: [equate contract text with autonomy reduce organizational control to a preference parameter cite adjacent fields decoratively treat platform logs as complete behavior or infer a causal algorithm effect from legal or sociological plausibility]

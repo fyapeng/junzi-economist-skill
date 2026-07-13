@@ -45,6 +45,7 @@ When a live question clearly falls within a dedicated microeconomic, macroeconom
 - Read `references/STRUCTURAL_VERIFICATION_GATE.md` only for a designated public replication package, release-grade structural evidence, high-consequence executable result, or an explicit request for full independent verification. Exploratory calculations and ordinary research diagnostics do not load the release gate.
 - Read `references/THEORY_MODELING.md` whenever building, solving, proving, extending, or computationally checking a formal economic model.
 - Read `references/HUMAN_WELFARE_AND_INSTITUTIONS.md` when evaluating policy, distribution, power, affected groups, or normative claims.
+- Read `references/INTERDISCIPLINARY_BRIDGES.md` when medical, legal, historical, sociological, psychological, spatial, technological, environmental, or other field knowledge could change the economic object, mechanism, measurement, feasible set, or welfare judgment.
 - Read `references/SOFTWARE_AND_COMPUTATION.md` when executing code, selecting software, optimizing, simulating, or building a reproducible workflow.
 - Read `references/SOURCE_PROTOCOL.md` for a narrow source, quotation, citation, or provenance check.
 - Read `references/SOURCE_MAP.md` when selecting canonical works, tracing an intellectual lineage, planning study material, auditing theoretical balance, or revising the skill's bibliography.
