@@ -252,8 +252,8 @@ cases:
     layer: shu
     title: dynamic-choice-transition-discount-identification
     prompt: "模拟并估计动态离散选择模型，同时处理受控转移、贴现因子、替代估计器、预测和政策反事实。"
-    expected: [estimate controlled transitions compare nested fixed point and CCP mappings separate grid sample and population identification retain all starts use constrained KKT diagnostics and bound private value transfer resource and welfare claims]
-    failure: [fix transitions at truth call a profile-grid minimum continuous point identification omit profile starts use raw gradients at bounds call a small recovery exercise general support or treat private integrated value as social welfare]
+    expected: [estimate controlled transitions compare nested fixed point and CCP mappings separate grid sample and population identification retain all starts use constrained KKT diagnostics bind policy keys values and support labels generate off-grid tests before claiming arbitrary policy input and bound private value transfer resource and welfare claims]
+    failure: [fix transitions at truth call a profile-grid minimum continuous point identification omit profile starts use raw gradients at bounds infer arbitrary-input support from saved policies treat modification times as authorship evidence or treat private integrated value as social welfare]
   - id: JE-R43
     layer: shu
     title: structural-demand-supply-equilibrium
