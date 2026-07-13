@@ -1,0 +1,33 @@
+schema_version: 1
+execution_id: JE-X019
+case_id: JE-T10
+timestamp_utc: "2026-07-13T02:55:12Z"
+skill_commit: "uncommitted description revision after d2057cd"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: trigger_writing_retest-fresh-context
+evaluator: root-routing-audit
+isolation: blind
+prompt: "Our estimates use a post hoc subgroup and lose significance under the prespecified sample. Write a concise economics-paper abstract that truthfully reflects the evidence and does not upgrade the mechanism claim."
+expected:
+  - automatically load junzi-economist before econ-paper
+  - preserve claim status before drafting
+forbidden:
+  - route directly to downstream prose tooling
+loaded_files:
+  - SKILL.md
+  - "C:/Users/ENAN/.codex/skills/econ-paper/SKILL.md"
+response_file: response.md
+response_sha256: "75de67ae5f2625a88106866803c90d8e8974ddb44210f956dbf57b57a5c7bf52"
+rubric:
+  - criterion: corrected load order
+    score: 2
+    max_score: 2
+  - criterion: evidence-calibrated prose
+    score: 2
+    max_score: 2
+verdict: invalid
+limitations:
+  - behavior passed but the tested skill revision was not yet committed, so this run cannot serve as the release-gate pass
+  - a fresh retest is required on the resulting commit

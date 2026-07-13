@@ -1,0 +1,42 @@
+schema_version: 1
+execution_id: JE-X016
+case_id: JE-T01
+timestamp_utc: "2026-07-13T02:52:50Z"
+skill_commit: "d2057cd"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: trigger_positive-fresh-context
+evaluator: root-routing-audit
+isolation: blind
+prompt: "A city congestion charge changed commuting, firm location, transit crowding, and housing demand. Help me form an economics research question, competing mechanisms, welfare object, and empirical-versus-structural research path. Do not assume that reduced car trips prove welfare improvement."
+expected:
+  - automatically load junzi-economist without explicit invocation
+  - route through economic mechanisms welfare and method choice
+  - load only relevant references
+forbidden:
+  - require explicit skill naming
+  - equate fewer car trips with welfare
+  - load every reference indiscriminately
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "0182eee6d1695eecffb4873fa6a6f3d36f497783a873bca6110dc072ece5a65b"
+rubric:
+  - criterion: automatic positive dispatch
+    score: 2
+    max_score: 2
+  - criterion: relevant progressive loading
+    score: 2
+    max_score: 2
+  - criterion: substantive economic judgment
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - provenance is self-reported by a fresh Codex subagent because platform-level dispatch telemetry is unavailable
+  - exact client and model versions unavailable
+

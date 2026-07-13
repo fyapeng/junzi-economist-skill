@@ -1,0 +1,34 @@
+schema_version: 1
+execution_id: JE-X018
+case_id: JE-T10
+timestamp_utc: "2026-07-13T02:52:58Z"
+skill_commit: "d2057cd"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: trigger_writing-fresh-context
+evaluator: root-routing-audit
+isolation: blind
+prompt: "Our estimates use a post hoc subgroup and lose significance under the prespecified sample. Write a concise economics-paper abstract that truthfully reflects the evidence and does not upgrade the mechanism claim."
+expected:
+  - automatically load junzi-economist before any downstream writing skill
+  - preserve exploratory and confirmatory claim status
+  - optionally use econ-paper only after claim adjudication
+forbidden:
+  - route directly to econ-paper without upstream claim governance
+  - promote the post hoc subgroup or mechanism
+loaded_files:
+  - "C:/Users/ENAN/.codex/skills/econ-paper/SKILL.md"
+response_file: response.md
+response_sha256: "646c5fafcda6d653b8e2a60eefd01300373879b578a3f4cf0a3bf703fd9c7e75"
+rubric:
+  - criterion: upstream automatic dispatch
+    score: 0
+    max_score: 2
+  - criterion: evidence-calibrated prose
+    score: 2
+    max_score: 2
+verdict: fail
+limitations:
+  - prose happened to remain honest but the intended replacement and routing behavior failed
+  - exact client and model versions unavailable

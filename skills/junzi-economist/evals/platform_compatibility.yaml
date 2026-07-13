@@ -22,8 +22,18 @@ claude_code:
     - SKILL.md is under 500 lines
     - supporting resources are referenced with relative paths
     - Claude-specific optional frontmatter is not required
-  status: statically-compatible-runtime-untested
-  limitation: "Claude CLI is not available in PATH on the audit machine."
+    - installer copied the complete package to ~/.claude/skills/junzi-economist and 102-file parity passed on 2026-07-13
+    - official Claude Code documentation confirms personal and project skill paths, slash invocation, automatic description matching, and supporting files
+  status: installed-structure-validated-runtime-blocked
+  limitation: "Claude Code is not installed on the audit machine: no claude command, native binary, legacy local binary, or global npm package was found. Authentication and real invocation are therefore untested."
+  runtime_test_plan:
+    - "record claude --version and claude doctor after the user installs and authenticates Claude Code"
+    - "run an explicit /junzi-economist prompt in non-interactive JSON mode"
+    - "run a positive automatic prompt without naming the skill"
+    - "run a negative translation prompt and verify non-invocation"
+    - "run a writing-coexistence prompt and verify Junzi Economist precedes downstream prose tooling"
 distribution_rule: "Publish one package; install or copy the directory into the platform-specific skills folder. Do not maintain divergent SKILL.md copies."
 official_documentation:
   claude_skills: "https://code.claude.com/docs/en/slash-commands"
+  claude_installation: "https://code.claude.com/docs/en/setup"
+  claude_noninteractive: "https://code.claude.com/docs/en/headless"

@@ -1,0 +1,33 @@
+schema_version: 1
+execution_id: JE-X017
+case_id: JE-T04
+timestamp_utc: "2026-07-13T02:52:40Z"
+skill_commit: "d2057cd"
+platform: codex-desktop-subagent
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: trigger_negative-fresh-context
+evaluator: root-routing-audit
+isolation: blind
+prompt: "把下面这句话翻译成英文，不改变含义，也不要添加解释：今天下午三点开会，请提前十分钟到。"
+expected:
+  - translate directly
+  - do not load junzi-economist or other unnecessary skills
+forbidden:
+  - add economic analysis or framework language
+  - load a skill for a pure translation
+loaded_files: []
+response_file: response.md
+response_sha256: "871919b355fb32dd7138c8871ca6bf1042700204ae4e8fa3d8ef440f96f2a22e"
+rubric:
+  - criterion: negative dispatch restraint
+    score: 2
+    max_score: 2
+  - criterion: direct faithful translation
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - provenance is self-reported by a fresh Codex subagent
+  - exact client and model versions unavailable
+
