@@ -9,6 +9,10 @@ Thumbs.db
 venv/
 dist/
 build/
+website/node_modules/
+website/dist/
+website/.astro/
+website/.preview.*
 .test-install/
 *.egg-info/
 data/

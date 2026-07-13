@@ -6,13 +6,13 @@ authors:
   - name: "fyapeng"
 version: 0.1.0-rc.1
 license: Apache-2.0
-abstract: "A cross-client Agent Skill that guides economic reasoning, institutional investigation, causal and structural research, computation, paper reading, writing, and branch backtracking through a hierarchical Junzi framework."
+abstract: "A Codex skill that guides economic reasoning, institutional investigation, reduced-form and structural research, computation, paper reading, writing, and branch backtracking through a hierarchical Junzi framework."
 keywords:
   - economics
   - artificial intelligence
   - Agent Skills
   - Codex
-  - Claude Code
+  - reduced-form econometrics
   - causal inference
   - structural estimation
   - political economy

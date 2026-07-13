@@ -75,6 +75,7 @@ Use these as rival and complementary accounts. Do not collapse Marxian productio
 ## Econometrics, causal inference, and structural work
 
 - Fumio Hayashi, *Econometrics* (Princeton University Press, 2000), Bruce E. Hansen, *Econometrics* (2022), and Jeffrey M. Wooldridge, *Econometric Analysis of Cross Section and Panel Data*, 2nd ed. (MIT Press, 2010): probability, estimation, identification, and inference.
+- Joshua D. Angrist and Jörn-Steffen Pischke, *Mostly Harmless Econometrics* (Princeton University Press, 2009) and *Mastering 'Metrics* (Princeton University Press, 2014): transparent reduced-form research designs, credible variation, and the limits of identified margins.
 - Guido W. Imbens and Donald B. Rubin, *Causal Inference* (Cambridge University Press, 2015), and Miguel Hernán and James Robins, *Causal Inference: What If* (2020): potential outcomes, assignment, longitudinal treatment, and target-trial reasoning.
 - Daniel McFadden’s discrete-choice work, Kenneth Train’s *Discrete Choice Methods with Simulation* (2nd ed., 2009), Steven Berry, James Levinsohn, and Ariel Pakes (1995), and John Rust (1987): choice, demand, dynamic decisions, identification, estimation, and counterfactuals.
 - Kenneth L. Judd, *Numerical Methods in Economics* (MIT Press, 1998; paperback 2023): approximation, optimization, integration, dynamic programming, and computational equilibrium.

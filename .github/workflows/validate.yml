@@ -24,6 +24,11 @@ jobs:
           python scripts/validate_eval_records.py
           python evals/fixtures/provider_model_check.py
           python -m compileall -q skills/junzi-economist/scripts scripts
+      - name: Build website
+        working-directory: website
+        run: |
+          npm ci
+          npm run build
 
   install:
     strategy:
@@ -43,31 +48,26 @@ jobs:
           HOME: ${{ runner.temp }}/junzi-home
         run: |
           chmod +x install.sh
-          ./install.sh both
+          ./install.sh
           python "$HOME/.codex/skills/junzi-economist/scripts/validate.py"
-          python "$HOME/.claude/skills/junzi-economist/scripts/validate_compatibility.py"
           python scripts/verify_install.py --source skills/junzi-economist --installed "$HOME/.codex/skills/junzi-economist"
-          python scripts/verify_install.py --source skills/junzi-economist --installed "$HOME/.claude/skills/junzi-economist"
           touch "$HOME/.codex/skills/junzi-economist/keep-marker"
-          if ./install.sh both 2>/dev/null; then exit 1; fi
+          if ./install.sh 2>/dev/null; then exit 1; fi
           test -f "$HOME/.codex/skills/junzi-economist/keep-marker"
-          ./install.sh both --force
+          ./install.sh --force
           test ! -f "$HOME/.codex/skills/junzi-economist/keep-marker"
       - name: Test PowerShell installer
         if: runner.os == 'Windows'
         shell: pwsh
         run: |
           $Root = Join-Path $env:RUNNER_TEMP 'junzi-home'
-          .\install.ps1 -Target both -DestinationRoot $Root
+          .\install.ps1 -DestinationRoot $Root
           $Codex = Join-Path $Root '.codex\skills\junzi-economist'
-          $Claude = Join-Path $Root '.claude\skills\junzi-economist'
           python "$Codex\scripts\validate.py"
-          python "$Claude\scripts\validate_compatibility.py"
           python .\scripts\verify_install.py --source .\skills\junzi-economist --installed $Codex
-          python .\scripts\verify_install.py --source .\skills\junzi-economist --installed $Claude
           Set-Content -LiteralPath "$Codex\keep-marker" -Value 'preserve'
           $Blocked = $false
-          try { .\install.ps1 -Target both -DestinationRoot $Root } catch { $Blocked = $true }
+          try { .\install.ps1 -DestinationRoot $Root } catch { $Blocked = $true }
           if (-not $Blocked -or -not (Test-Path -LiteralPath "$Codex\keep-marker")) { throw 'Overwrite protection failed' }
-          .\install.ps1 -Target both -DestinationRoot $Root -Force
+          .\install.ps1 -DestinationRoot $Root -Force
           if (Test-Path -LiteralPath "$Codex\keep-marker") { throw 'Force replacement failed' }

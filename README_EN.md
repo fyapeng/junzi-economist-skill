@@ -1,66 +1,43 @@
 # Junzi Economist
 
-Junzi Economist is an Agent Skill for Codex and Claude Code. It treats economic theory as the foundation for research judgment, investigates concrete institutions and evidence before selecting methods, and uses data, software, models, and writing as subordinate instruments.
+Junzi Economist is a Codex skill for economic research. It starts from real economic problems and human consequences, uses microeconomic and macroeconomic theory to define the object, investigates institutions and data generation, and then chooses evidence and methods.
 
 Its hierarchy is:
 
-`Dao (direction) → Fa (economic law) → Shi (concrete situation) → Shu (research practice) → Qi (instruments) → practice and revision`
+`Dao (direction) → Fa (economic reasoning) → Shi (concrete situation) → Shu (research practice) → Qi (instruments) → practice and revision`
 
-The skill supports microeconomics, macroeconomics, political economy, causal inference, structural estimation, computation, welfare analysis, academic-paper reading, and evidence-calibrated writing. It records claim status, preserves competing explanations, and backtracks when a branch loses a required premise.
+For applied work, the default evidence order is:
+
+`economic question → theory and institutions → transparent facts → reduced-form econometrics → structural or predictive extension when required`
+
+ANOVA is descriptive unless an identification argument adds more. A/B language requires genuine randomized assignment and a well-defined estimand. Machine learning serves prediction, measurement, nuisance estimation, or disciplined heterogeneity analysis; predictive accuracy alone does not establish causality, mechanism, welfare, or policy invariance. Structural estimation enters when primitives, equilibrium responses, welfare, or unsupported counterfactuals require it.
+
+The skill also separates the active research state from project memory. Current user decisions, root status, and the declared mainline govern ongoing work; archives, generated outputs, and abandoned models remain evidence without silently reactivating themselves.
 
 ## Install
 
-This is currently a local release candidate. The GitHub commands below become directly usable after the `fyapeng/junzi-economist-skill` remote is published.
+```powershell
+npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a codex --copy -y
+```
 
-Windows PowerShell:
+Or clone and install:
 
 ```powershell
 git clone https://github.com/fyapeng/junzi-economist-skill.git
 Set-Location .\junzi-economist-skill
-.\install.ps1 -Target codex
+.\install.ps1
 ```
 
-Use `claude` or `both` as the target when needed.
-
-macOS or Linux:
-
-```bash
-git clone https://github.com/fyapeng/junzi-economist-skill.git
-cd junzi-economist-skill
-./install.sh codex
-```
-
-The runtime package is stored at `skills/junzi-economist/`. Manual installation copies this directory to `~/.codex/skills/` or `~/.claude/skills/`.
-
-Evaluation cases, historical executions, and development checks remain in the repository-level [`evals/`](evals/README.md) and `scripts/` directories. They are not copied into a user's skill directory.
-
-The installers preflight every selected destination before making changes. Existing installations are preserved unless `-Force` on PowerShell or `--force` on the shell installer is supplied. Forced updates stage and verify the new package, retain a temporary backup, and restore the previous installation if the transaction fails.
+On macOS or Linux, run `./install.sh`. The runtime package is stored at `skills/junzi-economist/`; repository-level evaluations are not copied into the personal skill directory.
 
 ## Use
 
-Codex:
-
 ```text
-$junzi-economist Review the economic object, identification, and policy counterfactual in this model.
+$junzi-economist Build a reduced-form evidence mainline for this hospital-performance question from economic theory, institutions, and credible variation.
 ```
 
-Claude Code:
+Relevant research requests may also trigger the skill automatically. Routine formatting, citation conversion, and literal translation remain lightweight.
 
-```text
-/junzi-economist Assess whether this institutional change supports a credible economic study.
-```
-
-Relevant research requests may also trigger the skill automatically. Routine formatting, citation-style conversion, and literal translation remain lightweight.
-
-## Validate
-
-```text
-python skills/junzi-economist/scripts/validate.py
-python skills/junzi-economist/scripts/validate_compatibility.py
-python scripts/test_utilities.py
-python scripts/validate_eval_records.py
-```
-
-Codex structure and behavioral tests currently pass. Claude Code static compatibility follows the official skill layout; an independent Claude runtime test remains pending. The installed runtime directory includes its Apache-2.0 license.
+Interactive website: [fyapeng.com/junzi-economist-skill](https://fyapeng.com/junzi-economist-skill/)
 
 Maintained by [fyapeng](https://github.com/fyapeng). Licensed under Apache-2.0.

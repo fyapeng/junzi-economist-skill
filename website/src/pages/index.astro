@@ -1,0 +1,92 @@
+---
+import "../styles/global.css";
+
+const base = import.meta.env.BASE_URL;
+const repo = "https://github.com/fyapeng/junzi-economist-skill";
+const layers = [
+  ["道", "DAO", "立其问", "什么值得研究？", "真实的人、制度、物质条件、分配后果与人的发展"],
+  ["法", "FA", "明其理", "经济对象怎样运行？", "主体、约束、信息、激励、互动、均衡、动态与福利"],
+  ["势", "SHI", "察其实", "具体情势怎样？", "历史阶段、制度执行、市场边界、数据生成与学术前沿"],
+  ["术", "SHU", "辨其证", "怎样形成可信研究？", "测量、简约式识别、理论、结构估计、写作与回溯"],
+  ["器", "QI", "驭其用", "借助什么完成？", "数据、文献、软件、算法、求解器与计算设施"],
+];
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="君子经济学家：从经济理论、制度与简约式计量证据出发的 Codex 研究技能。" />
+    <meta name="theme-color" content="#f3ecdf" />
+    <link rel="icon" type="image/svg+xml" href={`${base}economist-mark.svg`} />
+    <title>君子经济学家 · Junzi Economist</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href={base}><span>经</span><b>君子经济学家<small>JUNZI ECONOMIST</small></b></a>
+      <nav><a href="#hierarchy">五层</a><a href="#evidence">证据</a><a href="#roles">边界</a><a href="#install">安装</a></nav>
+      <a class="github" href={repo}>GitHub ↗</a>
+    </header>
+
+    <main>
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> ECONOMICS BEFORE METHODS</p>
+          <h1>让经济学<br /><em>决定方法</em></h1>
+          <p class="lead">从真实经济问题出发，以理论定对象，以制度察情势，以简约式证据辨机制，再为必要的参数、均衡、福利与反事实引入结构。</p>
+          <div class="actions"><a class="primary" href="#evidence">查看研究次序</a><a href={`${repo}/blob/main/skills/junzi-economist/SKILL.md`}>阅读技能核心 ↗</a></div>
+          <p class="traits">问题意识 · 前沿视野 · 人文关怀 · 计量判断 · 结构能力</p>
+        </div>
+        <div class="hero-figure" aria-label="研究路径图">
+          <div class="seal"><span>经</span><small>ECONOMIST</small></div>
+          <svg viewBox="0 0 520 520" aria-hidden="true"><circle cx="260" cy="260" r="205"/><circle cx="260" cy="260" r="148"/><path d="M103 336C165 230 225 302 282 195S402 155 430 208"/><path d="M104 380h326"/></svg>
+          <div class="figure-note"><b>经世济民</b><span>理论扎根于现实，方法服务于问题</span></div>
+        </div>
+      </section>
+
+      <section id="hierarchy" class="hierarchy">
+        <div class="shell">
+          <div class="heading"><p class="eyebrow"><i></i> DAO · FA · SHI · SHU · QI</p><h2>五层相生<br /><em>由内而外形成研究能力</em></h2></div>
+          <div class="layers">
+            {layers.map(([key, latin, title, question, text], i) => <article style={`--i:${i}`}><span class="number">0{i+1}</span><div class="round">{key}</div><p>{latin}</p><h3>{title}</h3><b>{question}</b><small>{text}</small></article>)}
+          </div>
+        </div>
+      </section>
+
+      <section id="evidence" class="evidence shell">
+        <div class="heading"><p class="eyebrow"><i></i> EVIDENCE ORDER</p><h2>证据有次序<br /><em>复杂度需要理由</em></h2><p>应用研究先建立能够被理解、质疑和复核的事实与识别，再增加必要的模型负担。</p></div>
+        <div class="evidence-path">
+          <article><span>01</span><b>经济问题</b><small>谁在何种约束下作出什么选择，后果由谁承担？</small></article>
+          <article><span>02</span><b>理论与制度</b><small>哪些机制竞争，制度怎样改变激励、信息与均衡？</small></article>
+          <article><span>03</span><b>透明事实</b><small>测量对象、分布、趋势、转移、边界与数据生成。</small></article>
+          <article class="focus"><span>04</span><b>简约式证据</b><small>明确 estimand、可信变异、识别假设、支持范围与威胁。</small></article>
+          <article><span>05</span><b>必要扩展</b><small>参数、均衡、福利或样本外反事实提出要求时进入结构。</small></article>
+        </div>
+        <div class="equation"><span>问题</span><i>→</i><span>理论制度</span><i>→</i><span>事实</span><i>→</i><strong>简约式计量</strong><i>→</i><span>结构*</span><small>* 非默认终点</small></div>
+      </section>
+
+      <section id="roles" class="roles">
+        <div class="shell roles-layout">
+          <div class="heading light"><p class="eyebrow"><i></i> METHOD ROLES</p><h2>方法各安其位<br /><em>不让工具生成问题</em></h2><p>熟悉、方便和新颖都不是证据。每一种方法都要说明它改变哪一项经济判断。</p></div>
+          <div class="role-cards">
+            <article><p>ANOVA</p><h3>描述差异</h3><span>定位变异来源与组间差别</span><b>不能独自识别因果或机制</b></article>
+            <article><p>A / B</p><h3>真实实验</h3><span>核对随机化、分配单位、干扰与依从</span><b>观测组比较不因改名成为实验</b></article>
+            <article><p>MACHINE LEARNING</p><h3>辅助推断</h3><span>预测、测量、辅助函数与异质性</span><b>预测精度不等于因果与福利</b></article>
+            <article><p>STRUCTURAL</p><h3>必要反事实</h3><span>原语、均衡响应、福利与样本外政策</span><b>先说明简约式证据缺少什么</b></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="mainline shell">
+        <div class="mainline-copy"><p class="eyebrow"><i></i> ACTIVE RESEARCH STATE</p><h2>档案保存经验<br /><em>不接管现在</em></h2><p>最新明确目标、根目录状态和当前研究主线决定正在推进什么。旧稿、归档、历史输出与废弃模型可供追索，却不会凭数量、日期或技术复杂度自动复活。</p></div>
+        <div class="state-board"><div><b>当前主线</b><span>目标 · 状态 · 计划</span></div><div><b>项目记忆</b><span>旧稿 · 输出 · 失败分支</span></div><p>篇幅更多　·　更新更晚　·　技术更复杂<br /><strong>≠ 当前路线</strong></p></div>
+      </section>
+
+      <section id="install" class="install">
+        <div class="shell install-grid"><div><p class="eyebrow"><i></i> BEGIN THE PRACTICE</p><h2>安装到 Codex<br /><em>开始经济学研究</em></h2><p>本项目当前专注于 Codex skill。运行包与开发评测分离，安装不会复制历史测试记录。</p></div><div class="terminal"><p>从 GitHub 安装</p><code>npx -y skills add fyapeng/junzi-economist-skill --skill junzi-economist -g -a codex --copy -y</code><div><a href={repo}>查看 GitHub 仓库</a><a href={`${repo}/blob/main/README.md#安装`}>其他安装方式 ↗</a></div></div></div>
+      </section>
+    </main>
+
+    <footer><div class="footer-mark">经</div><p>从现实问题出发，以经济理论明辨机制，以简约式证据建立主线；必要时善用结构与计算，受阻时敢于回溯。</p><div>© 2026 fyapeng　<a href={repo}>GitHub</a>　Apache 2.0</div></footer>
+  </body>
+</html>

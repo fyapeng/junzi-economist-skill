@@ -2,6 +2,14 @@ schema_version: 1
 suite: junzi-economist-core
 purpose: "Forward-test economic reasoning before method and tool selection."
 cases:
+  - id: JE-METHOD-ORDER-01
+    title: hospital-performance-reduced-form-mainline
+    prompt: "医院管理绩效项目里已有方差分析、A/B test、机器学习预测和结构模型材料。请决定当前研究主线和下一步方法。项目根目录说明研究已经重启，旧模型仅作档案。"
+    expected:
+      - "以当前项目声明和用户目标判断活动主线，不按旧材料数量或复杂度继承路线"
+      - "先明确医院、管理者、约束、制度与经济机制，再寻找可识别政策或行为边际的简约式计量证据"
+      - "将方差分析视为描述，将 A/B test 限于真实随机化，将机器学习限定为预测、测量、异质性或辅助估计角色"
+      - "只有反事实、均衡、福利或行为参数确有需要时才进入结构模型"
   - id: JE-R01
     layer: fa
     title: data-field-does-not-create-question

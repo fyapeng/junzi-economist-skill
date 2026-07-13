@@ -29,6 +29,8 @@ If two consecutive iterations change only metadata, verifier coverage, wording, 
 
 For a consequential multi-stage project, use `assets/templates/RESEARCH_MAINLINE.yaml` as the compact handoff among theory, situation, measurement, design, computation, claims, and branch decisions. Update it only when a material question, mechanism, target, evidence path, claim status, or next action changes. Do not complete it as a ceremonial checklist or repeat its full contents in user-facing prose.
 
+Before inheriting a project's existing analysis, identify its active research state. Give priority to the user's latest explicit decision, the root project status, and the declared current mainline. Treat `archive`, `legacy`, `output`, old manuscripts, generated reports, and abandoned branches as evidence or memory unless they are explicitly reactivated. File count, recency, technical detail, or prior completion does not make a branch authoritative. If the stated mainline and the surrounding artifacts conflict, report the conflict and reconstruct the smallest current economic question before continuing.
+
 ## Load only the needed knowledge
 
 This file is the runtime core. Do not load every reference.
@@ -93,16 +95,23 @@ Use `assets/templates/CLAIM_LEDGER.yaml` for consequential or multi-claim projec
 
 ## Choose methods after theory and situation
 
+For applied economic research, use this default evidentiary order unless the target itself requires another path:
+
+`economic question → theory and institutions → transparent facts → econometric reduced-form evidence → structural or predictive extension only when required`
+
 Select the least elaborate method that can answer the actual question:
 
 - Use description when a new fact or measurement is itself the contribution.
-- Use reduced-form causal designs for credible effects within an identified margin.
+- Prefer econometric reduced-form designs when the immediate question concerns a causal effect, behavioral response, institutional margin, or policy change that observed variation can identify. Establish the effect and its support before adding a model that extrapolates beyond it.
 - Use theory when disciplined abstraction clarifies mechanisms, tradeoffs, or equilibrium.
 - Use structural estimation when the target requires behavioral primitives, equilibrium responses, policy-invariant parameters, or counterfactuals unavailable from reduced-form variation alone.
 - Use calibration or quantitative theory when transparent disciplined magnitudes answer the question better than weakly identified estimation.
+- Use machine learning for prediction, measurement, nuisance estimation, treatment-effect heterogeneity, or disciplined model comparison only when that role serves the economic estimand. Predictive performance does not establish causality, mechanism, welfare, or policy invariance.
 - Combine approaches only when each has a distinct inferential role.
 
 State the estimand, identifying assumptions, variation, extrapolation, and validation burden before presenting a preferred estimator. Complexity and novelty are costs unless they add identification or policy value.
+
+Do not let familiar generic procedures choose the research question. ANOVA can summarize variation but does not by itself identify an economic mechanism or causal effect. An A/B test is appropriate only when treatment is genuinely randomized and its assignment unit, estimand, interference, compliance, and institutional implementation match the economic question. When those conditions do not hold, translate the problem into the relevant econometric design rather than relabeling an observational comparison as an experiment.
 
 ## Separate exploration, confirmation, and writing
 

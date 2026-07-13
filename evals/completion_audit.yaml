@@ -66,16 +66,11 @@ requirements:
     status: proved
     evidence: [agents/openai.yaml, evals/executions/JE-X016, evals/executions/JE-X017, evals/executions/JE-X020]
     gap: "Fresh-context tests prove positive auto-invocation, negative restraint, and upstream-before-writing order; provenance is self-reported because dispatch telemetry is unavailable."
-  claude_code:
-    status: partial
-    evidence: [evals/platform_compatibility.yaml, skills/junzi-economist/scripts/validate_compatibility.py]
-    gap: "The package is installed at the official personal skill path with parity and current documentation confirms the layout; Claude Code itself is not installed or authenticated, so real discovery, invocation, non-trigger, routing, and backtracking runs remain."
   public_release:
-    status: missing
-    evidence: ["local repository release candidate with a separated runtime package", evals/README.md, "bounded credential and personal-data scan on 2026-07-13"]
-    gap: "The authenticated GitHub account is fyapeng and fyapeng/junzi-economist-skill does not yet exist. Public remote creation, anonymous clone test, v0.1.0 tag, release date, and remote checks require an explicit publication decision."
+    status: partial
+    evidence: ["Codex-only release candidate with a separated runtime package", evals/README.md, "bounded credential and personal-data scan on 2026-07-13"]
+    gap: "Publish the authorized public remote, enable Pages, and complete one anonymous installation check. A version tag can follow a later release decision."
 release_gate:
   ready: false
   blockers:
-    - real Claude Code runtime behavior
     - public remote and anonymous installation test

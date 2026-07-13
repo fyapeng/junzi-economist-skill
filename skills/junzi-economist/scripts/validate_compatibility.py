@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate the shared Junzi Economist package against Codex/Claude skill constraints."""
+"""Validate Junzi Economist's portable Codex skill package."""
 from __future__ import annotations
 import re
 import sys
@@ -24,17 +24,17 @@ if fields != ["name", "description"]:
 name_match = re.search(r"(?m)^name:\s*([^\s]+)\s*$", frontmatter)
 name = name_match.group(1) if name_match else ""
 if not re.fullmatch(r"[a-z0-9-]{1,64}", name):
-    errors.append("name is not Claude-compatible lowercase/hyphen form of at most 64 characters")
+    errors.append("name must use lowercase letters, digits, and hyphens")
 
 description_match = re.search(r'(?ms)^description:\s*"(.*?)"\s*$', frontmatter)
 description = description_match.group(1) if description_match else ""
 if not description:
     errors.append("description must be a quoted one-line string")
-elif len(description) > 1536:
-    errors.append(f"description exceeds Claude listing budget: {len(description)} characters")
+elif len(description) > 2048:
+    errors.append(f"description is unusually long: {len(description)} characters")
 
 if len(text.splitlines()) >= 500:
-    errors.append("SKILL.md exceeds the shared 500-line guidance")
+    errors.append("SKILL.md exceeds the project's 500-line runtime budget")
 
 resource_pattern = re.compile(r"`((?:references|assets|scripts)/[^`]+)`")
 for relative in sorted(set(resource_pattern.findall(text))):
@@ -54,8 +54,7 @@ if errors:
     sys.exit(1)
 
 print(
-    "Shared skill compatibility passed: "
+    "Codex skill package validation passed: "
     f"name={name}, description_chars={len(description)}, skill_lines={len(text.splitlines())}, "
     f"referenced_resources={len(set(resource_pattern.findall(text)))}."
 )
-print("Runtime note: static compatibility does not substitute for a Claude Code invocation test.")

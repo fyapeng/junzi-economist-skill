@@ -4,6 +4,8 @@
 
 Classify the target as a descriptive object, causal effect, mechanism, behavioral primitive, equilibrium relationship, forecast, policy counterfactual, or welfare comparison. Different targets require different evidence.
 
+For ordinary applied work, begin with the most transparent evidence that can discriminate among the economic mechanisms. The normal progression is institutional facts and descriptive regularities, followed by a reduced-form econometric design for the relevant margin. Structural estimation enters when the research target truly requires primitives, equilibrium adjustment, welfare, or unsupported counterfactuals. Prediction enters when prediction is the target or when it performs a named supporting role. Do not begin from the most elaborate method already present in a project directory.
+
 ## Descriptive economic facts
 
 Build economically meaningful measurements before causal work. Examine levels, distributions, transitions, concentration, decomposition, heterogeneity, market boundaries, balance identities, and institutional timing. Validate definitions and denominators. A carefully established fact can be a complete contribution.
@@ -22,6 +24,10 @@ population and margin:
 ```
 
 Then choose among experiments, differences-in-differences, event studies, instrumental variables, regression discontinuity, synthetic controls, panel methods, matching/weighting, or other designs. The design name never substitutes for the assumption.
+
+Treat ANOVA, mean comparisons, correlations, and predictive importance as descriptive diagnostics unless an assignment mechanism or defensible identification argument gives them a causal interpretation. A/B testing is an experimental implementation, not a generic synonym for comparing two observed groups. Verify randomization, assignment level, exposure, compliance, spillovers, clustering, attrition, and the policy margin before using its language.
+
+Use machine learning only with an explicit inferential role: constructing a measurement, predicting an outcome, estimating nuisance functions under an appropriate causal design, exploring heterogeneity with honest uncertainty, or comparing predictive models. Keep the causal estimand and identification assumptions outside the algorithm. Out-of-sample accuracy cannot by itself establish a treatment effect, economic mechanism, structural parameter, or welfare conclusion.
 
 Distinguish treatment timing, anticipation, composition, spillovers, interference, heterogeneous effects, attrition, measurement change, and equilibrium responses. Use robustness analysis to probe specific threats, not to accumulate favorable specifications.
 
@@ -46,6 +52,8 @@ A mechanism signature is usually diagnostic rather than identifying. Label a pat
 ## Structural modeling and estimation
 
 Use a structural model when the question requires latent preferences or technology, strategic or dynamic responses, equilibrium feedback, or policy counterfactuals outside observed variation.
+
+Before building it, state what the preceding facts or reduced-form evidence can already establish and name the unanswered object that requires structure. If no economically consequential target remains beyond the reduced-form evidence, stop rather than adding structure for its own sake.
 
 Document:
 
