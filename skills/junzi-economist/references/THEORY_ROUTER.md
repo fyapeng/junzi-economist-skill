@@ -1,6 +1,8 @@
 # Theory router
 
-Use this router after naming the real phenomenon. Load only the theoretical families that can materially alter the research question or evidence.
+Use this router after naming the real phenomenon. Begin from the economic grammar—agents, objectives, constraints, information, interaction, institutions, equilibrium, dynamics, distribution, and welfare—then identify the theoretical families that can materially alter the research question or evidence. The rows below are prompts for transfer across tasks, not a closed taxonomy of fields.
+
+When a phenomenon is absent from the table, construct its route directly: identify the choice or allocation, locate the binding constraint and interaction, derive competing mechanisms, and search for the theory needed to sharpen them. Do not force a new object into the nearest familiar row.
 
 | Phenomenon | Begin with | Ask next | Common rivals |
 |---|---|---|---|

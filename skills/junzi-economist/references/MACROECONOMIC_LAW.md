@@ -14,7 +14,7 @@ Do not call a stationary budget identity a policy regime. When policy or debt dy
 
 Ask which micro objects aggregate, under what distribution, prices, market completeness, and mobility. Aggregate change may reflect within-unit behavior, composition, entry and exit, reallocation, price indices, or measurement. Representative-agent shortcuts require an aggregation argument and may erase incidence, precaution, or financial amplification.
 
-For heterogeneous-agent equilibrium, close household policy, the invariant distribution, every asset's net supply, factor prices, and the aggregate resource constraint together. Predeclare acceptance thresholds and make every decisive diagnostic—including household optimality, distribution, market, resource, and boundary errors—part of the executed reliability decision. A computed root is one equilibrium found unless the full reliable domain, all sign changes and genuine non-crossing tangencies, or an analytic uniqueness argument has been checked.
+For heterogeneous-agent equilibrium, close individual policies, distributions, asset supplies, prices, and aggregate constraints together. A computed solution establishes one admissible equilibrium under the implemented domain and tolerances; uniqueness and global stability require separate economic or numerical arguments.
 
 ## Intertemporal constraints and dynamics
 
@@ -36,7 +36,7 @@ Labeling a residual a shock does not establish an autonomous disturbance. Check 
 
 Trace consolidated and unconsolidated balance sheets when relevant. State the nominal anchor, payment and liquidity mechanism, credit creation, collateral, default, maturity, and policy rule. For fiscal policy, account for financing, timing, incidence, implementation capacity, expectations, and monetary interaction.
 
-When comparing incomplete and complete markets, state asset payoffs, prices, no-arbitrage normalization, net supplies, initial ownership, and counterparties. A larger payoff span does not by itself establish nested affordable sets, implementability, or a Pareto ranking.
+When comparing financial arrangements, state asset payoffs, prices, net supplies, ownership, counterparties, implementability, and the welfare criterion. Greater spanning or financial completeness alone does not determine incidence or a Pareto ranking.
 
 Neither money neutrality nor persistent real effects should be assumed outside their horizon, friction, and policy regime.
 

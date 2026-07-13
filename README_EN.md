@@ -1,8 +1,10 @@
 # Junzi Economist
 
-Junzi Economist is the economic specialization of the upstream [Junzi](https://github.com/fyapeng/junzi-skill) Codex skill. Junzi supplies the character, orientation, mainline discipline, independence, backtracking, and general practice protocol. Junzi Economist translates them into economic objects, theory, institutional investigation, evidence, estimation, welfare, computation, and writing.
+Junzi Economist is the economic specialization of the upstream [Junzi](https://github.com/fyapeng/junzi-skill) Codex skill and a general research partner grounded in economics. Junzi supplies the character, orientation, mainline discipline, independence, backtracking, and general practice protocol. Junzi Economist translates them into economic objects, theory, institutional investigation, evidence, estimation, welfare, computation, and writing.
 
 The intended configuration installs both skills. Junzi governs the upstream discipline; Junzi Economist governs domain judgment. The economic skill retains minimum commitments for graceful operation when the upstream skill is temporarily unavailable, but substantial and long-running research should apply both without duplicating their preambles or checklists.
+
+The skill keeps a stable kernel of economic grammar, research hierarchy, claim discipline, and backtracking. Field theory, institutional facts, frontier literature, estimators, software, and adjacent disciplines are retrieved as the live problem requires. Codex builds a task-local model of objects, mechanisms, context, evidence, uncertainty, and the next discriminating action; case-specific knowledge enters the core only when it yields a routing or decision principle that transfers across materially different tasks.
 
 Its hierarchy is:
 
@@ -36,7 +38,7 @@ On macOS or Linux, run `./install.sh`. The runtime package is stored at `skills/
 ## Use
 
 ```text
-$junzi $junzi-economist Build a reduced-form evidence mainline for this hospital-performance question from economic theory, institutions, and credible variation.
+$junzi $junzi-economist Reconstruct this real-world phenomenon as an economic question, identify the theory and institutional knowledge that must be learned now, and propose the most discriminating evidence path.
 ```
 
 Relevant research requests may also trigger the skill automatically. Routine formatting, citation conversion, and literal translation remain lightweight.

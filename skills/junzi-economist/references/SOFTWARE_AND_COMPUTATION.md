@@ -23,27 +23,17 @@ This table is a router, not a restriction. Verify current official documentation
 - record random seeds, tolerances, solver options, hardware-sensitive behavior, and versions;
 - separate exploratory outputs from confirmed artifacts;
 - generate tables and figures from analysis code;
-- add tests for identities, invariants, toy cases, and previously observed failures;
-- validate checkpoint protocol metadata, unique task keys, seeds, and expected coverage before resuming; do not reuse a partial run merely because its row count matches;
+- add tests for identities, invariants, toy cases, and failures that could recur;
+- validate the state and provenance of a resumed computation in proportion to its consequence;
 - retain portable formats and human-readable state at tool boundaries.
 
 ## Numerical discipline
 
-Scale variables, inspect conditioning, enforce economic constraints, and distinguish solver convergence from economic validity. Save diagnostic traces when they can discriminate implementation, numerical, identification, and theoretical failures.
+Scale variables, inspect conditioning, enforce economic constraints, and distinguish software completion, numerical convergence, statistical adequacy, and economic validity. Let the decisive claim determine which residuals, constraints, starts, approximation choices, seeds, traces, or alternative implementations must be retained. A passed diagnostic supports only the object it checks.
 
-Make verification recompute the object from primitives in a fresh output path. Reading stored residuals or a previous result file can check a schema or snapshot, but it is not an independent solve. When searching for equilibria, retain the full scan and root-evaluation trace, reject unreliable evaluations, collect every admissible sign-change bracket, and avoid returning the first root as if uniqueness had been established. Search for a non-crossing root with a signed-residual extremum or another method that can distinguish tangency from an ordinary crossing; minimizing absolute residual around a known crossing is not a tangency test. Put every claimed diagnostic into the executed acceptance rule. Vary one numerical dimension at a time when attributing convergence, report root and residual differences, and label a joint grid change as a stress test rather than isolated evidence.
+Use fresh recomputation, analytic cases, independently constructed inputs, or a separate implementation when shared code could preserve the same error. A saved output or imported production function is useful for regression testing and provenance, with that narrower status stated explicitly. Preserve important failed branches and make required failures visible to the calling process.
 
-For constrained estimators, record active bounds and projected or KKT residuals for every selected solution. Preserve each start's initial point, terminal parameters, objective, raw and projected gradients, status, message, and distance from the best objective; parameter spread across starts is evidence of a ridge only among solutions with substantively equivalent objectives.
-
-Scale equilibrium residuals by an economically meaningful quantity and reject degenerate states in which raw residuals vanish only because shares, quantities, or probabilities approach zero. Save the complete executable branch or patch that produced an important failure, not only its output. Describe a verifier that imports production solvers or reads saved summaries as a regression check; reserve “independent verification” for a separate implementation or recomputation from primitives that can detect a shared coding error. Give every verifier an explicit coverage map: a passing Bellman, derivative, or equilibrium check validates only that object, not untested transitions, estimation, profiles, searches, traces, counterfactuals, or the whole pipeline. Match independent checks to the decisive headline claims; leave every uncovered claim explicitly unverified.
-
-Make coverage predicates literal. Checking a saved finite policy set proves those declared inputs only; an arbitrary-input or functional-interface claim additionally requires generated off-grid inputs that are absent from production artifacts. Validate composite keys as tuples—key, numeric value, support label, and any midpoint or scenario flag—not as separate unordered sets. File hashes and modification times can establish byte identity and filesystem chronology; they do not prove authorship, exclusive access, or causal execution order, so name that evidence narrowly.
-
-Keep artifact-level and process-level failure signaling consistent. Write the diagnostic record before termination, then return a nonzero process status whenever a required replication, equilibrium, estimation, or verification unit fails. A successful exit must not silently mean only that the failure report was written.
-
-Reconcile headline counts and rates mechanically with the saved row-level records before reporting them. For randomized or global searches that support a substantive identification or uniqueness claim, retain the seed, declared domain and constraints, selected candidate, realized feasibility slack, objective, and enough search history or independent reruns to audit the result.
-
-Serialize terminal vectors and diagnostics at enough precision that acceptance residuals can be recomputed after a save-load round trip. Execute that round-trip check before publication; if rounded artifacts support only a weaker tolerance, report the weaker reproducible claim.
+Increase numerical and provenance detail as work moves from exploration to research evidence and public release. Do not turn release engineering into the default research workflow. Load the structural verification gate only when the intended deliverable and consequence justify it.
 
 ## Toolchain exit
 

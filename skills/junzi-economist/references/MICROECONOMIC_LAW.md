@@ -14,7 +14,7 @@ Specify outputs and quality as well as inputs. Separate technology from prices, 
 
 Dual cost or profit representations require maintained regularity conditions. Productivity residuals may also contain quality, markups, utilization, selection, and measurement error.
 
-With avoidable fixed or setup costs, treat shutdown as a separate global branch: the positive-activity objective can be smooth while the value function is discontinuous at zero. Compare every interior or boundary candidate with inactivity, preserve equality as a correspondence, and distinguish a strict entry wedge from endpoints at which one side is indifferent. State regularity on the actual domain; monotonicity or interior first-order conditions may fail on input axes even when positive-output duality is valid.
+Check global alternatives, boundaries, nonconvexities, and participation or shutdown choices when local first-order conditions cannot characterize the economic decision. Preserve indifference and multiplicity when the model does not select a unique action.
 
 ## Uncertainty, time, and learning
 
@@ -26,7 +26,7 @@ Map who knows, observes, verifies, commits, transfers, and enforces. Ask which a
 
 Contract terms are equilibrium objects. Correlation between incentives and outcomes does not reveal a contract effect without addressing selection and endogenous design.
 
-Write participation, incentive, limited-liability or wealth, resource, and enforcement constraints separately. Distinguish weak implementation, strict incentives, and strict participation. An open strict constraint can leave only an infimum rather than a minimizing contract; propagate that nonattainment into the principal's mode choice instead of evaluating the infimum as an available payoff. A binding limited-liability constraint can also create rent that makes participation strict at the weak-incentive minimum. Report complete contract and mode correspondences, not just one canonical wage pair.
+Write participation, incentive, wealth or liability, resource, and enforcement constraints separately. Check existence, rents, binding constraints, implementation, renegotiation, and whether the model yields a unique contract or a correspondence.
 
 ## Strategic interaction and industrial organization
 
@@ -34,7 +34,7 @@ Define players, timing, actions, information, payoffs, market boundaries, and eq
 
 An equilibrium prediction also requires attention to existence, multiplicity, selection, and comparative statics. Conduct parameters, markups, diversion ratios, and demand elasticities answer different questions and require different variation.
 
-For finite games, characterize best responses and the complete equilibrium correspondence before selecting an outcome; include mixed strategies, indifference boundaries, degeneracies, and asymmetric profiles. Keep welfare dominance, risk dominance, basin arguments, refinements, and observed play distinct. A policy that changes or even makes an equilibrium unique need not improve resource welfare, and a strict implementation threshold may have an unattained infimum. With multiple equilibria, report policy outcomes as a set unless a selection device is supplied.
+Characterize the equilibrium correspondence before selecting an outcome. Keep existence, uniqueness, refinements, selection evidence, stability, and welfare as separate questions. With multiple equilibria, report the policy implications as conditional or set-valued unless a credible selection mechanism is supplied.
 
 ## General equilibrium and welfare
 

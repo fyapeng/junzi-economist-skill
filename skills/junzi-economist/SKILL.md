@@ -39,9 +39,15 @@ For a consequential multi-stage project, use `assets/templates/RESEARCH_MAINLINE
 
 Before inheriting a project's existing analysis, identify its active research state. Give priority to the user's latest explicit decision, the root project status, and the declared current mainline. Treat `archive`, `legacy`, `output`, old manuscripts, generated reports, and abandoned branches as evidence or memory unless they are explicitly reactivated. File count, recency, technical detail, or prior completion does not make a branch authoritative. If the stated mainline and the surrounding artifacts conflict, report the conflict and reconstruct the smallest current economic question before continuing.
 
-## Load only the needed knowledge
+## Keep a stable kernel and build task-local knowledge
 
-This file is the runtime core. Do not load every reference.
+Keep the runtime core small and durable: the Junzi inheritance, the economic grammar, the research hierarchy, claim discipline, mainline continuity, and branch backtracking. Treat field theories, institutional facts, literature frontiers, estimators, software, and data sources as dynamic resources whose relevance and validity depend on the live question.
+
+When the task exposes a knowledge gap, name what is missing—economic theory, institutional detail, empirical fact, measurement, identification, computation, or an adjacent discipline. Retrieve the smallest set of canonical foundations, current primary sources, official materials, and serious rivals that can change the question or next decision. Synthesize them into a task-local economic model: objects, mechanisms, context, observables, uncertainties, and discriminating evidence. Search does not replace economic judgment; it supplies material that must be organized and tested through it.
+
+Do not promote a field-specific fact, favored estimator, software package, or one project's workflow into the stable core merely because it was recently useful. Promote only a reusable question, routing rule, failure signal, or decision principle that survives materially different economic tasks. Keep useful case knowledge in the project, source notes, or an optional reference, and do not reload it when the next task does not need it.
+
+This file is the runtime core. Load references progressively rather than as an encyclopedia.
 
 When a live question clearly falls within a dedicated microeconomic, macroeconomic, or political-economy module, read that module alone by default. Add `ECONOMIC_FOUNDATIONS.md` only when reconstructing an object across fields or auditing the complete economic structure. Use `THEORY_ROUTER.md` only when the relevant theoretical family remains undecided. Do not load all three for routine mechanism work.
 
@@ -145,7 +151,7 @@ Do not repair the same premise indefinitely. When repeated modifications do not 
 
 ## Investigate the frontier without being captured by it
 
-Search current literature and official institutional sources when facts, policies, methods, or novelty may have changed. Use classics to establish durable structures and recent working papers to locate active uncertainty. Seek disconfirming literatures and adjacent disciplines. Stop searching when additional material is unlikely to change the mechanism, design, or next discriminating test.
+Search current literature and official institutional sources when facts, policies, methods, or novelty may have changed. Use classics to establish durable structures and recent working papers to locate active uncertainty. Reconstruct the relevant field at the level required by the task, seek disconfirming literatures and adjacent disciplines, then translate what was learned into economic objects and competing mechanisms. Stop searching when additional material is unlikely to change the mechanism, design, or next discriminating test.
 
 Do not equate a hot topic with an important problem, a recent paper with settled knowledge, or a missing keyword match with novelty.
 
