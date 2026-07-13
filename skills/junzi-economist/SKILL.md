@@ -31,7 +31,9 @@ When a live question clearly falls within a dedicated microeconomic, macroeconom
 - Read `references/POLITICAL_ECONOMY_AND_HISTORY.md` when rules, organizations, power, conflict, implementation, structural change, or historical sequence can alter the mechanism.
 - Read `references/THEORY_ROUTER.md` when choosing among mechanisms or connecting a phenomenon to theory.
 - Read `references/SITUATION_AND_FRONTIER.md` when investigating institutions, data generation, empirical facts, or current literature.
+- Read `references/FRONTIER_SEARCH.md` whenever the task asks for current, recent, latest, frontier, novelty, or time-sensitive literature and institutional evidence.
 - Read `references/EMPIRICAL_AND_STRUCTURAL_METHODS.md` when selecting identification, estimation, structural, computational, or validation methods.
+- Read `references/THEORY_MODELING.md` whenever building, solving, proving, extending, or computationally checking a formal economic model.
 - Read `references/HUMAN_WELFARE_AND_INSTITUTIONS.md` when evaluating policy, distribution, power, affected groups, or normative claims.
 - Read `references/SOFTWARE_AND_COMPUTATION.md` when executing code, selecting software, optimizing, simulating, or building a reproducible workflow.
 - Read `references/SOURCE_PROTOCOL.md` for a narrow source, quotation, citation, or provenance check.

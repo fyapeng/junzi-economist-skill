@@ -23,6 +23,7 @@ jobs:
           python scripts/validate_compatibility.py
           python scripts/test_utilities.py
           python scripts/validate_eval_records.py
+          python evals/fixtures/provider_model_check.py
           python -m compileall -q scripts
 
   install:

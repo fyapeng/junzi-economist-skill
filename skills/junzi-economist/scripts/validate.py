@@ -37,7 +37,9 @@ REQUIRED = [
     "references/POLITICAL_ECONOMY_AND_HISTORY.md",
     "references/THEORY_ROUTER.md",
     "references/SITUATION_AND_FRONTIER.md",
+    "references/FRONTIER_SEARCH.md",
     "references/EMPIRICAL_AND_STRUCTURAL_METHODS.md",
+    "references/THEORY_MODELING.md",
     "references/HUMAN_WELFARE_AND_INSTITUTIONS.md",
     "references/SOFTWARE_AND_COMPUTATION.md",
     "references/SOURCE_MAP.md",
@@ -57,6 +59,7 @@ REQUIRED = [
     "evals/platform_compatibility.yaml",
     "evals/run_schema.yaml",
     "evals/completion_audit.yaml",
+    "evals/fixtures/provider_model_check.py",
     "scripts/check_citekeys.py",
     "scripts/prose_lint.py",
     "scripts/test_utilities.py",
@@ -86,7 +89,7 @@ else:
 if len(skill.splitlines()) >= 300:
     fail("SKILL.md should stay below 300 lines")
 
-for relative in REQUIRED[2:16]:
+for relative in REQUIRED[2:18]:
     if f"`{relative}`" not in skill:
         fail(f"SKILL.md does not route to {relative}")
 
@@ -141,6 +144,16 @@ reading = read("references/PAPER_READING.md")
 for phrase in ["Select the reading purpose", "Reconstruct the paper", "Separate four voices", "Audit by paper type", "Build a literature map"]:
     if phrase not in reading:
         fail(f"paper reading reference missing: {phrase}")
+
+theory_modeling = read("references/THEORY_MODELING.md")
+for phrase in ["Reconstruct before solving", "Solve the constrained problem", "Define welfare independently", "Search for failure", "Assign derivation status"]:
+    if phrase not in theory_modeling:
+        fail(f"theory modeling reference missing: {phrase}")
+
+frontier_search = read("references/FRONTIER_SEARCH.md")
+for phrase in ["Fix the as-of date and decision", "Verify each source at the claim level", "Build a frontier map", "Stop for a reason", "Minimum frontier artifact"]:
+    if phrase not in frontier_search:
+        fail(f"frontier search reference missing: {phrase}")
 
 methods = read("references/EMPIRICAL_AND_STRUCTURAL_METHODS.md")
 methods_folded = methods.casefold()

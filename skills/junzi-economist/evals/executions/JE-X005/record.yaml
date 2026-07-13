@@ -1,0 +1,47 @@
+schema_version: 1
+execution_id: JE-X005
+case_id: JE-R22
+timestamp_utc: "2026-07-13T01:08:13Z"
+skill_commit: "a918258"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_mainline
+evaluator: eval_light-independent-audit
+isolation: blind
+prompt: "建立一个最小医生治疗强度模型：支付激励与医生利他共同决定治疗。请明确主体、时序、目标与约束，推导最优治疗、支付和利他的比较静态、社会福利边界，并给出至少一个推翻直觉的参数例子。"
+expected:
+  - define agents timing objectives and feasible set
+  - derive constrained optimum and region-specific comparative statics
+  - distinguish decentralized choice from social welfare
+  - provide a valid counterexample to an intuitive sign
+forbidden:
+  - state an interior derivative as a global theorem
+  - omit binding treatment or policy constraints
+  - treat more treatment or payment as universally welfare improving
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+response_file: response.md
+response_sha256: "a1bea3a4415668dca92113c0c97c3770154b752c2b7813763a3312d62ee3d40e"
+audit_file: audit.md
+computational_check: evals/fixtures/provider_model_check.py
+rubric:
+  - criterion: economic environment and interior solution
+    score: 2
+    max_score: 2
+  - criterion: constrained and boundary analysis
+    score: 0
+    max_score: 2
+  - criterion: comparative statics and counterexamples
+    score: 1
+    max_score: 2
+  - criterion: welfare derivation and implementation boundary
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - original skill lacked a dedicated formal-model constraint protocol
+  - exact client and model versions unavailable
+  - evaluator audit was manual; formulas were also checked by a deterministic numerical fixture
