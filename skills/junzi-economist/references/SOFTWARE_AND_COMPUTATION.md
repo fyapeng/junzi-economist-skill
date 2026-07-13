@@ -24,6 +24,7 @@ This table is a router, not a restriction. Verify current official documentation
 - separate exploratory outputs from confirmed artifacts;
 - generate tables and figures from analysis code;
 - add tests for identities, invariants, toy cases, and previously observed failures;
+- validate checkpoint protocol metadata, unique task keys, seeds, and expected coverage before resuming; do not reuse a partial run merely because its row count matches;
 - retain portable formats and human-readable state at tool boundaries.
 
 ## Numerical discipline

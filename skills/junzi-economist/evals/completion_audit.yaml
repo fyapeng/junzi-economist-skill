@@ -28,8 +28,8 @@ requirements:
     gap: "Broaden design coverage beyond DID and common counterfactual failures."
   structural_estimation:
     status: partial
-    evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/executions/JE-X011]
-    gap: "JE-X011 executed and reproduced a complete NFXP recovery, validation, and counterfactual, but one-run sample curvature was overstated as local identification; add a population argument or repeated-sample recovery study."
+    evidence: [references/EMPIRICAL_AND_STRUCTURAL_METHODS.md, evals/executions/JE-X011, evals/executions/JE-X012]
+    gap: "Dynamic NFXP estimation, repeated recovery, local population rank, failure accounting, and bounded global searches now pass; broaden to discrete-choice equilibrium, estimated transitions or discounting, misspecification, and alternative estimators."
   computation_and_instruments:
     status: partial
     evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py]
@@ -43,13 +43,13 @@ requirements:
     evidence: [assets/templates/RESEARCH_MAINLINE.yaml, assets/templates/CLAIM_LEDGER.yaml, references/BRANCH_AND_DECISION_PROTOCOL.md]
     gap: "A multi-turn state transition test with new evidence, reopening, and protection against premature abandonment."
   cross_disciplinary_correction:
-    status: partial
-    evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md]
-    gap: "A behavior test where medical, legal, historical, or organizational evidence changes the economic model."
+    status: proved
+    evidence: [references/SOURCE_PROTOCOL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, evals/executions/JE-X013]
+    gap: "JE-X013 proves clinical and institutional evidence can reconstruct agents, states, measurement, welfare, and claim status; extend behavior coverage to legal, historical, and organizational corrections."
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Ten strict raw executions now cover welfare, backtracking, writing, a non-trigger, theory, frontier, and structural estimation; exact client/model provenance, clean endpoint passes, and automatic trigger-dispatch coverage remain incomplete."
+    gap: "Twelve strict raw executions now cover welfare, backtracking, writing, a non-trigger, theory, frontier, structural estimation, and cross-disciplinary correction; exact client/model provenance and automatic trigger-dispatch coverage remain incomplete."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml]

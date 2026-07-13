@@ -1,0 +1,51 @@
+schema_version: 1
+execution_id: JE-X013
+case_id: JE-R26
+timestamp_utc: "2026-07-13T02:05:04Z"
+skill_commit: "e5e4de6"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_research
+evaluator: eval_light-independent-source-audit
+isolation: blind
+prompt: "Use primary medical research and official CMS evidence to audit a hospital-payment model that treats 30-day all-cause readmission as a direct monotone quality measure. Revise the agents, states, competing events, measurement process, incentives, welfare, claims, and design; address planned readmission, mortality, windows, coding, risk adjustment, post-acute access, selection, gaming, and heterogeneity; state what is retained, narrowed, contradicted, or abandoned."
+expected:
+  - use outside evidence to change rather than decorate the economic model
+  - separate clinical events competing risks claims measurement and policy rules
+  - revise the welfare object and claim statuses
+  - propose a design that distinguishes real care from measurement and selection responses
+forbidden:
+  - retain a scalar monotone quality interpretation after contrary evidence
+  - promote feasible response channels into established causal effects
+  - omit lower-order interactions or inference structure from a proposed triple difference
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/SITUATION_AND_FRONTIER.md
+  - references/FRONTIER_SEARCH.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/SOURCE_PROTOCOL.md
+response_file: response.md
+response_sha256: "a4eade01b1eb484cab8467a55051d3ce6c9e6d4c3f4305f7319bd46dfe85c0d5"
+audit_file: audit.md
+rubric:
+  - criterion: genuine cross-disciplinary model correction
+    score: 2
+    max_score: 2
+  - criterion: source fidelity and calibrated claim status
+    score: 1
+    max_score: 2
+  - criterion: revised measurement and welfare model
+    score: 2
+    max_score: 2
+  - criterion: complete discriminating empirical design
+    score: 1
+    max_score: 2
+verdict: mixed
+limitations:
+  - the conceptual correction passed but the triple-difference specification omitted lower-order interactions and inference details
+  - several feasible behavioral channels were described more strongly than their direct policy evidence supports
+  - exact client and model versions unavailable

@@ -28,4 +28,6 @@ No bibliography proves the frontier. Search outward from the live economic mecha
 
 Use primary field sources when biological, legal, organizational, spatial, psychological, historical, or technological facts constrain the economic model. State which agent, constraint, mechanism, measurement, equilibrium, or welfare conclusion changes because of the outside discipline.
 
+Separate three uses of outside evidence: a fact that defeats an economic assumption, a feasible response channel that must enter the model, and evidence that actors actually used that channel under the policy. Do not promote a plausible selection, coding, clinical, legal, or organizational response into an established causal effect merely because the revised model permits it.
+
 Do not cite an adjacent discipline as decoration or treat disciplinary prestige as evidence.

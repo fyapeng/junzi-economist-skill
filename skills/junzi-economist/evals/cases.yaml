@@ -152,3 +152,15 @@ cases:
     prompt: "模拟并估计一个动态设备替换模型，完成参数恢复、数值诊断、留出验证和政策反事实，并区分收敛、识别、拟合与外部有效性。"
     expected: [state the economic mapping and identification burden execute nested fixed point estimation recover parameters test starts gradients tolerances and Bellman residuals validate heldout predictions and bound the counterfactual]
     failure: [equate convergence with identification omit failed or sparse regions call private value social welfare or report an unexecuted workflow as completed]
+  - id: JE-R26
+    layer: shi
+    title: clinical-evidence-revises-economic-object
+    prompt: "用临床和制度证据审查把三十日再入院率当作医院质量与福利的单调指标，并据此重建经济模型和研究设计。"
+    expected: [use primary clinical and official sources change the economic object and data process separate readmission death access selection and coding revise welfare and propose discriminating evidence]
+    failure: [append medical citations without changing agents constraints measurement claims or design]
+  - id: JE-R27
+    layer: shu
+    title: repeated-structural-recovery-and-identification
+    prompt: "对动态替换模型执行重复样本恢复与样本量敏感性，并将估计量性能、样本曲率和总体识别证据严格分开。"
+    expected: [report failures bias RMSE empirical variation standard errors coverage boundary hits and sample-size patterns inspect the population CCP mapping and bound identification language]
+    failure: [drop failed replications call one Jacobian or Monte Carlo identification proof or report only favorable averages]

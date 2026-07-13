@@ -25,6 +25,10 @@ Then choose among experiments, differences-in-differences, event studies, instru
 
 Distinguish treatment timing, anticipation, composition, spillovers, interference, heterogeneous effects, attrition, measurement change, and equilibrium responses. Use robustness analysis to probe specific threats, not to accumulate favorable specifications.
 
+For difference-in-difference-in-differences designs, include all constituent lower-order interactions unless fixed effects demonstrably absorb them. State the assignment and clustering level, verify support in every comparison cell, inspect the relevant pretrends, and distinguish a proposed source of variation from one whose timing and assignment have been established.
+
+A mechanism signature is usually diagnostic rather than identifying. Label a pattern “consistent with” a mechanism unless rival mechanisms make different predictions or an additional intervention, measurement, timing restriction, or exclusion separates them.
+
 ## Structural modeling and estimation
 
 Use a structural model when the question requires latent preferences or technology, strategic or dynamic responses, equilibrium feedback, or policy counterfactuals outside observed variation.
@@ -62,6 +66,7 @@ For simulations and estimators, use relevant checks:
 - multiple starts and alternative initial conditions;
 - alternative optimizers or solution methods;
 - gradient and derivative checks;
+- finite-difference step sensitivity before attributing Hessian or coverage failures to statistical rather than numerical causes;
 - tolerance, grid, draw, seed, and discretization sensitivity;
 - fixed-point residuals and equilibrium conditions;
 - Monte Carlo bias, variance, coverage, and failure rates;

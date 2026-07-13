@@ -1,0 +1,412 @@
+{
+  "versions": {
+    "python": "3.11.15",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1"
+  },
+  "protocol": {
+    "sample_sizes": [
+      100,
+      400
+    ],
+    "periods": 30,
+    "replications_per_size": 60,
+    "starts": [
+      [
+        0.3,
+        1.0
+      ],
+      [
+        1.5,
+        4.5
+      ]
+    ],
+    "bellman_tolerance": 1e-10,
+    "bounds": [
+      [
+        1e-06,
+        5.0
+      ],
+      [
+        1e-06,
+        8.0
+      ]
+    ],
+    "base_seed": 2026071300
+  },
+  "truth": {
+    "theta": 0.7,
+    "RC": 2.2
+  },
+  "monte_carlo_summaries": [
+    {
+      "n_physicians": 100,
+      "periods": 30,
+      "replications": 60,
+      "optimizer_failures": 0,
+      "optimizer_failure_rate": 0.0,
+      "hessian_failures": 0,
+      "hessian_failure_rate_among_optimizer_success": 0.0,
+      "successful_estimates": 60,
+      "valid_hessian_estimates": 60,
+      "bias": [
+        0.003123752695846534,
+        0.0030650492555415187
+      ],
+      "rmse": [
+        0.038124736948746206,
+        0.08501730868963572
+      ],
+      "empirical_sd": [
+        0.03831720067585197,
+        0.08567903200498812
+      ],
+      "mean_hessian_se": [
+        0.03984672884544819,
+        0.09302988846736258
+      ],
+      "wald_95_coverage": [
+        0.95,
+        0.9833333333333333
+      ],
+      "boundary_hits": [
+        0,
+        0
+      ],
+      "max_abs_gradient": 0.0001881517164292745,
+      "max_bellman_residual": 8.998757294875759e-11,
+      "worst_cases": [
+        {
+          "parameter": "theta",
+          "replication": 3,
+          "seed": 2026071303,
+          "estimate": 0.6015624064299087,
+          "error": -0.0984375935700913,
+          "se": 0.03670124105479096,
+          "covered": false,
+          "boundary": false
+        },
+        {
+          "parameter": "RC",
+          "replication": 44,
+          "seed": 2026071344,
+          "estimate": 2.4289771923351116,
+          "error": 0.22897719233511138,
+          "se": 0.09988281030207359,
+          "covered": false,
+          "boundary": false
+        }
+      ]
+    },
+    {
+      "n_physicians": 400,
+      "periods": 30,
+      "replications": 60,
+      "optimizer_failures": 0,
+      "optimizer_failure_rate": 0.0,
+      "hessian_failures": 0,
+      "hessian_failure_rate_among_optimizer_success": 0.0,
+      "successful_estimates": 60,
+      "valid_hessian_estimates": 60,
+      "bias": [
+        -0.00118406334945196,
+        -0.0034398772903522818
+      ],
+      "rmse": [
+        0.02018365800668026,
+        0.053038527997467534
+      ],
+      "empirical_sd": [
+        0.020318932755448885,
+        0.05337350986796632
+      ],
+      "mean_hessian_se": [
+        0.01984932985784989,
+        0.0464179216594283
+      ],
+      "wald_95_coverage": [
+        0.95,
+        0.8833333333333333
+      ],
+      "boundary_hits": [
+        0,
+        0
+      ],
+      "max_abs_gradient": 0.0006658410711679607,
+      "max_bellman_residual": 8.967226960976404e-11,
+      "worst_cases": [
+        {
+          "parameter": "theta",
+          "replication": 22,
+          "seed": 2026081322,
+          "estimate": 0.6404445187403346,
+          "error": -0.059555481259665366,
+          "se": 0.018914809836873214,
+          "covered": false,
+          "boundary": false
+        },
+        {
+          "parameter": "RC",
+          "replication": 22,
+          "seed": 2026081322,
+          "estimate": 2.0616644052897546,
+          "error": -0.1383355947102456,
+          "se": 0.04444867302685137,
+          "covered": false,
+          "boundary": false
+        }
+      ]
+    }
+  ],
+  "population_identification": {
+    "truth": [
+      0.7,
+      2.2
+    ],
+    "truth_ccp": [
+      0.13747775510547297,
+      0.3774603045571706,
+      0.6251633078159056,
+      0.7956621542427492,
+      0.8909134902076932
+    ],
+    "jacobian": [
+      [
+        0.03005731181726645,
+        -0.1033015915087461
+      ],
+      [
+        0.34830191699419805,
+        -0.1485503927846985
+      ],
+      [
+        0.5482426018221798,
+        -0.11848593870943491
+      ],
+      [
+        0.5118504631973497,
+        -0.07256691565326145
+      ],
+      [
+        0.3962040207472483,
+        -0.041829573421187594
+      ]
+    ],
+    "singular_values": [
+      0.9371634857671056,
+      0.131429706084097
+    ],
+    "rank_tolerance_1e-8": 2,
+    "condition_number": 7.130530179892889,
+    "nearby_grid": {
+      "points_scanned": 2598,
+      "exclusion_radius": 0.02,
+      "closest": {
+        "params": [
+          0.7,
+          2.22
+        ],
+        "parameter_distance": 0.020000000000000018,
+        "ccp_l2": 0.0046301965751545495,
+        "ccp_max_abs": 0.0029651282956816294,
+        "ccp": [
+          0.13542482265308245,
+          0.374495176261489,
+          0.622793011908927,
+          0.7942090618818591,
+          0.890075383552949
+        ]
+      }
+    },
+    "broad_grid": {
+      "points_scanned": 4797,
+      "exclusion_radius": 0.05,
+      "closest": {
+        "params": [
+          0.7110169491525424,
+          2.255696202531646
+        ],
+        "parameter_distance": 0.05677534804011176,
+        "ccp_l2": 0.007400686379214196,
+        "ccp_max_abs": 0.005328862583321908,
+        "ccp": [
+          0.13214889252215106,
+          0.3730534682340198,
+          0.6246216529955653,
+          0.7972639832827559,
+          0.8929368364100793
+        ]
+      }
+    },
+    "inverse_mapping_runs": [
+      {
+        "start": [
+          0.05,
+          0.2
+        ],
+        "success": true,
+        "x": [
+          0.6999999997324847,
+          2.2000000034236504
+        ],
+        "objective": 1.0086164234993068e-18,
+        "parameter_distance_from_truth": 3.4340858243146205e-09,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          0.05,
+          2.5
+        ],
+        "success": true,
+        "x": [
+          0.6999999819889549,
+          2.199999937170034
+        ],
+        "objective": 9.269343251124868e-17,
+        "parameter_distance_from_truth": 6.536055682188853e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          0.05,
+          6.0
+        ],
+        "success": true,
+        "x": [
+          0.6999999815883727,
+          2.1999999349569226
+        ],
+        "objective": 9.732273318791693e-17,
+        "parameter_distance_from_truth": 6.759874229190555e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          0.4,
+          0.2
+        ],
+        "success": true,
+        "x": [
+          0.6999999818989477,
+          2.199999936516151
+        ],
+        "objective": 9.380229567220358e-17,
+        "parameter_distance_from_truth": 6.601399254475031e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          0.4,
+          2.5
+        ],
+        "success": true,
+        "x": [
+          0.6999999832567054,
+          2.199999945928594
+        ],
+        "objective": 7.906327805460667e-17,
+        "parameter_distance_from_truth": 5.6604371391065885e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          0.4,
+          6.0
+        ],
+        "success": true,
+        "x": [
+          0.6999999817231122,
+          2.199999935593306
+        ],
+        "objective": 9.580805724752974e-17,
+        "parameter_distance_from_truth": 6.694973401554323e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          1.0,
+          0.2
+        ],
+        "success": true,
+        "x": [
+          0.7000000009009192,
+          2.200000002895023
+        ],
+        "objective": 2.289158512280211e-19,
+        "parameter_distance_from_truth": 3.0319652006743664e-09,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          1.0,
+          2.5
+        ],
+        "success": true,
+        "x": [
+          0.69999998220235,
+          2.1999999361959017
+        ],
+        "objective": 9.153330127224046e-17,
+        "parameter_distance_from_truth": 6.623986202580341e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          1.0,
+          6.0
+        ],
+        "success": true,
+        "x": [
+          0.6999999820014705,
+          2.1999999369419494
+        ],
+        "objective": 9.270686954220636e-17,
+        "parameter_distance_from_truth": 6.557640452531206e-08,
+        "message": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+      },
+      {
+        "start": [
+          2.0,
+          0.2
+        ],
+        "success": true,
+        "x": [
+          0.6999999843889788,
+          2.199999931117884
+        ],
+        "objective": 8.719262261363543e-17,
+        "parameter_distance_from_truth": 7.062895926795255e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          2.0,
+          2.5
+        ],
+        "success": true,
+        "x": [
+          0.6999999820141524,
+          2.1999999369497054
+        ],
+        "objective": 9.259604803473501e-17,
+        "parameter_distance_from_truth": 6.556546639192699e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      },
+      {
+        "start": [
+          2.0,
+          6.0
+        ],
+        "success": true,
+        "x": [
+          0.6999999820773972,
+          2.1999999371466306
+        ],
+        "objective": 9.195940095928476e-17,
+        "parameter_distance_from_truth": 6.535874663275687e-08,
+        "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+      }
+    ]
+  }
+}

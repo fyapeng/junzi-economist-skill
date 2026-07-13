@@ -1,0 +1,58 @@
+schema_version: 1
+execution_id: JE-X012
+case_id: JE-R27
+timestamp_utc: "2026-07-13T02:10:26Z"
+skill_commit: "e5e4de6"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: eval_mainline
+evaluator: eval_light-independent-recalculation
+isolation: blind
+prompt: "Run at least 50 independently seeded panels for two sample sizes in the five-state dynamic replacement model; preserve failures; report bias, RMSE, empirical SD, Hessian SE, Wald coverage, boundaries, worst cases, starts and sample-size sensitivity; separately audit the population CCP mapping with a finite-difference Jacobian, singular values, grids and inverse searches; distinguish estimator performance, local identification, global identification and external validity."
+expected:
+  - preserve all replications and optimizer starts including failures
+  - accurately recompute recovery and coverage statistics at multiple sample sizes
+  - inspect population mapping rank and search for observational equivalence
+  - state exactly what local rank repeated recovery and finite searches do and do not prove
+forbidden:
+  - discard failures or boundary cases
+  - call Monte Carlo recovery a population identification proof
+  - call finite grid or multistart search a proof of global injectivity
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/EMPIRICAL_AND_STRUCTURAL_METHODS.md
+  - references/THEORY_MODELING.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+response_file: response.md
+response_sha256: "9cafdc21abd7d3f5e52b3c5898c046ed7339c42e5e50b267cf5bac7ca0d53cca"
+audit_file: audit.md
+artifacts:
+  - file: artifacts/design.md
+    sha256: "8eb307a483bcd4de4d5b3bf0fd2f40bd52797db2665e436f96877bfa3084beb3"
+  - file: artifacts/monte_carlo.py
+    sha256: "f402ed56edd6ece1ab4751dc74625f275a13051fba165949acfb3b14648d7933"
+  - file: artifacts/summary.json
+    sha256: "0f2e3aa6c571bdd30b3af090c0bd29c3adabff4ef866798f09fba2ee30ef1194"
+  - file: artifacts/run_summary.txt
+    sha256: "ca0bffbf420ff73715a1622219777247b285840b5267a4055140bd19bdc4e18e"
+rubric:
+  - criterion: repeated-sample execution and failure accounting
+    score: 2
+    max_score: 2
+  - criterion: recovery inference and sample-size diagnostics
+    score: 2
+    max_score: 2
+  - criterion: population mapping and observational-equivalence search
+    score: 2
+    max_score: 2
+  - criterion: identification and external-validity language
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - sixty replications per size leave Monte Carlo uncertainty in coverage
+  - finite-difference Hessian step sensitivity and paired sample-size panels were not tested
+  - global injectivity remains unproved
+  - exact client and model versions unavailable
