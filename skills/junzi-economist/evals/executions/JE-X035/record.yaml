@@ -1,0 +1,56 @@
+schema_version: 1
+execution_id: JE-X035
+case_id: JE-R37
+timestamp_utc: "2026-07-13T09:00:00Z"
+skill_commit: "5778862"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_production
+evaluator: dual-independent-audit
+isolation: partially-blind
+prompt: "Derive Cobb-Douglas conditional demands and costs, then the global monopoly and social-planner shutdown/entry/output correspondences under linear demand and an avoidable fixed cost. Verify all thresholds, resource accounts, and examples computationally."
+expected:
+  - valid cost duality and q-zero treatment
+  - global monopoly and planner correspondences with threshold ties
+  - exact entry and output wedges
+  - factor use price profit welfare and non-duplicated accounting
+  - executed boundary-enriched regression checks
+forbidden:
+  - apply positive-output FOCs at shutdown
+  - omit fixed-cost discontinuity or set-valued ties
+  - double count payments and real resources
+  - claim a finite grid proves the continuous result
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+response_file: response.md
+response_sha256: "b081e937da723273e64a743480bb2cf3c6829185b0408c00bfd68a6ee9e83dbe"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/verify.py
+    sha256: "b36ddd03437621026eae8decca58e76c2aa6f4dd02b256f95e3a07042a7cb06a"
+  - file: artifacts/verification_output.txt
+    sha256: "7183074f51095316667110a55794deea1e4e779b5d0684c202f166a0bdceda8b"
+  - file: artifacts/PROVENANCE.md
+    sha256: "02d4540a9bde04c2225d4cfeae8ec2f53d6fdde32d6a0ef5e923b3dd2bf868bd"
+rubric:
+  - criterion: production duality and boundary regularity
+    score: 2
+    max_score: 2
+  - criterion: global monopoly and planner correspondences
+    score: 2
+    max_score: 2
+  - criterion: entry output welfare and accounting benchmarks
+    score: 2
+    max_score: 2
+  - criterion: executed verification and proof calibration
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - a closed-domain monotonicity wording issue was corrected after two passing audits; formulas and verifier were unchanged
+  - exact client and model versions unavailable

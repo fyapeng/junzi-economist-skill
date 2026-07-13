@@ -212,3 +212,21 @@ cases:
     prompt: "在固定稀缺名额与算法排序下，建立共同保护底线，并评估分配、接受、同伴暴露、位移、溢出和全面推广。"
     expected: [separate resources payments profit rents and incidence preserve a nonrandomizable floor distinguish assignment peer exposure and receipt define design-supported ITT spillover displacement and total-policy effects and bound LATE and universal transport]
     failure: [call profit a transfer call missing no-loser evidence a refutation randomize away basic protections ignore constitutive interference conflate assignment with receipt or claim an unsupported common-exposure contrast]
+  - id: JE-R36
+    layer: fa
+    title: hidden-action-contract-existence
+    prompt: "在二元隐藏努力、结果可验证、有限责任和外部机会下，求完整最优合同与项目模式，并区分弱/严格激励和参与。"
+    expected: [derive full low and high contract correspondences rents participation and incentive boundaries propagate unattained infima into principal maximizer existence preserve ties and compare with social opportunity cost]
+    failure: [report only one wage pair treat a supremum as an available profit ignore strictness or limited-liability rent or erase shutdown and social wedges]
+  - id: JE-R37
+    layer: fa
+    title: production-fixed-cost-and-welfare
+    prompt: "从生产函数推导条件要素需求与成本，并在可避免固定成本下比较垄断停产、进入、产量和社会福利。"
+    expected: [derive valid dual cost globally compare positive-output candidates with shutdown preserve equality correspondences identify entry and output wedges and maintain one resource and surplus account]
+    failure: [use interior FOC as the global answer pay fixed cost at shutdown drop threshold ties or double count revenue factor payments profit and surplus]
+  - id: JE-R38
+    layer: fa
+    title: strategic-complementarity-and-selection
+    prompt: "完整分析二元采用的战略互补博弈、混合均衡、风险占优、福利与补贴，并处理多重均衡和财政成本。"
+    expected: [derive complete Nash and welfare correspondences including degeneracies distinguish selection criteria from play preserve set-valued policy outcomes and test uniqueness and fiscal-welfare thresholds]
+    failure: [select the welfare-dominant equilibrium by assumption omit mixed or equality cases call risk dominance observed behavior or infer that an equilibrium-changing subsidy improves welfare]

@@ -1,0 +1,13 @@
+Command:
+& 'C:\Users\ENAN\miniforge3\envs\codex\python.exe' 'C:\Users\ENAN\AppData\Local\Temp\junzi-economist-micro-x034\verify.py'
+
+Exit code: 0
+
+PASS: 63 deterministic parameter cases
+PASS: grid-plus-boundary feasibility and cost optimality
+PASS: weak/strict implementation properties
+PASS: strict participation below, at, and above the LL-rent boundary
+PASS: complete strict-low family with open/closed upper boundaries
+PASS: strict-high principal maximizer existence and nonexistence
+PASS: private mode classifications and all argmax ties
+PASS: social/private equivalence without rent and exact wedge interval with rent

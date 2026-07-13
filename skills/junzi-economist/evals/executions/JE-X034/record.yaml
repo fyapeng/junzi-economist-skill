@@ -1,0 +1,56 @@
+schema_version: 1
+execution_id: JE-X034
+case_id: JE-R36
+timestamp_utc: "2026-07-13T09:00:00Z"
+skill_commit: "5778862"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_contract
+evaluator: dual-independent-audit-and-retest
+isolation: partially-blind
+prompt: "Derive and verify the complete contract and project-mode correspondences for a binary hidden-action principal-agent problem with nonnegative outcome wages, outside option, shutdown, weak and strict effort implementation, and weak or strict participation. Compare with the social opportunity-cost benchmark."
+expected:
+  - complete low and high least-cost contract sets including p_L=0
+  - weak versus strict IC and participation minima versus infima
+  - principal mode ties and maximizer nonexistence
+  - exact limited-liability rent and social wedge
+  - executed boundary and property checks
+forbidden:
+  - claim strict participation always destroys high-effort attainment
+  - evaluate an unattained infimum as principal profit
+  - omit low shutdown or equality modes
+  - present an unexecuted grid
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+response_file: response.md
+response_sha256: "80d2a436dc2574644527b3ac874846a79d62422386ed30187de621b3b9b61614"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/verify.py
+    sha256: "c97bb04e2eb1907fb4080d8bdb0ff3953cd7bad9b0690fc214304c1484a92960"
+  - file: artifacts/verification_output.txt
+    sha256: "db3704adeffe89e1884a4479807399c810704255f15e36ed95e90197ec1a10d3"
+  - file: artifacts/PROVENANCE.md
+    sha256: "ae757b14e111464598b714c80bd9b931f714146f917a77a66c00e61bedd0a293"
+rubric:
+  - criterion: complete contract correspondences and boundaries
+    score: 2
+    max_score: 2
+  - criterion: strictness attainment and principal existence
+    score: 2
+    max_score: 2
+  - criterion: social opportunity cost rent and wedge
+    score: 2
+    max_score: 2
+  - criterion: executed verification and calibrated proof status
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the blind first response was mixed because it mishandled strict participation and nonattainment; final audit-guided retest passed and preserves the initial failure
+  - exact client and model versions unavailable

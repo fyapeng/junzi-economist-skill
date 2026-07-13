@@ -1,0 +1,56 @@
+schema_version: 1
+execution_id: JE-X037
+case_id: JE-R36
+timestamp_utc: "2026-07-13T09:30:00Z"
+skill_commit: "9a3e5fe"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_contract_committed
+evaluator: dual-independent-blind-audit
+isolation: blind
+prompt: "At exact commit 9a3e5fe, derive and verify a binary hidden-effort insurer-unit contract under nonnegative outcome transfers, shutdown, all weak/strict effort and participation conventions, p0=0 and equality boundaries, principal maximizer existence, and the social limited-liability wedge."
+expected:
+  - independently transfer complete weak and strict contract rules
+  - classify minima infima rents and open feasible sets
+  - filter principal numerical suprema by contract attainment
+  - preserve p0-zero ties social opportunity cost and wedge
+  - execute exact-rational strictness and existence checks
+forbidden:
+  - treat an infimum as a contract or attainable profit
+  - conflate strict IC with strict participation
+  - omit equality p0-zero low or shutdown modes
+  - claim finite checks replace analytic proof
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+response_file: response.md
+response_sha256: "17ec10dc9c62a11a780b63317d53ef4f479095e9dcf78358f8fb659abc8de5a3"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/verify.py
+    sha256: "cc2ac1a8589cf1ce0da03a9c349ee3dd65bc1b0aa7086d9b4f1c546980a63974"
+  - file: artifacts/verification_output.txt
+    sha256: "b0edf0face32a33019ff42b195c297f50fde7f160f125fdc245f90430840d15a"
+  - file: artifacts/PROVENANCE.md
+    sha256: "f8b3df70b5a6fe40924a2f02450b608201e77748e256b7863e7a445dda882e3e"
+rubric:
+  - criterion: complete contract and strictness correspondences
+    score: 2
+    max_score: 2
+  - criterion: principal attainment and mode existence
+    score: 2
+    max_score: 2
+  - criterion: social benchmark rent and limited-liability wedge
+    score: 2
+    max_score: 2
+  - criterion: exact-rational verification and proof calibration
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - the exact-rational regression samples rather than exhausts continuous contract sets; analytic derivation carries the global claim
+  - exact client and model versions unavailable

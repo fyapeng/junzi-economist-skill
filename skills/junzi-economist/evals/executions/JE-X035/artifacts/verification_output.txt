@@ -1,0 +1,12 @@
+Deterministic verification: PASS
+Python: 3.11.15
+Duality/feasibility parameter sets: 3; quantities each: 4
+Boundary-enriched objective grids: 14 (20,001 base points each)
+below-unit-cost: monopoly=shutdown, planner=shutdown
+equal-unit-cost: monopoly=shutdown, planner=shutdown
+above-cost-below-HM: monopoly=entry, planner=entry
+at-HM: monopoly=tie, planner=entry
+strict-wedge: monopoly=shutdown, planner=entry
+at-HS: monopoly=shutdown, planner=tie
+above-HS: monopoly=shutdown, planner=shutdown
+Accounting identities: PASS (8 positive allocations)

@@ -1,0 +1,10 @@
+ALL CHECKS PASSED
+pure best-response cases: 1377
+strict mixed/risk cases: 168
+transfer-free welfare cases: 1377
+financing-cost policy cases: 5508
+coordination-failure witnesses: 120
+excess-adoption witnesses: 204
+boundary cases: x=-gamma, x=0, gamma=x=0 verified
+counterexample retained: welfare dominance does not select equilibrium
+counterexample retained: equilibrium-changing subsidy can reduce fiscal welfare

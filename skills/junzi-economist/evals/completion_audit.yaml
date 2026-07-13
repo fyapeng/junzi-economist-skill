@@ -7,9 +7,9 @@ requirements:
     evidence: [SKILL.md, references/HUMAN_WELFARE_AND_INSTITUTIONS.md, evals/executions/JE-X027, evals/executions/JE-X028, evals/executions/JE-X029, evals/executions/JE-X030, evals/executions/JE-X031, evals/executions/JE-X032, evals/executions/JE-X033]
     gap: "Seven adversarial executions now make agency, power, safety, due process, voice, rights constraints, and unresolved value conflict change feasible sets, welfare criteria, research design, and branch decisions across labor, education, housing, health, courts, scholarships, and childcare; JE-X033 is a clean dual-audited pass on exact commit b8f4611. Future breadth can test environmental and intergenerational conflicts."
   microeconomic_law:
-    status: partial
-    evidence: [references/MICROECONOMIC_LAW.md, evals/runs/2026-07-13-round-02.md]
-    gap: "Behavior coverage for contracts, games, production, equilibrium multiplicity, and welfare benchmarks."
+    status: proved
+    evidence: [references/MICROECONOMIC_LAW.md, evals/executions/JE-X034, evals/executions/JE-X035, evals/executions/JE-X036, evals/executions/JE-X037]
+    gap: "Hidden-action contracts, limited liability, strict implementation and existence, production duality, fixed-cost entry, monopoly and social benchmarks, strategic complementarity, complete mixed-equilibrium correspondences, selection, and fiscal policy now pass. Future breadth can add adverse selection, auctions, bargaining, search, and general equilibrium."
   macroeconomic_law:
     status: partial
     evidence: [references/MACROECONOMIC_LAW.md, evals/executions/JE-X014]
@@ -33,7 +33,7 @@ requirements:
   computation_and_instruments:
     status: partial
     evidence: [references/SOFTWARE_AND_COMPUTATION.md, scripts/test_utilities.py, evals/fixtures/provider_model_check.py, evals/executions/JE-X011/artifacts/analysis.py]
-    gap: "Dynamic programming, NFXP, optimizer, gradient, tolerance, and heldout checks now have a reproducible run; broader data-construction, alternative-algorithm, and failure-region evidence remain."
+    gap: "Dynamic programming, NFXP, optimizer, gradient, tolerance, heldout checks, exact-rational contract and game tests, and boundary-enriched production checks now have reproducible runs; broader data-construction, alternative-algorithm, and failure-region evidence remain."
   writing_and_reading:
     status: proved
     evidence: [references/ECONOMIC_WRITING.md, references/PAPER_READING.md, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]
@@ -49,7 +49,7 @@ requirements:
   reproducible_behavior_evaluation:
     status: partial
     evidence: [evals/cases.yaml, evals/runs, evals/run_schema.yaml, evals/executions]
-    gap: "Thirty-two strict executions now include automatic routing, real PDF, long manuscript, legacy comparisons, clean theory/frontier endpoints, six preserved Dao correction histories, and a clean dual-audited Dao transfer on exact commit b8f4611; exact client/model provenance and platform-level telemetry remain unavailable."
+    gap: "Thirty-six strict executions now include automatic routing, real PDF, long manuscript, legacy comparisons, clean theory/frontier and Dao endpoints, three micro-law families, preserved correction histories, and a clean dual-audited contract transfer on exact commit 9a3e5fe; exact client/model provenance and platform-level telemetry remain unavailable."
   legacy_skill_replacement:
     status: partial
     evidence: [evals/legacy_capabilities.yaml, evals/executions/JE-X018, evals/executions/JE-X020, evals/executions/JE-X021, evals/executions/JE-X022, evals/executions/JE-X023, evals/executions/JE-X024]

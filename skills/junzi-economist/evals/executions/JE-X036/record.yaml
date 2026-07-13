@@ -1,0 +1,57 @@
+schema_version: 1
+execution_id: JE-X036
+case_id: JE-R38
+timestamp_utc: "2026-07-13T09:00:00Z"
+skill_commit: "5778862"
+platform: codex-desktop
+client_version: unavailable-to-executor
+model: "GPT-5 family; exact version unavailable to executor"
+executor: micro_game
+evaluator: dual-independent-blind-audit
+isolation: blind
+prompt: "Characterize the complete equilibrium and welfare correspondences of a two-player binary adoption game with strategic complementarity and a per-adopter subsidy, including mixed equilibria, degeneracies, risk dominance, subsidy thresholds, real financing cost, and set-valued policy evaluation. Execute exhaustive rational-grid checks."
+expected:
+  - complete pure mixed and degenerate Nash correspondence
+  - risk dominance and basin claims separated from actual selection
+  - complete welfare ties coordination failure and excess adoption
+  - unique and risk-dominant subsidy thresholds with unattained infimum
+  - financing-cost policy sets and counterexamples
+forbidden:
+  - omit asymmetric or degenerate candidates without proof
+  - select welfare dominance as equilibrium play
+  - treat subsidy as free after adding real financing cost
+  - claim every equilibrium-changing subsidy improves welfare
+loaded_files:
+  - SKILL.md
+  - references/MICROECONOMIC_LAW.md
+  - references/THEORY_MODELING.md
+  - references/HUMAN_WELFARE_AND_INSTITUTIONS.md
+  - references/SOFTWARE_AND_COMPUTATION.md
+response_file: response.md
+response_sha256: "fe3bb94ecd856511d869adec191120546a3163febec75646e059bb666b4192cc"
+audit_file: audit.md
+redteam_audit_file: redteam_audit.md
+artifacts:
+  - file: artifacts/verify.py
+    sha256: "4391cd77803e703adda6419982fa485cd4265b447459475feff8b7c1aed35b24"
+  - file: artifacts/verification_output.txt
+    sha256: "9ac60532c52c82185226e15cd3769a4b481c96cf79e829791f5205af886980e7"
+  - file: artifacts/PROVENANCE.md
+    sha256: "5faa6d209df96660aa872d7bb211a248de4013bd727313c66b25b664d637d409"
+rubric:
+  - criterion: complete Nash correspondence and degeneracies
+    score: 2
+    max_score: 2
+  - criterion: multiplicity risk and selection discipline
+    score: 2
+    max_score: 2
+  - criterion: welfare subsidy and financing-cost correspondence
+    score: 2
+    max_score: 2
+  - criterion: exhaustive checks and counterexamples
+    score: 2
+    max_score: 2
+verdict: pass
+limitations:
+  - exhaustive enumeration is over a finite rational grid while analytic proof establishes the full parameter correspondence
+  - exact client and model versions unavailable

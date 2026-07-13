@@ -1,0 +1,6 @@
+ALL ASSERTIONS PASSED
+weak_contract_checks: 24
+strict_existence_cells: 20
+principal_existence_cases: 4
+wedge_social_checks: 4
+Covered p0=0; U<L, U=L, U>L; weak/strict IC; weak/strict PC; ties.
