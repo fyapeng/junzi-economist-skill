@@ -8,9 +8,13 @@ Write the relevant stocks, flows, balance sheets, resource constraints, and sect
 
 State how households, firms, government, financial intermediaries, the monetary authority, and the external sector are closed. Track nominal versus real quantities, gross versus net flows, levels versus growth, and ex ante plans versus ex post identities.
 
+Do not call a stationary budget identity a policy regime. When policy or debt dynamics matter, specify which authority adjusts which instrument away from the steady state, how multiple branches are selected, what expectations and terminal or transversality conditions apply, and where the rule remains feasible. Test whether deviations return, persist, or diverge.
+
 ## Aggregation and heterogeneity
 
 Ask which micro objects aggregate, under what distribution, prices, market completeness, and mobility. Aggregate change may reflect within-unit behavior, composition, entry and exit, reallocation, price indices, or measurement. Representative-agent shortcuts require an aggregation argument and may erase incidence, precaution, or financial amplification.
+
+For heterogeneous-agent equilibrium, close household policy, the invariant distribution, every asset's net supply, factor prices, and the aggregate resource constraint together. Report boundary mass, policy truncation, distribution residuals, optimality or Euler/KKT errors, market residuals, and grid sensitivity. A computed root is one equilibrium found unless the full reliable domain, all sign changes and tangencies, or an analytic uniqueness argument has been checked.
 
 ## Intertemporal constraints and dynamics
 
@@ -31,6 +35,8 @@ Labeling a residual a shock does not establish an autonomous disturbance. Check 
 ## Money, finance, and fiscal systems
 
 Trace consolidated and unconsolidated balance sheets when relevant. State the nominal anchor, payment and liquidity mechanism, credit creation, collateral, default, maturity, and policy rule. For fiscal policy, account for financing, timing, incidence, implementation capacity, expectations, and monetary interaction.
+
+When comparing incomplete and complete markets, state asset payoffs, prices, no-arbitrage normalization, net supplies, initial ownership, and counterparties. A larger payoff span does not by itself establish nested affordable sets, implementability, or a Pareto ranking.
 
 Neither money neutrality nor persistent real effects should be assumed outside their horizon, friction, and policy regime.
 

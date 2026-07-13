@@ -72,6 +72,8 @@ If a counterexample defeats the statement, narrow the theorem or change its stat
 
 Make computational checks executable: state their parameter domain, enforce preconditions such as ordered changes, and include assertions or recorded output. A code fragment followed by “should pass” is a proposed check, not evidence that it passed.
 
+Keep exact economic regimes separate from floating-point acceptance. Do not use a numerical tolerance to turn a strictly positive value into zero, a point below a threshold into equality, or a point above it into a feasible boundary case. Encode analytically known cases explicitly; use scaled or high-precision residual tolerances only after the branch is fixed, and test both sides of every equality, tangency, or multiplicity boundary.
+
 ## Assign derivation status
 
 - `verified-global`: proof covers the stated feasible domain;

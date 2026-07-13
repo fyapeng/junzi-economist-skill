@@ -31,6 +31,8 @@ This table is a router, not a restriction. Verify current official documentation
 
 Scale variables, inspect conditioning, enforce economic constraints, and distinguish solver convergence from economic validity. Save diagnostic traces when they can discriminate implementation, numerical, identification, and theoretical failures.
 
+Make verification recompute the object from primitives in a fresh output path. Reading stored residuals or a previous result file can check a schema or snapshot, but it is not an independent solve. When searching for equilibria, retain the full scan, diagnose unreliable grid regions, collect every admissible sign-change bracket, test tangencies and boundaries separately, and avoid returning the first root as if uniqueness had been established. If an implementation claims to filter truncated or contaminated regions, make that diagnostic part of the executed selection rule and record it.
+
 ## Toolchain exit
 
 Do not continue using a tool because code already exists. When a package, language, data format, or pipeline blocks the real question, preserve portable inputs, specifications, tests, and learned results; then replace or retire the instrument. Never change the research target merely to fit the available tool.
